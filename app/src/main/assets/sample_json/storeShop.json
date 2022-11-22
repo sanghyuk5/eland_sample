@@ -1,0 +1,1208 @@
+{
+  "code": "200",
+  "data": {
+    "smartpick_list": [
+      {
+        "rel_cont_nm": "대전유성점",
+        "category_no": "1906396125"
+      },
+      {
+        "rel_cont_nm": "강서점",
+        "category_no": "1807354249"
+      },
+      {
+        "rel_cont_nm": "부천점",
+        "category_no": "1708325729"
+      },
+      {
+        "rel_cont_nm": "동수원점",
+        "category_no": "1708325731"
+      },
+      {
+        "rel_cont_nm": "괴정점",
+        "category_no": "1904388131"
+      },
+      {
+        "rel_cont_nm": "평촌점",
+        "category_no": "1708325732"
+      },
+      {
+        "rel_cont_nm": "청주점",
+        "category_no": "2001426054"
+      },
+      {
+        "rel_cont_nm": "고잔점",
+        "category_no": "1708325976"
+      },
+      {
+        "rel_cont_nm": "중계점",
+        "category_no": "1907398741"
+      },
+      {
+        "rel_cont_nm": "서면점",
+        "category_no": "1909410255"
+      },
+      {
+        "rel_cont_nm": "인천점",
+        "category_no": "1912423923"
+      },
+      {
+        "rel_cont_nm": "뉴코아아울렛 평택점",
+        "category_no": "2007457544"
+      },
+      {
+        "rel_cont_nm": "동아강북점",
+        "category_no": "2001429320"
+      },
+      {
+        "rel_cont_nm": "창원점",
+        "category_no": "2008464314"
+      },
+      {
+        "rel_cont_nm": "강남점",
+        "category_no": "1708325730"
+      },
+      {
+        "rel_cont_nm": "부산대점",
+        "category_no": "2002435419"
+      },
+      {
+        "rel_cont_nm": "덕천점",
+        "category_no": "1907401851"
+      },
+      {
+        "rel_cont_nm": "분당점",
+        "category_no": "1811369898"
+      },
+      {
+        "rel_cont_nm": "구로점",
+        "category_no": "1907398740"
+      },
+      {
+        "rel_cont_nm": "동아쇼핑점",
+        "category_no": "2001429322"
+      },
+      {
+        "rel_cont_nm": "경산점",
+        "category_no": "1904388130"
+      },
+      {
+        "rel_cont_nm": "부평점",
+        "category_no": "1905391245"
+      },
+      {
+        "rel_cont_nm": "순천점",
+        "category_no": "2002433796"
+      },
+      {
+        "rel_cont_nm": "울산점",
+        "category_no": "2007459366"
+      },
+      {
+        "rel_cont_nm": "중앙로역점",
+        "category_no": "2002433792"
+      },
+      {
+        "rel_cont_nm": "동아수성점",
+        "category_no": "2001429323"
+      },
+      {
+        "rel_cont_nm": "광명점",
+        "category_no": "1903385297"
+      },
+      {
+        "rel_cont_nm": "구로점",
+        "category_no": "1907398740"
+      },
+      {
+        "rel_cont_nm": "충장점",
+        "category_no": "1905392831"
+      },
+      {
+        "rel_cont_nm": "산본점",
+        "category_no": "2005450352"
+      },
+      {
+        "rel_cont_nm": "터미널점",
+        "category_no": "2007457543"
+      },
+      {
+        "rel_cont_nm": "논현점",
+        "category_no": "2002433795"
+      },
+      {
+        "rel_cont_nm": "일산점",
+        "category_no": "2006453705"
+      },
+      {
+        "rel_cont_nm": "안양점",
+        "category_no": "2002433473"
+      },
+      {
+        "rel_cont_nm": "구미점",
+        "category_no": "2002435418"
+      },
+      {
+        "rel_cont_nm": "수성마트점",
+        "category_no": "2002433793"
+      },
+      {
+        "rel_cont_nm": "불광점",
+        "category_no": "2001429324"
+      },
+      {
+        "rel_cont_nm": "야탑점",
+        "category_no": "2204602449"
+      },
+      {
+        "rel_cont_nm": "천호점",
+        "category_no": "2007459365"
+      },
+      {
+        "rel_cont_nm": "해운대점",
+        "category_no": "2002433794"
+      },
+      {
+        "rel_cont_nm": "울산성남점",
+        "category_no": "2008463053"
+      },
+      {
+        "rel_cont_nm": "안양점",
+        "category_no": "2002433473"
+      },
+      {
+        "rel_cont_nm": "광주역점",
+        "category_no": "2204602447"
+      },
+      {
+        "rel_cont_nm": "엑스코점",
+        "category_no": "2204602448"
+      }
+    ],
+    "banjjak_deli": {
+      "btn_nm": "배송지 설정",
+      "flag": "P",
+      "btn_url": "/mypage/searchBanJJakDlvpListLayer.action?layerClose=Y&url=%2Fapi%2Fdispctg%2FgetInitStoreShoppingApi.action",
+      "img_path": "",
+      "img_link": "",
+      "addr": "오늘받송 가능지역을 확인하세요."
+    },
+    "store_banner_list": [],
+    "ctg_navi": [
+      {
+        "ctg_no": "1704316850",
+        "ctg_nm": "NC백화점"
+      }
+    ],
+    "recommend_store_list": [
+      {
+        "store_nm": "대전유성점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+        "link_url": "https://www.elandmall.com/dispctg/searchStoreShoppingList.action?vend_no=V220021352"
+      },
+      {
+        "store_nm": "부천점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/420/00/200500000197420.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V160003263"
+      },
+      {
+        "store_nm": "강서점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/416/00/200500000197416.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V170004601"
+      },
+      {
+        "store_nm": "신구로점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/388/00/201100000233388.png",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V200014709"
+      },
+      {
+        "store_nm": "동수원점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/419/00/200500000197419.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V160003184"
+      },
+      {
+        "store_nm": "평촌점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/421/00/200500000197421.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V160003592"
+      },
+      {
+        "store_nm": "강남점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/432/00/200500000197432.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V160003262"
+      },
+      {
+        "store_nm": "인천점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/427/00/200500000197427.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=V190012056"
+      },
+      {
+        "store_nm": "울산점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/868/00/201200000236868.jpg",
+        "link_url": "/dispctg/searchStoreShoppingList.action?vend_no=v200014421"
+      },
+      {
+        "store_nm": "송파점",
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/984/00/220100000317984.jpg",
+        "link_url": "https://www.elandmall.com/dispctg/searchStoreShoppingList.action?vend_no=V190010639"
+      }
+    ],
+    "category_goods_list": [
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]NIKE COURT LEGACY (GS) 코트 레거시 (GS) DA5380 102",
+            "goods_star_point": 100,
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 53100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209276250&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894841&conts_divi_cd=10&rel_no=2209276250&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DNIKE+COURT+LEGACY+%28GS%29+%EC%BD%94%ED%8A%B8+%EB%A0%88%EA%B1%B0%EC%8B%9C+%28GS%29+DA5380+102&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/250/600/2209276250_0000105.jpg",
+            "sale_price": 59000,
+            "market_price": 0,
+            "goods_comment_count": 4
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]W NIKE COURT VISION ALTA LTR 코트비전 알타 우먼스 LTR DM0113-100",
+            "goods_star_point": 100,
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 80100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210402322&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894840&conts_divi_cd=10&rel_no=2210402322&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DW+NIKE+COURT+VISION+ALTA+LTR+%EC%BD%94%ED%8A%B8%EB%B9%84%EC%A0%84+%EC%95%8C%ED%83%80+%EC%9A%B0%EB%A8%BC%EC%8A%A4+LTR+DM0113-100&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/322/600/2210402322_0000049.jpg",
+            "sale_price": 89000,
+            "market_price": 0,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]NIKE BURROW 버로우 패딩 겨울 슬리퍼 DC1456-002",
+            "goods_star_point": 100,
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 62100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210473969&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894844&conts_divi_cd=10&rel_no=2210473969&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DNIKE+BURROW+%EB%B2%84%EB%A1%9C%EC%9A%B0+%ED%8C%A8%EB%94%A9+%EA%B2%A8%EC%9A%B8+%EC%8A%AC%EB%A6%AC%ED%8D%BC+DC1456-002&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/969/600/2210473969_0000019.jpg",
+            "sale_price": 69000,
+            "market_price": 0,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]WMNS NIKE BURROW 버로우 우먼스 패딩 겨울 슬리퍼 DC1458-001",
+            "goods_star_point": 100,
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 62100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210418121&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894848&conts_divi_cd=10&rel_no=2210418121&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DWMNS+NIKE+BURROW+%EB%B2%84%EB%A1%9C%EC%9A%B0+%EC%9A%B0%EB%A8%BC%EC%8A%A4+%ED%8C%A8%EB%94%A9+%EA%B2%A8%EC%9A%B8+%EC%8A%AC%EB%A6%AC%ED%8D%BC+DC1458-001&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/121/600/2210418121_0000031.jpg",
+            "sale_price": 69000,
+            "market_price": 0,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]W NIKE COURT VISION ALTA LTR 코트비전 알타 우먼스 LTR DM0113-101",
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 80100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210475362&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894843&conts_divi_cd=10&rel_no=2210475362&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DW+NIKE+COURT+VISION+ALTA+LTR+%EC%BD%94%ED%8A%B8%EB%B9%84%EC%A0%84+%EC%95%8C%ED%83%80+%EC%9A%B0%EB%A8%BC%EC%8A%A4+LTR+DM0113-101&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/362/600/2210475362_0000041.jpg",
+            "sale_price": 89000,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "와이드앵글 남성 CF 변형 무스탕 다운 자켓  WMW21543",
+            "brand_nm": "와이드앵글",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 349000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210450644&vir_vend_no=VV21023697&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894873&conts_divi_cd=10&rel_no=2210450644&rel_divi_cd=10&brand_nm=%EC%99%80%EC%9D%B4%EB%93%9C%EC%95%B5%EA%B8%80&goods_nm=%EC%99%80%EC%9D%B4%EB%93%9C%EC%95%B5%EA%B8%80+%EB%82%A8%EC%84%B1+CF+%EB%B3%80%ED%98%95+%EB%AC%B4%EC%8A%A4%ED%83%95+%EB%8B%A4%EC%9A%B4+%EC%9E%90%EC%BC%93++WMW21543&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/644/600/2210450644_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 499000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]NIKE DEFYALLDAY 나이키 디파이 올 데이 DJ1196-100",
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 71100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209281947&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894845&conts_divi_cd=10&rel_no=2209281947&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DNIKE+DEFYALLDAY+%EB%82%98%EC%9D%B4%ED%82%A4+%EB%94%94%ED%8C%8C%EC%9D%B4+%EC%98%AC+%EB%8D%B0%EC%9D%B4+DJ1196-100&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/947/600/2209281947_0000081.jpg",
+            "sale_price": 79000,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]WMNS NIKE AIR MAX SC 나이키 에어 맥스 SC CW4554 101",
+            "goods_star_point": 100,
+            "brand_nm": "나이키",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 80100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207065399&vir_vend_no=VV18008595&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894842&conts_divi_cd=10&rel_no=2207065399&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5DWMNS+NIKE+AIR+MAX+SC+%EB%82%98%EC%9D%B4%ED%82%A4+%EC%97%90%EC%96%B4+%EB%A7%A5%EC%8A%A4+SC+CW4554+101&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/399/600/2207065399_0000114.jpg",
+            "sale_price": 89000,
+            "market_price": 0,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "와이드앵글 남성 WL 하이브리드 터널 스윙다운 WMW21504",
+            "brand_nm": "와이드앵글",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 279000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210450616&vir_vend_no=VV21023697&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894875&conts_divi_cd=10&rel_no=2210450616&rel_divi_cd=10&brand_nm=%EC%99%80%EC%9D%B4%EB%93%9C%EC%95%B5%EA%B8%80&goods_nm=%EC%99%80%EC%9D%B4%EB%93%9C%EC%95%B5%EA%B8%80+%EB%82%A8%EC%84%B1+WL+%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C+%ED%84%B0%EB%84%90+%EC%8A%A4%EC%9C%99%EB%8B%A4%EC%9A%B4+WMW21504&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/616/600/2210450616_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 399000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무료배송💥]디스커버리 여성 밀포드 RDS 다운자켓 DWDJ7B961",
+            "brand_nm": "",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 179000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2111836053&vir_vend_no=VV21026836&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894851&conts_divi_cd=10&rel_no=2111836053&rel_divi_cd=10&brand_nm=&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%F0%9F%92%A5%5D%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC+%EC%97%AC%EC%84%B1+%EB%B0%80%ED%8F%AC%EB%93%9C+RDS+%EB%8B%A4%EC%9A%B4%EC%9E%90%EC%BC%93+DWDJ7B961&flag_img_path=",
+            "sale_rate": 74,
+            "image_url": "//www.elandrs.com/upload/prd/img/053/600/2111836053_0000026.jpg",
+            "sale_price": 0,
+            "market_price": 690000
+          }
+        ],
+        "ctg_no": "1709327241",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/688/00/221000000371688.png",
+        "ctg_nm": "스포츠",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/687/00/221000000371687.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤][스케쳐스키즈] 여아 로스앤젤레스 긴팔 티셔츠 SK3GT20F331",
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011345478&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131131&conts_divi_cd=10&rel_no=2011345478&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%5B%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EC%97%AC%EC%95%84+%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4+%EA%B8%B4%ED%8C%94+%ED%8B%B0%EC%85%94%EC%B8%A0+SK3GT20F331&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/478/600/2011345478_0000043.jpg",
+            "sale_price": 19000,
+            "market_price": 39000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤][스케쳐스키즈] 여아 로스앤젤레스 긴팔티셔츠  SK3GT20F321",
+            "goods_star_point": 100,
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011345470&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131130&conts_divi_cd=10&rel_no=2011345470&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%5B%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EC%97%AC%EC%95%84+%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4+%EA%B8%B4%ED%8C%94%ED%8B%B0%EC%85%94%EC%B8%A0++SK3GT20F321&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/470/600/2011345470_0000037.jpg",
+            "sale_price": 19000,
+            "market_price": 39000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤][스캐쳐스키즈]  남아 로스앤젤로스 긴팔 티셔츠   SK3BT20F611",
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011326021&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131128&conts_divi_cd=10&rel_no=2011326021&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%5B%EC%8A%A4%EC%BA%90%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88%5D++%EB%82%A8%EC%95%84+%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A1%9C%EC%8A%A4+%EA%B8%B4%ED%8C%94+%ED%8B%B0%EC%85%94%EC%B8%A0+++SK3BT20F611&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/021/600/2011326021_0000043.jpg",
+            "sale_price": 19000,
+            "market_price": 39000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤][스케쳐스키즈] 남아 띠 로고 배색 저지집업   SK3BN20F121",
+            "goods_star_point": 100,
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 40050,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011326010&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131126&conts_divi_cd=10&rel_no=2011326010&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%5B%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EB%82%A8%EC%95%84+%EB%9D%A0+%EB%A1%9C%EA%B3%A0+%EB%B0%B0%EC%83%89+%EC%A0%80%EC%A7%80%EC%A7%91%EC%97%85+++SK3BN20F121&flag_img_path=",
+            "sale_rate": 55,
+            "image_url": "//www.elandrs.com/upload/prd/img/010/600/2011326010_0000037.jpg",
+            "sale_price": 44500,
+            "market_price": 89000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤][스케쳐스키즈] 여아 양면 페어리 다운 점퍼  SK3GD20W111",
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 53100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2010226180&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131121&conts_divi_cd=10&rel_no=2010226180&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%5B%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EC%97%AC%EC%95%84+%EC%96%91%EB%A9%B4+%ED%8E%98%EC%96%B4%EB%A6%AC+%EB%8B%A4%EC%9A%B4+%EC%A0%90%ED%8D%BC++SK3GD20W111&flag_img_path=",
+            "sale_rate": 79,
+            "image_url": "//www.elandrs.com/upload/prd/img/180/600/2010226180_0000025.jpg",
+            "sale_price": 59000,
+            "market_price": 249000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤]스케쳐스키즈 남아 컬러 블록 우븐 후드 자켓 SK3BJ20F111_NC 구로점",
+            "goods_star_point": 100,
+            "brand_nm": "스케쳐스키즈",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 36000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2009088412&vir_vend_no=VV20019340&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C21011183131117&conts_divi_cd=10&rel_no=2009088412&rel_divi_cd=10&brand_nm=%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5D%EC%8A%A4%EC%BC%80%EC%B3%90%EC%8A%A4%ED%82%A4%EC%A6%88+%EB%82%A8%EC%95%84+%EC%BB%AC%EB%9F%AC+%EB%B8%94%EB%A1%9D+%EC%9A%B0%EB%B8%90+%ED%9B%84%EB%93%9C+%EC%9E%90%EC%BC%93+SK3BJ20F111_NC+%EA%B5%AC%EB%A1%9C%EC%A0%90&flag_img_path=",
+            "sale_rate": 60,
+            "image_url": "//www.elandrs.com/upload/prd/img/412/600/2009088412_0000025.jpg",
+            "sale_price": 40000,
+            "market_price": 89000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "아메리칸투어리스터 스콜라백팩  BLACK  AG009002_평촌점",
+            "goods_star_point": 100,
+            "brand_nm": "아메리칸투어리스터",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 71100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1706262417&vir_vend_no=VV17004474&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911841&conts_divi_cd=10&rel_no=1706262417&rel_divi_cd=10&brand_nm=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0&goods_nm=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0+%EC%8A%A4%EC%BD%9C%EB%9D%BC%EB%B0%B1%ED%8C%A9++BLACK++AG009002_%ED%8F%89%EC%B4%8C%EC%A0%90&flag_img_path=",
+            "sale_rate": 37,
+            "image_url": "//www.elandrs.com/upload/prd/img/417/600/1706262417_0000094.jpg",
+            "sale_price": 79000,
+            "market_price": 113000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "PRIPEby미소페(MISOPE 고잔)1센티 특허 에어쿠션 천연 양가죽 펌프스 111731025(가부시아님)",
+            "brand_nm": "미소페",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 138000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1709350497&vir_vend_no=VV17003643&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911840&conts_divi_cd=10&rel_no=1709350497&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%86%8C%ED%8E%98&goods_nm=PRIPEby%EB%AF%B8%EC%86%8C%ED%8E%98%28MISOPE+%EA%B3%A0%EC%9E%94%291%EC%84%BC%ED%8B%B0+%ED%8A%B9%ED%97%88+%EC%97%90%EC%96%B4%EC%BF%A0%EC%85%98+%EC%B2%9C%EC%97%B0+%EC%96%91%EA%B0%80%EC%A3%BD+%ED%8E%8C%ED%94%84%EC%8A%A4+111731025%28%EA%B0%80%EB%B6%80%EC%8B%9C%EC%95%84%EB%8B%98%29&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/497/600/1709350497_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "PRIPEby미소페(MISOPE 고잔)핫픽스 여성 4CM 뮬 샌들_111923004",
+            "brand_nm": "미소페",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 178000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1906551223&vir_vend_no=VV17003643&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911832&conts_divi_cd=10&rel_no=1906551223&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%86%8C%ED%8E%98&goods_nm=PRIPEby%EB%AF%B8%EC%86%8C%ED%8E%98%28MISOPE+%EA%B3%A0%EC%9E%94%29%ED%95%AB%ED%94%BD%EC%8A%A4+%EC%97%AC%EC%84%B1+4CM+%EB%AE%AC+%EC%83%8C%EB%93%A4_111923004&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/223/600/1906551223_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "PRIPEby미소페(MISOPE 고잔)뱀피 무늬 여성 5cm 슬리퍼형 샌들_111923007",
+            "brand_nm": "미소페",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 148000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1907632897&vir_vend_no=VV17003643&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911831&conts_divi_cd=10&rel_no=1907632897&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%86%8C%ED%8E%98&goods_nm=PRIPEby%EB%AF%B8%EC%86%8C%ED%8E%98%28MISOPE+%EA%B3%A0%EC%9E%94%29%EB%B1%80%ED%94%BC+%EB%AC%B4%EB%8A%AC+%EC%97%AC%EC%84%B1+5cm+%EC%8A%AC%EB%A6%AC%ED%8D%BC%ED%98%95+%EC%83%8C%EB%93%A4_111923007&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/897/600/1907632897_0000010.jpg",
+            "sale_price": 0,
+            "market_price": 0
+          }
+        ],
+        "ctg_no": "1709327244",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/689/00/221000000371689.png",
+        "ctg_nm": "패션잡화",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/690/00/221000000371690.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "(부천점)14290-010-833-46 남아 레터링 에코볼 패딩점퍼(3color)",
+            "goods_star_point": 100,
+            "brand_nm": "행텐주니어",
+            "icon_view": "",
+            "cust_sale_price": 19000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011386056&vir_vend_no=VV18006531&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894720&conts_divi_cd=10&rel_no=2011386056&rel_divi_cd=10&brand_nm=%ED%96%89%ED%85%90%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%28%EB%B6%80%EC%B2%9C%EC%A0%90%2914290-010-833-46+%EB%82%A8%EC%95%84+%EB%A0%88%ED%84%B0%EB%A7%81+%EC%97%90%EC%BD%94%EB%B3%BC+%ED%8C%A8%EB%94%A9%EC%A0%90%ED%8D%BC%283color%29&flag_img_path=",
+            "sale_rate": 81,
+            "image_url": "//www.elandrs.com/upload/prd/img/056/600/2011386056_0000031.jpg",
+            "sale_price": 0,
+            "market_price": 99800,
+            "goods_comment_count": 4
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "(부천점)14390-010-804-69 남여공용 타프트 플리스 뽀글이 본딩집업(4color)",
+            "goods_star_point": 100,
+            "brand_nm": "행텐주니어",
+            "icon_view": "",
+            "cust_sale_price": 34900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210407359&vir_vend_no=VV18006531&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894739&conts_divi_cd=10&rel_no=2210407359&rel_divi_cd=10&brand_nm=%ED%96%89%ED%85%90%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%28%EB%B6%80%EC%B2%9C%EC%A0%90%2914390-010-804-69+%EB%82%A8%EC%97%AC%EA%B3%B5%EC%9A%A9+%ED%83%80%ED%94%84%ED%8A%B8+%ED%94%8C%EB%A6%AC%EC%8A%A4+%EB%BD%80%EA%B8%80%EC%9D%B4+%EB%B3%B8%EB%94%A9%EC%A7%91%EC%97%85%284color%29&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/359/600/2210407359_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 69800,
+            "goods_comment_count": 5
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✪무배+20%✪]기본 슬림핏기모트레이닝팬츠_W218B3521B_평촌점",
+            "goods_star_point": 100,
+            "brand_nm": "에어워크주니어",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 18320,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2111842183&vir_vend_no=VV16003209&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894742&conts_divi_cd=10&rel_no=2111842183&rel_divi_cd=10&brand_nm=%EC%97%90%EC%96%B4%EC%9B%8C%ED%81%AC%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%5B%E2%9C%AA%EB%AC%B4%EB%B0%B0%2B20%25%E2%9C%AA%5D%EA%B8%B0%EB%B3%B8+%EC%8A%AC%EB%A6%BC%ED%95%8F%EA%B8%B0%EB%AA%A8%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D%ED%8C%AC%EC%B8%A0_W218B3521B_%ED%8F%89%EC%B4%8C%EC%A0%90&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/183/600/2111842183_0000041.jpg",
+            "sale_price": 22900,
+            "market_price": 49900,
+            "goods_comment_count": 17
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "플리츠 융 치랭스 CITS22W04_부천점",
+            "goods_star_point": 100,
+            "brand_nm": "신디키즈",
+            "icon_view": "",
+            "cust_sale_price": 20900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208224896&vir_vend_no=VV17003513&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894740&conts_divi_cd=10&rel_no=2208224896&rel_divi_cd=10&brand_nm=%EC%8B%A0%EB%94%94%ED%82%A4%EC%A6%88&goods_nm=%ED%94%8C%EB%A6%AC%EC%B8%A0+%EC%9C%B5+%EC%B9%98%EB%9E%AD%EC%8A%A4+CITS22W04_%EB%B6%80%EC%B2%9C%EC%A0%90&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/896/600/2208224896_0000001.JPG",
+            "sale_price": 0,
+            "market_price": 29900,
+            "goods_comment_count": 2
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✪무배+20%✪]두줄 스키니 기모 트레이닝 바지_14340-038-835-69_평촌점",
+            "brand_nm": "행텐주니어",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 12000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210465807&vir_vend_no=VV18006224&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894732&conts_divi_cd=10&rel_no=2210465807&rel_divi_cd=10&brand_nm=%ED%96%89%ED%85%90%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%5B%E2%9C%AA%EB%AC%B4%EB%B0%B0%2B20%25%E2%9C%AA%5D%EB%91%90%EC%A4%84+%EC%8A%A4%ED%82%A4%EB%8B%88+%EA%B8%B0%EB%AA%A8+%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D+%EB%B0%94%EC%A7%80_14340-038-835-69_%ED%8F%89%EC%B4%8C%EC%A0%90&flag_img_path=",
+            "sale_rate": 70,
+            "image_url": "//www.elandrs.com/upload/prd/img/807/600/2210465807_0000096.jpg",
+            "sale_price": 15000,
+            "market_price": 39800
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✪블프+20%✪]행텐틴즈 14390-010-801-69 보아털 후드 점퍼",
+            "goods_star_point": 95,
+            "brand_nm": "행텐주니어",
+            "icon_view": "",
+            "cust_sale_price": 19920,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209316049&vir_vend_no=VV22030198&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894733&conts_divi_cd=10&rel_no=2209316049&rel_divi_cd=10&brand_nm=%ED%96%89%ED%85%90%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%5B%E2%9C%AA%EB%B8%94%ED%94%84%2B20%25%E2%9C%AA%5D%ED%96%89%ED%85%90%ED%8B%B4%EC%A6%88+14390-010-801-69+%EB%B3%B4%EC%95%84%ED%84%B8+%ED%9B%84%EB%93%9C+%EC%A0%90%ED%8D%BC&flag_img_path=",
+            "sale_rate": 67,
+            "image_url": "//www.elandrs.com/upload/prd/img/049/600/2209316049_0000048.jpg",
+            "sale_price": 24900,
+            "market_price": 59800,
+            "goods_comment_count": 4
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✪무배+20%✪]기본핏 기모 주머니지퍼 팬츠 W218B3532B_평촌점",
+            "goods_star_point": 99,
+            "brand_nm": "에어워크주니어",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 19920,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210394801&vir_vend_no=VV16003209&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894743&conts_divi_cd=10&rel_no=2210394801&rel_divi_cd=10&brand_nm=%EC%97%90%EC%96%B4%EC%9B%8C%ED%81%AC%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%5B%E2%9C%AA%EB%AC%B4%EB%B0%B0%2B20%25%E2%9C%AA%5D%EA%B8%B0%EB%B3%B8%ED%95%8F+%EA%B8%B0%EB%AA%A8+%EC%A3%BC%EB%A8%B8%EB%8B%88%EC%A7%80%ED%8D%BC+%ED%8C%AC%EC%B8%A0+W218B3532B_%ED%8F%89%EC%B4%8C%EC%A0%90&flag_img_path=",
+            "sale_rate": 60,
+            "image_url": "//www.elandrs.com/upload/prd/img/801/600/2210394801_0000001.jpg",
+            "sale_price": 24900,
+            "market_price": 49900,
+            "goods_comment_count": 8
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "(부천점)14290-010-831-46 남여공용 리버시블 에코볼 양면 패딩점퍼(3color)",
+            "brand_nm": "행텐주니어",
+            "icon_view": "",
+            "cust_sale_price": 29000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011386053&vir_vend_no=VV18006531&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894724&conts_divi_cd=10&rel_no=2011386053&rel_divi_cd=10&brand_nm=%ED%96%89%ED%85%90%EC%A3%BC%EB%8B%88%EC%96%B4&goods_nm=%28%EB%B6%80%EC%B2%9C%EC%A0%90%2914290-010-831-46+%EB%82%A8%EC%97%AC%EA%B3%B5%EC%9A%A9+%EB%A6%AC%EB%B2%84%EC%8B%9C%EB%B8%94+%EC%97%90%EC%BD%94%EB%B3%BC+%EC%96%91%EB%A9%B4+%ED%8C%A8%EB%94%A9%EC%A0%90%ED%8D%BC%283color%29&flag_img_path=",
+            "sale_rate": 76,
+            "image_url": "//www.elandrs.com/upload/prd/img/053/600/2011386053_0000077.jpg",
+            "sale_price": 0,
+            "market_price": 119800
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "파스텔 기모 세트 상의 CIMS22W07_부천점",
+            "goods_star_point": 100,
+            "brand_nm": "신디키즈",
+            "icon_view": "",
+            "cust_sale_price": 19900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208213386&vir_vend_no=VV17003513&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894729&conts_divi_cd=10&rel_no=2208213386&rel_divi_cd=10&brand_nm=%EC%8B%A0%EB%94%94%ED%82%A4%EC%A6%88&goods_nm=%ED%8C%8C%EC%8A%A4%ED%85%94+%EA%B8%B0%EB%AA%A8+%EC%84%B8%ED%8A%B8+%EC%83%81%EC%9D%98+CIMS22W07_%EB%B6%80%EC%B2%9C%EC%A0%90&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/386/600/2208213386_0000001.JPG",
+            "sale_price": 0,
+            "market_price": 0,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✤무배+10%✤]FC B 절개 기모 후드 맨투맨 ULMH21T02_평촌점",
+            "goods_star_point": 100,
+            "brand_nm": "유솔",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17910,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210431678&vir_vend_no=VV17005763&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894738&conts_divi_cd=10&rel_no=2210431678&rel_divi_cd=10&brand_nm=%EC%9C%A0%EC%86%94&goods_nm=%5B%E2%9C%A4%EB%AC%B4%EB%B0%B0%2B10%25%E2%9C%A4%5DFC+B+%EC%A0%88%EA%B0%9C+%EA%B8%B0%EB%AA%A8+%ED%9B%84%EB%93%9C+%EB%A7%A8%ED%88%AC%EB%A7%A8+ULMH21T02_%ED%8F%89%EC%B4%8C%EC%A0%90&flag_img_path=",
+            "sale_rate": 55,
+            "image_url": "//www.elandrs.com/upload/prd/img/678/600/2210431678_0000007.jpg",
+            "sale_price": 19900,
+            "market_price": 39900,
+            "goods_comment_count": 5
+          }
+        ],
+        "ctg_no": "1709327240",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/691/00/221000000371691.png",
+        "ctg_nm": "유아동",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/692/00/221000000371692.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "블루페페 코펜하겐 소프트 밍크코트 P204PSG373 NC송파",
+            "brand_nm": "블루페페",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 1881000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2109562252&vir_vend_no=VV20018864&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894799&conts_divi_cd=10&rel_no=2109562252&rel_divi_cd=10&brand_nm=%EB%B8%94%EB%A3%A8%ED%8E%98%ED%8E%98&goods_nm=%EB%B8%94%EB%A3%A8%ED%8E%98%ED%8E%98+%EC%BD%94%ED%8E%9C%ED%95%98%EA%B2%90+%EC%86%8C%ED%94%84%ED%8A%B8+%EB%B0%8D%ED%81%AC%EC%BD%94%ED%8A%B8+P204PSG373+NC%EC%86%A1%ED%8C%8C&flag_img_path=",
+            "sale_rate": 69,
+            "image_url": "//www.elandrs.com/upload/prd/img/252/600/2109562252_0000113.jpg",
+            "sale_price": 2090000,
+            "market_price": 5990000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가15%+무배✯]온앤온 뒷트임 핸드메이드 양모코트 JW1WH70407C",
+            "brand_nm": "온앤온",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 186570,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110714383&vir_vend_no=VV20019698&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894767&conts_divi_cd=10&rel_no=2110714383&rel_divi_cd=10&brand_nm=%EC%98%A8%EC%95%A4%EC%98%A8&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8015%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%EC%98%A8%EC%95%A4%EC%98%A8+%EB%92%B7%ED%8A%B8%EC%9E%84+%ED%95%B8%EB%93%9C%EB%A9%94%EC%9D%B4%EB%93%9C+%EC%96%91%EB%AA%A8%EC%BD%94%ED%8A%B8+JW1WH70407C&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/383/600/2110714383_0000003.jpg",
+            "sale_price": 219500,
+            "market_price": 439000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가20%+무배✯]22FW 캐주얼 양가죽자켓 CACW0-WLJ900",
+            "brand_nm": "꼼빠니아",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 319680,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210471797&vir_vend_no=VV22030175&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894778&conts_divi_cd=10&rel_no=2210471797&rel_divi_cd=10&brand_nm=%EA%BC%BC%EB%B9%A0%EB%8B%88%EC%95%84&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8020%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D22FW+%EC%BA%90%EC%A3%BC%EC%96%BC+%EC%96%91%EA%B0%80%EC%A3%BD%EC%9E%90%EC%BC%93+CACW0-WLJ900&flag_img_path=",
+            "sale_rate": 68,
+            "image_url": "//www.elandrs.com/upload/prd/img/797/600/2210471797_0000037.jpg",
+            "sale_price": 399600,
+            "market_price": 999000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "빅카라 더블버튼 클래식 코트S214B793",
+            "brand_nm": "샤틴",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 248400,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211525637&vir_vend_no=VV22028480&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894772&conts_divi_cd=10&rel_no=2211525637&rel_divi_cd=10&brand_nm=%EC%83%A4%ED%8B%B4&goods_nm=%EB%B9%85%EC%B9%B4%EB%9D%BC+%EB%8D%94%EB%B8%94%EB%B2%84%ED%8A%BC+%ED%81%B4%EB%9E%98%EC%8B%9D+%EC%BD%94%ED%8A%B8S214B793&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/637/600/2211525637_0000002.jpg",
+            "sale_price": 0,
+            "market_price": 628000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가15%+무배✯]퀼팅 노카라 단추 점퍼 CACW9-WHH900",
+            "brand_nm": "꼼빠니아",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 169570,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208165079&vir_vend_no=VV18007384&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894766&conts_divi_cd=10&rel_no=2208165079&rel_divi_cd=10&brand_nm=%EA%BC%BC%EB%B9%A0%EB%8B%88%EC%95%84&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8015%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%ED%80%BC%ED%8C%85+%EB%85%B8%EC%B9%B4%EB%9D%BC+%EB%8B%A8%EC%B6%94+%EC%A0%90%ED%8D%BC+CACW9-WHH900&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/079/600/2208165079_0000071.jpg",
+            "sale_price": 199500,
+            "market_price": 399000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가15%+무배✯]온앤온 양모 핸드메이드 밸트코트 JW1WH70400A",
+            "brand_nm": "온앤온",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 186570,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110714321&vir_vend_no=VV20019698&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894771&conts_divi_cd=10&rel_no=2110714321&rel_divi_cd=10&brand_nm=%EC%98%A8%EC%95%A4%EC%98%A8&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8015%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%EC%98%A8%EC%95%A4%EC%98%A8+%EC%96%91%EB%AA%A8+%ED%95%B8%EB%93%9C%EB%A9%94%EC%9D%B4%EB%93%9C+%EB%B0%B8%ED%8A%B8%EC%BD%94%ED%8A%B8+JW1WH70400A&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/321/600/2110714321_0000003.jpg",
+            "sale_price": 219500,
+            "market_price": 439000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가10%+무배✯]캐시미어 100% 기본 코트 MUDAWL9340",
+            "brand_nm": "미니멈(MINIMUM)",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 557100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209248999&vir_vend_no=VV20017283&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894796&conts_divi_cd=10&rel_no=2209248999&rel_divi_cd=10&brand_nm=%EB%AF%B8%EB%8B%88%EB%A9%88%28MINIMUM%29&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8010%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%EC%BA%90%EC%8B%9C%EB%AF%B8%EC%96%B4+100%25+%EA%B8%B0%EB%B3%B8+%EC%BD%94%ED%8A%B8+MUDAWL9340&flag_img_path=",
+            "sale_rate": 73,
+            "image_url": "//www.elandrs.com/upload/prd/img/999/600/2209248999_0000064.jpg",
+            "sale_price": 619000,
+            "market_price": 2090000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]겨울H28-기모배기바지 C21K2FPT0077 (기모)",
+            "brand_nm": "에잇컨셉",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 13930,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112968610&vir_vend_no=VV20013873&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894762&conts_divi_cd=10&rel_no=2112968610&rel_divi_cd=10&brand_nm=%EC%97%90%EC%9E%87%EC%BB%A8%EC%85%89&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%EA%B2%A8%EC%9A%B8H28-%EA%B8%B0%EB%AA%A8%EB%B0%B0%EA%B8%B0%EB%B0%94%EC%A7%80+C21K2FPT0077+%28%EA%B8%B0%EB%AA%A8%29&flag_img_path=",
+            "sale_rate": 65,
+            "image_url": "//www.elandrs.com/upload/prd/img/610/600/2112968610_0000018.jpg",
+            "sale_price": 19900,
+            "market_price": 39900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가15%+무배✯]지고트  폭스후드 벨티드 롱 구스다운패딩 JLCA2PD93",
+            "brand_nm": "지고트",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 509150,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209248371&vir_vend_no=VV19011683&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894768&conts_divi_cd=10&rel_no=2209248371&rel_divi_cd=10&brand_nm=%EC%A7%80%EA%B3%A0%ED%8A%B8&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8015%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%EC%A7%80%EA%B3%A0%ED%8A%B8++%ED%8F%AD%EC%8A%A4%ED%9B%84%EB%93%9C+%EB%B2%A8%ED%8B%B0%EB%93%9C+%EB%A1%B1+%EA%B5%AC%EC%8A%A4%EB%8B%A4%EC%9A%B4%ED%8C%A8%EB%94%A9+JLCA2PD93&flag_img_path=",
+            "sale_rate": 68,
+            "image_url": "//www.elandrs.com/upload/prd/img/371/600/2209248371_0000109.jpg",
+            "sale_price": 599000,
+            "market_price": 1580000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가10%+무배✯]제시뉴욕 폭스퍼 양모코트 JB97NBFH8820",
+            "brand_nm": "제시뉴욕",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 269100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211517924&vir_vend_no=VV21027636&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894773&conts_divi_cd=10&rel_no=2211517924&rel_divi_cd=10&brand_nm=%EC%A0%9C%EC%8B%9C%EB%89%B4%EC%9A%95&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%8010%25%2B%EB%AC%B4%EB%B0%B0%E2%9C%AF%5D%EC%A0%9C%EC%8B%9C%EB%89%B4%EC%9A%95+%ED%8F%AD%EC%8A%A4%ED%8D%BC+%EC%96%91%EB%AA%A8%EC%BD%94%ED%8A%B8+JB97NBFH8820&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/924/600/2211517924_0000001.jpg",
+            "sale_price": 299000,
+            "market_price": 640000
+          }
+        ],
+        "ctg_no": "1709327239",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/693/00/221000000371693.png",
+        "ctg_nm": "여성의류",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/694/00/221000000371694.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "비너스 풀커버 기능성 브래지어 VBRG510B-SK",
+            "brand_nm": "비너스",
+            "icon_view": "",
+            "cust_sale_price": 78000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2003141680&vir_vend_no=VV20013811&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911947&conts_divi_cd=10&rel_no=2003141680&rel_divi_cd=10&brand_nm=%EB%B9%84%EB%84%88%EC%8A%A4&goods_nm=%EB%B9%84%EB%84%88%EC%8A%A4+%ED%92%80%EC%BB%A4%EB%B2%84+%EA%B8%B0%EB%8A%A5%EC%84%B1+%EB%B8%8C%EB%9E%98%EC%A7%80%EC%96%B4+VBRG510B-SK&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/680/600/2003141680_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]핏 브라렛 (노와이어)+티팬티 세트 (3colors) EBBRB3726Q",
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202227240&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894642&conts_divi_cd=10&rel_no=2202227240&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%ED%95%8F+%EB%B8%8C%EB%9D%BC%EB%A0%9B+%28%EB%85%B8%EC%99%80%EC%9D%B4%EC%96%B4%29%2B%ED%8B%B0%ED%8C%AC%ED%8B%B0+%EC%84%B8%ED%8A%B8+%283colors%29+EBBRB3726Q&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/240/600/2202227240_0000001.jpg",
+            "sale_price": 22800,
+            "market_price": 45800
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]클레르 컴포트브라렛+햄팬티 세트 (2컬러) EBBRB3716M",
+            "goods_star_point": 100,
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 17170,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2201168417&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894644&conts_divi_cd=10&rel_no=2201168417&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%ED%81%B4%EB%A0%88%EB%A5%B4+%EC%BB%B4%ED%8F%AC%ED%8A%B8%EB%B8%8C%EB%9D%BC%EB%A0%9B%2B%ED%96%84%ED%8C%AC%ED%8B%B0+%EC%84%B8%ED%8A%B8+%282%EC%BB%AC%EB%9F%AC%29+EBBRB3716M&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/417/600/2201168417_0000001.jpg",
+            "sale_price": 22900,
+            "market_price": 45800,
+            "goods_comment_count": 3
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]체크 커플파자마 (2colors) EBPPB4902M",
+            "goods_star_point": 90,
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 18670,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2201141246&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894640&conts_divi_cd=10&rel_no=2201141246&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%EC%B2%B4%ED%81%AC+%EC%BB%A4%ED%94%8C%ED%8C%8C%EC%9E%90%EB%A7%88+%282colors%29+EBPPB4902M&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/246/600/2201141246_0000009.jpg",
+            "sale_price": 24900,
+            "market_price": 49900,
+            "goods_comment_count": 3
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]MERIME 고져스 블랙 슬립  (1color) EBFLBA9H1Q",
+            "goods_star_point": 83,
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 18750,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210389579&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894641&conts_divi_cd=10&rel_no=2210389579&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5DMERIME+%EA%B3%A0%EC%A0%B8%EC%8A%A4+%EB%B8%94%EB%9E%99+%EC%8A%AC%EB%A6%BD++%281color%29+EBFLBA9H1Q&flag_img_path=",
+            "sale_rate": 69,
+            "image_url": "//www.elandrs.com/upload/prd/img/579/600/2210389579_0000001.jpg",
+            "sale_price": 25000,
+            "market_price": 59900,
+            "goods_comment_count": 4
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%][파자마] 여신 코튼 파자마 (2colors) EBPPC1161M",
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 26170,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204492882&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894649&conts_divi_cd=10&rel_no=2204492882&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%5B%ED%8C%8C%EC%9E%90%EB%A7%88%5D+%EC%97%AC%EC%8B%A0+%EC%BD%94%ED%8A%BC+%ED%8C%8C%EC%9E%90%EB%A7%88+%282colors%29+EBPPC1161M&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/882/600/2204492882_0000004.jpg",
+            "sale_price": 34900,
+            "market_price": 69900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]MERIME_피치크러쉬 슬립 (1colors) EBFLBA6H1Q",
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 18670,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210415072&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894643&conts_divi_cd=10&rel_no=2210415072&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5DMERIME_%ED%94%BC%EC%B9%98%ED%81%AC%EB%9F%AC%EC%89%AC+%EC%8A%AC%EB%A6%BD+%281colors%29+EBFLBA6H1Q&flag_img_path=",
+            "sale_rate": 69,
+            "image_url": "//www.elandrs.com/upload/prd/img/072/600/2210415072_0000001.jpg",
+            "sale_price": 24900,
+            "market_price": 59900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]샤무즈 가운 (2colors) EBGNB4930M",
+            "goods_star_point": 100,
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 26170,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202292023&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894664&conts_divi_cd=10&rel_no=2202292023&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%EC%83%A4%EB%AC%B4%EC%A6%88+%EA%B0%80%EC%9A%B4+%282colors%29+EBGNB4930M&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/023/600/2202292023_0000001.jpg",
+            "sale_price": 34900,
+            "market_price": 69900,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]퓨어심리스 브라세트 (후크형) (4colors) EBBRC2306Q",
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 14920,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211529692&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894657&conts_divi_cd=10&rel_no=2211529692&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%ED%93%A8%EC%96%B4%EC%8B%AC%EB%A6%AC%EC%8A%A4+%EB%B8%8C%EB%9D%BC%EC%84%B8%ED%8A%B8+%28%ED%9B%84%ED%81%AC%ED%98%95%29+%284colors%29+EBBRC2306Q&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/692/600/2211529692_0000011.jpg",
+            "sale_price": 19900,
+            "market_price": 39900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[★블프특가★+25%]퓨어라벤더 슬립 (1color) EBFLC3708R",
+            "brand_nm": "에블린",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 44920,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211529265&vir_vend_no=VV18006584&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894671&conts_divi_cd=10&rel_no=2211529265&rel_divi_cd=10&brand_nm=%EC%97%90%EB%B8%94%EB%A6%B0&goods_nm=%5B%E2%98%85%EB%B8%94%ED%94%84%ED%8A%B9%EA%B0%80%E2%98%85%2B25%25%5D%ED%93%A8%EC%96%B4%EB%9D%BC%EB%B2%A4%EB%8D%94+%EC%8A%AC%EB%A6%BD+%281color%29+EBFLC3708R&flag_img_path=",
+            "sale_rate": 25,
+            "image_url": "//www.elandrs.com/upload/prd/img/265/600/2211529265_0000003.jpg",
+            "sale_price": 59900,
+            "market_price": 0
+          }
+        ],
+        "ctg_no": "1709327246",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/695/00/221000000371695.png",
+        "ctg_nm": "언더웨어",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/696/00/221000000371696.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[♦어메이징위크♦10%+무배]심플 그레이 스키니팬츠_195600026",
+            "brand_nm": "리바이스",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 80100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1805764189&vir_vend_no=VV18007421&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911501&conts_divi_cd=10&rel_no=1805764189&rel_divi_cd=10&brand_nm=%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4&goods_nm=%5B%E2%99%A6%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95%EC%9C%84%ED%81%AC%E2%99%A610%25%2B%EB%AC%B4%EB%B0%B0%5D%EC%8B%AC%ED%94%8C+%EA%B7%B8%EB%A0%88%EC%9D%B4+%EC%8A%A4%ED%82%A4%EB%8B%88%ED%8C%AC%EC%B8%A0_195600026&flag_img_path=",
+            "sale_rate": 38,
+            "image_url": "//www.elandrs.com/upload/prd/img/189/600/1805764189_0000001.JPG",
+            "sale_price": 89000,
+            "market_price": 129000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[♦어메이징위크♦5%+무배]리바이스 남성 511 슬림핏 진_04511-3231_강남점",
+            "brand_nm": "리바이스",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 65550,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2003207244&vir_vend_no=VV20014524&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911485&conts_divi_cd=10&rel_no=2003207244&rel_divi_cd=10&brand_nm=%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4&goods_nm=%5B%E2%99%A6%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95%EC%9C%84%ED%81%AC%E2%99%A65%25%2B%EB%AC%B4%EB%B0%B0%5D%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4+%EB%82%A8%EC%84%B1+511+%EC%8A%AC%EB%A6%BC%ED%95%8F+%EC%A7%84_04511-3231_%EA%B0%95%EB%82%A8%EC%A0%90&flag_img_path=",
+            "sale_rate": 5,
+            "image_url": "//www.elandrs.com/upload/prd/img/244/600/2003207244_0000061.jpg",
+            "sale_price": 69000,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[♦어메이징위크♦5%+무배]리바이스 여성 웨스턴 데님 셔츠_16786-0002_강남점",
+            "brand_nm": "리바이스",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 94050,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2003207257&vir_vend_no=VV20014524&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911484&conts_divi_cd=10&rel_no=2003207257&rel_divi_cd=10&brand_nm=%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4&goods_nm=%5B%E2%99%A6%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95%EC%9C%84%ED%81%AC%E2%99%A65%25%2B%EB%AC%B4%EB%B0%B0%5D%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4+%EC%97%AC%EC%84%B1+%EC%9B%A8%EC%8A%A4%ED%84%B4+%EB%8D%B0%EB%8B%98+%EC%85%94%EC%B8%A0_16786-0002_%EA%B0%95%EB%82%A8%EC%A0%90&flag_img_path=",
+            "sale_rate": 5,
+            "image_url": "//www.elandrs.com/upload/prd/img/257/600/2003207257_0000091.jpg",
+            "sale_price": 99000,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "시원한 쿨맥스기능성원단 으로 입자 !! 슬림일자 04511-3726",
+            "brand_nm": "리바이스",
+            "icon_view": "",
+            "cust_sale_price": 79000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2004293631&vir_vend_no=VV16002561&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766911474&conts_divi_cd=10&rel_no=2004293631&rel_divi_cd=10&brand_nm=%EB%A6%AC%EB%B0%94%EC%9D%B4%EC%8A%A4&goods_nm=%EC%8B%9C%EC%9B%90%ED%95%9C+%EC%BF%A8%EB%A7%A5%EC%8A%A4%EA%B8%B0%EB%8A%A5%EC%84%B1%EC%9B%90%EB%8B%A8+%EC%9C%BC%EB%A1%9C+%EC%9E%85%EC%9E%90+%21%21+%EC%8A%AC%EB%A6%BC%EC%9D%BC%EC%9E%90+04511-3726&flag_img_path=",
+            "sale_rate": 11,
+            "image_url": "//www.elandrs.com/upload/prd/img/631/600/2004293631_0000069.jpg",
+            "sale_price": 0,
+            "market_price": 89000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "남녀공용 오리털 다운 기본 숏다운 푸퍼 숏패딩 점퍼 아우터 110 XXL PHC4JP3920",
+            "brand_nm": "폴햄",
+            "icon_view": "",
+            "cust_sale_price": 69900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210465655&vir_vend_no=VV18008617&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894680&conts_divi_cd=10&rel_no=2210465655&rel_divi_cd=10&brand_nm=%ED%8F%B4%ED%96%84&goods_nm=%EB%82%A8%EB%85%80%EA%B3%B5%EC%9A%A9+%EC%98%A4%EB%A6%AC%ED%84%B8+%EB%8B%A4%EC%9A%B4+%EA%B8%B0%EB%B3%B8+%EC%88%8F%EB%8B%A4%EC%9A%B4+%ED%91%B8%ED%8D%BC+%EC%88%8F%ED%8C%A8%EB%94%A9+%EC%A0%90%ED%8D%BC+%EC%95%84%EC%9A%B0%ED%84%B0+110+XXL+PHC4JP3920&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/655/600/2210465655_0000042.jpg",
+            "sale_price": 0,
+            "market_price": 199900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "남녀공용 무지 기모 맨투맨 티셔츠 커플룩 단체복 블랙 그레이 110 XXL C4TR3330",
+            "goods_star_point": 100,
+            "brand_nm": "폴햄",
+            "icon_view": "",
+            "cust_sale_price": 15000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209324259&vir_vend_no=VV18008617&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894683&conts_divi_cd=10&rel_no=2209324259&rel_divi_cd=10&brand_nm=%ED%8F%B4%ED%96%84&goods_nm=%EB%82%A8%EB%85%80%EA%B3%B5%EC%9A%A9+%EB%AC%B4%EC%A7%80+%EA%B8%B0%EB%AA%A8+%EB%A7%A8%ED%88%AC%EB%A7%A8+%ED%8B%B0%EC%85%94%EC%B8%A0+%EC%BB%A4%ED%94%8C%EB%A3%A9+%EB%8B%A8%EC%B2%B4%EB%B3%B5+%EB%B8%94%EB%9E%99+%EA%B7%B8%EB%A0%88%EC%9D%B4+110+XXL+C4TR3330&flag_img_path=",
+            "sale_rate": 62,
+            "image_url": "//www.elandrs.com/upload/prd/img/259/600/2209324259_0000143.jpg",
+            "sale_price": 0,
+            "market_price": 39900,
+            "goods_comment_count": 6
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[♦어메이징위크♦10%+무배]유니 패딩안감 바시티자켓 WHJJC4V24U_GS",
+            "goods_star_point": 100,
+            "brand_nm": "후아유",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 89910,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210428270&vir_vend_no=VV18007383&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894686&conts_divi_cd=10&rel_no=2210428270&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%E2%99%A6%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95%EC%9C%84%ED%81%AC%E2%99%A610%25%2B%EB%AC%B4%EB%B0%B0%5D%EC%9C%A0%EB%8B%88+%ED%8C%A8%EB%94%A9%EC%95%88%EA%B0%90+%EB%B0%94%EC%8B%9C%ED%8B%B0%EC%9E%90%EC%BC%93+WHJJC4V24U_GS&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/270/600/2210428270_0000061.jpg",
+            "sale_price": 99900,
+            "market_price": 129000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가 5% 할인✯]숏 폭스퍼 다운 DAJD20NG2_유성점",
+            "brand_nm": "데이텀",
+            "icon_view": "",
+            "cust_sale_price": 19000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210455175&vir_vend_no=VV22030044&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894681&conts_divi_cd=10&rel_no=2210455175&rel_divi_cd=10&brand_nm=%EB%8D%B0%EC%9D%B4%ED%85%80&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%80+5%25+%ED%95%A0%EC%9D%B8%E2%9C%AF%5D%EC%88%8F+%ED%8F%AD%EC%8A%A4%ED%8D%BC+%EB%8B%A4%EC%9A%B4+DAJD20NG2_%EC%9C%A0%EC%84%B1%EC%A0%90&flag_img_path=",
+            "sale_rate": 36,
+            "image_url": "//www.elandrs.com/upload/prd/img/175/600/2210455175_0000012.jpg",
+            "sale_price": 20000,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[✯추가 5% 할인✯]베네통 비비안 뽀글이 배색 코트 BACTA9261",
+            "brand_nm": "베네통",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 341430,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211493811&vir_vend_no=VV22030211&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894697&conts_divi_cd=10&rel_no=2211493811&rel_divi_cd=10&brand_nm=%EB%B2%A0%EB%84%A4%ED%86%B5&goods_nm=%5B%E2%9C%AF%EC%B6%94%EA%B0%80+5%25+%ED%95%A0%EC%9D%B8%E2%9C%AF%5D%EB%B2%A0%EB%84%A4%ED%86%B5+%EB%B9%84%EB%B9%84%EC%95%88+%EB%BD%80%EA%B8%80%EC%9D%B4+%EB%B0%B0%EC%83%89+%EC%BD%94%ED%8A%B8+BACTA9261&flag_img_path=",
+            "sale_rate": 43,
+            "image_url": "//www.elandrs.com/upload/prd/img/811/600/2211493811_0000001.jpg",
+            "sale_price": 359400,
+            "market_price": 599000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[♦어메이징위크♦10%+무배]유니 스티브 브이넥 가디건 WHCKC4813U_GS",
+            "brand_nm": "후아유",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 35910,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208132665&vir_vend_no=VV18007383&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894704&conts_divi_cd=10&rel_no=2208132665&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%E2%99%A6%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95%EC%9C%84%ED%81%AC%E2%99%A610%25%2B%EB%AC%B4%EB%B0%B0%5D%EC%9C%A0%EB%8B%88+%EC%8A%A4%ED%8B%B0%EB%B8%8C+%EB%B8%8C%EC%9D%B4%EB%84%A5+%EA%B0%80%EB%94%94%EA%B1%B4+WHCKC4813U_GS&flag_img_path=",
+            "sale_rate": 28,
+            "image_url": "//www.elandrs.com/upload/prd/img/665/600/2208132665_0000061.jpg",
+            "sale_price": 39900,
+            "market_price": 49900
+          }
+        ],
+        "ctg_no": "1709327243",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/697/00/221000000371697.png",
+        "ctg_nm": "캐주얼",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/698/00/221000000371698.png"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "엘르골프 봄 간절기 남성 자수 포인트 메쉬 풀집업 가디건 [6G-13701BC]",
+            "brand_nm": "엘르골프",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 179500,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2003166821&vir_vend_no=VV19011785&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766912037&conts_divi_cd=10&rel_no=2003166821&rel_divi_cd=10&brand_nm=%EC%97%98%EB%A5%B4%EA%B3%A8%ED%94%84&goods_nm=%EC%97%98%EB%A5%B4%EA%B3%A8%ED%94%84+%EB%B4%84+%EA%B0%84%EC%A0%88%EA%B8%B0+%EB%82%A8%EC%84%B1+%EC%9E%90%EC%88%98+%ED%8F%AC%EC%9D%B8%ED%8A%B8+%EB%A9%94%EC%89%AC+%ED%92%80%EC%A7%91%EC%97%85+%EA%B0%80%EB%94%94%EA%B1%B4+%5B6G-13701BC%5D&flag_img_path=",
+            "sale_rate": 50,
+            "image_url": "//www.elandrs.com/upload/prd/img/821/600/2003166821_0000009.jpg",
+            "sale_price": 0,
+            "market_price": 359000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "인디안트레몰로봄 가을 간절기용 점퍼 TRB CLVS 1211  55",
+            "brand_nm": "트레몰로",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 75000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2004255034&vir_vend_no=VV20013565&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766912027&conts_divi_cd=10&rel_no=2004255034&rel_divi_cd=10&brand_nm=%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C&goods_nm=%EC%9D%B8%EB%94%94%EC%95%88%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C%EB%B4%84+%EA%B0%80%EC%9D%84+%EA%B0%84%EC%A0%88%EA%B8%B0%EC%9A%A9+%EC%A0%90%ED%8D%BC+TRB+CLVS+1211++55&flag_img_path=",
+            "sale_rate": 73,
+            "image_url": "//www.elandrs.com/upload/prd/img/034/600/2004255034_0000037.jpg",
+            "sale_price": 0,
+            "market_price": 280000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "인디안 트레몰로세정 시원한 여름 점퍼TRB CLVY3146 55",
+            "brand_nm": "트레몰로",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 69000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2005420810&vir_vend_no=VV20013565&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766912015&conts_divi_cd=10&rel_no=2005420810&rel_divi_cd=10&brand_nm=%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C&goods_nm=%EC%9D%B8%EB%94%94%EC%95%88+%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C%EC%84%B8%EC%A0%95+%EC%8B%9C%EC%9B%90%ED%95%9C+%EC%97%AC%EB%A6%84+%EC%A0%90%ED%8D%BCTRB+CLVY3146+55&flag_img_path=",
+            "sale_rate": 66,
+            "image_url": "//www.elandrs.com/upload/prd/img/810/600/2005420810_0000024.jpg",
+            "sale_price": 0,
+            "market_price": 200000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "인디안 트레몰로세정 여름 시원한여름 재킷TRB FUVY2211 56",
+            "goods_star_point": 100,
+            "brand_nm": "트레몰로",
+            "icon_view": "",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2005420815&vir_vend_no=VV20013565&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C20052766912014&conts_divi_cd=10&rel_no=2005420815&rel_divi_cd=10&brand_nm=%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C&goods_nm=%EC%9D%B8%EB%94%94%EC%95%88+%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C%EC%84%B8%EC%A0%95+%EC%97%AC%EB%A6%84+%EC%8B%9C%EC%9B%90%ED%95%9C%EC%97%AC%EB%A6%84+%EC%9E%AC%ED%82%B7TRB+FUVY2211+56&flag_img_path=",
+            "sale_rate": 77,
+            "image_url": "//www.elandrs.com/upload/prd/img/815/600/2005420815_0000024.jpg",
+            "sale_price": 0,
+            "market_price": 220000,
+            "goods_comment_count": 1
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥즉시할인10%💥]세정 트레몰로 라쿤퍼 후드 덕다운 사파리 TRN KDVW B121(34)",
+            "brand_nm": "트레몰로",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 124200,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211523026&vir_vend_no=VV19011462&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894802&conts_divi_cd=10&rel_no=2211523026&rel_divi_cd=10&brand_nm=%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C&goods_nm=%5B%F0%9F%92%A5%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5D%EC%84%B8%EC%A0%95+%ED%8A%B8%EB%A0%88%EB%AA%B0%EB%A1%9C+%EB%9D%BC%EC%BF%A4%ED%8D%BC+%ED%9B%84%EB%93%9C+%EB%8D%95%EB%8B%A4%EC%9A%B4+%EC%82%AC%ED%8C%8C%EB%A6%AC+TRN+KDVW+B121%2834%29&flag_img_path=",
+            "sale_rate": 82,
+            "image_url": "//www.elandrs.com/upload/prd/img/026/600/2211523026_0000001.jpg",
+            "sale_price": 138000,
+            "market_price": 690000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[파크랜드]오스틴리드 남성가을겨울정장 21F/W블랙정장ASS21051A NC울산뉴코아",
+            "brand_nm": "파크랜드",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 199000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208119276&vir_vend_no=VV20017373&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894806&conts_divi_cd=10&rel_no=2208119276&rel_divi_cd=10&brand_nm=%ED%8C%8C%ED%81%AC%EB%9E%9C%EB%93%9C&goods_nm=%5B%ED%8C%8C%ED%81%AC%EB%9E%9C%EB%93%9C%5D%EC%98%A4%EC%8A%A4%ED%8B%B4%EB%A6%AC%EB%93%9C+%EB%82%A8%EC%84%B1%EA%B0%80%EC%9D%84%EA%B2%A8%EC%9A%B8%EC%A0%95%EC%9E%A5+21F%2FW%EB%B8%94%EB%9E%99%EC%A0%95%EC%9E%A5ASS21051A+NC%EC%9A%B8%EC%82%B0%EB%89%B4%EC%BD%94%EC%95%84&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/276/600/2208119276_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 398000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인10%💥]크로커다일남성 파격할인!! 고급스러운 리얼퍼 덕 다운 점퍼 A4JP4219",
+            "brand_nm": "크로커다일",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 143100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112019959&vir_vend_no=VV20019533&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894831&conts_divi_cd=10&rel_no=2112019959&rel_divi_cd=10&brand_nm=%ED%81%AC%EB%A1%9C%EC%BB%A4%EB%8B%A4%EC%9D%BC&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B810%25%F0%9F%92%A5%5D%ED%81%AC%EB%A1%9C%EC%BB%A4%EB%8B%A4%EC%9D%BC%EB%82%A8%EC%84%B1+%ED%8C%8C%EA%B2%A9%ED%95%A0%EC%9D%B8%21%21+%EA%B3%A0%EA%B8%89%EC%8A%A4%EB%9F%AC%EC%9A%B4+%EB%A6%AC%EC%96%BC%ED%8D%BC+%EB%8D%95+%EB%8B%A4%EC%9A%B4+%EC%A0%90%ED%8D%BC+A4JP4219&flag_img_path=",
+            "sale_rate": 81,
+            "image_url": "//www.elandrs.com/upload/prd/img/959/600/2112019959_0000009.jpg",
+            "sale_price": 159000,
+            "market_price": 760000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인5%💥]지오지아 22FW 세미오버 핸드메이드 더블 코트 AAC4CB1103 BK",
+            "brand_nm": "지오지아",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 284050,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210429599&vir_vend_no=VV20019387&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894821&conts_divi_cd=10&rel_no=2210429599&rel_divi_cd=10&brand_nm=%EC%A7%80%EC%98%A4%EC%A7%80%EC%95%84&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B85%25%F0%9F%92%A5%5D%EC%A7%80%EC%98%A4%EC%A7%80%EC%95%84+22FW+%EC%84%B8%EB%AF%B8%EC%98%A4%EB%B2%84+%ED%95%B8%EB%93%9C%EB%A9%94%EC%9D%B4%EB%93%9C+%EB%8D%94%EB%B8%94+%EC%BD%94%ED%8A%B8+AAC4CB1103+BK&flag_img_path=",
+            "sale_rate": 53,
+            "image_url": "//www.elandrs.com/upload/prd/img/599/600/2210429599_0000001.jpg",
+            "sale_price": 299000,
+            "market_price": 599000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[💥무배+즉시할인5%💥]지오지아 22FW  프리미엄 구스 카라 패딩 코트 ABC4FP1105 NV",
+            "brand_nm": "지오지아",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 170050,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210459173&vir_vend_no=VV20019387&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894800&conts_divi_cd=10&rel_no=2210459173&rel_divi_cd=10&brand_nm=%EC%A7%80%EC%98%A4%EC%A7%80%EC%95%84&goods_nm=%5B%F0%9F%92%A5%EB%AC%B4%EB%B0%B0%2B%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B85%25%F0%9F%92%A5%5D%EC%A7%80%EC%98%A4%EC%A7%80%EC%95%84+22FW++%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84+%EA%B5%AC%EC%8A%A4+%EC%B9%B4%EB%9D%BC+%ED%8C%A8%EB%94%A9+%EC%BD%94%ED%8A%B8+ABC4FP1105+NV&flag_img_path=",
+            "sale_rate": 63,
+            "image_url": "//www.elandrs.com/upload/prd/img/173/600/2210459173_0000001.jpg",
+            "sale_price": 179000,
+            "market_price": 459000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "코오롱Fnc 피쉬테일 다운 사파리 점퍼 BRUAW21891GYX,KHX 그레이-카키 투컬러",
+            "brand_nm": "브렌우드",
+            "icon_view": "무료배송,",
+            "cust_sale_price": 220000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211542955&vir_vend_no=VV20019486&sale_shop_divi_cd=&disp_ctg_no=&sale_area_no=&tr_yn=&conts_dist_no=C22112233894813&conts_divi_cd=10&rel_no=2211542955&rel_divi_cd=10&brand_nm=%EB%B8%8C%EB%A0%8C%EC%9A%B0%EB%93%9C&goods_nm=%EC%BD%94%EC%98%A4%EB%A1%B1Fnc+%ED%94%BC%EC%89%AC%ED%85%8C%EC%9D%BC+%EB%8B%A4%EC%9A%B4+%EC%82%AC%ED%8C%8C%EB%A6%AC+%EC%A0%90%ED%8D%BC+BRUAW21891GYX%2CKHX+%EA%B7%B8%EB%A0%88%EC%9D%B4-%EC%B9%B4%ED%82%A4+%ED%88%AC%EC%BB%AC%EB%9F%AC&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/955/600/2211542955_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 630000
+          }
+        ],
+        "ctg_no": "1709327242",
+        "dactive_img_url": "//www.elandrs.com/upload/dspl/banner/90/700/00/221000000371700.png",
+        "ctg_nm": "남성",
+        "active_img_url": "//www.elandrs.com/upload/dspl/banner/90/701/00/221000000371701.png"
+      }
+    ],
+    "my_regular_store_list": [],
+    "store_mainbanner_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/109/221100000380109.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2110555603"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/071/221100000380071.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2208631107"
+      }
+    ]
+  },
+  "resultMsg": "success"
+}

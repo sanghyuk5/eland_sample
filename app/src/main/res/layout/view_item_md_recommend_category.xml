@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="63dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/iv_category"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="2.5dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.1"
+        android:maxLines="2"
+        android:paddingHorizontal="4.5dp"
+        android:text="카테고리명/최대두줄로"
+        android:textColor="#3e3e3e"
+        android:textSize="11.3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_category" />
+
+    <ImageView
+        android:id="@+id/iv_bar"
+        android:layout_width="match_parent"
+        android:layout_height="4.5dp"
+        android:src="#c9000b"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="#3e3e3e"
+        android:textSize="11dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="전체"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

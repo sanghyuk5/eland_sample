@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ElandMall_MVVM</string>
+
+    <string name="dialog_ok">확인</string>
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_app_finish">앱 종료</string>
+    <string name="dialog_close">닫기</string>
+
+    <string name="msg_network_error">네트워크에 연결되어 있지 않습니다. Wi-Fi 또는 데이터 연결 상태를 확인 해 주세요.</string>
+</resources>

@@ -1,0 +1,138 @@
+{
+  "code": "200",
+  "data": {
+    "header_icon_list": [
+      {
+        "webview": "N",
+        "menu_subtitle": "",
+        "menu_cd": "10",
+        "link_url": "https://m.elandmall.com/main/initMain.action",
+        "menu_lank": 1,
+        "menu_nm": "홈",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "20",
+        "menu_lank": 2,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/shop/searchShopLuckyDealJson.action?gnb_num=2",
+        "menu_nm": "럭키딜",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "Y",
+        "menu_cd": "30",
+        "image_url": "",
+        "menu_lank": 3,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/shop/searchShopBest100Json.action?gnb_num=1",
+        "menu_nm": "베스트",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "130",
+        "image_url": "",
+        "menu_lank": 4,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210650451",
+        "menu_nm": "키디데이",
+        "new_tag_yn": "Y"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "130",
+        "image_url": "",
+        "menu_lank": 5,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2206621188",
+        "menu_nm": "뉴발란스패딩",
+        "new_tag_yn": "Y"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "130",
+        "image_url": "",
+        "menu_lank": 6,
+        "menu_subtitle": "슈펜",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649531",
+        "menu_nm": "이동휘부츠",
+        "new_tag_yn": "Y"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "110",
+        "image_url": "",
+        "menu_lank": 7,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/shop/showNewEkidsShop.action?gnb_num=7",
+        "menu_nm": "E키즈샵",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "140",
+        "image_url": "",
+        "menu_lank": 8,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2007458454&gnb_num=6",
+        "menu_nm": "오프라이스",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "60",
+        "image_url": "",
+        "menu_lank": 9,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=1704316850&gnb_num=4",
+        "menu_nm": "NC백화점",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "N",
+        "menu_cd": "40",
+        "image_url": "",
+        "menu_lank": 10,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/api/shop/initPlanShopGoodsMainJson.action",
+        "menu_nm": "기획전",
+        "new_tag_yn": "N"
+      },
+      {
+        "webview": "Y",
+        "menu_cd": "80",
+        "image_url": "",
+        "menu_lank": 11,
+        "menu_subtitle": "",
+        "link_url": "https://m.elandmall.com/event/searchEventBenefitZoneJson.action?gnb_num=10",
+        "menu_nm": "이벤트·쿠폰",
+        "new_tag_yn": "N"
+      }
+    ],
+    "search_ad": {
+      "searchAdLnkUrl": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210648887",
+      "searchAd": "1DAY 스파오 ~80%"
+    },
+    "top_banner": {
+      "image_url": "//www.elandrs.com/upload/dspl/banner/10/054/00/221000000374054.jpg",
+      "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210650451"
+    },
+    "foot_banner": {
+      "image_url": "//www.elandrs.com/upload/dspl/banner/10/842/221000000373842.jpg",
+      "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210648887"
+    },
+    "foot_left_low_banner": {
+      "image_url": "//www.elandrs.com/upload/dspl/banner/10/706/00/221000000373706.png",
+      "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649786"
+    },
+    "foot_chat_bot_banner": {
+      "error_msg": "죄송합니다. 서버가 원활하지 않습니다.",
+      "image_url": "//www.elandrs.com/upload/dspl/banner/90/609/00/220400000338609.png",
+      "chatbot_state_url": "/custcenter/chatBotHealth.action",
+      "chatbot_url": "https://chatbot.elandmall.com/sharedfront/jsp/view/sso.jsp?mbrNo="
+    }
+  },
+  "resultMsg": "success"
+}

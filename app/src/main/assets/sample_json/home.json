@@ -1,0 +1,2268 @@
+{
+  "code": "200",
+  "data": {
+    "home_eyou": {},
+    "home_categoryIcon_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/666/00/220100000321666.png",
+        "title": "여성의류",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554374"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/667/00/220100000321667.png",
+        "title": "캐주얼",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554360"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/668/00/220100000321668.png",
+        "title": "유아동패션",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554379"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/672/00/220100000321672.png",
+        "title": "패브릭/데코",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554382"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/673/00/220100000321673.png",
+        "title": "주방",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554398"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/674/00/220100000321674.png",
+        "title": "뷰티",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554403"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/675/00/220100000321675.png",
+        "title": "해외명품",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554404"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/676/00/220100000321676.png",
+        "title": "유아동용품",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554380"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/677/00/220100000321677.png",
+        "title": "식품",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554401"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/678/00/220100000321678.png",
+        "title": "생활/수납",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554399"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/679/00/220100000321679.png",
+        "title": "속옷/잠옷",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554375"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/339/00/220300000331339.png",
+        "title": "슈즈/가방",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554377"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/681/00/220100000321681.png",
+        "title": "주얼리/시계",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554378"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/682/00/220100000321682.png",
+        "title": "가구",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554381"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/683/00/220100000321683.png",
+        "title": "가전/디지털",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554400"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/684/00/220100000321684.png",
+        "title": "남성의류",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554376"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/685/00/220100000321685.png",
+        "title": "레저/스포츠",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554402"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/686/00/220100000321686.png",
+        "title": "여행/티켓",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554406"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/687/00/220100000321687.png",
+        "title": "펫/취미",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554405"
+      }
+    ],
+    "home_brand_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/690/00/210700000279690.png",
+        "brand_name": "키디키디",
+        "link_url": "https://m-kidikidi.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/692/00/210700000279692.png",
+        "brand_name": "스파오",
+        "link_url": "https://m-spao.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/691/00/210700000279691.png",
+        "brand_name": "모던하우스",
+        "link_url": "https://m-modernhouse.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/698/00/210700000279698.png",
+        "brand_name": "미쏘",
+        "link_url": "https://m-mixxo.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/696/00/210700000279696.png",
+        "brand_name": "로엠",
+        "link_url": "https://roem.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/697/00/210700000279697.png",
+        "brand_name": "슈펜",
+        "link_url": "https://shoopen.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/148/00/211100000306148.png",
+        "brand_name": "후아유",
+        "link_url": "http://whoau.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/827/00/220500000342827.png",
+        "brand_name": "폴더",
+        "link_url": "http://folder.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/700/00/210700000279700.png",
+        "brand_name": "에블린",
+        "link_url": "https://eblin.elandmall.com/main/initMain.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/856/00/210800000285856.png",
+        "brand_name": "애니바디",
+        "link_url": "https://m-anybody.elandmall.com"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/703/00/210700000279703.png",
+        "brand_name": "이랜드브랜드"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/704/00/210700000279704.png",
+        "brand_name": "복지몰"
+      }
+    ],
+    "home_lucky_deal": {
+      "goods_list": [
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "goods_nm": "[스파오X이득데이] 1DAY 득템! 가성비 갑 FW 아우터_ 퀼팅/플리스/푸퍼 외",
+          "brand_nm": "",
+          "icon_view": "",
+          "cust_sale_price": 10900,
+          "sale_qty": 91892,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2203374951&vir_vend_no=VV16001887&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864838&conts_divi_cd=10&rel_no=2203374951&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EC%8A%A4%ED%8C%8C%EC%98%A4X%EC%9D%B4%EB%93%9D%EB%8D%B0%EC%9D%B4%5D+1DAY+%EB%93%9D%ED%85%9C%21+%EA%B0%80%EC%84%B1%EB%B9%84+%EA%B0%91+FW+%EC%95%84%EC%9A%B0%ED%84%B0_+%ED%80%BC%ED%8C%85%2F%ED%94%8C%EB%A6%AC%EC%8A%A4%2F%ED%91%B8%ED%8D%BC+%EC%99%B8&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/951/2203374951_0000019.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "goods_nm": "[뉴발란스키즈] 다운/자켓/바람막이 외 아우터 ▶~50%◀",
+          "brand_nm": "",
+          "icon_view": "무료배송,",
+          "cust_sale_price": 149900,
+          "sale_qty": 13104,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207001282&vir_vend_no=VV16001875&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864845&conts_divi_cd=10&rel_no=2207001282&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EB%8B%A4%EC%9A%B4%2F%EC%9E%90%EC%BC%93%2F%EB%B0%94%EB%9E%8C%EB%A7%89%EC%9D%B4+%EC%99%B8+%EC%95%84%EC%9A%B0%ED%84%B0+%E2%96%B6%7E50%25%E2%97%80&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/282/2207001282_0000010.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/066/00/220700000355066.png",
+          "goods_nm": "[후아유] 단 하루, 노세일 신상 전 품목 20% 추가 할인 (+ 2만원 쿠폰)",
+          "brand_nm": "",
+          "icon_view": "무료배송,",
+          "cust_sale_price": 12720,
+          "sale_qty": 7735,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108331956&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864829&conts_divi_cd=10&rel_no=2108331956&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%9B%84%EC%95%84%EC%9C%A0%5D+%EB%8B%A8+%ED%95%98%EB%A3%A8%2C+%EB%85%B8%EC%84%B8%EC%9D%BC+%EC%8B%A0%EC%83%81+%EC%A0%84+%ED%92%88%EB%AA%A9+20%25+%EC%B6%94%EA%B0%80+%ED%95%A0%EC%9D%B8+%28%2B+2%EB%A7%8C%EC%9B%90+%EC%BF%A0%ED%8F%B0%29&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/066/00/220700000355066.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/956/2108331956_0000035.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "goods_nm": "[폴더] 나이키/컨버스 외 운동화&스니커즈 특가 ~67%",
+          "brand_nm": "",
+          "icon_view": "",
+          "cust_sale_price": 12000,
+          "sale_qty": 17407,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2005422679&vir_vend_no=VV16001914&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864820&conts_divi_cd=10&rel_no=2005422679&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%8F%B4%EB%8D%94%5D+%EB%82%98%EC%9D%B4%ED%82%A4%2F%EC%BB%A8%EB%B2%84%EC%8A%A4+%EC%99%B8+%EC%9A%B4%EB%8F%99%ED%99%94%26%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+%ED%8A%B9%EA%B0%80+%7E67%25&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/679/2005422679_0000084.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "goods_nm": "[몰리멜리][추가인하] 유아등원룩/데일리룩/원피스/상하복 모음",
+          "brand_nm": "",
+          "icon_view": "",
+          "cust_sale_price": 3600,
+          "sale_qty": 13787,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208105774&vir_vend_no=VV20017985&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864849&conts_divi_cd=10&rel_no=2208105774&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%AA%B0%EB%A6%AC%EB%A9%9C%EB%A6%AC%5D%5B%EC%B6%94%EA%B0%80%EC%9D%B8%ED%95%98%5D+%EC%9C%A0%EC%95%84%EB%93%B1%EC%9B%90%EB%A3%A9%2F%EB%8D%B0%EC%9D%BC%EB%A6%AC%EB%A3%A9%2F%EC%9B%90%ED%94%BC%EC%8A%A4%2F%EC%83%81%ED%95%98%EB%B3%B5+%EB%AA%A8%EC%9D%8C&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/774/2208105774_0000018.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "",
+          "goods_nm": "[모던하우스]난방비 절약 외풍차단, 22FW신상/베스트 방한커튼 모음",
+          "brand_nm": "",
+          "icon_view": "",
+          "cust_sale_price": 20370,
+          "sale_qty": 4033,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209321542&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864851&conts_divi_cd=10&rel_no=2209321542&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4%5D%EB%82%9C%EB%B0%A9%EB%B9%84+%EC%A0%88%EC%95%BD+%EC%99%B8%ED%92%8D%EC%B0%A8%EB%8B%A8%2C+22FW%EC%8B%A0%EC%83%81%2F%EB%B2%A0%EC%8A%A4%ED%8A%B8+%EB%B0%A9%ED%95%9C%EC%BB%A4%ED%8A%BC+%EB%AA%A8%EC%9D%8C&flag_img_path=",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/542/2209321542_0000003.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/066/00/220700000355066.png",
+          "goods_nm": "✯미쏘위크✯ 단 하루 스페셜브랜드 최대 80%",
+          "brand_nm": "",
+          "icon_view": "무료배송,단독특가,",
+          "cust_sale_price": 18900,
+          "sale_qty": 7147,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2201172774&vir_vend_no=VV16001926&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864835&conts_divi_cd=10&rel_no=2201172774&rel_divi_cd=10&brand_nm=&goods_nm=%E2%9C%AF%EB%AF%B8%EC%8F%98%EC%9C%84%ED%81%AC%E2%9C%AF+%EB%8B%A8+%ED%95%98%EB%A3%A8+%EC%8A%A4%ED%8E%98%EC%85%9C%EB%B8%8C%EB%9E%9C%EB%93%9C+%EC%B5%9C%EB%8C%80+80%25&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/066/00/220700000355066.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/774/2201172774_0000038.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "goods_nm": "[슈펜] 10월 이득데이, 가을 여성화/남성화 특가 (UPTO 80%)",
+          "brand_nm": "",
+          "icon_view": "태그태그,",
+          "cust_sale_price": 3700,
+          "sale_qty": 16038,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207965673&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864848&conts_divi_cd=10&rel_no=2207965673&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EC%8A%88%ED%8E%9C%5D+10%EC%9B%94+%EC%9D%B4%EB%93%9D%EB%8D%B0%EC%9D%B4%2C+%EA%B0%80%EC%9D%84+%EC%97%AC%EC%84%B1%ED%99%94%2F%EB%82%A8%EC%84%B1%ED%99%94+%ED%8A%B9%EA%B0%80+%28UPTO+80%25%29&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/673/2207965673_0000011.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "",
+          "goods_nm": "[NC위크] 뽀글이/플리스/후드집업/경량패딩/바람막이/다운 外 아우터 대전!",
+          "brand_nm": "",
+          "icon_view": "특별할인,",
+          "cust_sale_price": 900,
+          "sale_qty": 2389,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2111876728&vir_vend_no=VV18008752&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864832&conts_divi_cd=10&rel_no=2111876728&rel_divi_cd=10&brand_nm=&goods_nm=%5BNC%EC%9C%84%ED%81%AC%5D+%EB%BD%80%EA%B8%80%EC%9D%B4%2F%ED%94%8C%EB%A6%AC%EC%8A%A4%2F%ED%9B%84%EB%93%9C%EC%A7%91%EC%97%85%2F%EA%B2%BD%EB%9F%89%ED%8C%A8%EB%94%A9%2F%EB%B0%94%EB%9E%8C%EB%A7%89%EC%9D%B4%2F%EB%8B%A4%EC%9A%B4+%E5%A4%96+%EC%95%84%EC%9A%B0%ED%84%B0+%EB%8C%80%EC%A0%84%21&flag_img_path=",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/728/2111876728_0000038.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "",
+          "goods_nm": "[더데이걸x쿠로미] 첫! 콜라보 온라인 OPEN!",
+          "brand_nm": "",
+          "icon_view": "무료배송,",
+          "cust_sale_price": 39900,
+          "sale_qty": 41,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210443410&vir_vend_no=VV17005751&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864856&conts_divi_cd=10&rel_no=2210443410&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%8D%94%EB%8D%B0%EC%9D%B4%EA%B1%B8x%EC%BF%A0%EB%A1%9C%EB%AF%B8%5D+%EC%B2%AB%21+%EC%BD%9C%EB%9D%BC%EB%B3%B4+%EC%98%A8%EB%9D%BC%EC%9D%B8+OPEN%21&flag_img_path=",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/410/2210443410_0000003.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "",
+          "goods_nm": "[뉴발란스키즈] 기모 맨투맨/트레이닝 팬츠 외 ★~50% 할인★",
+          "brand_nm": "",
+          "icon_view": "",
+          "cust_sale_price": 27500,
+          "sale_qty": 13078,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204519962&vir_vend_no=VV18008624&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001108&tr_yn=Y&conts_dist_no=C22102131864841&conts_divi_cd=10&rel_no=2204519962&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4%ED%82%A4%EC%A6%88%5D+%EA%B8%B0%EB%AA%A8+%EB%A7%A8%ED%88%AC%EB%A7%A8%2F%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D+%ED%8C%AC%EC%B8%A0+%EC%99%B8+%E2%98%85%7E50%25+%ED%95%A0%EC%9D%B8%E2%98%85&flag_img_path=",
+          "sale_rate": 0,
+          "image_url": "//www.elandrs.com/upload/prd/orgimg/962/2204519962_0000019.jpg",
+          "sale_price": 0,
+          "market_price": 0
+        }
+      ],
+      "subtitle": "쇼핑의 거품을 쏙 뺀 럭키특가",
+      "title": "럭키딜"
+    },
+    "home_oprice_list": [],
+    "home_nc_live": {},
+    "home_today_market": {
+      "home_today_list": [],
+      "subtitle": "",
+      "title": ""
+    },
+    "home_mainbanner_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/823/00/221000000373823.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210650451"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/20/731/00/221000000373731.jpg",
+        "link_url": "https://m.elandmall.com/event/initEventDtl.action?event_no=E221015720"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/655/00/221000000373655.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2208639072"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/647/00/221000000373647.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649622"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/645/00/221000000373645.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2206619135"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/644/00/221000000373644.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649686"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/051/00/221000000374051.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2209646049"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/911/00/221000000373911.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649095"
+      }
+    ],
+    "home_timesale": {
+      "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+      "goods_nm": "[스파오X이득위크] HOT 단하루 FW 신상 특가, 망설이는 순간 품절!",
+      "brand_nm": "",
+      "icon_view": "무료배송, 단독특가,",
+      "title": "타임세일",
+      "cust_sale_price": 14310,
+      "sale_qty": 12,
+      "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2201109942&vir_vend_no=VV16001887&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001106&tr_yn=Y&conts_dist_no=C22102131860154&conts_divi_cd=10&rel_no=2201109942&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EC%8A%A4%ED%8C%8C%EC%98%A4X%EC%9D%B4%EB%93%9D%EC%9C%84%ED%81%AC%5D+HOT+%EB%8B%A8%ED%95%98%EB%A3%A8+FW+%EC%8B%A0%EC%83%81+%ED%8A%B9%EA%B0%80%2C+%EB%A7%9D%EC%84%A4%EC%9D%B4%EB%8A%94+%EC%88%9C%EA%B0%84+%ED%92%88%EC%A0%88%21&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+      "sale_rate": 0,
+      "image_url": "//www.elandrs.com/upload/prd/img/942/600/2201109942_0000022.jpg",
+      "sale_price": 0,
+      "market_price": 0,
+      "time": "2022/11/18 17:12:10"
+    },
+    "home_banner_bottom": {},
+    "home_imgbanner": {},
+    "home_subbanner_list": [],
+    "home_banner_top": {
+      "image_url": "//www.elandrs.com/upload/dspl/banner/10/692/00/221000000373692.jpg",
+      "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649386"
+    },
+    "home_shoppingvj": [],
+    "home_banner_top_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/693/00/221000000373693.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649453"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/692/00/221000000373692.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649386"
+      }
+    ],
+    "home_offers": {
+      "subtitle": "주목해야할 금주의 트렌드",
+      "title": "시즌 기획전",
+      "home_offers_list": [
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/656/00/221000000373656.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649270",
+          "goods_list": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[더데이걸x쿠로미] 첫! 콜라보 온라인 OPEN!",
+              "brand_nm": "",
+              "cust_sale_price": 39900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210443410&vir_vend_no=VV17005751&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102031810190&conts_divi_cd=20&rel_no=2210443410&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%8D%94%EB%8D%B0%EC%9D%B4%EA%B1%B8x%EC%BF%A0%EB%A1%9C%EB%AF%B8%5D+%EC%B2%AB%21+%EC%BD%9C%EB%9D%BC%EB%B3%B4+%EC%98%A8%EB%9D%BC%EC%9D%B8+OPEN%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/410/240/2210443410_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "★쿠로미★ 박시 조끼 TGVK22T1K",
+              "brand_nm": "더데이걸",
+              "cust_sale_price": 49900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210431463&vir_vend_no=VV17005751&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102031810181&conts_divi_cd=20&rel_no=2210431463&rel_divi_cd=10&brand_nm=%EB%8D%94%EB%8D%B0%EC%9D%B4%EA%B1%B8&goods_nm=%E2%98%85%EC%BF%A0%EB%A1%9C%EB%AF%B8%E2%98%85+%EB%B0%95%EC%8B%9C+%EC%A1%B0%EB%81%BC+TGVK22T1K&flag_img_path=",
+              "sale_rate": 29,
+              "image_url": "//www.elandrs.com/upload/prd/img/463/240/2210431463_0000008.jpg",
+              "sale_price": 0,
+              "market_price": 69900
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "★쿠로미★ 꿈나라 파자마 세트 TGSM22T1K",
+              "brand_nm": "더데이걸",
+              "cust_sale_price": 49900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210431462&vir_vend_no=VV17005751&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102031810185&conts_divi_cd=20&rel_no=2210431462&rel_divi_cd=10&brand_nm=%EB%8D%94%EB%8D%B0%EC%9D%B4%EA%B1%B8&goods_nm=%E2%98%85%EC%BF%A0%EB%A1%9C%EB%AF%B8%E2%98%85+%EA%BF%88%EB%82%98%EB%9D%BC+%ED%8C%8C%EC%9E%90%EB%A7%88+%EC%84%B8%ED%8A%B8+TGSM22T1K&flag_img_path=",
+              "sale_rate": 29,
+              "image_url": "//www.elandrs.com/upload/prd/img/462/240/2210431462_0000009.jpg",
+              "sale_price": 0,
+              "market_price": 69900
+            }
+          ]
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/657/00/221000000373657.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649148",
+          "goods_list": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 10%할인](택배발송/DIY) WOW 오풀로 카페테이블 +  체어 2개 세트_OF026SET005",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 61120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=A999997100397&vir_vend_no=VV17004814&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102131870715&conts_divi_cd=20&rel_no=A999997100397&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5D%28%ED%83%9D%EB%B0%B0%EB%B0%9C%EC%86%A1%2FDIY%29+WOW+%EC%98%A4%ED%92%80%EB%A1%9C+%EC%B9%B4%ED%8E%98%ED%85%8C%EC%9D%B4%EB%B8%94+%2B++%EC%B2%B4%EC%96%B4+2%EA%B0%9C+%EC%84%B8%ED%8A%B8_OF026SET005&flag_img_path=",
+              "sale_rate": 39,
+              "image_url": "//www.elandrs.com/upload/prd/img/397/240/A999997100397_0000010.jpg",
+              "sale_price": 79900,
+              "market_price": 99700
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 10%할인](택배발송/DIY)오풀로 화이트 UG 2인세트_LS22SET011",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 61120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207017860&vir_vend_no=VV17004814&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102131870713&conts_divi_cd=20&rel_no=2207017860&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5D%28%ED%83%9D%EB%B0%B0%EB%B0%9C%EC%86%A1%2FDIY%29%EC%98%A4%ED%92%80%EB%A1%9C+%ED%99%94%EC%9D%B4%ED%8A%B8+UG+2%EC%9D%B8%EC%84%B8%ED%8A%B8_LS22SET011&flag_img_path=",
+              "sale_rate": 44,
+              "image_url": "//www.elandrs.com/upload/prd/img/860/240/2207017860_0000001.jpg",
+              "sale_price": 79900,
+              "market_price": 109000
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 10%할인](택배발송/DIY) 에브리 틈새 4단 서랍장 W324(투명)_CF0522041",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 41240,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209313004&vir_vend_no=VV17004814&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102131870711&conts_divi_cd=20&rel_no=2209313004&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5D%28%ED%83%9D%EB%B0%B0%EB%B0%9C%EC%86%A1%2FDIY%29+%EC%97%90%EB%B8%8C%EB%A6%AC+%ED%8B%88%EC%83%88+4%EB%8B%A8+%EC%84%9C%EB%9E%8D%EC%9E%A5+W324%28%ED%88%AC%EB%AA%85%29_CF0522041&flag_img_path=",
+              "sale_rate": 31,
+              "image_url": "//www.elandrs.com/upload/prd/img/004/240/2209313004_0000001.jpg",
+              "sale_price": 53910,
+              "market_price": 59900
+            }
+          ]
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/663/00/221000000373663.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649908",
+          "goods_list": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[블랙야크키즈] F/W 신상입고 이월상품 특가세일!",
+              "brand_nm": "",
+              "cust_sale_price": 32000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210443411&vir_vend_no=VV21027475&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970348&conts_divi_cd=20&rel_no=2210443411&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B8%94%EB%9E%99%EC%95%BC%ED%81%AC%ED%82%A4%EC%A6%88%5D+F%2FW+%EC%8B%A0%EC%83%81%EC%9E%85%EA%B3%A0+%EC%9D%B4%EC%9B%94%EC%83%81%ED%92%88+%ED%8A%B9%EA%B0%80%EC%84%B8%EC%9D%BC%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/411/240/2210443411_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            }
+          ]
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/672/00/221000000373672.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2105523117",
+          "goods_list": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            }
+          ]
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/679/00/221000000373679.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649583",
+          "goods_list": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[네파키즈] FW 가을신상 아우터 특가",
+              "brand_nm": "",
+              "cust_sale_price": 39200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2110702130&vir_vend_no=VV21020555&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001109&tr_yn=Y&conts_dist_no=B22102331970349&conts_divi_cd=20&rel_no=2110702130&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%84%A4%ED%8C%8C%ED%82%A4%EC%A6%88%5D+FW+%EA%B0%80%EC%9D%84%EC%8B%A0%EC%83%81+%EC%95%84%EC%9A%B0%ED%84%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/130/240/2110702130_0000037.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            }
+          ]
+        }
+      ]
+    },
+    "home_md": {
+      "subtitle": "엄선한 추천 상품",
+      "home_md_cat_list": [
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[슬랙스닝] 쿨 와이드 팬츠 (3colors) CVTWC3803Q",
+              "goods_star_point": 97,
+              "brand_nm": "클라비스",
+              "cust_sale_price": 39970,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204532980&vir_vend_no=VV16001902&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22053021895624&conts_divi_cd=10&rel_no=2204532980&rel_divi_cd=10&brand_nm=%ED%81%B4%EB%9D%BC%EB%B9%84%EC%8A%A4&goods_nm=%5B%EC%8A%AC%EB%9E%99%EC%8A%A4%EB%8B%9D%5D+%EC%BF%A8+%EC%99%80%EC%9D%B4%EB%93%9C+%ED%8C%AC%EC%B8%A0+%283colors%29+CVTWC3803Q&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/980/330/2204532980_0000013.jpg",
+              "sale_price": 49900,
+              "market_price": 0,
+              "goods_comment_count": 58
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "goods_nm": "[✯단독상품✯]울헤링본 오버핏자켓 MIWJKCT1PC",
+              "goods_star_point": 98,
+              "brand_nm": "미쏘",
+              "cust_sale_price": 80020,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208096848&vir_vend_no=VV16001901&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975000&conts_divi_cd=10&rel_no=2208096848&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%8F%98&goods_nm=%5B%E2%9C%AF%EB%8B%A8%EB%8F%85%EC%83%81%ED%92%88%E2%9C%AF%5D%EC%9A%B8%ED%97%A4%EB%A7%81%EB%B3%B8+%EC%98%A4%EB%B2%84%ED%95%8F%EC%9E%90%EC%BC%93+MIWJKCT1PC&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/848/330/2208096848_0000005.jpg",
+              "sale_price": 88910,
+              "market_price": 99900,
+              "goods_comment_count": 60
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[구름패딩] 라운드넥 퀼팅 점퍼 (3colors) CVJPC4T01M",
+              "goods_star_point": 100,
+              "brand_nm": "클라비스",
+              "cust_sale_price": 80020,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208169285&vir_vend_no=VV16001902&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975001&conts_divi_cd=10&rel_no=2208169285&rel_divi_cd=10&brand_nm=%ED%81%B4%EB%9D%BC%EB%B9%84%EC%8A%A4&goods_nm=%5B%EA%B5%AC%EB%A6%84%ED%8C%A8%EB%94%A9%5D+%EB%9D%BC%EC%9A%B4%EB%93%9C%EB%84%A5+%ED%80%BC%ED%8C%85+%EC%A0%90%ED%8D%BC+%283colors%29+CVJPC4T01M&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/285/330/2208169285_0000003.jpg",
+              "sale_price": 99900,
+              "market_price": 0,
+              "goods_comment_count": 19
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "goods_nm": "[✯단독상품✯]테일러드 벨티드 롱 코트 (3colors) MIWJHCV0PB",
+              "goods_star_point": 90,
+              "brand_nm": "미쏘",
+              "cust_sale_price": 97000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209379746&vir_vend_no=VV16001901&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975009&conts_divi_cd=10&rel_no=2209379746&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%8F%98&goods_nm=%5B%E2%9C%AF%EB%8B%A8%EB%8F%85%EC%83%81%ED%92%88%E2%9C%AF%5D%ED%85%8C%EC%9D%BC%EB%9F%AC%EB%93%9C+%EB%B2%A8%ED%8B%B0%EB%93%9C+%EB%A1%B1+%EC%BD%94%ED%8A%B8+%283colors%29+MIWJHCV0PB&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "sale_rate": 25,
+              "image_url": "//www.elandrs.com/upload/prd/img/746/330/2209379746_0000002.jpg",
+              "sale_price": 116100,
+              "market_price": 129000,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "goods_nm": "[✯단독상품✯]테일러드 싱글 울혼방 자켓 MIWJKD114B",
+              "goods_star_point": 100,
+              "brand_nm": "미쏘",
+              "cust_sale_price": 80020,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209379756&vir_vend_no=VV16001901&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975008&conts_divi_cd=10&rel_no=2209379756&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%8F%98&goods_nm=%5B%E2%9C%AF%EB%8B%A8%EB%8F%85%EC%83%81%ED%92%88%E2%9C%AF%5D%ED%85%8C%EC%9D%BC%EB%9F%AC%EB%93%9C+%EC%8B%B1%EA%B8%80+%EC%9A%B8%ED%98%BC%EB%B0%A9+%EC%9E%90%EC%BC%93+MIWJKD114B&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/278/00/220700000354278.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/756/330/2209379756_0000005.jpg",
+              "sale_price": 88910,
+              "market_price": 99900,
+              "goods_comment_count": 3
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "프레이드 퀼팅 덕다운 점퍼_SSDJPL41600",
+              "brand_nm": "쉬즈미스",
+              "cust_sale_price": 127200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202235406&vir_vend_no=VV21028300&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975020&conts_divi_cd=10&rel_no=2202235406&rel_divi_cd=10&brand_nm=%EC%89%AC%EC%A6%88%EB%AF%B8%EC%8A%A4&goods_nm=%ED%94%84%EB%A0%88%EC%9D%B4%EB%93%9C+%ED%80%BC%ED%8C%85+%EB%8D%95%EB%8B%A4%EC%9A%B4+%EC%A0%90%ED%8D%BC_SSDJPL41600&flag_img_path=",
+              "sale_rate": 70,
+              "image_url": "//www.elandrs.com/upload/prd/img/406/330/2202235406_0000001.jpg",
+              "sale_price": 159000,
+              "market_price": 428000
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "루즈핏 체크 자켓 (1color) CVJKC1102Q",
+              "goods_star_point": 96,
+              "brand_nm": "클라비스",
+              "cust_sale_price": 48020,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112041113&vir_vend_no=VV16001902&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975003&conts_divi_cd=10&rel_no=2112041113&rel_divi_cd=10&brand_nm=%ED%81%B4%EB%9D%BC%EB%B9%84%EC%8A%A4&goods_nm=%EB%A3%A8%EC%A6%88%ED%95%8F+%EC%B2%B4%ED%81%AC+%EC%9E%90%EC%BC%93+%281color%29+CVJKC1102Q&flag_img_path=",
+              "sale_rate": 52,
+              "image_url": "//www.elandrs.com/upload/prd/img/113/330/2112041113_0000005.jpg",
+              "sale_price": 59940,
+              "market_price": 99900,
+              "goods_comment_count": 9
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[찰랑셔츠] 링클프리 솔리드 셔츠 (6colors) CVYWC4901N",
+              "goods_star_point": 96,
+              "brand_nm": "클라비스",
+              "cust_sale_price": 23950,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206851640&vir_vend_no=VV16001902&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975002&conts_divi_cd=10&rel_no=2206851640&rel_divi_cd=10&brand_nm=%ED%81%B4%EB%9D%BC%EB%B9%84%EC%8A%A4&goods_nm=%5B%EC%B0%B0%EB%9E%91%EC%85%94%EC%B8%A0%5D+%EB%A7%81%ED%81%B4%ED%94%84%EB%A6%AC+%EC%86%94%EB%A6%AC%EB%93%9C+%EC%85%94%EC%B8%A0+%286colors%29+CVYWC4901N&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/640/330/2206851640_0000021.jpg",
+              "sale_price": 29900,
+              "market_price": 0,
+              "goods_comment_count": 127
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[✯오늘만신상할인✯]빅카라 숏 더플코트 MIWJHCV02G",
+              "brand_nm": "미쏘",
+              "cust_sale_price": 109130,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208189270&vir_vend_no=VV16001901&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975013&conts_divi_cd=10&rel_no=2208189270&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%8F%98&goods_nm=%5B%E2%9C%AF%EC%98%A4%EB%8A%98%EB%A7%8C%EC%8B%A0%EC%83%81%ED%95%A0%EC%9D%B8%E2%9C%AF%5D%EB%B9%85%EC%B9%B4%EB%9D%BC+%EC%88%8F+%EB%8D%94%ED%94%8C%EC%BD%94%ED%8A%B8+MIWJHCV02G&flag_img_path=",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/270/330/2208189270_0000004.jpg",
+              "sale_price": 121260,
+              "market_price": 129000
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "울 크롭자켓 (2colors) CVJKC4T01M",
+              "brand_nm": "클라비스",
+              "cust_sale_price": 103330,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209259586&vir_vend_no=VV16001902&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975036&conts_divi_cd=10&rel_no=2209259586&rel_divi_cd=10&brand_nm=%ED%81%B4%EB%9D%BC%EB%B9%84%EC%8A%A4&goods_nm=%EC%9A%B8+%ED%81%AC%EB%A1%AD%EC%9E%90%EC%BC%93+%282colors%29+CVJKC4T01M&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/586/330/2209259586_0000006.jpg",
+              "sale_price": 129000,
+              "market_price": 0
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/666/00/220100000321666.png",
+          "menu_title": "여성의류"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[밀리밤]신상+이월FW 아동 아우터/상하세트/원피스 외~80%",
+              "goods_star_point": 97,
+              "brand_nm": "",
+              "cust_sale_price": 3100,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2102576650&vir_vend_no=CN003567&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22030315270747&conts_divi_cd=10&rel_no=2102576650&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B0%80%EB%A6%AC%EB%B0%A4%5D%EC%8B%A0%EC%83%81%2B%EC%9D%B4%EC%9B%94FW+%EC%95%84%EB%8F%99+%EC%95%84%EC%9A%B0%ED%84%B0%2F%EC%83%81%ED%95%98%EC%84%B8%ED%8A%B8%2F%EC%9B%90%ED%94%BC%EC%8A%A4+%EC%99%B8%7E80%25&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/650/330/2102576650_0000044.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1030
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[밀리밤 간절기]50%이상 할인템 트렌치/가디건/원피스/블라우스 외",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 5120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2104843950&vir_vend_no=CN003567&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22030315270748&conts_divi_cd=10&rel_no=2104843950&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B0%80%EB%A6%AC%EB%B0%A4+%EA%B0%84%EC%A0%88%EA%B8%B0%5D50%25%EC%9D%B4%EC%83%81+%ED%95%A0%EC%9D%B8%ED%85%9C+%ED%8A%B8%EB%A0%8C%EC%B9%98%2F%EA%B0%80%EB%94%94%EA%B1%B4%2F%EC%9B%90%ED%94%BC%EC%8A%A4%2F%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4+%EC%99%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/950/330/2104843950_0000009.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1565
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[헌트키즈 50%이상 할인템] 자켓/셔츠/블라우스/원피스 외",
+              "goods_star_point": 97,
+              "brand_nm": "",
+              "cust_sale_price": 7900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2010282825&vir_vend_no=VV17005746&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22030315270745&conts_divi_cd=10&rel_no=2010282825&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%97%8C%ED%8A%B8%ED%82%A4%EC%A6%88+50%25%EC%9D%B4%EC%83%81+%ED%95%A0%EC%9D%B8%ED%85%9C%5D+%EC%9E%90%EC%BC%93%2F%EC%85%94%EC%B8%A0%2F%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4%2F%EC%9B%90%ED%94%BC%EC%8A%A4+%EC%99%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/825/330/2010282825_0000014.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 332
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[보보트리 50%특가]상하세트/반팔티/반바지 외",
+              "goods_star_point": 99,
+              "brand_nm": "",
+              "cust_sale_price": 14900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2010234434&vir_vend_no=CN003573&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22030315270744&conts_divi_cd=10&rel_no=2010234434&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B3%B4%EB%B3%B4%ED%8A%B8%EB%A6%AC+50%25%ED%8A%B9%EA%B0%80%5D%EC%83%81%ED%95%98%EC%84%B8%ED%8A%B8%2F%EB%B0%98%ED%8C%94%ED%8B%B0%2F%EB%B0%98%EB%B0%94%EC%A7%80+%EC%99%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/434/330/2010234434_0000011.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 440
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[앙떼떼] 득템찬스 최대61%SALE 베스트 런닝/팬티/잠옷세트",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 6900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2007669377&vir_vend_no=CN003623&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202846&conts_divi_cd=10&rel_no=2007669377&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EC%95%99%EB%96%BC%EB%96%BC%5D+%EB%93%9D%ED%85%9C%EC%B0%AC%EC%8A%A4+%EC%B5%9C%EB%8C%8061%25SALE+%EB%B2%A0%EC%8A%A4%ED%8A%B8+%EB%9F%B0%EB%8B%9D%2F%ED%8C%AC%ED%8B%B0%2F%EC%9E%A0%EC%98%B7%EC%84%B8%ED%8A%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/377/330/2007669377_0000007.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 802
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "포크레인 남아 잠옷세트 (150~160) ATJS20W36",
+              "goods_star_point": 100,
+              "brand_nm": "앙떼떼",
+              "cust_sale_price": 23000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2008923372&vir_vend_no=CN003623&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202841&conts_divi_cd=10&rel_no=2008923372&rel_divi_cd=10&brand_nm=%EC%95%99%EB%96%BC%EB%96%BC&goods_nm=%ED%8F%AC%ED%81%AC%EB%A0%88%EC%9D%B8+%EB%82%A8%EC%95%84+%EC%9E%A0%EC%98%B7%EC%84%B8%ED%8A%B8+%28150%7E160%29+ATJS20W36&flag_img_path=",
+              "sale_rate": 30,
+              "image_url": "//www.elandrs.com/upload/prd/img/372/330/2008923372_0000010.jpg",
+              "sale_price": 0,
+              "market_price": 32900,
+              "goods_comment_count": 7
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "아노락 점퍼 IKJA20W01경량 점퍼 MLJD19W60",
+              "goods_star_point": 97,
+              "brand_nm": "인디고뱅크키즈",
+              "cust_sale_price": 14900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2008923374&vir_vend_no=CN003563&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202840&conts_divi_cd=10&rel_no=2008923374&rel_divi_cd=10&brand_nm=%EC%9D%B8%EB%94%94%EA%B3%A0%EB%B1%85%ED%81%AC%ED%82%A4%EC%A6%88&goods_nm=%EC%95%84%EB%85%B8%EB%9D%BD+%EC%A0%90%ED%8D%BC+IKJA20W01%EA%B2%BD%EB%9F%89+%EC%A0%90%ED%8D%BC+MLJD19W60&flag_img_path=",
+              "sale_rate": 70,
+              "image_url": "//www.elandrs.com/upload/prd/img/374/330/2008923374_0000010.jpg",
+              "sale_price": 0,
+              "market_price": 49900,
+              "goods_comment_count": 18
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "포인포 최대~60% SALE 패딩/자켓/맨투맨/상하세트 외",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 1900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2011334996&vir_vend_no=VV17005749&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202836&conts_divi_cd=10&rel_no=2011334996&rel_divi_cd=10&brand_nm=&goods_nm=%ED%8F%AC%EC%9D%B8%ED%8F%AC+%EC%B5%9C%EB%8C%80%7E60%25+SALE+%ED%8C%A8%EB%94%A9%2F%EC%9E%90%EC%BC%93%2F%EB%A7%A8%ED%88%AC%EB%A7%A8%2F%EC%83%81%ED%95%98%EC%84%B8%ED%8A%B8+%EC%99%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/996/330/2011334996_0000012.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 328
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "일로딜로 21FW 신상룩! BEST 패딩/코트/원피스/상하세트 외",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 19900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2004309413&vir_vend_no=VV16002999&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202835&conts_divi_cd=10&rel_no=2004309413&rel_divi_cd=10&brand_nm=&goods_nm=%EC%9D%BC%EB%A1%9C%EB%94%9C%EB%A1%9C+21FW+%EC%8B%A0%EC%83%81%EB%A3%A9%21+BEST+%ED%8C%A8%EB%94%A9%2F%EC%BD%94%ED%8A%B8%2F%EC%9B%90%ED%94%BC%EC%8A%A4%2F%EC%83%81%ED%95%98%EC%84%B8%ED%8A%B8+%EC%99%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/413/330/2004309413_0000021.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1053
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[이랜드키즈]이월 여름템 900원부터~추가 20% 할인!",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 2900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2101550038&vir_vend_no=CN003566&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112202834&conts_divi_cd=10&rel_no=2101550038&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EC%9D%B4%EB%9E%9C%EB%93%9C%ED%82%A4%EC%A6%88%5D%EC%9D%B4%EC%9B%94+%EC%97%AC%EB%A6%84%ED%85%9C+900%EC%9B%90%EB%B6%80%ED%84%B0%7E%EC%B6%94%EA%B0%80+20%25+%ED%95%A0%EC%9D%B8%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/038/330/2101550038_0000014.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 3900
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/668/00/220100000321668.png",
+          "menu_title": "유아동패션"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 무료배송][슈펜×최실장] 플랫폼 삭스 부츠 5.0 HPWXAC472Q",
+              "goods_star_point": 98,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 55900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375161&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975040&conts_divi_cd=10&rel_no=2209375161&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%5D%5B%EC%8A%88%ED%8E%9C%C3%97%EC%B5%9C%EC%8B%A4%EC%9E%A5%5D+%ED%94%8C%EB%9E%AB%ED%8F%BC+%EC%82%AD%EC%8A%A4+%EB%B6%80%EC%B8%A0+5.0+HPWXAC472Q&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/161/330/2209375161_0000013.jpg",
+              "sale_price": 0,
+              "market_price": 69900,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 무료배송][슈펜×최실장] 라운드토 앵클 부츠 7.0 HPWXAC471Q",
+              "goods_star_point": 100,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 55900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375160&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975041&conts_divi_cd=10&rel_no=2209375160&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%5D%5B%EC%8A%88%ED%8E%9C%C3%97%EC%B5%9C%EC%8B%A4%EC%9E%A5%5D+%EB%9D%BC%EC%9A%B4%EB%93%9C%ED%86%A0+%EC%95%B5%ED%81%B4+%EB%B6%80%EC%B8%A0+7.0+HPWXAC471Q&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/160/330/2209375160_0000013.jpg",
+              "sale_price": 0,
+              "market_price": 69900,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 무료배송][드로우핏 X 슈펜] 비브람 첼시 HPMV9C403M",
+              "goods_star_point": 100,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 149000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209345252&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975052&conts_divi_cd=10&rel_no=2209345252&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%5D%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EB%B9%84%EB%B8%8C%EB%9E%8C+%EC%B2%BC%EC%8B%9C+HPMV9C403M&flag_img_path=",
+              "sale_rate": 6,
+              "image_url": "//www.elandrs.com/upload/prd/img/252/330/2209345252_0000010.jpg",
+              "sale_price": 0,
+              "market_price": 159000,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "스퀘어 롱부츠 2.5 (와이드) HPWXLC405S",
+              "goods_star_point": 95,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 51200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208225616&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975048&conts_divi_cd=10&rel_no=2208225616&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+2.5+%28%EC%99%80%EC%9D%B4%EB%93%9C%29+HPWXLC405S&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/616/330/2208225616_0000004.jpg",
+              "sale_price": 53900,
+              "market_price": 59900,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "슈탠다드 와이드 스니커즈 HPCR3CA02S",
+              "goods_star_point": 94,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 26900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208101343&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975047&conts_divi_cd=10&rel_no=2208101343&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%88%ED%83%A0%EB%8B%A4%EB%93%9C+%EC%99%80%EC%9D%B4%EB%93%9C+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+HPCR3CA02S&flag_img_path=",
+              "sale_rate": 10,
+              "image_url": "//www.elandrs.com/upload/prd/img/343/330/2208101343_0000015.jpg",
+              "sale_price": 0,
+              "market_price": 29900,
+              "goods_comment_count": 25
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "락스터드 미니 숄더백 1W2P0W31 VSH 0NO",
+              "brand_nm": "발렌티노",
+              "cust_sale_price": 908000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208188387&vir_vend_no=VV17003854&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975077&conts_divi_cd=10&rel_no=2208188387&rel_divi_cd=10&brand_nm=%EB%B0%9C%EB%A0%8C%ED%8B%B0%EB%85%B8&goods_nm=%EB%9D%BD%EC%8A%A4%ED%84%B0%EB%93%9C+%EB%AF%B8%EB%8B%88+%EC%88%84%EB%8D%94%EB%B0%B1+1W2P0W31+VSH+0NO&flag_img_path=",
+              "sale_rate": 41,
+              "image_url": "//www.elandrs.com/upload/prd/img/387/330/2208188387_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 1543600
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "베이직 스퀘어 삭스부츠 5.0 HPWXAC402S",
+              "goods_star_point": 100,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 42650,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208179050&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975045&conts_divi_cd=10&rel_no=2208179050&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%B2%A0%EC%9D%B4%EC%A7%81+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%82%AD%EC%8A%A4%EB%B6%80%EC%B8%A0+5.0+HPWXAC402S&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/050/330/2208179050_0000021.jpg",
+              "sale_price": 44900,
+              "market_price": 49900,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "스퀘어 롱부츠 2.5 (스탠다드) HPWXLC404S",
+              "goods_star_point": 100,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 51200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208224877&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975053&conts_divi_cd=10&rel_no=2208224877&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+2.5+%28%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C%29+HPWXLC404S&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/877/330/2208224877_0000001.jpg",
+              "sale_price": 53900,
+              "market_price": 59900,
+              "goods_comment_count": 5
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "[오늘만 무료배송]스퀘어 밴딩 바부슈 플랫 1.0 HPWWFB403M",
+              "goods_star_point": 96,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 13200,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958665&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975043&conts_divi_cd=10&rel_no=2206958665&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%5D%EC%8A%A4%ED%80%98%EC%96%B4+%EB%B0%B4%EB%94%A9+%EB%B0%94%EB%B6%80%EC%8A%88+%ED%94%8C%EB%9E%AB+1.0+HPWWFB403M&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 34,
+              "image_url": "//www.elandrs.com/upload/prd/img/665/330/2206958665_0000015.jpg",
+              "sale_price": 13900,
+              "market_price": 19900,
+              "goods_comment_count": 309
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "[오늘만 무료배송][테디아일랜드] 논슬립 스웨이드 퍼 룸슈즈 HPCRVC414S",
+              "goods_star_point": 100,
+              "brand_nm": "슈펜",
+              "cust_sale_price": 22130,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210389596&vir_vend_no=VV22030535&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431975044&conts_divi_cd=10&rel_no=2210389596&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EB%AC%B4%EB%A3%8C%EB%B0%B0%EC%86%A1%5D%5B%ED%85%8C%EB%94%94%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%5D+%EB%85%BC%EC%8A%AC%EB%A6%BD+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%ED%8D%BC+%EB%A3%B8%EC%8A%88%EC%A6%88+HPCRVC414S&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/596/330/2210389596_0000016.jpg",
+              "sale_price": 23300,
+              "market_price": 25900,
+              "goods_comment_count": 3
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/339/00/220300000331339.png",
+          "menu_title": "슈즈/가방/잡화"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[모던하우스]ON 린넨스타일 3중방한 3도씨커튼(6color)",
+              "goods_star_point": 100,
+              "brand_nm": "",
+              "cust_sale_price": 40460,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209369271&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101831651989&conts_divi_cd=10&rel_no=2209369271&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4%5DON+%EB%A6%B0%EB%84%A8%EC%8A%A4%ED%83%80%EC%9D%BC+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC%286color%29&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/271/330/2209369271_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 9
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[모던하우스]ON 먼지없는 미니하운드 3중방한 3도씨커튼(3color)",
+              "brand_nm": "",
+              "cust_sale_price": 54820,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209369270&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101831651988&conts_divi_cd=10&rel_no=2209369270&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4%5DON+%EB%A8%BC%EC%A7%80%EC%97%86%EB%8A%94+%EB%AF%B8%EB%8B%88%ED%95%98%EC%9A%B4%EB%93%9C+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC%283color%29&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/270/330/2209369270_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[모던하우스]ON 포시즌 패딩 탈부착 3중방한 3도씨커튼(3color)",
+              "goods_star_point": 93,
+              "brand_nm": "",
+              "cust_sale_price": 38210,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209369267&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101831651987&conts_divi_cd=10&rel_no=2209369267&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4%5DON+%ED%8F%AC%EC%8B%9C%EC%A6%8C+%ED%8C%A8%EB%94%A9+%ED%83%88%EB%B6%80%EC%B0%A9+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC%283color%29&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/267/330/2209369267_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 8
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 린넨스타일 3중방한 3도씨커튼 220x240 1장 베이지(높이조절밴드형)",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 33660,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209340999&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591293&conts_divi_cd=10&rel_no=2209340999&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%EB%A6%B0%EB%84%A8%EC%8A%A4%ED%83%80%EC%9D%BC+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+220x240+1%EC%9E%A5+%EB%B2%A0%EC%9D%B4%EC%A7%80%28%EB%86%92%EC%9D%B4%EC%A1%B0%EC%A0%88%EB%B0%B4%EB%93%9C%ED%98%95%29&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/999/330/2209340999_0000004.jpg",
+              "sale_price": 39600,
+              "market_price": 49500,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 린넨스타일 3중방한 3도씨커튼 265x240 1장 화이트(높이조절밴드형)",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 40460,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209340996&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591292&conts_divi_cd=10&rel_no=2209340996&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%EB%A6%B0%EB%84%A8%EC%8A%A4%ED%83%80%EC%9D%BC+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+265x240+1%EC%9E%A5+%ED%99%94%EC%9D%B4%ED%8A%B8%28%EB%86%92%EC%9D%B4%EC%A1%B0%EC%A0%88%EB%B0%B4%EB%93%9C%ED%98%95%29&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/996/330/2209340996_0000004.jpg",
+              "sale_price": 47600,
+              "market_price": 59500,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 린넨스타일 3중방한 3도씨커튼 220x240 1장 화이트(높이조절밴드형)",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 33660,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209340995&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591291&conts_divi_cd=10&rel_no=2209340995&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%EB%A6%B0%EB%84%A8%EC%8A%A4%ED%83%80%EC%9D%BC+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+220x240+1%EC%9E%A5+%ED%99%94%EC%9D%B4%ED%8A%B8%28%EB%86%92%EC%9D%B4%EC%A1%B0%EC%A0%88%EB%B0%B4%EB%93%9C%ED%98%95%29&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/995/330/2209340995_0000004.jpg",
+              "sale_price": 39600,
+              "market_price": 49500,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 린넨스타일 3중방한 3도씨커튼 140X240 1장 화이트(높이조절밴드형)",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 27170,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209340994&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591290&conts_divi_cd=10&rel_no=2209340994&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%EB%A6%B0%EB%84%A8%EC%8A%A4%ED%83%80%EC%9D%BC+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+140X240+1%EC%9E%A5+%ED%99%94%EC%9D%B4%ED%8A%B8%28%EB%86%92%EC%9D%B4%EC%A1%B0%EC%A0%88%EB%B0%B4%EB%93%9C%ED%98%95%29&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/994/330/2209340994_0000004.jpg",
+              "sale_price": 31960,
+              "market_price": 39950
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 포시즌 패딩 탈부착 3중방한 3도씨커튼 265x240 1장 베이지 _BL3822021",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 67570,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209323081&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591289&conts_divi_cd=10&rel_no=2209323081&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%ED%8F%AC%EC%8B%9C%EC%A6%8C+%ED%8C%A8%EB%94%A9+%ED%83%88%EB%B6%80%EC%B0%A9+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+265x240+1%EC%9E%A5+%EB%B2%A0%EC%9D%B4%EC%A7%80+_BL3822021&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/081/330/2209323081_0000001.jpg",
+              "sale_price": 79500,
+              "market_price": 99500
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 포시즌 패딩 탈부착 3중방한 3도씨커튼 220x240 1장 베이지 _BL3822020",
+              "goods_star_point": 60,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 54060,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209323080&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591288&conts_divi_cd=10&rel_no=2209323080&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%ED%8F%AC%EC%8B%9C%EC%A6%8C+%ED%8C%A8%EB%94%A9+%ED%83%88%EB%B6%80%EC%B0%A9+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+220x240+1%EC%9E%A5+%EB%B2%A0%EC%9D%B4%EC%A7%80+_BL3822020&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/080/330/2209323080_0000001.jpg",
+              "sale_price": 63600,
+              "market_price": 79500,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[1장]ON 포시즌 패딩 탈부착 3중방한 3도씨커튼 140X240 1장 베이지 _BL3822019",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 38210,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209323079&vir_vend_no=VV19013320&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731591287&conts_divi_cd=10&rel_no=2209323079&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B1%EC%9E%A5%5DON+%ED%8F%AC%EC%8B%9C%EC%A6%8C+%ED%8C%A8%EB%94%A9+%ED%83%88%EB%B6%80%EC%B0%A9+3%EC%A4%91%EB%B0%A9%ED%95%9C+3%EB%8F%84%EC%94%A8%EC%BB%A4%ED%8A%BC+140X240+1%EC%9E%A5+%EB%B2%A0%EC%9D%B4%EC%A7%80+_BL3822019&flag_img_path=",
+              "sale_rate": 36,
+              "image_url": "//www.elandrs.com/upload/prd/img/079/330/2209323079_0000001.jpg",
+              "sale_price": 44950,
+              "market_price": 59500,
+              "goods_comment_count": 1
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/672/00/220100000321672.png",
+          "menu_title": "패브릭/홈데코"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "어반 2인조 홈세트 14P_그레이,네이비_CA3222004",
+              "goods_star_point": 99,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 15570,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208139484&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564120&conts_divi_cd=10&rel_no=2208139484&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%EC%96%B4%EB%B0%98+2%EC%9D%B8%EC%A1%B0+%ED%99%88%EC%84%B8%ED%8A%B8+14P_%EA%B7%B8%EB%A0%88%EC%9D%B4%2C%EB%84%A4%EC%9D%B4%EB%B9%84_CA3222004&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/484/330/2208139484_0000001.jpg",
+              "sale_price": 18320,
+              "market_price": 22900,
+              "goods_comment_count": 8
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/232/00/220100000319232.png",
+              "goods_nm": "[10월 가격인하]아이보리 파스타볼 4P세트_CA3618108",
+              "goods_star_point": 97,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 8410,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1804690694&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564119&conts_divi_cd=10&rel_no=1804690694&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5D%EC%95%84%EC%9D%B4%EB%B3%B4%EB%A6%AC+%ED%8C%8C%EC%8A%A4%ED%83%80%EB%B3%BC+4P%EC%84%B8%ED%8A%B8_CA3618108&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/232/00/220100000319232.png",
+              "sale_rate": 35,
+              "image_url": "//www.elandrs.com/upload/prd/img/694/330/1804690694_0000020.jpg",
+              "sale_price": 9900,
+              "market_price": 12900,
+              "goods_comment_count": 551
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/233/00/220100000319233.png",
+              "goods_nm": "스텐 다용도 보조 개수볼 (D형)_CK051071R9",
+              "goods_star_point": 97,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 13530,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=CK051071R9&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564118&conts_divi_cd=10&rel_no=CK051071R9&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%EC%8A%A4%ED%85%90+%EB%8B%A4%EC%9A%A9%EB%8F%84+%EB%B3%B4%EC%A1%B0+%EA%B0%9C%EC%88%98%EB%B3%BC+%28D%ED%98%95%29_CK051071R9&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/233/00/220100000319233.png",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/1R9/330/CK051071R9_0000020.jpg",
+              "sale_price": 15920,
+              "market_price": 19900,
+              "goods_comment_count": 947
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "깔끔실리콘 프라이팬 덮개_CK1321020",
+              "goods_star_point": 98,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 8770,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204504825&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564117&conts_divi_cd=10&rel_no=2204504825&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%EA%B9%94%EB%81%94%EC%8B%A4%EB%A6%AC%EC%BD%98+%ED%94%84%EB%9D%BC%EC%9D%B4%ED%8C%AC+%EB%8D%AE%EA%B0%9C_CK1321020&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/825/330/2204504825_0000001.jpg",
+              "sale_price": 10320,
+              "market_price": 12900,
+              "goods_comment_count": 23
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]ON 스마일 양면 식탁매트 4P세트_PL0322049",
+              "goods_star_point": 99,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 10110,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207035714&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564116&conts_divi_cd=10&rel_no=2207035714&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5DON+%EC%8A%A4%EB%A7%88%EC%9D%BC+%EC%96%91%EB%A9%B4+%EC%8B%9D%ED%83%81%EB%A7%A4%ED%8A%B8+4P%EC%84%B8%ED%8A%B8_PL0322049&flag_img_path=",
+              "sale_rate": 36,
+              "image_url": "//www.elandrs.com/upload/prd/img/714/330/2207035714_0000001.jpg",
+              "sale_price": 11900,
+              "market_price": 15900,
+              "goods_comment_count": 23
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]ON 스마일 멜라민쟁반3P세트_PL0422002",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 6580,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202318306&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564115&conts_divi_cd=10&rel_no=2202318306&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5DON+%EC%8A%A4%EB%A7%88%EC%9D%BC+%EB%A9%9C%EB%9D%BC%EB%AF%BC%EC%9F%81%EB%B0%983P%EC%84%B8%ED%8A%B8_PL0422002&flag_img_path=",
+              "sale_rate": 49,
+              "image_url": "//www.elandrs.com/upload/prd/img/306/330/2202318306_0000001.jpg",
+              "sale_price": 7740,
+              "market_price": 12900,
+              "goods_comment_count": 71
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]ON 모던골드화이트 디너커트러리 1인세트_4P_TO0722008",
+              "goods_star_point": 95,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 9140,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202285447&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564114&conts_divi_cd=10&rel_no=2202285447&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5DON+%EB%AA%A8%EB%8D%98%EA%B3%A8%EB%93%9C%ED%99%94%EC%9D%B4%ED%8A%B8+%EB%94%94%EB%84%88%EC%BB%A4%ED%8A%B8%EB%9F%AC%EB%A6%AC+1%EC%9D%B8%EC%84%B8%ED%8A%B8_4P_TO0722008&flag_img_path=",
+              "sale_rate": 54,
+              "image_url": "//www.elandrs.com/upload/prd/img/447/330/2202285447_0000001.jpg",
+              "sale_price": 11940,
+              "market_price": 19900,
+              "goods_comment_count": 28
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]ON 모던골드블랙 디너커트러리 1인세트_4P_TO0722007",
+              "goods_star_point": 95,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 9140,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202285446&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564113&conts_divi_cd=10&rel_no=2202285446&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5DON+%EB%AA%A8%EB%8D%98%EA%B3%A8%EB%93%9C%EB%B8%94%EB%9E%99+%EB%94%94%EB%84%88%EC%BB%A4%ED%8A%B8%EB%9F%AC%EB%A6%AC+1%EC%9D%B8%EC%84%B8%ED%8A%B8_4P_TO0722007&flag_img_path=",
+              "sale_rate": 54,
+              "image_url": "//www.elandrs.com/upload/prd/img/446/330/2202285446_0000001.jpg",
+              "sale_price": 11940,
+              "market_price": 19900,
+              "goods_comment_count": 49
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]엘레강스 타원돔 세트_PL021004R9",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 6730,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=PL021004R9&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564112&conts_divi_cd=10&rel_no=PL021004R9&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5D%EC%97%98%EB%A0%88%EA%B0%95%EC%8A%A4+%ED%83%80%EC%9B%90%EB%8F%94+%EC%84%B8%ED%8A%B8_PL021004R9&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/4R9/330/PL021004R9_0000005.jpg",
+              "sale_price": 7920,
+              "market_price": 9900,
+              "goods_comment_count": 1553
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/236/00/220100000319236.png",
+              "goods_nm": "[10월 가격인하](온라인전용) 타원볼 4개+미니볼 2개_세트_CA266025",
+              "goods_star_point": 95,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 13530,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1611071543&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101731564111&conts_divi_cd=10&rel_no=1611071543&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5D%28%EC%98%A8%EB%9D%BC%EC%9D%B8%EC%A0%84%EC%9A%A9%29+%ED%83%80%EC%9B%90%EB%B3%BC+4%EA%B0%9C%2B%EB%AF%B8%EB%8B%88%EB%B3%BC+2%EA%B0%9C_%EC%84%B8%ED%8A%B8_CA266025&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/236/00/220100000319236.png",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/543/330/1611071543_0000016.jpg",
+              "sale_price": 15920,
+              "market_price": 19900,
+              "goods_comment_count": 2213
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/673/00/220100000321673.png",
+          "menu_title": "주방"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "goods_nm": "애슐리 볶음밥 6종 SET 총24인분(갈릭+깍두기치즈+통새우+랍스타+케이준+와규",
+              "goods_star_point": 100,
+              "brand_nm": "애슐리 홈스토랑",
+              "cust_sale_price": 40410,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208144390&vir_vend_no=VV19011622&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974604&conts_divi_cd=10&rel_no=2208144390&rel_divi_cd=10&brand_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%99%88%EC%8A%A4%ED%86%A0%EB%9E%91&goods_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%EB%B3%B6%EC%9D%8C%EB%B0%A5+6%EC%A2%85+SET+%EC%B4%9D24%EC%9D%B8%EB%B6%84%28%EA%B0%88%EB%A6%AD%2B%EA%B9%8D%EB%91%90%EA%B8%B0%EC%B9%98%EC%A6%88%2B%ED%86%B5%EC%83%88%EC%9A%B0%2B%EB%9E%8D%EC%8A%A4%ED%83%80%2B%EC%BC%80%EC%9D%B4%EC%A4%80%2B%EC%99%80%EA%B7%9C&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/299/00/220600000347299.png",
+              "sale_rate": 48,
+              "image_url": "//www.elandrs.com/upload/prd/img/390/330/2208144390_0000001.jpg",
+              "sale_price": 44900,
+              "market_price": 77400,
+              "goods_comment_count": 24
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "애슐리 볶음밥 12인분 ( 케이준 4+랍스터 4+ 통 새우 4)",
+              "goods_star_point": 98,
+              "brand_nm": "애슐리 홈스토랑",
+              "cust_sale_price": 24900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206877775&vir_vend_no=VV19011622&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974603&conts_divi_cd=10&rel_no=2206877775&rel_divi_cd=10&brand_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%99%88%EC%8A%A4%ED%86%A0%EB%9E%91&goods_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%EB%B3%B6%EC%9D%8C%EB%B0%A5+12%EC%9D%B8%EB%B6%84+%28+%EC%BC%80%EC%9D%B4%EC%A4%80+4%2B%EB%9E%8D%EC%8A%A4%ED%84%B0+4%2B+%ED%86%B5+%EC%83%88%EC%9A%B0+4%29&flag_img_path=",
+              "sale_rate": 36,
+              "image_url": "//www.elandrs.com/upload/prd/img/775/330/2206877775_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 38700,
+              "goods_comment_count": 38
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "애슐리 볶음밥 12인분(랍스터4+통새우4+갈릭 스테이크4)",
+              "goods_star_point": 98,
+              "brand_nm": "애슐리 홈스토랑",
+              "cust_sale_price": 24900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2205678247&vir_vend_no=VV19011622&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974606&conts_divi_cd=10&rel_no=2205678247&rel_divi_cd=10&brand_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%99%88%EC%8A%A4%ED%86%A0%EB%9E%91&goods_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%EB%B3%B6%EC%9D%8C%EB%B0%A5+12%EC%9D%B8%EB%B6%84%28%EB%9E%8D%EC%8A%A4%ED%84%B04%2B%ED%86%B5%EC%83%88%EC%9A%B04%2B%EA%B0%88%EB%A6%AD+%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%81%AC4%29&flag_img_path=",
+              "sale_rate": 36,
+              "image_url": "//www.elandrs.com/upload/prd/img/247/330/2205678247_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 38700,
+              "goods_comment_count": 54
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[임박할인] 해태 오예스 540g  (유통기한22.11.08)",
+              "goods_star_point": 87,
+              "brand_nm": "킴스클럽",
+              "cust_sale_price": 4990,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202307861&vir_vend_no=VV22029017&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974601&conts_divi_cd=10&rel_no=2202307861&rel_divi_cd=10&brand_nm=%ED%82%B4%EC%8A%A4%ED%81%B4%EB%9F%BD&goods_nm=%5B%EC%9E%84%EB%B0%95%ED%95%A0%EC%9D%B8%5D+%ED%95%B4%ED%83%9C+%EC%98%A4%EC%98%88%EC%8A%A4+540g++%28%EC%9C%A0%ED%86%B5%EA%B8%B0%ED%95%9C22.11.08%29&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/861/330/2202307861_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 7290,
+              "goods_comment_count": 6
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[GNC][AK백화점] 츄어블 멀티비타민(60정)",
+              "brand_nm": "AK플라자",
+              "cust_sale_price": 45980,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2109673147&vir_vend_no=VV21024719&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974637&conts_divi_cd=10&rel_no=2109673147&rel_divi_cd=10&brand_nm=AK%ED%94%8C%EB%9D%BC%EC%9E%90&goods_nm=%5BGNC%5D%5BAK%EB%B0%B1%ED%99%94%EC%A0%90%5D+%EC%B8%84%EC%96%B4%EB%B8%94+%EB%A9%80%ED%8B%B0%EB%B9%84%ED%83%80%EB%AF%BC%2860%EC%A0%95%29&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/147/330/2109673147_0000006.jpg",
+              "sale_price": 0,
+              "market_price": 53100
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[임박상품]Oprice 자연단맛 알단밤 65g*20 (2Box 1300g)",
+              "goods_star_point": 100,
+              "brand_nm": "오프라이스",
+              "cust_sale_price": 15500,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209294531&vir_vend_no=VV22029017&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974616&conts_divi_cd=10&rel_no=2209294531&rel_divi_cd=10&brand_nm=%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4&goods_nm=%5B%EC%9E%84%EB%B0%95%EC%83%81%ED%92%88%5DOprice+%EC%9E%90%EC%97%B0%EB%8B%A8%EB%A7%9B+%EC%95%8C%EB%8B%A8%EB%B0%A4+65g*20+%282Box+1300g%29&flag_img_path=",
+              "sale_rate": 50,
+              "image_url": "//www.elandrs.com/upload/prd/img/531/330/2209294531_0000001.JPG",
+              "sale_price": 0,
+              "market_price": 30900,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "애슐리 봉골레 크림 빠네 2인분",
+              "goods_star_point": 99,
+              "brand_nm": "애슐리 홈스토랑",
+              "cust_sale_price": 13900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2106052546&vir_vend_no=VV19011622&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974611&conts_divi_cd=10&rel_no=2106052546&rel_divi_cd=10&brand_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%99%88%EC%8A%A4%ED%86%A0%EB%9E%91&goods_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%EB%B4%89%EA%B3%A8%EB%A0%88+%ED%81%AC%EB%A6%BC+%EB%B9%A0%EB%84%A4+2%EC%9D%B8%EB%B6%84&flag_img_path=",
+              "sale_rate": 22,
+              "image_url": "//www.elandrs.com/upload/prd/img/546/330/2106052546_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 17900,
+              "goods_comment_count": 58
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "오프라이스 X 애슐리 크리스피 통살치킨 700gx2개",
+              "goods_star_point": 97,
+              "brand_nm": "오프라이스",
+              "cust_sale_price": 13900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2205805329&vir_vend_no=VV22029017&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974617&conts_divi_cd=10&rel_no=2205805329&rel_divi_cd=10&brand_nm=%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4&goods_nm=%EC%98%A4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4+X+%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%94%BC+%ED%86%B5%EC%82%B4%EC%B9%98%ED%82%A8+700gx2%EA%B0%9C&flag_img_path=",
+              "sale_rate": 22,
+              "image_url": "//www.elandrs.com/upload/prd/img/329/330/2205805329_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 17900,
+              "goods_comment_count": 50
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "휴럼 트루락 생 신바이오틱스 4.5g*30포",
+              "goods_star_point": 100,
+              "brand_nm": "휴럼",
+              "cust_sale_price": 9900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2109581744&vir_vend_no=VV21027276&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974615&conts_divi_cd=10&rel_no=2109581744&rel_divi_cd=10&brand_nm=%ED%9C%B4%EB%9F%BC&goods_nm=%ED%9C%B4%EB%9F%BC+%ED%8A%B8%EB%A3%A8%EB%9D%BD+%EC%83%9D+%EC%8B%A0%EB%B0%94%EC%9D%B4%EC%98%A4%ED%8B%B1%EC%8A%A4+4.5g*30%ED%8F%AC&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/744/330/2109581744_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 13500,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "애슐리 머쉬룸 크림스프",
+              "goods_star_point": 98,
+              "brand_nm": "애슐리 홈스토랑",
+              "cust_sale_price": 1900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202286682&vir_vend_no=VV19011622&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974600&conts_divi_cd=10&rel_no=2202286682&rel_divi_cd=10&brand_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%ED%99%88%EC%8A%A4%ED%86%A0%EB%9E%91&goods_nm=%EC%95%A0%EC%8A%90%EB%A6%AC+%EB%A8%B8%EC%89%AC%EB%A3%B8+%ED%81%AC%EB%A6%BC%EC%8A%A4%ED%94%84&flag_img_path=",
+              "sale_rate": 34,
+              "image_url": "//www.elandrs.com/upload/prd/img/682/330/2202286682_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 2900,
+              "goods_comment_count": 32
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/677/00/220100000321677.png",
+          "menu_title": "식품"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "ON 쉽게 빨아쓰는 타월매트 2P세트 40*60 다크그레이_BG2020059",
+              "goods_star_point": 93,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 6730,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2008888062&vir_vend_no=VV19013321&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22020812823068&conts_divi_cd=10&rel_no=2008888062&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=ON+%EC%89%BD%EA%B2%8C+%EB%B9%A8%EC%95%84%EC%93%B0%EB%8A%94+%ED%83%80%EC%9B%94%EB%A7%A4%ED%8A%B8+2P%EC%84%B8%ED%8A%B8+40*60+%EB%8B%A4%ED%81%AC%EA%B7%B8%EB%A0%88%EC%9D%B4_BG2020059&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/062/330/2008888062_0000019.jpg",
+              "sale_price": 7920,
+              "market_price": 9900,
+              "goods_comment_count": 84
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "벨로아자가드 바스로브 S_BG0220002",
+              "goods_star_point": 65,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 40730,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2005464822&vir_vend_no=VV19013321&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22020812823067&conts_divi_cd=10&rel_no=2005464822&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%EB%B2%A8%EB%A1%9C%EC%95%84%EC%9E%90%EA%B0%80%EB%93%9C+%EB%B0%94%EC%8A%A4%EB%A1%9C%EB%B8%8C+S_BG0220002&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/822/330/2005464822_0000001.jpg",
+              "sale_price": 47920,
+              "market_price": 59900,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "WOW 샤기 바스 매트 60*40 3개 세트 그레이_MA2319002",
+              "goods_star_point": 95,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 9900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1903366596&vir_vend_no=VV19013321&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22020812823063&conts_divi_cd=10&rel_no=1903366596&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=WOW+%EC%83%A4%EA%B8%B0+%EB%B0%94%EC%8A%A4+%EB%A7%A4%ED%8A%B8+60*40+3%EA%B0%9C+%EC%84%B8%ED%8A%B8+%EA%B7%B8%EB%A0%88%EC%9D%B4_MA2319002&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/596/330/1903366596_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 116
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "★작년에 제일 많이 팔린★리빙BEST 상품 특집!",
+              "goods_star_point": 96,
+              "brand_nm": "",
+              "cust_sale_price": 1800,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2105911113&vir_vend_no=VV19009780&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205186&conts_divi_cd=10&rel_no=2105911113&rel_divi_cd=10&brand_nm=&goods_nm=%E2%98%85%EC%9E%91%EB%85%84%EC%97%90+%EC%A0%9C%EC%9D%BC+%EB%A7%8E%EC%9D%B4+%ED%8C%94%EB%A6%B0%E2%98%85%EB%A6%AC%EB%B9%99BEST+%EC%83%81%ED%92%88+%ED%8A%B9%EC%A7%91%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/113/330/2105911113_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 265
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[GNC]백화점 인기건강기능식품 시크릿특가!",
+              "goods_star_point": 97,
+              "brand_nm": "",
+              "cust_sale_price": 71900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108350339&vir_vend_no=VV16003125&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205176&conts_divi_cd=10&rel_no=2108350339&rel_divi_cd=10&brand_nm=&goods_nm=%5BGNC%5D%EB%B0%B1%ED%99%94%EC%A0%90+%EC%9D%B8%EA%B8%B0%EA%B1%B4%EA%B0%95%EA%B8%B0%EB%8A%A5%EC%8B%9D%ED%92%88+%EC%8B%9C%ED%81%AC%EB%A6%BF%ED%8A%B9%EA%B0%80%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/339/330/2108350339_0000005.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 94
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 가격인하]마이키친 우드핸들 선반키친타올걸이_KO0420011",
+              "goods_star_point": 97,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 4010,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2006621282&vir_vend_no=VV19013319&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205187&conts_divi_cd=10&rel_no=2006621282&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%EA%B0%80%EA%B2%A9%EC%9D%B8%ED%95%98%5D%EB%A7%88%EC%9D%B4%ED%82%A4%EC%B9%9C+%EC%9A%B0%EB%93%9C%ED%95%B8%EB%93%A4+%EC%84%A0%EB%B0%98%ED%82%A4%EC%B9%9C%ED%83%80%EC%98%AC%EA%B1%B8%EC%9D%B4_KO0420011&flag_img_path=",
+              "sale_rate": 32,
+              "image_url": "//www.elandrs.com/upload/prd/img/282/330/2006621282_0000014.jpg",
+              "sale_price": 4720,
+              "market_price": 5900,
+              "goods_comment_count": 281
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "★여름준비 시작!★모기*제습*청소도구 필수품 모음딜!",
+              "goods_star_point": 94,
+              "brand_nm": "",
+              "cust_sale_price": 14900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2105900773&vir_vend_no=VV18006419&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205188&conts_divi_cd=10&rel_no=2105900773&rel_divi_cd=10&brand_nm=&goods_nm=%E2%98%85%EC%97%AC%EB%A6%84%EC%A4%80%EB%B9%84+%EC%8B%9C%EC%9E%91%21%E2%98%85%EB%AA%A8%EA%B8%B0*%EC%A0%9C%EC%8A%B5*%EC%B2%AD%EC%86%8C%EB%8F%84%EA%B5%AC+%ED%95%84%EC%88%98%ED%92%88+%EB%AA%A8%EC%9D%8C%EB%94%9C%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/773/330/2105900773_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 5
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "♥바나나빌딩♥살림100단의 선택! 인기 생활템 BEST 모음!",
+              "goods_star_point": 94,
+              "brand_nm": "",
+              "cust_sale_price": 34900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2103716911&vir_vend_no=VV21021899&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205191&conts_divi_cd=10&rel_no=2103716911&rel_divi_cd=10&brand_nm=&goods_nm=%E2%99%A5%EB%B0%94%EB%82%98%EB%82%98%EB%B9%8C%EB%94%A9%E2%99%A5%EC%82%B4%EB%A6%BC100%EB%8B%A8%EC%9D%98+%EC%84%A0%ED%83%9D%21+%EC%9D%B8%EA%B8%B0+%EC%83%9D%ED%99%9C%ED%85%9C+BEST+%EB%AA%A8%EC%9D%8C%21&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/911/330/2103716911_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 65
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[휴럼]홍삼정부터 비타민까지 건강을 챙기는 휴럼 브랜드전",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 9800,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2109574789&vir_vend_no=VV21027276&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205180&conts_divi_cd=10&rel_no=2109574789&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%9C%B4%EB%9F%BC%5D%ED%99%8D%EC%82%BC%EC%A0%95%EB%B6%80%ED%84%B0+%EB%B9%84%ED%83%80%EB%AF%BC%EA%B9%8C%EC%A7%80+%EA%B1%B4%EA%B0%95%EC%9D%84+%EC%B1%99%EA%B8%B0%EB%8A%94+%ED%9C%B4%EB%9F%BC+%EB%B8%8C%EB%9E%9C%EB%93%9C%EC%A0%84&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/789/330/2109574789_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 21
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "킴스 순간흡수 뱀부타월 그레이 5P",
+              "goods_star_point": 100,
+              "brand_nm": "킴스클럽",
+              "cust_sale_price": 9900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206912974&vir_vend_no=VV22029028&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974640&conts_divi_cd=10&rel_no=2206912974&rel_divi_cd=10&brand_nm=%ED%82%B4%EC%8A%A4%ED%81%B4%EB%9F%BD&goods_nm=%ED%82%B4%EC%8A%A4+%EC%88%9C%EA%B0%84%ED%9D%A1%EC%88%98+%EB%B1%80%EB%B6%80%ED%83%80%EC%9B%94+%EA%B7%B8%EB%A0%88%EC%9D%B4+5P&flag_img_path=",
+              "sale_rate": 45,
+              "image_url": "//www.elandrs.com/upload/prd/img/974/330/2206912974_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 17900,
+              "goods_comment_count": 8
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/678/00/220100000321678.png",
+          "menu_title": "생활/수납/청소"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[재입고 특가]WOW 스페이스 1300 철제 벙크베드(매트포함)_SG015SET008",
+              "goods_star_point": 97,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 351400,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=A225167102936&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886624&conts_divi_cd=10&rel_no=A225167102936&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%9E%AC%EC%9E%85%EA%B3%A0+%ED%8A%B9%EA%B0%80%5DWOW+%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4+1300+%EC%B2%A0%EC%A0%9C+%EB%B2%99%ED%81%AC%EB%B2%A0%EB%93%9C%28%EB%A7%A4%ED%8A%B8%ED%8F%AC%ED%95%A8%29_SG015SET008&flag_img_path=",
+              "sale_rate": 23,
+              "image_url": "//www.elandrs.com/upload/prd/img/936/330/A225167102936_0000001.jpg",
+              "sale_price": 366400,
+              "market_price": 458000,
+              "goods_comment_count": 114
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "에반스베러 E0 2000전면 책상세트V2_CF22SET005",
+              "goods_star_point": 98,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 129000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204562090&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886617&conts_divi_cd=10&rel_no=2204562090&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%EC%97%90%EB%B0%98%EC%8A%A4%EB%B2%A0%EB%9F%AC+E0+2000%EC%A0%84%EB%A9%B4+%EC%B1%85%EC%83%81%EC%84%B8%ED%8A%B8V2_CF22SET005&flag_img_path=",
+              "sale_rate": 35,
+              "image_url": "//www.elandrs.com/upload/prd/img/090/330/2204562090_0000001.jpg",
+              "sale_price": 159000,
+              "market_price": 199000,
+              "goods_comment_count": 34
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 15,000원 할인]ON 밀리언 풀바디 LPM 전면 책상 BASIC_CF0122010",
+              "goods_star_point": 95,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 124000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208217254&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886622&conts_divi_cd=10&rel_no=2208217254&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+15%2C000%EC%9B%90+%ED%95%A0%EC%9D%B8%5DON+%EB%B0%80%EB%A6%AC%EC%96%B8+%ED%92%80%EB%B0%94%EB%94%94+LPM+%EC%A0%84%EB%A9%B4+%EC%B1%85%EC%83%81+BASIC_CF0122010&flag_img_path=",
+              "sale_rate": 43,
+              "image_url": "//www.elandrs.com/upload/prd/img/254/330/2208217254_0000001.jpg",
+              "sale_price": 154000,
+              "market_price": 219000,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[재입고 특가]ON 덴 E0 전면책상 2000-완제품V3_CF22SET031",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 114000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206936225&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886618&conts_divi_cd=10&rel_no=2206936225&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%9E%AC%EC%9E%85%EA%B3%A0+%ED%8A%B9%EA%B0%80%5DON+%EB%8D%B4+E0+%EC%A0%84%EB%A9%B4%EC%B1%85%EC%83%81+2000-%EC%99%84%EC%A0%9C%ED%92%88V3_CF22SET031&flag_img_path=",
+              "sale_rate": 43,
+              "image_url": "//www.elandrs.com/upload/prd/img/225/330/2206936225_0000001.jpg",
+              "sale_price": 129000,
+              "market_price": 199000,
+              "goods_comment_count": 47
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[10월 한정특가]니노 1100 베이직 책상 세트_SC19SET001",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 104000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=1912860875&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886616&conts_divi_cd=10&rel_no=1912860875&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B10%EC%9B%94+%ED%95%9C%EC%A0%95%ED%8A%B9%EA%B0%80%5D%EB%8B%88%EB%85%B8+1100+%EB%B2%A0%EC%9D%B4%EC%A7%81+%EC%B1%85%EC%83%81+%EC%84%B8%ED%8A%B8_SC19SET001&flag_img_path=",
+              "sale_rate": 35,
+              "image_url": "//www.elandrs.com/upload/prd/img/875/330/1912860875_0000012.jpg",
+              "sale_price": 119000,
+              "market_price": 159000,
+              "goods_comment_count": 45
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "ON 헤이즐 E0등급 풀바디 LPM 2단 높은수납장 1200 _LS22SET009",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 104000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208111437&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886620&conts_divi_cd=10&rel_no=2208111437&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=ON+%ED%97%A4%EC%9D%B4%EC%A6%90+E0%EB%93%B1%EA%B8%89+%ED%92%80%EB%B0%94%EB%94%94+LPM+2%EB%8B%A8+%EB%86%92%EC%9D%80%EC%88%98%EB%82%A9%EC%9E%A5+1200+_LS22SET009&flag_img_path=",
+              "sale_rate": 38,
+              "image_url": "//www.elandrs.com/upload/prd/img/437/330/2208111437_0000001.jpg",
+              "sale_price": 119000,
+              "market_price": 169000,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "ON 헤이즐 E0등급 풀바디LPM 3단 높은수납장1200_LS22SET010",
+              "goods_star_point": 98,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 126000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208111439&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886621&conts_divi_cd=10&rel_no=2208111439&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=ON+%ED%97%A4%EC%9D%B4%EC%A6%90+E0%EB%93%B1%EA%B8%89+%ED%92%80%EB%B0%94%EB%94%94LPM+3%EB%8B%A8+%EB%86%92%EC%9D%80%EC%88%98%EB%82%A9%EC%9E%A51200_LS22SET010&flag_img_path=",
+              "sale_rate": 37,
+              "image_url": "//www.elandrs.com/upload/prd/img/439/330/2208111439_0000001.jpg",
+              "sale_price": 141000,
+              "market_price": 199000,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/234/00/220100000319234.png",
+              "goods_nm": "[즉시 10%할인](택배발송/DIY) WOW 오풀로 카페테이블 +  체어 2개 세트_OF026SET005",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 61120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=A999997100397&vir_vend_no=VV17004814&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886625&conts_divi_cd=10&rel_no=A999997100397&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5D%28%ED%83%9D%EB%B0%B0%EB%B0%9C%EC%86%A1%2FDIY%29+WOW+%EC%98%A4%ED%92%80%EB%A1%9C+%EC%B9%B4%ED%8E%98%ED%85%8C%EC%9D%B4%EB%B8%94+%2B++%EC%B2%B4%EC%96%B4+2%EA%B0%9C+%EC%84%B8%ED%8A%B8_OF026SET005&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/234/00/220100000319234.png",
+              "sale_rate": 39,
+              "image_url": "//www.elandrs.com/upload/prd/img/397/330/A999997100397_0000010.jpg",
+              "sale_price": 79900,
+              "market_price": 99700,
+              "goods_comment_count": 330
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 10%할인](택배발송/DIY)오풀로 화이트 UG 2인세트_LS22SET011",
+              "goods_star_point": 98,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 61120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207017860&vir_vend_no=VV17004814&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886619&conts_divi_cd=10&rel_no=2207017860&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5D%28%ED%83%9D%EB%B0%B0%EB%B0%9C%EC%86%A1%2FDIY%29%EC%98%A4%ED%92%80%EB%A1%9C+%ED%99%94%EC%9D%B4%ED%8A%B8+UG+2%EC%9D%B8%EC%84%B8%ED%8A%B8_LS22SET011&flag_img_path=",
+              "sale_rate": 44,
+              "image_url": "//www.elandrs.com/upload/prd/img/860/330/2207017860_0000001.jpg",
+              "sale_price": 79900,
+              "market_price": 109000,
+              "goods_comment_count": 6
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[즉시 10%할인]ON 뉴포트 카운터 테이블세트 (테이블1+스툴2)_DN034SET001",
+              "goods_star_point": 96,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 92100,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=A225167102223&vir_vend_no=VV17004819&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102131886623&conts_divi_cd=10&rel_no=A225167102223&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%A6%89%EC%8B%9C+10%25%ED%95%A0%EC%9D%B8%5DON+%EB%89%B4%ED%8F%AC%ED%8A%B8+%EC%B9%B4%EC%9A%B4%ED%84%B0+%ED%85%8C%EC%9D%B4%EB%B8%94%EC%84%B8%ED%8A%B8+%28%ED%85%8C%EC%9D%B4%EB%B8%941%2B%EC%8A%A4%ED%88%B42%29_DN034SET001&flag_img_path=",
+              "sale_rate": 64,
+              "image_url": "//www.elandrs.com/upload/prd/img/223/330/A225167102223_0000006.jpg",
+              "sale_price": 119000,
+              "market_price": 258800,
+              "goods_comment_count": 156
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/682/00/220100000321682.png",
+          "menu_title": "가구"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[온라인단독][2장 구매시 15%할인] 모던하우스 극세사 블랑켓 신상출시기념 특가+무배",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 21900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210428306&vir_vend_no=VV19013323&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101831646529&conts_divi_cd=10&rel_no=2210428306&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%8B%A8%EB%8F%85%5D%5B2%EC%9E%A5+%EA%B5%AC%EB%A7%A4%EC%8B%9C+15%25%ED%95%A0%EC%9D%B8%5D+%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4+%EA%B7%B9%EC%84%B8%EC%82%AC+%EB%B8%94%EB%9E%91%EC%BC%93+%EC%8B%A0%EC%83%81%EC%B6%9C%EC%8B%9C%EA%B8%B0%EB%85%90+%ED%8A%B9%EA%B0%80%2B%EB%AC%B4%EB%B0%B0&flag_img_path=",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/306/330/2210428306_0000001.jpg",
+              "sale_price": 25800,
+              "market_price": 0,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 즉시할인]리틀키친 물나오는 주방놀이 세트_PY0322008",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 30520,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208139849&vir_vend_no=VV19013323&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101331339246&conts_divi_cd=10&rel_no=2208139849&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B8%5D%EB%A6%AC%ED%8B%80%ED%82%A4%EC%B9%9C+%EB%AC%BC%EB%82%98%EC%98%A4%EB%8A%94+%EC%A3%BC%EB%B0%A9%EB%86%80%EC%9D%B4+%EC%84%B8%ED%8A%B8_PY0322008&flag_img_path=",
+              "sale_rate": 49,
+              "image_url": "//www.elandrs.com/upload/prd/img/849/330/2208139849_0000009.jpg",
+              "sale_price": 39900,
+              "market_price": 59900,
+              "goods_comment_count": 12
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 즉시할인]리틀키친 물나오는 싱크대놀이 세트_PY0322007",
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 19810,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208139848&vir_vend_no=VV19013323&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101331339245&conts_divi_cd=10&rel_no=2208139848&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B8%5D%EB%A6%AC%ED%8B%80%ED%82%A4%EC%B9%9C+%EB%AC%BC%EB%82%98%EC%98%A4%EB%8A%94+%EC%8B%B1%ED%81%AC%EB%8C%80%EB%86%80%EC%9D%B4+%EC%84%B8%ED%8A%B8_PY0322007&flag_img_path=",
+              "sale_rate": 45,
+              "image_url": "//www.elandrs.com/upload/prd/img/848/330/2208139848_0000008.jpg",
+              "sale_price": 25900,
+              "market_price": 35900
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "키즈캠핑 샌드토이 핑크웨건세트_PY0922023",
+              "goods_star_point": 88,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 17000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208113404&vir_vend_no=VV19013323&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22082328167732&conts_divi_cd=10&rel_no=2208113404&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%ED%82%A4%EC%A6%88%EC%BA%A0%ED%95%91+%EC%83%8C%EB%93%9C%ED%86%A0%EC%9D%B4+%ED%95%91%ED%81%AC%EC%9B%A8%EA%B1%B4%EC%84%B8%ED%8A%B8_PY0922023&flag_img_path=",
+              "sale_rate": 15,
+              "image_url": "//www.elandrs.com/upload/prd/img/404/330/2208113404_0000001.jpg",
+              "sale_price": 17900,
+              "market_price": 19900,
+              "goods_comment_count": 9
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "유비맘 데일리 원터치빨대컵 1+1",
+              "goods_star_point": 100,
+              "brand_nm": "유비맘",
+              "cust_sale_price": 29800,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210391482&vir_vend_no=VV20019621&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974920&conts_divi_cd=10&rel_no=2210391482&rel_divi_cd=10&brand_nm=%EC%9C%A0%EB%B9%84%EB%A7%98&goods_nm=%EC%9C%A0%EB%B9%84%EB%A7%98+%EB%8D%B0%EC%9D%BC%EB%A6%AC+%EC%9B%90%ED%84%B0%EC%B9%98%EB%B9%A8%EB%8C%80%EC%BB%B5+1%2B1&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/482/330/2210391482_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[블루래빗] 오감발달 첫 놀잇감",
+              "goods_star_point": 98,
+              "brand_nm": "블루래빗",
+              "cust_sale_price": 106800,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2203342058&vir_vend_no=VV22029086&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974924&conts_divi_cd=10&rel_no=2203342058&rel_divi_cd=10&brand_nm=%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97&goods_nm=%5B%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97%5D+%EC%98%A4%EA%B0%90%EB%B0%9C%EB%8B%AC+%EC%B2%AB+%EB%86%80%EC%9E%87%EA%B0%90&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/058/330/2203342058_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 168500,
+              "goods_comment_count": 32
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[블루래빗] TOY손바닥사운드북고래야놀자+안녕! 내 친구 코야",
+              "goods_star_point": 96,
+              "brand_nm": "블루래빗",
+              "cust_sale_price": 40800,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208100580&vir_vend_no=VV22029086&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974923&conts_divi_cd=10&rel_no=2208100580&rel_divi_cd=10&brand_nm=%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97&goods_nm=%5B%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97%5D+TOY%EC%86%90%EB%B0%94%EB%8B%A5%EC%82%AC%EC%9A%B4%EB%93%9C%EB%B6%81%EA%B3%A0%EB%9E%98%EC%95%BC%EB%86%80%EC%9E%90%2B%EC%95%88%EB%85%95%21+%EB%82%B4+%EC%B9%9C%EA%B5%AC+%EC%BD%94%EC%95%BC&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/580/330/2208100580_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 57000,
+              "goods_comment_count": 10
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[리퍼] 스노우파레트 4단 (280*140*4)",
+              "brand_nm": "크림하우스",
+              "cust_sale_price": 299000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209367417&vir_vend_no=VV21021285&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974928&conts_divi_cd=10&rel_no=2209367417&rel_divi_cd=10&brand_nm=%ED%81%AC%EB%A6%BC%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EB%A6%AC%ED%8D%BC%5D+%EC%8A%A4%EB%85%B8%EC%9A%B0%ED%8C%8C%EB%A0%88%ED%8A%B8+4%EB%8B%A8+%28280*140*4%29&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/417/330/2209367417_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[블루래빗] 치카치카+잘먹겠습니다",
+              "goods_star_point": 100,
+              "brand_nm": "블루래빗",
+              "cust_sale_price": 50000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209267909&vir_vend_no=VV22029086&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974922&conts_divi_cd=10&rel_no=2209267909&rel_divi_cd=10&brand_nm=%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97&goods_nm=%5B%EB%B8%94%EB%A3%A8%EB%9E%98%EB%B9%97%5D+%EC%B9%98%EC%B9%B4%EC%B9%98%EC%B9%B4%2B%EC%9E%98%EB%A8%B9%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/909/330/2209267909_0000002.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 3
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 즉시할인]리틀키친 물나오는 주방놀이 세트_PY0322008",
+              "goods_star_point": 100,
+              "brand_nm": "모던하우스",
+              "cust_sale_price": 30520,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208139849&vir_vend_no=VV19013323&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22102431974921&conts_divi_cd=10&rel_no=2208139849&rel_divi_cd=10&brand_nm=%EB%AA%A8%EB%8D%98%ED%95%98%EC%9A%B0%EC%8A%A4&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%A6%89%EC%8B%9C%ED%95%A0%EC%9D%B8%5D%EB%A6%AC%ED%8B%80%ED%82%A4%EC%B9%9C+%EB%AC%BC%EB%82%98%EC%98%A4%EB%8A%94+%EC%A3%BC%EB%B0%A9%EB%86%80%EC%9D%B4+%EC%84%B8%ED%8A%B8_PY0322008&flag_img_path=",
+              "sale_rate": 49,
+              "image_url": "//www.elandrs.com/upload/prd/img/849/330/2208139849_0000009.jpg",
+              "sale_price": 39900,
+              "market_price": 59900,
+              "goods_comment_count": 12
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/676/00/220100000321676.png",
+          "menu_title": "유아동용품"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]리버서블 후드 웜업 (5color) / WHJJC4T01U",
+              "goods_star_point": 96,
+              "brand_nm": "후아유",
+              "cust_sale_price": 79900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209346700&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441146&conts_divi_cd=10&rel_no=2209346700&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%A6%AC%EB%B2%84%EC%84%9C%EB%B8%94+%ED%9B%84%EB%93%9C+%EC%9B%9C%EC%97%85+%285color%29+%2F+WHJJC4T01U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/700/330/2209346700_0000027.jpg",
+              "sale_price": 0,
+              "market_price": 99900,
+              "goods_comment_count": 37
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]리버서블 덤블 숏푸퍼 (7color) / WHJPC4V02U",
+              "goods_star_point": 99,
+              "brand_nm": "후아유",
+              "cust_sale_price": 99900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209349822&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441147&conts_divi_cd=10&rel_no=2209349822&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%A6%AC%EB%B2%84%EC%84%9C%EB%B8%94+%EB%8D%A4%EB%B8%94+%EC%88%8F%ED%91%B8%ED%8D%BC+%287color%29+%2F+WHJPC4V02U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 23,
+              "image_url": "//www.elandrs.com/upload/prd/img/822/330/2209349822_0000014.jpg",
+              "sale_price": 0,
+              "market_price": 129000,
+              "goods_comment_count": 9
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]바시티 자켓 (패딩 안감) (2color) / WHJJC4V24U",
+              "goods_star_point": 100,
+              "brand_nm": "후아유",
+              "cust_sale_price": 99900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208214529&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441144&conts_divi_cd=10&rel_no=2208214529&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%B0%94%EC%8B%9C%ED%8B%B0+%EC%9E%90%EC%BC%93+%28%ED%8C%A8%EB%94%A9+%EC%95%88%EA%B0%90%29+%282color%29+%2F+WHJJC4V24U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 23,
+              "image_url": "//www.elandrs.com/upload/prd/img/529/330/2208214529_0000007.jpg",
+              "sale_price": 0,
+              "market_price": 129000,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 신상 20%]스티브 R넥 케이블 풀오버 (7color) / WHKAC4T11F",
+              "goods_star_point": 96,
+              "brand_nm": "후아유",
+              "cust_sale_price": 47920,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208226609&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441145&conts_divi_cd=10&rel_no=2208226609&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%8B%A0%EC%83%81+20%25%5D%EC%8A%A4%ED%8B%B0%EB%B8%8C+R%EB%84%A5+%EC%BC%80%EC%9D%B4%EB%B8%94+%ED%92%80%EC%98%A4%EB%B2%84+%287color%29+%2F+WHKAC4T11F&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/609/330/2208226609_0000017.jpg",
+              "sale_price": 59900,
+              "market_price": 0,
+              "goods_comment_count": 28
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]시그니처 패치 후드집업 (기모) (8color) / WHMZC4911U",
+              "goods_star_point": 97,
+              "brand_nm": "후아유",
+              "cust_sale_price": 48900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206832864&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441149&conts_divi_cd=10&rel_no=2206832864&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98+%ED%8C%A8%EC%B9%98+%ED%9B%84%EB%93%9C%EC%A7%91%EC%97%85+%28%EA%B8%B0%EB%AA%A8%29+%288color%29+%2F+WHMZC4911U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 30,
+              "image_url": "//www.elandrs.com/upload/prd/img/864/330/2206832864_0000027.jpg",
+              "sale_price": 0,
+              "market_price": 69900,
+              "goods_comment_count": 38
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]기모 스티브 조거팬츠 (4color) / WHTMC4922U",
+              "goods_star_point": 100,
+              "brand_nm": "후아유",
+              "cust_sale_price": 39900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207034499&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441141&conts_divi_cd=10&rel_no=2207034499&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EA%B8%B0%EB%AA%A8+%EC%8A%A4%ED%8B%B0%EB%B8%8C+%EC%A1%B0%EA%B1%B0%ED%8C%AC%EC%B8%A0+%284color%29+%2F+WHTMC4922U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/499/330/2207034499_0000004.jpg",
+              "sale_price": 0,
+              "market_price": 49900,
+              "goods_comment_count": 3
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDCA5단 하루 특가\uD83D\uDCA5]기모 스티브 자수 맨투맨 (6color) / WHMWC4901U",
+              "goods_star_point": 99,
+              "brand_nm": "후아유",
+              "cust_sale_price": 29900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207973092&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441143&conts_divi_cd=10&rel_no=2207973092&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%92%A5%EB%8B%A8+%ED%95%98%EB%A3%A8+%ED%8A%B9%EA%B0%80%F0%9F%92%A5%5D%EA%B8%B0%EB%AA%A8+%EC%8A%A4%ED%8B%B0%EB%B8%8C+%EC%9E%90%EC%88%98+%EB%A7%A8%ED%88%AC%EB%A7%A8+%286color%29+%2F+WHMWC4901U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 25,
+              "image_url": "//www.elandrs.com/upload/prd/img/092/330/2207973092_0000009.jpg",
+              "sale_price": 0,
+              "market_price": 39900,
+              "goods_comment_count": 34
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDCA5단 하루 특가\uD83D\uDCA5]기모 스티브 후드맨투맨 (4color) / WHMHC4901U",
+              "goods_star_point": 99,
+              "brand_nm": "후아유",
+              "cust_sale_price": 39900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207034496&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441140&conts_divi_cd=10&rel_no=2207034496&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%92%A5%EB%8B%A8+%ED%95%98%EB%A3%A8+%ED%8A%B9%EA%B0%80%F0%9F%92%A5%5D%EA%B8%B0%EB%AA%A8+%EC%8A%A4%ED%8B%B0%EB%B8%8C+%ED%9B%84%EB%93%9C%EB%A7%A8%ED%88%AC%EB%A7%A8+%284color%29+%2F+WHMHC4901U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/496/330/2207034496_0000007.jpg",
+              "sale_price": 0,
+              "market_price": 49900,
+              "goods_comment_count": 24
+            },
+            {
+              "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]스티브 V넥 가디건 (6color) / WHCKC4813U",
+              "goods_star_point": 97,
+              "brand_nm": "후아유",
+              "cust_sale_price": 39900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207044122&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441142&conts_divi_cd=10&rel_no=2207044122&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EC%8A%A4%ED%8B%B0%EB%B8%8C+V%EB%84%A5+%EA%B0%80%EB%94%94%EA%B1%B4+%286color%29+%2F+WHCKC4813U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/122/330/2207044122_0000012.jpg",
+              "sale_price": 0,
+              "market_price": 49900,
+              "goods_comment_count": 67
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[오늘만 신상 20%][투웨이] 여성 디터쳐블 숏푸퍼 / WHJPC4V11F",
+              "brand_nm": "후아유",
+              "cust_sale_price": 79920,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209361434&vir_vend_no=VV16001895&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22101431441148&conts_divi_cd=10&rel_no=2209361434&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%8B%A0%EC%83%81+20%25%5D%5B%ED%88%AC%EC%9B%A8%EC%9D%B4%5D+%EC%97%AC%EC%84%B1+%EB%94%94%ED%84%B0%EC%B3%90%EB%B8%94+%EC%88%8F%ED%91%B8%ED%8D%BC+%2F+WHJPC4V11F&flag_img_path=",
+              "sale_rate": 20,
+              "image_url": "//www.elandrs.com/upload/prd/img/434/330/2209361434_0000008.jpg",
+              "sale_price": 99900,
+              "market_price": 0
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/667/00/220100000321667.png",
+          "menu_title": "캐주얼/유니섹스"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "NK_{cu4826-002}AIR MAX AP_19",
+              "goods_star_point": 98,
+              "brand_nm": "나이키",
+              "cust_sale_price": 99000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208181094&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725410&conts_divi_cd=10&rel_no=2208181094&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=NK_%7Bcu4826-002%7DAIR+MAX+AP_19&flag_img_path=",
+              "sale_rate": 17,
+              "image_url": "//www.elandrs.com/upload/prd/img/094/330/2208181094_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 119000,
+              "goods_comment_count": 27
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "범피 쏭 / 베이지",
+              "goods_star_point": 100,
+              "brand_nm": "엄브로",
+              "cust_sale_price": 45000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207982473&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725408&conts_divi_cd=10&rel_no=2207982473&rel_divi_cd=10&brand_nm=%EC%97%84%EB%B8%8C%EB%A1%9C&goods_nm=%EB%B2%94%ED%94%BC+%EC%8F%AD+%2F+%EB%B2%A0%EC%9D%B4%EC%A7%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/473/330/2207982473_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "범피 쏭 / 블랙",
+              "goods_star_point": 100,
+              "brand_nm": "엄브로",
+              "cust_sale_price": 45000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207982472&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725407&conts_divi_cd=10&rel_no=2207982472&rel_divi_cd=10&brand_nm=%EC%97%84%EB%B8%8C%EB%A1%9C&goods_nm=%EB%B2%94%ED%94%BC+%EC%8F%AD+%2F+%EB%B8%94%EB%9E%99&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/472/330/2207982472_0000007.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "가브리엘 / 브라운",
+              "goods_star_point": 100,
+              "brand_nm": "예루살렘",
+              "cust_sale_price": 59000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206910830&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725406&conts_divi_cd=10&rel_no=2206910830&rel_divi_cd=10&brand_nm=%EC%98%88%EB%A3%A8%EC%82%B4%EB%A0%98&goods_nm=%EA%B0%80%EB%B8%8C%EB%A6%AC%EC%97%98+%2F+%EB%B8%8C%EB%9D%BC%EC%9A%B4&flag_img_path=",
+              "sale_rate": 46,
+              "image_url": "//www.elandrs.com/upload/prd/img/830/330/2206910830_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 109000,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "AC_{1201A438-300}_GEL-SONOMA 15-50_49",
+              "brand_nm": "아식스",
+              "cust_sale_price": 109000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206910730&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725405&conts_divi_cd=10&rel_no=2206910730&rel_divi_cd=10&brand_nm=%EC%95%84%EC%8B%9D%EC%8A%A4&goods_nm=AC_%7B1201A438-300%7D_GEL-SONOMA+15-50_49&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/730/330/2206910730_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "WS327BN / NBPDCB137Z",
+              "goods_star_point": 100,
+              "brand_nm": "뉴발란스",
+              "cust_sale_price": 119000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206880059&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725404&conts_divi_cd=10&rel_no=2206880059&rel_divi_cd=10&brand_nm=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4&goods_nm=WS327BN+%2F+NBPDCB137Z&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/059/330/2206880059_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "MS327KC1 / NBPDCB125W",
+              "goods_star_point": 100,
+              "brand_nm": "뉴발란스",
+              "cust_sale_price": 139000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206879947&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725403&conts_divi_cd=10&rel_no=2206879947&rel_divi_cd=10&brand_nm=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4&goods_nm=MS327KC1+%2F+NBPDCB125W&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/947/330/2206879947_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 2
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "와플 데뷰 / DH9523-002",
+              "goods_star_point": 100,
+              "brand_nm": "나이키",
+              "cust_sale_price": 57900,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206847080&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725401&conts_divi_cd=10&rel_no=2206847080&rel_divi_cd=10&brand_nm=%EB%82%98%EC%9D%B4%ED%82%A4&goods_nm=%EC%99%80%ED%94%8C+%EB%8D%B0%EB%B7%B0+%2F+DH9523-002&flag_img_path=",
+              "sale_rate": 35,
+              "image_url": "//www.elandrs.com/upload/prd/img/080/330/2206847080_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 89000,
+              "goods_comment_count": 8
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "SD6301GBK / NBRJCB107B",
+              "brand_nm": "뉴발란스",
+              "cust_sale_price": 49000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206831431&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725399&conts_divi_cd=10&rel_no=2206831431&rel_divi_cd=10&brand_nm=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4&goods_nm=SD6301GBK+%2F+NBRJCB107B&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/431/330/2206831431_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "SD3205HBK / NBRJCB403B",
+              "goods_star_point": 100,
+              "brand_nm": "뉴발란스",
+              "cust_sale_price": 89000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206831429&vir_vend_no=VV16001893&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22083028725398&conts_divi_cd=10&rel_no=2206831429&rel_divi_cd=10&brand_nm=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4&goods_nm=SD3205HBK+%2F+NBRJCB403B&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/429/330/2206831429_0000001.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 2
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/685/00/220100000321685.png",
+          "menu_title": "레저/스포츠"
+        },
+        {
+          "home_md_goods": [
+            {
+              "flag_img_path": "",
+              "goods_nm": "[프라다] 시크 럭셔리, PRADA의 뉴시즌",
+              "brand_nm": "",
+              "cust_sale_price": 536410,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2001017235&vir_vend_no=VV17004790&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205553&conts_divi_cd=10&rel_no=2001017235&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%94%84%EB%9D%BC%EB%8B%A4%5D+%EC%8B%9C%ED%81%AC+%EB%9F%AD%EC%85%94%EB%A6%AC%2C+PRADA%EC%9D%98+%EB%89%B4%EC%8B%9C%EC%A6%8C&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/235/330/2001017235_0000028.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[발렌티노] 가방/지갑/슈즈 외 모아보기 특가",
+              "brand_nm": "",
+              "cust_sale_price": 199640,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2002084867&vir_vend_no=VV21024457&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205552&conts_divi_cd=10&rel_no=2002084867&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B0%9C%EB%A0%8C%ED%8B%B0%EB%85%B8%5D+%EA%B0%80%EB%B0%A9%2F%EC%A7%80%EA%B0%91%2F%EC%8A%88%EC%A6%88+%EC%99%B8+%EB%AA%A8%EC%95%84%EB%B3%B4%EA%B8%B0+%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/867/330/2002084867_0000012.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[해외명품] 샌들/스니커즈 세일특가",
+              "goods_star_point": 100,
+              "brand_nm": "",
+              "cust_sale_price": 355120,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2006611355&vir_vend_no=VV21024457&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205551&conts_divi_cd=10&rel_no=2006611355&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%95%B4%EC%99%B8%EB%AA%85%ED%92%88%5D+%EC%83%8C%EB%93%A4%2F%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+%EC%84%B8%EC%9D%BC%ED%8A%B9%EA%B0%80&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/355/330/2006611355_0000014.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 6
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[구찌,프라다,버버리,생로랑 외] 사랑받는 스테디셀러",
+              "goods_star_point": 98,
+              "brand_nm": "",
+              "cust_sale_price": 219000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2007693849&vir_vend_no=VV21024337&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205550&conts_divi_cd=10&rel_no=2007693849&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EA%B5%AC%EC%B0%8C%2C%ED%94%84%EB%9D%BC%EB%8B%A4%2C%EB%B2%84%EB%B2%84%EB%A6%AC%2C%EC%83%9D%EB%A1%9C%EB%9E%91+%EC%99%B8%5D+%EC%82%AC%EB%9E%91%EB%B0%9B%EB%8A%94+%EC%8A%A4%ED%85%8C%EB%94%94%EC%85%80%EB%9F%AC&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/849/330/2007693849_0000047.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 21
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[해외명품] 버버리의 계절, 가을 신상 가방/지갑/의류 추가할인",
+              "goods_star_point": 100,
+              "brand_nm": "",
+              "cust_sale_price": 176640,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2007801344&vir_vend_no=VV21024457&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205549&conts_divi_cd=10&rel_no=2007801344&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%95%B4%EC%99%B8%EB%AA%85%ED%92%88%5D+%EB%B2%84%EB%B2%84%EB%A6%AC%EC%9D%98+%EA%B3%84%EC%A0%88%2C+%EA%B0%80%EC%9D%84+%EC%8B%A0%EC%83%81+%EA%B0%80%EB%B0%A9%2F%EC%A7%80%EA%B0%91%2F%EC%9D%98%EB%A5%98+%EC%B6%94%EA%B0%80%ED%95%A0%EC%9D%B8&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/344/330/2007801344_0000008.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 4
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[해외명품] 의류/슈즈/ 잡화 세일전",
+              "goods_star_point": 60,
+              "brand_nm": "",
+              "cust_sale_price": 186000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2008840626&vir_vend_no=VV17003854&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205548&conts_divi_cd=10&rel_no=2008840626&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%95%B4%EC%99%B8%EB%AA%85%ED%92%88%5D+%EC%9D%98%EB%A5%98%2F%EC%8A%88%EC%A6%88%2F+%EC%9E%A1%ED%99%94+%EC%84%B8%EC%9D%BC%EC%A0%84&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/626/330/2008840626_0000014.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 1
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "♥[바버] FW 신상 자켓/셔츠 외 의류/잡화 세일전♥",
+              "goods_star_point": 95,
+              "brand_nm": "",
+              "cust_sale_price": 58700,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2009014772&vir_vend_no=VV18008434&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205547&conts_divi_cd=10&rel_no=2009014772&rel_divi_cd=10&brand_nm=&goods_nm=%E2%99%A5%5B%EB%B0%94%EB%B2%84%5D+FW+%EC%8B%A0%EC%83%81+%EC%9E%90%EC%BC%93%2F%EC%85%94%EC%B8%A0+%EC%99%B8+%EC%9D%98%EB%A5%98%2F%EC%9E%A1%ED%99%94+%EC%84%B8%EC%9D%BC%EC%A0%84%E2%99%A5&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/772/330/2009014772_0000010.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 8
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[해외명품] 봄맞이 여성 플랫슈즈 레페토",
+              "brand_nm": "",
+              "cust_sale_price": 195040,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2103736833&vir_vend_no=VV21024457&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205546&conts_divi_cd=10&rel_no=2103736833&rel_divi_cd=10&brand_nm=&goods_nm=%5B%ED%95%B4%EC%99%B8%EB%AA%85%ED%92%88%5D+%EB%B4%84%EB%A7%9E%EC%9D%B4+%EC%97%AC%EC%84%B1+%ED%94%8C%EB%9E%AB%EC%8A%88%EC%A6%88+%EB%A0%88%ED%8E%98%ED%86%A0&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/833/330/2103736833_0000011.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "[보테가베네타] 명품 가방/지갑 신상 특가전",
+              "brand_nm": "",
+              "cust_sale_price": 2662000,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2103749237&vir_vend_no=VV22029056&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205544&conts_divi_cd=10&rel_no=2103749237&rel_divi_cd=10&brand_nm=&goods_nm=%5B%EB%B3%B4%ED%85%8C%EA%B0%80%EB%B2%A0%EB%84%A4%ED%83%80%5D+%EB%AA%85%ED%92%88+%EA%B0%80%EB%B0%A9%2F%EC%A7%80%EA%B0%91+%EC%8B%A0%EC%83%81+%ED%8A%B9%EA%B0%80%EC%A0%84&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/237/330/2103749237_0000003.jpg",
+              "sale_price": 0,
+              "market_price": 0
+            },
+            {
+              "flag_img_path": "",
+              "goods_nm": "★[럭스보이] 해외명품 빅세일 특가세일전",
+              "goods_star_point": 99,
+              "brand_nm": "",
+              "cust_sale_price": 514280,
+              "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2105984288&vir_vend_no=VV21024457&sale_shop_divi_cd=10&disp_ctg_no=1511000528&sale_area_no=D1808001114&tr_yn=Y&conts_dist_no=C22013112205543&conts_divi_cd=10&rel_no=2105984288&rel_divi_cd=10&brand_nm=&goods_nm=%E2%98%85%5B%EB%9F%AD%EC%8A%A4%EB%B3%B4%EC%9D%B4%5D+%ED%95%B4%EC%99%B8%EB%AA%85%ED%92%88+%EB%B9%85%EC%84%B8%EC%9D%BC+%ED%8A%B9%EA%B0%80%EC%84%B8%EC%9D%BC%EC%A0%84&flag_img_path=",
+              "sale_rate": 0,
+              "image_url": "//www.elandrs.com/upload/prd/img/288/330/2105984288_0000004.jpg",
+              "sale_price": 0,
+              "market_price": 0,
+              "goods_comment_count": 16
+            }
+          ],
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/675/00/220100000321675.png",
+          "menu_title": "해외명품"
+        }
+      ],
+      "title": "MD추천"
+    },
+    "home_week_goods": [],
+    "home_offline_shop": {
+      "subtitle": "",
+      "home_offline_shop_list": [
+        {
+          "flag_img_path": "",
+          "goods_nm": "[오늘만 신상 20%][투웨이] 여성 디터쳐블 숏푸퍼 / WHJPC4V11F",
+          "brand_nm": "후아유",
+          "cust_sale_price": 79920,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209361434&vir_vend_no=VV16001895&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001113&tr_yn=Y&conts_dist_no=C22102031788442&conts_divi_cd=10&rel_no=2209361434&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%8B%A0%EC%83%81+20%25%5D%5B%ED%88%AC%EC%9B%A8%EC%9D%B4%5D+%EC%97%AC%EC%84%B1+%EB%94%94%ED%84%B0%EC%B3%90%EB%B8%94+%EC%88%8F%ED%91%B8%ED%8D%BC+%2F+WHJPC4V11F&flag_img_path=",
+          "sale_rate": 20,
+          "image_url": "//www.elandrs.com/upload/prd/img/434/330/2209361434_0000008.jpg",
+          "sale_price": 99900,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]리버서블 덤블 숏푸퍼 (7color) / WHJPC4V02U",
+          "brand_nm": "후아유",
+          "cust_sale_price": 99900,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209349822&vir_vend_no=VV16001895&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001113&tr_yn=Y&conts_dist_no=C22102031788441&conts_divi_cd=10&rel_no=2209349822&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%A6%AC%EB%B2%84%EC%84%9C%EB%B8%94+%EB%8D%A4%EB%B8%94+%EC%88%8F%ED%91%B8%ED%8D%BC+%287color%29+%2F+WHJPC4V02U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "sale_rate": 23,
+          "image_url": "//www.elandrs.com/upload/prd/img/822/330/2209349822_0000014.jpg",
+          "sale_price": 0,
+          "market_price": 129000
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]리버서블 후드 웜업 (5color) / WHJJC4T01U",
+          "brand_nm": "후아유",
+          "cust_sale_price": 79900,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209346700&vir_vend_no=VV16001895&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001113&tr_yn=Y&conts_dist_no=C22102031788440&conts_divi_cd=10&rel_no=2209346700&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%A6%AC%EB%B2%84%EC%84%9C%EB%B8%94+%ED%9B%84%EB%93%9C+%EC%9B%9C%EC%97%85+%285color%29+%2F+WHJJC4T01U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "sale_rate": 20,
+          "image_url": "//www.elandrs.com/upload/prd/img/700/330/2209346700_0000027.jpg",
+          "sale_price": 0,
+          "market_price": 99900
+        },
+        {
+          "flag_img_path": "",
+          "goods_nm": "[오늘만 신상 20%]시그니처 퍼플리스 패치집업 / WHMZC4T11U",
+          "brand_nm": "후아유",
+          "cust_sale_price": 55920,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209314317&vir_vend_no=VV16001895&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001113&tr_yn=Y&conts_dist_no=C22102031788439&conts_divi_cd=10&rel_no=2209314317&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%EC%98%A4%EB%8A%98%EB%A7%8C+%EC%8B%A0%EC%83%81+20%25%5D%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98+%ED%8D%BC%ED%94%8C%EB%A6%AC%EC%8A%A4+%ED%8C%A8%EC%B9%98%EC%A7%91%EC%97%85+%2F+WHMZC4T11U&flag_img_path=",
+          "sale_rate": 20,
+          "image_url": "//www.elandrs.com/upload/prd/img/317/330/2209314317_0000007.jpg",
+          "sale_price": 69900,
+          "market_price": 0
+        },
+        {
+          "flag_img_path": "//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "goods_nm": "[\uD83D\uDD25이랜드몰 단독 특가\uD83D\uDD25]바시티 자켓 (패딩 안감) (2color) / WHJJC4V24U",
+          "brand_nm": "후아유",
+          "cust_sale_price": 99900,
+          "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208214529&vir_vend_no=VV16001895&sale_shop_divi_cd=&disp_ctg_no=1511000528&sale_area_no=D1808001113&tr_yn=Y&conts_dist_no=C22102031788438&conts_divi_cd=10&rel_no=2208214529&rel_divi_cd=10&brand_nm=%ED%9B%84%EC%95%84%EC%9C%A0&goods_nm=%5B%F0%9F%94%A5%EC%9D%B4%EB%9E%9C%EB%93%9C%EB%AA%B0+%EB%8B%A8%EB%8F%85+%ED%8A%B9%EA%B0%80%F0%9F%94%A5%5D%EB%B0%94%EC%8B%9C%ED%8B%B0+%EC%9E%90%EC%BC%93+%28%ED%8C%A8%EB%94%A9+%EC%95%88%EA%B0%90%29+%282color%29+%2F+WHJJC4V24U&flag_img_path=//www.elandrs.com/upload/dspl/banner/90/508/00/220700000357508.png",
+          "sale_rate": 23,
+          "image_url": "//www.elandrs.com/upload/prd/img/529/330/2208214529_0000007.jpg",
+          "sale_price": 0,
+          "market_price": 129000
+        }
+      ],
+      "title": "이슈 브랜드",
+      "home_offline_shop_banner": [
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/307/00/221000000373307.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649417"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/693/00/221000000373693.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649453"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/692/00/221000000373692.jpg",
+          "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210649386"
+        }
+      ]
+    }
+  },
+  "resultMsg": "success"
+}
