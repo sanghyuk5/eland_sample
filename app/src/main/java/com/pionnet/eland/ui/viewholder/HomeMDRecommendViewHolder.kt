@@ -7,16 +7,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.pionnet.eland.EventBus
-import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemMdRecommendCategoryBinding
-import com.pionnet.eland.databinding.ViewItemMdRecommendGoodBinding
-import com.pionnet.eland.model.Goods
 import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.ui.main.GoodsDiffCallback
+import com.pionnet.eland.ui.main.HorizontalAdapter
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
-import com.pionnet.eland.utils.priceFormat
+import com.pionnet.eland.utils.toPx
+import com.pionnet.eland.views.HorizontalMarginDecoration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -31,7 +28,7 @@ class HomeMDRecommendViewHolder(
     private val tabClickCallback: ItemClickIntCallback = { index ->
         mdRecommend?.categoryList?.select(index) {
             mdRecommend?.categoryList = it.toMutableList()
-            (binding.rvGoods.adapter as? HomeMDCategoryGoodsAdapter)?.submitList(it.getOrNull(index)?.goodsList)
+            (binding.rvGoods.adapter as? HorizontalAdapter)?.submitList(it.getOrNull(index)?.goodsList)
         }
     }
 
@@ -49,17 +46,18 @@ class HomeMDRecommendViewHolder(
         if (selectedTabItem == -1) selectedTabItem = 0
 
         rvCategory.apply {
-            if (adapter == null) {
-                adapter = HomeMDCategoryAdapter(tabClickCallback).apply {
-                    submitList(data.categoryList)
-                }
-                smoothScrollToPosition(selectedTabItem)
+            if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
+
+            adapter = HomeMDCategoryAdapter(tabClickCallback).apply {
+                submitList(data.categoryList)
             }
+
+            smoothScrollToPosition(selectedTabItem)
         }
 
         rvGoods.apply {
             if (adapter == null) {
-                adapter = HomeMDCategoryGoodsAdapter().apply {
+                adapter = HorizontalAdapter().apply {
                     submitList(data.categoryList!![selectedTabItem].goodsList)
                 }
             }
@@ -121,48 +119,5 @@ class HomeMDRecommendViewHolder(
 
         override fun areContentsTheSame(oldItem: HomeData.Data.MDRecommend.CategoryList, newItem: HomeData.Data.MDRecommend.CategoryList): Boolean =
             oldItem == newItem
-    }
-
-    private inner class HomeMDCategoryGoodsAdapter
-        : ListAdapter<Goods, HomeMDCategoryGoodsAdapter.ViewHolder>(GoodsDiffCallback()) {
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            return ViewHolder(
-                ViewItemMdRecommendGoodBinding.inflate(
-                    LayoutInflater.from(parent.context),
-                    parent,
-                    false
-                )
-            )
-        }
-
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.bind(currentList[position])
-        }
-
-        private inner class ViewHolder(val binding: ViewItemMdRecommendGoodBinding)
-            : RecyclerView.ViewHolder(binding.root) {
-
-            private var linkUrl: String? = null
-
-            init {
-                itemView.setOnClickListener {
-                    linkUrl?.let {
-                        EventBus.fire(LinkEvent(it))
-                    }
-                }
-            }
-
-            fun bind(data: Goods) = with(binding) {
-                linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivMdGood)
-                tvBrand.text = data.brand
-                tvContent.text = data.goodsName
-                tvPrice.text = priceFormat(data.marketPrice ?: 0)
-                tvSalePrice.text = priceFormat(data.salePrice ?: 0)
-                ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
-                tvReply.text = "리뷰(" + data.commentCnt.toString() + ")"
-            }
-        }
     }
 }

@@ -9,6 +9,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.FragmentMainCommonModulesBinding
+import com.pionnet.eland.localData.DataManager
 
 data class FooterAction(val position: Int, val isExpand: Boolean)
 
@@ -23,6 +24,8 @@ abstract class CommonModulesBaseFragment :
     protected val recyclerViewAdapter by lazy {
         binding.list.adapter as CommonModulesRecyclerViewAdapter
     }
+
+    protected val linearlayoutManager by lazy { LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL, false) }
 
     private var isLoadingFinished = false
     private var isLoading = false
@@ -61,7 +64,7 @@ abstract class CommonModulesBaseFragment :
 
     open fun onLoadMore() {}
 
-    open fun setStickyView(isState: Boolean) {}
+    open fun setStickyView(isState: Boolean, position: Int = 0) {}
 
     protected fun addScrollListener(listener: RecyclerView.OnScrollListener) {
         binding.list.addOnScrollListener(listener)
@@ -80,8 +83,8 @@ abstract class CommonModulesBaseFragment :
         }
     }
 
-    protected fun showToast(msg: String, duration: Long = 2000L) {
-        mainViewModel.showToast.value = ShowToast(msg, duration)
+    protected fun showToast(msg: String) {
+        mainViewModel.showToast.value = ShowToast(msg)
     }
 
     open fun onBaseViewCreated() {}
@@ -106,7 +109,7 @@ abstract class CommonModulesBaseFragment :
 
             list.apply {
                 setHasFixedSize(true)
-                layoutManager = LinearLayoutManager(requireContext())
+                layoutManager = linearlayoutManager
                 adapter = CommonModulesRecyclerViewAdapter(
                     this@CommonModulesBaseFragment
                 ).apply {
@@ -168,8 +171,21 @@ abstract class CommonModulesBaseFragment :
                             }
                         }
 
-                        val firstCompletelyPosition =
-                            (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstCompletelyVisibleItemPosition() ?: 0
+                        val firstVisiblePosition =
+                            (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstVisibleItemPosition() ?: 0
+
+                        val storeShopCategoryDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryData })
+                        val storeShopCategoryTitleDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryTitleData })
+
+                        if (recyclerViewAdapter.values.isNotEmpty() && firstVisiblePosition != -1) {
+                            if (storeShopCategoryDataPosition != -1 && storeShopCategoryDataPosition < firstVisiblePosition) {
+                                Logger.d("hyuk ")
+                                val stickyIndex = firstVisiblePosition - storeShopCategoryTitleDataPosition
+                                setStickyView(true, stickyIndex) // sticky visible
+                            } else {
+                                setStickyView(false)  // sticky gone
+                            }
+                        }
                     }
                 })
             }

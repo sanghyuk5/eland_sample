@@ -2,6 +2,7 @@ package com.pionnet.eland
 
 import android.os.SystemClock
 import androidx.lifecycle.MutableLiveData
+import com.pionnet.eland.ui.main.ModuleData
 
 /**
 * 필요한 이벤트
@@ -14,6 +15,11 @@ object EventBus {
 
     val linkEvent: MutableLiveData<SingleLiveEvent<LinkEvent>> = MutableLiveData()
     val holderEvent: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopRegularSearchStore: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
+    val storeShopSearchStore: MutableLiveData<SingleLiveEvent<ModuleData.StoreShopSmartPickData>> = MutableLiveData()
+    val sort: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
+    val viewChange: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
+    val tabChange: MutableLiveData<SingleLiveEvent<Int>> = MutableLiveData()
 
     fun fire(event: LinkEvent) {
         if (isIntervalTooShort()) return
@@ -25,6 +31,28 @@ object EventBus {
         if (isIntervalTooShort()) return
 
         holderEvent.value = SingleLiveEvent(event)
+    }
+
+    fun fire(event: ModuleData.StoreShopSmartPickData) {
+        if (isIntervalTooShort()) return
+
+        storeShopSearchStore.value = SingleLiveEvent(event)
+    }
+
+    fun fire(event: String) {
+        if (isIntervalTooShort()) return
+
+        when(event) {
+            "searchStore" -> storeShopRegularSearchStore.value = SingleLiveEvent(event)
+            "sort" -> sort.value = SingleLiveEvent(event)
+            "viewChange" -> viewChange.value = SingleLiveEvent(event)
+        }
+    }
+
+    fun fire(event: Int) {
+        if (isIntervalTooShort()) return
+
+        tabChange.value = SingleLiveEvent(event)
     }
 
     private fun isIntervalTooShort(): Boolean {
@@ -87,7 +115,8 @@ class HolderEvent(val type: HolderEventType)
 
 enum class HolderEventType {
     REFRESH,
-    ADD_REPLY
+    ADD_REPLY,
+    STORE_SHOP_SEARCH
 }
 
 class SingleLiveEvent<out T>(private val content: T) {

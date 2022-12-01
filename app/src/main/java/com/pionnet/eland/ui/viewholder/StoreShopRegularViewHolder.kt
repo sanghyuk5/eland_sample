@@ -7,12 +7,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
-import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewItemStoreShopRecommendBinding
+import com.pionnet.eland.databinding.ViewItemStoreShopRegularMenuBinding
 import com.pionnet.eland.databinding.ViewStoreShopRegularModuleBinding
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.ui.main.HorizontalAdapter
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.utils.GlideApp
 
 class StoreShopRegularViewHolder(
     private val binding: ViewStoreShopRegularModuleBinding
@@ -20,23 +18,39 @@ class StoreShopRegularViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? ModuleData.StoreShopRegularStoreData)?.let {
-            initView(it.regularStoreData)
+            initView(it)
         }
     }
 
-    private fun initView(data: List<StoreShopData.Data.Regular>) = with(binding) {
+    private fun initView(data: ModuleData.StoreShopRegularStoreData) = with(binding) {
         viewTitle.tvTitle.text = "나의 단골매장"
 
-        llNoRegular.visibility = if (data.isEmpty()) View.VISIBLE else View.GONE
+        llRegular.visibility = if (data.isShowData) View.VISIBLE else View.GONE
+        llNoRegular.visibility = if (data.isShowData) View.GONE else View.VISIBLE
 
+        llSearch.setOnClickListener {
+            EventBus.fire("searchStore")
+        }
+
+        if (data.isShowData) { // 메뉴는 하드코딩된 정보로 그리기
+            val menuList = mutableListOf<String>()
+            menuList.add("선택한 지점")
+            rvRegularMenu.adapter = StoreShopRegularMenuAdapter().apply {
+                submitList(menuList)
+            }
+
+            rvRegularItem.adapter = HorizontalAdapter().apply {
+                submitList(data.goods)
+            }
+        }
     }
 
-    private inner class StoreShopRecommendAdapter
-        : ListAdapter<StoreShopData.Data.Recommend, StoreShopRecommendAdapter.ViewHolder>(DiffCallback()) {
+    private inner class StoreShopRegularMenuAdapter
+        : ListAdapter<String, StoreShopRegularMenuAdapter.ViewHolder>(DiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
-                ViewItemStoreShopRecommendBinding.inflate(
+                ViewItemStoreShopRegularMenuBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -48,32 +62,20 @@ class StoreShopRegularViewHolder(
             holder.bind(currentList[position])
         }
 
-        private inner class ViewHolder(val binding: ViewItemStoreShopRecommendBinding)
+        private inner class ViewHolder(val binding: ViewItemStoreShopRegularMenuBinding)
             : RecyclerView.ViewHolder(binding.root) {
 
-            private var linkUrl: String? = null
-
-            init {
-                itemView.setOnClickListener {
-                    linkUrl?.let {
-                        EventBus.fire(LinkEvent(it))
-                    }
-                }
-            }
-
-            fun bind(data: StoreShopData.Data.Recommend) = with(binding) {
-                linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(ivIcon)
-
+            fun bind(data: String) = with(binding) {
+                tvMenu.text = data
             }
         }
     }
 
-    private inner class DiffCallback : DiffUtil.ItemCallback<StoreShopData.Data.Recommend>() {
-        override fun areItemsTheSame(oldItem: StoreShopData.Data.Recommend, newItem: StoreShopData.Data.Recommend): Boolean =
+    private inner class DiffCallback : DiffUtil.ItemCallback<String>() {
+        override fun areItemsTheSame(oldItem: String, newItem: String): Boolean =
             oldItem == newItem
 
-        override fun areContentsTheSame(oldItem: StoreShopData.Data.Recommend, newItem: StoreShopData.Data.Recommend): Boolean =
+        override fun areContentsTheSame(oldItem: String, newItem: String): Boolean =
             oldItem == newItem
     }
 }

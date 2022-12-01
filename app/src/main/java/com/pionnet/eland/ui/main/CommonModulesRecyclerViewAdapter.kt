@@ -127,8 +127,16 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.StoreShopSmartPickData.ordinal() -> StoreShopSmartPickViewHolder(
-                ViewStoreShopSmartPickModuleBinding.inflate(
+            ModuleData.StoreShopSmartPickData.ordinal() -> StoreShopPickViewHolder(
+                ViewStoreShopPickModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.StoreShopSmartPickNameData.ordinal() -> StoreShopPickNameViewHolder(
+                ViewStoreShopPickNameModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -151,8 +159,24 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.StoreShopCategoryGoodData.ordinal() -> StoreShopCategoryGoodViewHolder(
-                ViewStoreShopCategoryGoodModuleBinding.inflate(
+            ModuleData.CommonGoodGridData.ordinal() -> CommonGoodGridViewHolder(
+                ViewCommonGoodGridModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.CommonGoodLinearData.ordinal() -> CommonGoodLinearViewHolder(
+                ViewCommonGoodLinearModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.CommonGoodLargeData.ordinal() -> CommonGoodLargeViewHolder(
+                ViewCommonGoodLargeModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false

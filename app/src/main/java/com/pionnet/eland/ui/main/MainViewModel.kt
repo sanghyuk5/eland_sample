@@ -4,7 +4,7 @@ import androidx.lifecycle.*
 import com.pionnet.eland.SingleLiveEvent
 
 data class RequestRefresh(val isWhole: Boolean = false)
-data class ShowToast(val msg: String, val duration: Long = 2000L)
+data class ShowToast(val msg: String)
 
 class MainViewModel : ViewModel() {
     val requestRefresh: MutableLiveData<SingleLiveEvent<RequestRefresh>> = MutableLiveData()

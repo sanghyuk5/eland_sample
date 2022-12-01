@@ -33,13 +33,13 @@ data class StoreShopData(
         data class Regular(
             @SerializedName("low_vend_nm") var name: String?,
             @SerializedName("vend_no") var vendNo: String?,
-            @SerializedName("vir_vend_no") var virVendNo: String?,
-            @SerializedName("goods_list") var goodsList: List<Goods>?
+            @SerializedName("vir_vend_no") var virVendNo: String? //이게 사용
         )
 
         data class SmartPick(
             @SerializedName("rel_cont_nm") var name: String?,
-            @SerializedName("category_no") var categoryNo: String?
+            @SerializedName("category_no") var categoryNo: String?,
+            var isSelected: Boolean
         )
 
         data class CategoryGoods(

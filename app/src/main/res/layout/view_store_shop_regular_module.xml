@@ -14,12 +14,27 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/view_title" >
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_regular"
+        <LinearLayout
+            android:id="@+id/ll_regular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:orientation="horizontal" />
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_regular_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_regular_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ll_no_regular"

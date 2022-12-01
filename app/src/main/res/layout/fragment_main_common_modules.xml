@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.pionnet.eland.views.NestedScrollableHost xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,10 +23,10 @@
         android:id="@+id/stickyTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="3"
-        tools:itemCount="3"
-        android:visibility="gone"/>
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</com.pionnet.eland.views.NestedScrollableHost>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,14 @@
     <string name="dialog_close">닫기</string>
 
     <string name="msg_network_error">네트워크에 연결되어 있지 않습니다. Wi-Fi 또는 데이터 연결 상태를 확인 해 주세요.</string>
+
+    <string-array name="sort_list">
+        <item>인기상품순</item>
+        <item>신상품순</item>
+        <item>낮은가격순</item>
+        <item>높은가격순</item>
+        <item>상품평순</item>
+        <item>할인율높은순</item>
+        <item>추천순</item>
+    </string-array>
 </resources>

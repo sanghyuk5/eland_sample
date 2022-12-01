@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.snackbar.Snackbar
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.databinding.ActivityMainBinding
 import com.pionnet.eland.model.DataSource
@@ -12,7 +13,6 @@ import com.pionnet.eland.ui.main.MainTabMenuAdapter
 import com.pionnet.eland.ui.main.MainTabPagerAdapter
 import com.pionnet.eland.ui.main.MainViewModel
 import com.pionnet.eland.utils.getDisplaySize
-import kotlin.math.ceil
 
 class MainActivity : BaseActivity() {
 
@@ -142,24 +142,8 @@ class MainActivity : BaseActivity() {
     }
 
     private fun observeShowToast() {
-//        viewModel.showToast.observe(this) {
-//            showToast(msg = it.msg, duration = it.duration)
-//        }
+        viewModel.showToast.observe(this) {
+            Snackbar.make(binding.root, it.msg, Snackbar.LENGTH_LONG).show()
+        }
     }
-
-//    private fun showToast(msg: String, duration: Long = 2000L) {
-//        with(binding.toastText) {
-//            text = msg
-//            visibility = View.VISIBLE
-//            alpha = 1.0f
-//            animate()
-//                .alpha(0.0f)
-//                .setDuration(duration)
-//                .withEndAction {
-//                    visibility = View.GONE
-//                }.start()
-//        }
-//    }
-
-
 }

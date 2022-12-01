@@ -132,7 +132,9 @@ sealed class ModuleData {
     }
 
     data class StoreShopRegularStoreData(
-        val regularStoreData: List<StoreShopData.Data.Regular>
+        val regularStoreData: List<StoreShopData.Data.Regular>,
+        val goods: List<Goods>,
+        val isShowData: Boolean
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -143,7 +145,20 @@ sealed class ModuleData {
 
     data class StoreShopSmartPickData(
         val smartPickData: List<StoreShopData.Data.SmartPick>,
-        val smartPickGoodData: List<Goods>
+        val pickName: String,
+        val sort: Int,
+        val viewType: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class StoreShopSmartPickNameData(
+        val pickName: String,
+        val pickNo: String?
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -172,8 +187,28 @@ sealed class ModuleData {
         companion object
     }
 
-    data class StoreShopCategoryGoodData(
+    data class CommonGoodGridData(
         val goodData: List<Goods>
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonGoodLinearData(
+        val goodData: Goods
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonGoodLargeData(
+        val goodData: Goods
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
