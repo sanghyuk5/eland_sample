@@ -16,8 +16,8 @@ object EventBus {
     val linkEvent: MutableLiveData<SingleLiveEvent<LinkEvent>> = MutableLiveData()
     val holderEvent: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val storeShopRegularSearchStore: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
-    val storeShopSearchStore: MutableLiveData<SingleLiveEvent<ModuleData.StoreShopSmartPickData>> = MutableLiveData()
-    val sort: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
+    val storeShopSearchStore: MutableLiveData<SingleLiveEvent<ModuleData.StoreShopPickSearchData>> = MutableLiveData()
+    val sort: MutableLiveData<SingleLiveEvent<List<String>>> = MutableLiveData()
     val viewChange: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
     val tabChange: MutableLiveData<SingleLiveEvent<Int>> = MutableLiveData()
 
@@ -33,10 +33,16 @@ object EventBus {
         holderEvent.value = SingleLiveEvent(event)
     }
 
-    fun fire(event: ModuleData.StoreShopSmartPickData) {
+    fun fire(event: ModuleData.StoreShopPickSearchData) {
         if (isIntervalTooShort()) return
 
         storeShopSearchStore.value = SingleLiveEvent(event)
+    }
+
+    fun fire(event: List<String>) {
+        if (isIntervalTooShort()) return
+
+        sort.value = SingleLiveEvent(event)
     }
 
     fun fire(event: String) {
@@ -44,7 +50,6 @@ object EventBus {
 
         when(event) {
             "searchStore" -> storeShopRegularSearchStore.value = SingleLiveEvent(event)
-            "sort" -> sort.value = SingleLiveEvent(event)
             "viewChange" -> viewChange.value = SingleLiveEvent(event)
         }
     }

@@ -6,7 +6,7 @@
 
     <include
         android:id="@+id/view_title"
-        layout="@layout/view_title_module"
+        layout="@layout/view_common_title_module"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

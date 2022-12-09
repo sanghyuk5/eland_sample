@@ -11,10 +11,13 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.FragmentBottomSheetBinding
 import com.pionnet.eland.databinding.ViewItemBottomSheetBinding
+import com.pionnet.eland.model.BaseParcelable
+import com.pionnet.eland.model.StoreShopData
 import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
 import com.pionnet.eland.views.BaseBottomSheetDialogFragment
 
 private const val ARG_SORT = "sort"
+private const val ARG_LIST = "list"
 
 class SortBottomSheetFragment : BaseBottomSheetDialogFragment() {
 
@@ -32,6 +35,7 @@ class SortBottomSheetFragment : BaseBottomSheetDialogFragment() {
     private lateinit var sortData: Array<String>
 
     private var selectedPosition = 1
+    private var data: List<String>? = null
 
     private val itemClickCallback: ItemClickIntCallback = { index ->
         applyCallback?.invoke(index)
@@ -44,6 +48,7 @@ class SortBottomSheetFragment : BaseBottomSheetDialogFragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
             selectedPosition = it.getInt(ARG_SORT)
+            data = it.getParcelable<BaseParcelable>(ARG_LIST)?.value as? List<String>
         }
     }
 
@@ -53,7 +58,13 @@ class SortBottomSheetFragment : BaseBottomSheetDialogFragment() {
         with(binding) {
             tvTitle.text = "정렬"
 
-            sortData = resources.getStringArray(R.array.sort_list)
+            data?.let {
+                sortData = if (it.isEmpty()) {
+                    resources.getStringArray(R.array.sort_list)
+                } else {
+                    it.toTypedArray()
+                }
+            }
 
             rvItem.apply {
                 adapter = SortPickAdapter(sortData, itemClickCallback)
@@ -111,10 +122,11 @@ class SortBottomSheetFragment : BaseBottomSheetDialogFragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(sort: Int) =
+        fun newInstance(sort: Int, data: List<String>) =
             SortBottomSheetFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_SORT, sort)
+                    putParcelable(ARG_LIST, BaseParcelable(data))
                 }
             }
     }

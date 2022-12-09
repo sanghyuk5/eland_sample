@@ -64,7 +64,7 @@ abstract class CommonModulesBaseFragment :
 
     open fun onLoadMore() {}
 
-    open fun setStickyView(isState: Boolean, position: Int = 0) {}
+//    open fun setStickyView(isState: Boolean, position: Int = 0) {}
 
     protected fun addScrollListener(listener: RecyclerView.OnScrollListener) {
         binding.list.addOnScrollListener(listener)
@@ -168,22 +168,6 @@ abstract class CommonModulesBaseFragment :
                             // 스크롤이 끝에 도달했는지 확인
                             if (lastVisibleItemPosition >= itemTotalCount) {
                                 onLoadMore()
-                            }
-                        }
-
-                        val firstVisiblePosition =
-                            (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstVisibleItemPosition() ?: 0
-
-                        val storeShopCategoryDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryData })
-                        val storeShopCategoryTitleDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryTitleData })
-
-                        if (recyclerViewAdapter.values.isNotEmpty() && firstVisiblePosition != -1) {
-                            if (storeShopCategoryDataPosition != -1 && storeShopCategoryDataPosition < firstVisiblePosition) {
-                                Logger.d("hyuk ")
-                                val stickyIndex = firstVisiblePosition - storeShopCategoryTitleDataPosition
-                                setStickyView(true, stickyIndex) // sticky visible
-                            } else {
-                                setStickyView(false)  // sticky gone
                             }
                         }
                     }

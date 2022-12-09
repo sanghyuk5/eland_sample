@@ -26,7 +26,6 @@ class StoreShopRecommendViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopRecommendData) = with(binding) {
-        viewTitle.tvTitle.text = "추천 지점"
         rvRecommend.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 3.toPx, 3.toPx))
             adapter = StoreShopRecommendAdapter().apply {

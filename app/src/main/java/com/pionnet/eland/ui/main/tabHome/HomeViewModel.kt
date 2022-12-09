@@ -68,7 +68,7 @@ class HomeViewModel : CommonViewModel() {
 
                         if (homeData.data.luckyDeal != null && !homeData.data.luckyDeal!!.goodsList.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.HomeTitleData(
+                                ModuleData.CommonTitleData(
                                     homeData.data.luckyDeal!!.title ?: "럭키딜",
                                     homeData.data.luckyDeal!!.subtitle ?: "서브타이틀"
                                 )
@@ -84,7 +84,7 @@ class HomeViewModel : CommonViewModel() {
 
                         if (homeData.data.seasonPlan != null && !homeData.data.seasonPlan!!.offerList.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.HomeTitleData(
+                                ModuleData.CommonTitleData(
                                     homeData.data.seasonPlan!!.title ?: "시즌기획전",
                                     homeData.data.seasonPlan!!.subtitle ?: "서브타이틀"
                                 )
@@ -114,6 +114,13 @@ class HomeViewModel : CommonViewModel() {
                                 categoryList!!.map { it.isSelected = false }
                             }
                             homeData.data.mdRecommend!!.categoryList!![0].isSelected = true
+
+                            moduleList.add(
+                                ModuleData.CommonTitleData(
+                                    homeData.data.mdRecommend!!.title ?: "MD추천",
+                                    homeData.data.seasonPlan!!.subtitle ?: ""
+                                )
+                            )
 
                             moduleList.add(
                                 ModuleData.HomeMDRecommendData(

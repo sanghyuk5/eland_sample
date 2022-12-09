@@ -141,7 +141,7 @@ class StoreShopPickBottomSheetFragment : BaseBottomSheetDialogFragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(data: ModuleData.StoreShopSmartPickData, pickName: String) =
+        fun newInstance(data: ModuleData.StoreShopPickSearchData, pickName: String) =
             StoreShopPickBottomSheetFragment().apply {
                 arguments = Bundle().apply {
                     putParcelable(ARG_STORE_PICK, BaseParcelable(data.smartPickData))

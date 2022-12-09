@@ -1,23 +1,42 @@
 package com.pionnet.eland.ui.viewholder
 
 import android.view.View
-import com.pionnet.eland.databinding.ViewCommonGoodLinearModuleBinding
+import com.pionnet.eland.databinding.ViewCommonGoodsGridModuleBinding
+import com.pionnet.eland.databinding.ViewItemCommonGoodBinding
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.FlagUtil
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.priceFormat
 
-class CommonGoodLinearViewHolder(
-    private val binding: ViewCommonGoodLinearModuleBinding
+class CommonGoodsGridViewHolder(
+    private val binding: ViewCommonGoodsGridModuleBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.CommonGoodLinearData)?.let {
-            initView(it.goodData)
+        (data as? ModuleData.CommonGoodsGridData)?.let {
+            initView(it.goodsData)
         }
     }
 
-    private fun initView(data: Goods) = with(binding) {
+    private fun initView(data: List<Goods>) = with(binding) {
+        if (data.getOrNull(0)?.imageUrl.isNullOrEmpty()) viewLeftGood.root.visibility = View.INVISIBLE
+        else {
+            viewLeftGood.root.visibility = View.VISIBLE
+            viewLeftGood.setView(data[0]) { pickGoodsNo ->
+
+            }
+        }
+
+        if (data.getOrNull(1)?.imageUrl.isNullOrEmpty()) viewRightGood.root.visibility = View.INVISIBLE
+        else {
+            viewRightGood.root.visibility = View.VISIBLE
+            viewRightGood.setView(data[1]) { pickGoodsNo ->
+
+            }
+        }
+    }
+
+    private fun ViewItemCommonGoodBinding.setView(data: Goods, Callback: (String?) -> Unit) {
         GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
         tvBrand.text = data.brand
         tvContent.text = data.goodsName

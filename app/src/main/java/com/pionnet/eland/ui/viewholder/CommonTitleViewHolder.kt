@@ -1,18 +1,18 @@
 package com.pionnet.eland.ui.viewholder
 
-import com.pionnet.eland.databinding.ViewTitleModuleBinding
+import com.pionnet.eland.databinding.ViewCommonTitleModuleBinding
 import com.pionnet.eland.ui.main.ModuleData
 
-class TitleViewHolder(
-    private val binding: ViewTitleModuleBinding
+class CommonTitleViewHolder(
+    private val binding: ViewCommonTitleModuleBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.HomeTitleData)?.let {
+        (data as? ModuleData.CommonTitleData)?.let {
             initView(it)
         }
     }
 
-    private fun initView(data: ModuleData.HomeTitleData) = with(binding) {
+    private fun initView(data: ModuleData.CommonTitleData) = with(binding) {
         tvTitle.text = data.title
         tvSubTitle.text = data.subTitle
     }

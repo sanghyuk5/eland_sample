@@ -63,16 +63,16 @@ class CommonModulesRecyclerViewAdapter(
                     )
                 )
 
-            ModuleData.HomeTitleData.ordinal() -> TitleViewHolder(
-                    ViewTitleModuleBinding.inflate(
+            ModuleData.CommonTitleData.ordinal() -> CommonTitleViewHolder(
+                    ViewCommonTitleModuleBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false
                     )
                 )
 
-            ModuleData.HomeLuckyDealGoodsData.ordinal() -> HomeLuckyDealGoodViewHolder(
-                    ViewHomeLuckyDealGoodModuleBinding.inflate(
+            ModuleData.HomeLuckyDealGoodsData.ordinal() -> HomeLuckyDealGoodsViewHolder(
+                    ViewHomeLuckyDealGoodsModuleBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false
@@ -127,8 +127,16 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.StoreShopSmartPickData.ordinal() -> StoreShopPickViewHolder(
-                ViewStoreShopPickModuleBinding.inflate(
+            ModuleData.StoreShopPickSearchData.ordinal() -> StoreShopPickSearchViewHolder(
+                ViewStoreShopPickSearchModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.CommonSortData.ordinal() -> CommonSortViewHolder(
+                ViewCommonSortModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -159,24 +167,40 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.CommonGoodGridData.ordinal() -> CommonGoodGridViewHolder(
-                ViewCommonGoodGridModuleBinding.inflate(
+            ModuleData.CommonGoodsGridData.ordinal() -> CommonGoodsGridViewHolder(
+                ViewCommonGoodsGridModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            ModuleData.CommonGoodLinearData.ordinal() -> CommonGoodLinearViewHolder(
-                ViewCommonGoodLinearModuleBinding.inflate(
+            ModuleData.CommonGoodsLinearData.ordinal() -> CommonGoodsLinearViewHolder(
+                ViewCommonGoodsLinearModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            ModuleData.CommonGoodLargeData.ordinal() -> CommonGoodLargeViewHolder(
-                ViewCommonGoodLargeModuleBinding.inflate(
+            ModuleData.CommonGoodsLargeData.ordinal() -> CommonGoodsLargeViewHolder(
+                ViewCommonGoodsLargeModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.PlanInfoData.ordinal() -> PlanInfoViewHolder(
+                ViewPlanInfoModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.PlanTabTitleData.ordinal() -> PlanTabTitleViewHolder(
+                ViewPlanTabTitleModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false

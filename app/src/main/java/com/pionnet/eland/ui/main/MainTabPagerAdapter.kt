@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.pionnet.eland.model.tabmenu.TabData
 import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment
+import com.pionnet.eland.ui.main.tabPlanDetail.PlanDetailModulesFragment
 import com.pionnet.eland.ui.main.tabStoreShop.StoreShopModulesFragment
 
 class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fragmentActivity: FragmentActivity)
@@ -18,12 +19,9 @@ class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fr
         val gnbItem = tabs[position]
 
         val fragment = when (tabs[position].menu_cd) {
-            "10" -> {
-                HomeModulesFragment()
-            }
-            "60" -> {
-                StoreShopModulesFragment.create("")
-            }
+            "10" -> HomeModulesFragment()
+            "60" -> StoreShopModulesFragment.create("")
+            "130" -> PlanDetailModulesFragment()
             else -> {
                 HomeModulesFragment()
             }

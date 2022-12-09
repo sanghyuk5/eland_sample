@@ -1,9 +1,6 @@
 package com.pionnet.eland.ui.main
 
-import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.model.*
 
 sealed class ModuleData {
     abstract fun clone(): ModuleData
@@ -59,7 +56,7 @@ sealed class ModuleData {
         companion object
     }
 
-    data class HomeTitleData(
+    data class CommonTitleData(
         val title: String,
         val subTitle: String
     ) : ModuleData() {
@@ -143,10 +140,20 @@ sealed class ModuleData {
         companion object
     }
 
-    data class StoreShopSmartPickData(
+    data class StoreShopPickSearchData(
         val smartPickData: List<StoreShopData.Data.SmartPick>,
-        val pickName: String,
-        val sort: Int,
+        val pickName: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonSortData(
+        val sortData: List<String>?,
+        val sortPosition: Int,
         val viewType: String
     ) : ModuleData() {
         override fun clone(): ModuleData {
@@ -187,8 +194,9 @@ sealed class ModuleData {
         companion object
     }
 
-    data class CommonGoodGridData(
-        val goodData: List<Goods>
+    data class CommonGoodsGridData(
+        val goodsData: List<Goods>,
+        val index: Int
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -197,8 +205,9 @@ sealed class ModuleData {
         companion object
     }
 
-    data class CommonGoodLinearData(
-        val goodData: Goods
+    data class CommonGoodsLinearData(
+        val goodsData: Goods,
+        val index: Int
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -207,8 +216,30 @@ sealed class ModuleData {
         companion object
     }
 
-    data class CommonGoodLargeData(
-        val goodData: Goods
+    data class CommonGoodsLargeData(
+        val goodsData: Goods,
+        val index: Int
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class PlanInfoData(
+        val shopInfo: PlanDetailData.Data.ShopInfo
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class PlanTabTitleData(
+        val tabTitle: String,
+        val count: Int
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()

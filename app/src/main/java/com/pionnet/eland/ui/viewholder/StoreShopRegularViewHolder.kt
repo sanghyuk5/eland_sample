@@ -23,8 +23,6 @@ class StoreShopRegularViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopRegularStoreData) = with(binding) {
-        viewTitle.tvTitle.text = "나의 단골매장"
-
         llRegular.visibility = if (data.isShowData) View.VISIBLE else View.GONE
         llNoRegular.visibility = if (data.isShowData) View.GONE else View.VISIBLE
 

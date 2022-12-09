@@ -1,20 +1,19 @@
 package com.pionnet.eland.ui.viewholder
 
 import android.view.View
-import com.pionnet.eland.databinding.ViewCommonGoodLargeModuleBinding
-import com.pionnet.eland.databinding.ViewCommonGoodLinearModuleBinding
+import com.pionnet.eland.databinding.ViewCommonGoodsLargeModuleBinding
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.FlagUtil
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.priceFormat
 
-class CommonGoodLargeViewHolder(
-    private val binding: ViewCommonGoodLargeModuleBinding
+class CommonGoodsLargeViewHolder(
+    private val binding: ViewCommonGoodsLargeModuleBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.CommonGoodLargeData)?.let {
-            initView(it.goodData)
+        (data as? ModuleData.CommonGoodsLargeData)?.let {
+            initView(it.goodsData)
         }
     }
 

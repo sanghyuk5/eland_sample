@@ -5,14 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
-    <include android:id="@+id/view_title"
-        layout="@layout/view_title_module" />
-
     <com.pionnet.eland.views.NestedScrollableHost
         android:id="@+id/ns_regular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/view_title" >
+        app:layout_constraintTop_toTopOf="parent" >
 
         <LinearLayout
             android:id="@+id/ll_regular"

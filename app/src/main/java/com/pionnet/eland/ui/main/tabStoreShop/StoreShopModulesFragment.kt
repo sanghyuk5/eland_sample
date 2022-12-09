@@ -6,16 +6,10 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.orhanobut.logger.Logger
+import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
-import com.pionnet.eland.localData.DataManager
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 class StoreShopModulesFragment : CommonModulesBaseFragment() {
 
@@ -50,7 +44,7 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
             setModules(it)
         }
 
-        smartPickHolderResult.observe(viewLifecycleOwner) {
+        sortResult.observe(viewLifecycleOwner) {
             setModules(it)
 
             initStickyView(it)
@@ -89,9 +83,9 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
     private fun observeSort() {
         EventBus.sort.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let {
-                val dlg = SortBottomSheetFragment.newInstance(viewModel.sort)
+                val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, it)
                 dlg.applyCallback = { index ->
-                    viewModel.sort = index
+                    viewModel.sortPosition = index
                     viewModel.requestStorePickData()
                 }
                 dlg.show(childFragmentManager, dlg.tag)
@@ -102,7 +96,7 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
     private fun observeViewChange() {
         EventBus.viewChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let {
-                viewModel.setView()
+                viewModel.setGoodsView()
             }
         }
     }
@@ -129,16 +123,14 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
         }
     }
 
-    override fun setStickyView(isState: Boolean, position: Int) {
-        with(binding) {
-            val itemIndex = position / (viewModel.categoryGoodsCount + 1) // 타이틀 때문에 +1
-            if (!isState) {
-                stickyTab.visibility = View.GONE
-                return
-            } else {
-                stickyTab.visibility = View.VISIBLE
-                setStickyViewPosition(itemIndex)
-            }
+    private fun setStickyView(isState: Boolean, position: Int = 0) = with(binding) {
+        val itemIndex = position / (viewModel.categoryGoodsCount + 1) // 타이틀 때문에 +1
+        if (!isState) {
+            stickyTab.visibility = View.GONE
+            return
+        } else {
+            stickyTab.visibility = View.VISIBLE
+            setStickyViewPosition(itemIndex)
         }
     }
 
@@ -148,6 +140,37 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
         }, 5)
 
         storeShopCategoryStickyAdapter.setSelected(position)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        addScrollListener(onScrollListener)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        removeScrollListener(onScrollListener)
+    }
+
+    private val onScrollListener: RecyclerView.OnScrollListener = object: RecyclerView.OnScrollListener() {
+        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+            super.onScrolled(recyclerView, dx, dy)
+
+            val firstVisiblePosition =
+                (recyclerView.layoutManager as? LinearLayoutManager)?.findFirstVisibleItemPosition() ?: 0
+
+            val storeShopCategoryDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryData })
+            val storeShopCategoryTitleDataPosition = (recyclerViewAdapter.values.indexOfFirst { it is ModuleData.StoreShopCategoryTitleData })
+
+            if (recyclerViewAdapter.values.isNotEmpty() && firstVisiblePosition != -1) {
+                if (storeShopCategoryDataPosition != -1 && storeShopCategoryDataPosition < firstVisiblePosition) {
+                    val stickyIndex = firstVisiblePosition - storeShopCategoryTitleDataPosition
+                    setStickyView(true, stickyIndex) // sticky visible
+                } else {
+                    setStickyView(false)  // sticky gone
+                }
+            }
+        }
     }
 
     class StoreShopViewModelFactory(private val params: String) : ViewModelProvider.Factory {

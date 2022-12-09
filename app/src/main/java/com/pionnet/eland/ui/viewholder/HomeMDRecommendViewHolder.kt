@@ -40,7 +40,6 @@ class HomeMDRecommendViewHolder(
 
     private fun initView(data: HomeData.Data.MDRecommend) = with(binding) {
         mdRecommend = data
-        viewTitle.tvTitle.text = data.title
 
         var selectedTabItem = data.categoryList?.indexOfFirst { it.isSelected } ?: -1
         if (selectedTabItem == -1) selectedTabItem = 0

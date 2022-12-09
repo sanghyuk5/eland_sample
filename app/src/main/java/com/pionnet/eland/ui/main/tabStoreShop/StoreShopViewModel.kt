@@ -2,7 +2,6 @@ package com.pionnet.eland.ui.main.tabStoreShop
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.model.Status
 import com.pionnet.eland.model.StoreShopData
@@ -15,7 +14,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
     val storeShopResult = MutableLiveData<MutableList<ModuleData>>()
     val regularHolderResult = MutableLiveData<MutableList<ModuleData>>()
-    val smartPickHolderResult = MutableLiveData<MutableList<ModuleData>>()
+    val sortResult = MutableLiveData<MutableList<ModuleData>>()
 
     private val moduleList = mutableListOf<ModuleData>()
 
@@ -23,9 +22,9 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
     var pickNo: String? = null
     var pickName = ""
-    var sort = 1
-    private var clickCount = 0
+    var sortPosition = 1
     private var viewType = "grid"
+    private var clickCount = 0
 
     private var regularData = listOf<StoreShopData.Data.Regular>()
     private var regularGoodsData = listOf<Goods>()
@@ -58,6 +57,13 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
                         if (!storeShopData.data.recommend.isNullOrEmpty()) {
                             moduleList.add(
+                                ModuleData.CommonTitleData(
+                                    "추천 지점",
+                                    ""
+                                )
+                            )
+
+                            moduleList.add(
                                 ModuleData.StoreShopRecommendData(
                                     storeShopData.data.recommend!!
                                 )
@@ -65,6 +71,13 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                         }
 
                         if (storeShopData.data.regular != null) { //size가 0이여도 그려야함.
+                            moduleList.add(
+                                ModuleData.CommonTitleData(
+                                    "나의 단골매장",
+                                    ""
+                                )
+                            )
+
                             regularData = storeShopData.data.regular!!
                             moduleList.add(
                                 ModuleData.StoreShopRegularStoreData(
@@ -76,16 +89,28 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                         }
 
                         if (!storeShopData.data.smartPick.isNullOrEmpty()) {
-                            pickNo = storeShopData.data.smartPick!![0].categoryNo
-                            pickName = storeShopData.data.smartPick!![0].name ?: ""
+                            moduleList.add(
+                                ModuleData.CommonTitleData(
+                                    "스토어픽 지점",
+                                    "매장에서 직접 확인하고 픽업해보세요."
+                                )
+                            )
 
                             smartPickData = storeShopData.data.smartPick!!
+                            pickName = storeShopData.data.smartPick!![0].name ?: ""
+                            pickNo = storeShopData.data.smartPick!![0].categoryNo
                             storeShopData.data.smartPick!![0].isSelected = true
 
                             moduleList.add(
-                                ModuleData.StoreShopSmartPickData(
+                                ModuleData.StoreShopPickSearchData(
                                     smartPickData,
-                                    pickName,
+                                    pickName
+                                )
+                            )
+
+                            moduleList.add(
+                                ModuleData.CommonSortData(
+                                    null,
                                     1,
                                     "grid"
                                 )
@@ -94,7 +119,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
                         if (!storeShopData.data.categoryGoods.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.HomeTitleData(
+                                ModuleData.CommonTitleData(
                                     "카테고리별 베스트 상품",
                                     ""
                                 )
@@ -116,10 +141,11 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
                                 if (!categoryGoods.goodsList.isNullOrEmpty()) {
                                     categoryGoodsCount = categoryGoods.goodsList!!.size / 2
-                                    categoryGoods.goodsList!!.chunked(2).forEach {
+                                    categoryGoods.goodsList!!.chunked(2).forEachIndexed { index, goodsInfo ->
                                         moduleList.add(
-                                            ModuleData.CommonGoodGridData(
-                                                it
+                                            ModuleData.CommonGoodsGridData(
+                                                goodsInfo,
+                                                index
                                             )
                                         )
                                     }
@@ -143,7 +169,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                         if (storePickData.data.keywordResult != null && !storePickData.data.keywordResult!!.goodsList.isNullOrEmpty()) {
                             smartPickGoodsData = storePickData.data.keywordResult!!.goodsList!!
 
-                            smartPickHolderResult.postValue(getViewType())
+                            sortResult.postValue(getViewType())
                         }
                     }
                 }
@@ -151,7 +177,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
         }
     }
 
-    fun setView() {
+    fun setGoodsView() {
         clickCount += 1
 
         viewType = if (clickCount % 3 == 1) {
@@ -163,7 +189,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
             "grid"
         }
 
-        smartPickHolderResult.postValue(getViewType())
+        sortResult.postValue(getViewType())
     }
 
     fun requestRegularData() {
@@ -183,15 +209,19 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                     }
                 }
 
-                is ModuleData.StoreShopSmartPickData -> {
-                    dataSet[index] = ModuleData.StoreShopSmartPickData(smartPickData, pickName, sort, viewType)
+                is ModuleData.StoreShopPickSearchData -> {
+                    dataSet[index] = ModuleData.StoreShopPickSearchData(smartPickData, pickName)
+                }
+
+                is ModuleData.CommonSortData -> {
+                    dataSet[index] = ModuleData.CommonSortData(null, sortPosition, viewType)
 
                     when (viewType) {
                         "linear" -> {
                             smartPickGoodsData.forEachIndexed { addIndex, addItem ->
                                 dataSet.add(
                                     index + addIndex + 1,
-                                    ModuleData.CommonGoodLinearData(addItem)
+                                    ModuleData.CommonGoodsLinearData(addItem, addIndex)
                                 )
                             }
 
@@ -204,7 +234,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                             smartPickGoodsData.forEachIndexed { addIndex, addItem ->
                                 dataSet.add(
                                     index + addIndex + 1,
-                                    ModuleData.CommonGoodLargeData(addItem)
+                                    ModuleData.CommonGoodsLargeData(addItem, addIndex)
                                 )
                             }
 
@@ -217,7 +247,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                             smartPickGoodsData.chunked(2).forEachIndexed { addIndex, addItem ->
                                 dataSet.add(
                                     index + addIndex + 1,
-                                    ModuleData.CommonGoodGridData(addItem)
+                                    ModuleData.CommonGoodsGridData(addItem, addIndex)
                                 )
                             }
 
