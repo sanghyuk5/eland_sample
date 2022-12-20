@@ -12,7 +12,7 @@ import com.pionnet.eland.utils.AdjustHeightImageViewTarget
 import com.pionnet.eland.utils.FlagUtil
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.priceFormat
-import com.pionnet.eland.utils.priceLuckyDeal
+import com.pionnet.eland.utils.saleQuantity
 
 class HomeLuckyDealGoodsViewHolder(
     private val binding: ViewHomeLuckyDealGoodsModuleBinding
@@ -69,6 +69,6 @@ class HomeLuckyDealGoodsViewHolder(
         cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.GONE
         cfvFlag.flags = FlagUtil.from(data.iconView)
 
-        tvCount.text = priceLuckyDeal(data.saleQty ?: 0)
+        tvCount.text = saleQuantity(data.saleQty ?: 0)
     }
 }

@@ -4,6 +4,7 @@ import android.provider.DocumentsContract
 import android.webkit.URLUtil
 import com.pionnet.eland.localData.DataManager
 import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 
 inline val String?.withBaseUrl: String
     get() = (if (this.isNullOrBlank())  ""
@@ -20,6 +21,17 @@ fun changedHeaderHtml(htmlText: String): String {
     val closedTag = "</body></html>"
     var changeFontHtml = head + htmlText + closedTag
     val doc = Jsoup.parse(changeFontHtml)
+
+//    val hyperLink = doc.getElementsByTag("a")
+//    if (hyperLink.size > 0) {
+//        for (i in 0 until hyperLink.size) {
+//            var href: String = hyperLink.get(i).attr("href")
+//            if (href.isNotEmpty() && !href.startsWith("http")) {
+//                href = DataManager.DEFAULT_SERVER + href
+//                hyperLink[i].attr("href", href)
+//            }
+//        }
+//    }
 
     changeFontHtml = doc.toString()
     return changeFontHtml

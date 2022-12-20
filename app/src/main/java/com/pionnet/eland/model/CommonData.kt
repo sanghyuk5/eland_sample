@@ -4,7 +4,8 @@ import com.google.gson.annotations.SerializedName
 
 data class Banner(
     @SerializedName("image_url") var imageUrl: String?,
-    @SerializedName("link_url") var linkUrl: String?
+    @SerializedName("link_url") var linkUrl: String?,
+    @SerializedName("rel_cont_nm") var name: String?
 )
 
 data class Goods(
@@ -22,4 +23,10 @@ data class Goods(
     @SerializedName("title") var title: String?,
     @SerializedName("goods_star_point") var starPoint: Int?,
     @SerializedName("goods_comment_count") var commentCnt: Int?,
+)
+
+data class Category(
+    @SerializedName("image_url") var imageUrl: String?,
+    @SerializedName("link_url") var linkUrl: String?,
+    @SerializedName("title") var title: String?
 )

@@ -23,7 +23,7 @@ class HomeViewModel : CommonViewModel() {
                     it.data?.let { homeData ->
                         if (!homeData.data.mainBanner.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.MainBannerData(
+                                ModuleData.CommonMainBanner(
                                     homeData.data.mainBanner!!
                                 )
                             )
@@ -44,7 +44,7 @@ class HomeViewModel : CommonViewModel() {
 
                         if (!homeData.data.multiBanner.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.HomeMultiBannerData(
+                                ModuleData.CommonMultiBannerData(
                                     homeData.data.multiBanner!!
                                 )
                             )

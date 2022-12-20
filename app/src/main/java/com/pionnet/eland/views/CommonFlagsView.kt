@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewCommonFlagItemBinding
 import com.pionnet.eland.databinding.ViewCommonFlagsBinding
 import com.pionnet.eland.model.HomeData
+import com.pionnet.eland.ui.main.StringDiffCallback
 import com.pionnet.eland.utils.toPx
 
 class CommonFlagsView @JvmOverloads constructor(
@@ -40,7 +41,7 @@ class CommonFlagsView @JvmOverloads constructor(
             adapter.submitList(field)
         }
 
-    class ViewAdapter : ListAdapter<String, ViewAdapter.ViewHolder>(DiffCallback()) {
+    class ViewAdapter : ListAdapter<String, ViewAdapter.ViewHolder>(StringDiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
@@ -63,14 +64,6 @@ class CommonFlagsView @JvmOverloads constructor(
                 flagTxt.text = data
             }
         }
-    }
-
-    class DiffCallback : DiffUtil.ItemCallback<String>() {
-        override fun areItemsTheSame(oldItem: String, newItem: String): Boolean =
-            oldItem == newItem
-
-        override fun areContentsTheSame(oldItem: String, newItem: String): Boolean =
-            oldItem == newItem
     }
 
     companion object {

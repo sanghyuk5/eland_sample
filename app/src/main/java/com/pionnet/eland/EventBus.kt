@@ -116,10 +116,26 @@ enum class LinkEventType {
     EXTERNAL
 }
 
-class HolderEvent(val type: HolderEventType)
+class HolderEvent {
+    val type: HolderEventType
+    val data: String?
+
+    constructor(type: HolderEventType) {
+        this.type = type
+        this.data = null
+    }
+
+    constructor(type: HolderEventType, data: String) {
+        this.type = type
+        this.data = data
+    }
+}
 
 enum class HolderEventType {
-    REFRESH,
+    EXPAND_WEEKLY,
+    EXPAND_NEW_ARRIVAL,
+    TAB_CLICK_WEEKLY,
+    TAB_CLICK_NEW_ARRIVAL,
     ADD_REPLY,
     STORE_SHOP_SEARCH
 }

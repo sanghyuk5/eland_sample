@@ -3,7 +3,6 @@ package com.pionnet.eland.ui.viewholder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
@@ -11,6 +10,7 @@ import com.pionnet.eland.databinding.ViewItemStoreShopRegularMenuBinding
 import com.pionnet.eland.databinding.ViewStoreShopRegularModuleBinding
 import com.pionnet.eland.ui.main.HorizontalAdapter
 import com.pionnet.eland.ui.main.ModuleData
+import com.pionnet.eland.ui.main.StringDiffCallback
 
 class StoreShopRegularViewHolder(
     private val binding: ViewStoreShopRegularModuleBinding
@@ -44,7 +44,7 @@ class StoreShopRegularViewHolder(
     }
 
     private inner class StoreShopRegularMenuAdapter
-        : ListAdapter<String, StoreShopRegularMenuAdapter.ViewHolder>(DiffCallback()) {
+        : ListAdapter<String, StoreShopRegularMenuAdapter.ViewHolder>(StringDiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
@@ -67,13 +67,5 @@ class StoreShopRegularViewHolder(
                 tvMenu.text = data
             }
         }
-    }
-
-    private inner class DiffCallback : DiffUtil.ItemCallback<String>() {
-        override fun areItemsTheSame(oldItem: String, newItem: String): Boolean =
-            oldItem == newItem
-
-        override fun areContentsTheSame(oldItem: String, newItem: String): Boolean =
-            oldItem == newItem
     }
 }

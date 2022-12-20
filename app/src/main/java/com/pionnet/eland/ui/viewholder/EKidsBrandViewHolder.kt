@@ -2,44 +2,44 @@ package com.pionnet.eland.ui.viewholder
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewHomeBrandModuleBinding
-import com.pionnet.eland.databinding.ViewItemBrandBinding
-import com.pionnet.eland.model.HomeData
+import com.pionnet.eland.databinding.ViewEkidsBrandModuleBinding
+import com.pionnet.eland.databinding.ViewItemEkidsBrandBinding
+import com.pionnet.eland.model.Banner
+import com.pionnet.eland.ui.main.BannerDiffCallback
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration
 
-class HomeBrandViewHolder(
-    private val binding: ViewHomeBrandModuleBinding
+class EKidsBrandViewHolder(
+    private val binding: ViewEkidsBrandModuleBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.HomeBrandData)?.let {
+        (data as? ModuleData.EKidsBrandData)?.let {
             initView(it)
         }
     }
 
-    private fun initView(data: ModuleData.HomeBrandData) = with(binding) {
-        rvBrand.apply {
+    private fun initView(data: ModuleData.EKidsBrandData) = with(binding) {
+        rvCategory.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
-            adapter = HomeBrandAdapter().apply {
-                submitList(data.homeBrandData)
+            adapter = BannerAdapter().apply {
+                submitList(data.bannerData)
             }
         }
     }
 
-    private inner class HomeBrandAdapter
-        : ListAdapter<HomeData.Data.Brand, HomeBrandAdapter.ViewHolder>(DiffCallback()) {
+    private inner class BannerAdapter
+        : ListAdapter<Banner, BannerAdapter.ViewHolder>(BannerDiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
-                ViewItemBrandBinding.inflate(
+                ViewItemEkidsBrandBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -51,7 +51,7 @@ class HomeBrandViewHolder(
             holder.bind(currentList[position])
         }
 
-        private inner class ViewHolder(val binding: ViewItemBrandBinding)
+        private inner class ViewHolder(val binding: ViewItemEkidsBrandBinding)
             : RecyclerView.ViewHolder(binding.root) {
 
             private var linkUrl: String? = null
@@ -64,19 +64,11 @@ class HomeBrandViewHolder(
                 }
             }
 
-            fun bind(data: HomeData.Data.Brand) = with(binding) {
-                tvName.text = data.brand
+            fun bind(data: Banner) = with(binding) {
+                tvName.text = data.name
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivIcon)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivBrand)
             }
         }
-    }
-
-    private inner class DiffCallback : DiffUtil.ItemCallback<HomeData.Data.Brand>() {
-        override fun areItemsTheSame(oldItem: HomeData.Data.Brand, newItem: HomeData.Data.Brand): Boolean =
-            oldItem == newItem
-
-        override fun areContentsTheSame(oldItem: HomeData.Data.Brand, newItem: HomeData.Data.Brand): Boolean =
-            oldItem == newItem
     }
 }

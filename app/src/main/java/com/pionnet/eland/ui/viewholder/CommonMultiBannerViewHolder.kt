@@ -1,43 +1,44 @@
 package com.pionnet.eland.ui.viewholder
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.request.target.Target
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewHomeMultiBannerModuleBinding
+import com.pionnet.eland.databinding.ViewCommonMultiBannerModuleBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.BannerDiffCallback
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget
 import com.pionnet.eland.utils.GlideApp
 
-class HomeMultiBannerViewHolder(
-    private val binding: ViewHomeMultiBannerModuleBinding
+class CommonMultiBannerViewHolder(
+    private val binding: ViewCommonMultiBannerModuleBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.HomeMultiBannerData)?.let {
+        (data as? ModuleData.CommonMultiBannerData)?.let {
             initView(it)
         }
     }
 
-    private fun initView(data: ModuleData.HomeMultiBannerData) = with(binding) {
+    private fun initView(data: ModuleData.CommonMultiBannerData) = with(binding) {
+        viewDivide.root.visibility = if (data.isShowDivide) View.VISIBLE else View.GONE
+
         rvBanner.apply {
-            adapter = HomeBannerAdapter().apply {
-                layoutManager = GridLayoutManager(binding.root.context, data.homeBannerData.size)
-                submitList(data.homeBannerData)
+            adapter = BannerAdapter().apply {
+                layoutManager = GridLayoutManager(binding.root.context, data.bannerData.size)
+                submitList(data.bannerData)
             }
         }
     }
 
-    private inner class HomeBannerAdapter
-        : ListAdapter<Banner, HomeBannerAdapter.ViewHolder>(BannerDiffCallback()) {
+    private inner class BannerAdapter
+        : ListAdapter<Banner, BannerAdapter.ViewHolder>(BannerDiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(

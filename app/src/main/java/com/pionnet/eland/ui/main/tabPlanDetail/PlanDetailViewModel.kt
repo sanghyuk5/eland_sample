@@ -29,9 +29,14 @@ class PlanDetailViewModel : CommonViewModel() {
                     it.data?.data?.let { planData ->
                         if (planData.shopInfo != null) {
                             shopName = planData.shopInfo!!.name.toString()
+                            moduleList.add(
+                                ModuleData.CommonCenterTitleData(
+                                    shopName
+                                )
+                            )
 
                             moduleList.add(
-                                ModuleData.PlanInfoData(
+                                ModuleData.CommonWebViewData(
                                     planData.shopInfo!!
                                 )
                             )

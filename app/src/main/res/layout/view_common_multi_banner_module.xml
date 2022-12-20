@@ -11,7 +11,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/view_item_divide"
+    <include android:id="@+id/view_divide"
+        layout="@layout/view_item_divide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

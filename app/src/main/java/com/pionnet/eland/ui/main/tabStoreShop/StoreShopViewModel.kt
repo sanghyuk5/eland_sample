@@ -41,7 +41,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                     it.data?.let { storeShopData ->
                         if (!storeShopData.data.mainBanner.isNullOrEmpty()) {
                             moduleList.add(
-                                ModuleData.MainBannerData(
+                                ModuleData.CommonMainBanner(
                                     storeShopData.data.mainBanner!!
                                 )
                             )

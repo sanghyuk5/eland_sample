@@ -1,0 +1,917 @@
+{
+  "code": "200",
+  "data": {
+    "paging_info": {
+      "page_idx": 1,
+      "rows_per_page": 20,
+      "total_count": 15
+    },
+    "plan_list": [
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "뮬 고구마 슈즈 AFTS79W02",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 14900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958882&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112934347561&conts_divi_cd=20&rel_no=2206958882&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%AE%AC+%EA%B3%A0%EA%B5%AC%EB%A7%88+%EC%8A%88%EC%A6%88+AFTS79W02&flag_img_path=",
+            "sale_rate": 50,
+            "image_url": "//www.elandrs.com/upload/prd/img/882/240/2206958882_0000013.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스트링 크로그 뮬 AFTS79W12",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 14900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958883&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112934347562&conts_divi_cd=20&rel_no=2206958883&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%8A%B8%EB%A7%81+%ED%81%AC%EB%A1%9C%EA%B7%B8+%EB%AE%AC+AFTS79W12&flag_img_path=",
+            "sale_rate": 50,
+            "image_url": "//www.elandrs.com/upload/prd/img/883/240/2206958883_0000002.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "메리제인 고구마 슈즈 AFTS79W01",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 20900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958885&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112934347553&conts_divi_cd=20&rel_no=2206958885&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%A9%94%EB%A6%AC%EC%A0%9C%EC%9D%B8+%EA%B3%A0%EA%B5%AC%EB%A7%88+%EC%8A%88%EC%A6%88+AFTS79W01&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/885/240/2206958885_0000013.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "라인 고구마 슈즈 AFTS79W03",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 20900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958886&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112934347554&conts_divi_cd=20&rel_no=2206958886&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%9D%BC%EC%9D%B8+%EA%B3%A0%EA%B5%AC%EB%A7%88+%EC%8A%88%EC%A6%88+AFTS79W03&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/886/240/2206958886_0000013.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "컬리 고구마 슈즈 AFTS79W05",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 20900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958596&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112934347555&conts_divi_cd=20&rel_no=2206958596&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%BB%AC%EB%A6%AC+%EA%B3%A0%EA%B5%AC%EB%A7%88+%EC%8A%88%EC%A6%88+AFTS79W05&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/596/240/2206958596_0000012.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/184/00/221200000382184.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2211661888"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "스퀘어 롱부츠 (스탠다드) HPWXLC404S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208224877&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112334000065&conts_divi_cd=20&rel_no=2208224877&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+%28%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C%29+HPWXLC404S&flag_img_path=",
+            "sale_rate": 17,
+            "image_url": "//www.elandrs.com/upload/prd/img/877/240/2208224877_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 59900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스퀘어 롱부츠 (와이드) HPWXLC405S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208225616&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22112334000066&conts_divi_cd=20&rel_no=2208225616&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+%28%EC%99%80%EC%9D%B4%EB%93%9C%29+HPWXLC405S&flag_img_path=",
+            "sale_rate": 17,
+            "image_url": "//www.elandrs.com/upload/prd/img/616/240/2208225616_0000004.jpg",
+            "sale_price": 0,
+            "market_price": 59900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스퀘어 롱부츠 (와이드 PLUS +1) HPWXLD106S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211549700&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111833680738&conts_divi_cd=20&rel_no=2211549700&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+%28%EC%99%80%EC%9D%B4%EB%93%9C+PLUS+%2B1%29+HPWXLD106S&flag_img_path=",
+            "sale_rate": 17,
+            "image_url": "//www.elandrs.com/upload/prd/img/700/240/2211549700_0000002.jpg",
+            "sale_price": 0,
+            "market_price": 59900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스퀘어 롱부츠 (와이드 PLUS +2) HPWXLD107S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2211549701&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111833680739&conts_divi_cd=20&rel_no=2211549701&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%A1%B1%EB%B6%80%EC%B8%A0+%28%EC%99%80%EC%9D%B4%EB%93%9C+PLUS+%2B2%29+HPWXLD107S&flag_img_path=",
+            "sale_rate": 17,
+            "image_url": "//www.elandrs.com/upload/prd/img/701/240/2211549701_0000002.jpg",
+            "sale_price": 0,
+            "market_price": 59900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[슈펜×최실장] 라운드토 앵클 부츠 7.0 HPWXAC471Q",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375160&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111833683648&conts_divi_cd=20&rel_no=2209375160&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%8A%88%ED%8E%9C%C3%97%EC%B5%9C%EC%8B%A4%EC%9E%A5%5D+%EB%9D%BC%EC%9A%B4%EB%93%9C%ED%86%A0+%EC%95%B5%ED%81%B4+%EB%B6%80%EC%B8%A0+7.0+HPWXAC471Q&flag_img_path=",
+            "sale_rate": 29,
+            "image_url": "//www.elandrs.com/upload/prd/img/160/240/2209375160_0000013.jpg",
+            "sale_price": 56900,
+            "market_price": 69900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/567/00/221100000381567.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2211659050"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[울블렌드] 리얼레더 스웨이드 양털부츠 HPCV8C412S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 44900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210438191&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111533456455&conts_divi_cd=20&rel_no=2210438191&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%9A%B8%EB%B8%94%EB%A0%8C%EB%93%9C%5D+%EB%A6%AC%EC%96%BC%EB%A0%88%EB%8D%94+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%EC%96%91%ED%84%B8%EB%B6%80%EC%B8%A0+HPCV8C412S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/191/240/2210438191_0000012.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[울블렌드] 리얼레더 스웨이드 양털 숏부츠 HPCV8C411S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 35900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210425701&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111533456456&conts_divi_cd=20&rel_no=2210425701&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%9A%B8%EB%B8%94%EB%A0%8C%EB%93%9C%5D+%EB%A6%AC%EC%96%BC%EB%A0%88%EB%8D%94+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%EC%96%91%ED%84%B8+%EC%88%8F%EB%B6%80%EC%B8%A0+HPCV8C411S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/701/240/2210425701_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 39900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[울블렌드] 리얼레더 스웨이드 양털 미들부츠 HPCV8C413S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 35900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210425702&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111533456454&conts_divi_cd=20&rel_no=2210425702&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%9A%B8%EB%B8%94%EB%A0%8C%EB%93%9C%5D+%EB%A6%AC%EC%96%BC%EB%A0%88%EB%8D%94+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%EC%96%91%ED%84%B8+%EB%AF%B8%EB%93%A4%EB%B6%80%EC%B8%A0+HPCV8C413S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/702/240/2210425702_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 39900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[울블렌드] 스웨이드 퍼 로우 슬리퍼 HPCV8D102S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 32300,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375156&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111533456453&conts_divi_cd=20&rel_no=2209375156&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%9A%B8%EB%B8%94%EB%A0%8C%EB%93%9C%5D+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%ED%8D%BC+%EB%A1%9C%EC%9A%B0+%EC%8A%AC%EB%A6%AC%ED%8D%BC+HPCV8D102S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/156/240/2209375156_0000014.jpg",
+            "sale_price": 0,
+            "market_price": 35900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[울블렌드] 리얼레더 스웨이드 양털 슬리퍼 HPCV8C401S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 32300,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375152&vir_vend_no=VV22030537&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22111533456459&conts_divi_cd=20&rel_no=2209375152&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%9A%B8%EB%B8%94%EB%A0%8C%EB%93%9C%5D+%EB%A6%AC%EC%96%BC%EB%A0%88%EB%8D%94+%EC%8A%A4%EC%9B%A8%EC%9D%B4%EB%93%9C+%EC%96%91%ED%84%B8+%EC%8A%AC%EB%A6%AC%ED%8D%BC+HPCV8C401S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/152/240/2209375152_0000014.jpg",
+            "sale_price": 0,
+            "market_price": 35900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/402/00/221100000379402.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2211656802"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[BAMKEL®] 밤켈 논슬립 듀얼쿠션 패딩 슬립온+슈즈백 세트 HPCV7C414U",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 44900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375151&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22102532091444&conts_divi_cd=20&rel_no=2209375151&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5BBAMKEL%C2%AE%5D+%EB%B0%A4%EC%BC%88+%EB%85%BC%EC%8A%AC%EB%A6%BD+%EB%93%80%EC%96%BC%EC%BF%A0%EC%85%98+%ED%8C%A8%EB%94%A9+%EC%8A%AC%EB%A6%BD%EC%98%A8%2B%EC%8A%88%EC%A6%88%EB%B0%B1+%EC%84%B8%ED%8A%B8+HPCV7C414U&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/151/240/2209375151_0000015.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[BAMKEL®] 밤켈 논슬립 듀얼쿠션 패딩 슬리퍼+슈즈백 세트 HPCV7C413U",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 44900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375150&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22102532091443&conts_divi_cd=20&rel_no=2209375150&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5BBAMKEL%C2%AE%5D+%EB%B0%A4%EC%BC%88+%EB%85%BC%EC%8A%AC%EB%A6%BD+%EB%93%80%EC%96%BC%EC%BF%A0%EC%85%98+%ED%8C%A8%EB%94%A9+%EC%8A%AC%EB%A6%AC%ED%8D%BC%2B%EC%8A%88%EC%A6%88%EB%B0%B1+%EC%84%B8%ED%8A%B8+HPCV7C413U&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/150/240/2209375150_0000017.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[BAMKEL®] 밤켈 블랑켓 HPAUXC401B",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 44900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375149&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22102532091943&conts_divi_cd=20&rel_no=2209375149&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5BBAMKEL%C2%AE%5D+%EB%B0%A4%EC%BC%88+%EB%B8%94%EB%9E%91%EC%BC%93+HPAUXC401B&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/149/240/2209375149_0000012.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[BAMKEL®] 밤켈 패딩 머플러 HPAAMC401B",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 23300,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375145&vir_vend_no=VV22030537&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22102532091944&conts_divi_cd=20&rel_no=2209375145&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5BBAMKEL%C2%AE%5D+%EB%B0%A4%EC%BC%88+%ED%8C%A8%EB%94%A9+%EB%A8%B8%ED%94%8C%EB%9F%AC+HPAAMC401B&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/145/240/2209375145_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 25900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[BAMKEL®] 밤켈 패딩 핸드폰 가방 HPABCC401B",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 17900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209358521&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22102532091946&conts_divi_cd=20&rel_no=2209358521&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5BBAMKEL%C2%AE%5D+%EB%B0%A4%EC%BC%88+%ED%8C%A8%EB%94%A9+%ED%95%B8%EB%93%9C%ED%8F%B0+%EA%B0%80%EB%B0%A9+HPABCC401B&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/521/240/2209358521_0000009.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/057/00/221000000375057.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210651388"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "메종키츠네 여성 폭스헤드 메리노울 가디건 네이비 IW00506KT1036 H481",
+            "brand_nm": "MAISON KITSUNE",
+            "cust_sale_price": 359000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207028292&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131225462&conts_divi_cd=20&rel_no=2207028292&rel_divi_cd=10&brand_nm=MAISON+KITSUNE&goods_nm=%EB%A9%94%EC%A2%85%ED%82%A4%EC%B8%A0%EB%84%A4+%EC%97%AC%EC%84%B1+%ED%8F%AD%EC%8A%A4%ED%97%A4%EB%93%9C+%EB%A9%94%EB%A6%AC%EB%85%B8%EC%9A%B8+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+IW00506KT1036+H481&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/292/240/2207028292_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 485000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 여성 메리노 울 4바 니트가디건 그레이 FKJ056AY1002 035",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 1599000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204565510&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131225463&conts_divi_cd=20&rel_no=2204565510&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%97%AC%EC%84%B1+%EB%A9%94%EB%A6%AC%EB%85%B8+%EC%9A%B8+4%EB%B0%94+%EB%8B%88%ED%8A%B8%EA%B0%80%EB%94%94%EA%B1%B4+%EA%B7%B8%EB%A0%88%EC%9D%B4+FKJ056AY1002+035&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/510/240/2204565510_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 3650000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "메종키츠네 폭스헤드 클래식 가디건 베이지 GU00542KT1036 H250",
+            "brand_nm": "MAISON KITSUNE",
+            "cust_sale_price": 359000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208202265&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131225464&conts_divi_cd=20&rel_no=2208202265&rel_divi_cd=10&brand_nm=MAISON+KITSUNE&goods_nm=%EB%A9%94%EC%A2%85%ED%82%A4%EC%B8%A0%EB%84%A4+%ED%8F%AD%EC%8A%A4%ED%97%A4%EB%93%9C+%ED%81%B4%EB%9E%98%EC%8B%9D+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%B2%A0%EC%9D%B4%EC%A7%80+GU00542KT1036+H250&flag_img_path=",
+            "sale_rate": 27,
+            "image_url": "//www.elandrs.com/upload/prd/img/265/240/2208202265_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 495000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[▶FOR WOMAN◀]꼼데가르송 여성 레드하트와펜 가디건 블랙 P1N007 BLACK",
+            "brand_nm": "COMME DES GARCONS",
+            "cust_sale_price": 359000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2202264090&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131225465&conts_divi_cd=20&rel_no=2202264090&rel_divi_cd=10&brand_nm=COMME+DES+GARCONS&goods_nm=%5B%E2%96%B6FOR+WOMAN%E2%97%80%5D%EA%BC%BC%EB%8D%B0%EA%B0%80%EB%A5%B4%EC%86%A1+%EC%97%AC%EC%84%B1+%EB%A0%88%EB%93%9C%ED%95%98%ED%8A%B8%EC%99%80%ED%8E%9C+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%B8%94%EB%9E%99+P1N007+BLACK&flag_img_path=",
+            "sale_rate": 16,
+            "image_url": "//www.elandrs.com/upload/prd/img/090/240/2202264090_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 425000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 여성 메리노 울 4바 니트가디건 네이비 FKJ056AY1002 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 1599000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204565507&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131225466&conts_divi_cd=20&rel_no=2204565507&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%97%AC%EC%84%B1+%EB%A9%94%EB%A6%AC%EB%85%B8+%EC%9A%B8+4%EB%B0%94+%EB%8B%88%ED%8A%B8%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+FKJ056AY1002+415&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/507/240/2204565507_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 3650000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/811/00/221000000371811.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210648715"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 코튼 4바 사선 가디건 네이비 MJT306A07897 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 899000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2205774499&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131223543&conts_divi_cd=20&rel_no=2205774499&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%BD%94%ED%8A%BC+4%EB%B0%94+%EC%82%AC%EC%84%A0+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+MJT306A07897+415&flag_img_path=",
+            "sale_rate": 42,
+            "image_url": "//www.elandrs.com/upload/prd/img/499/240/2205774499_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 1550000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "메종마르지엘라 남성 백스티치 가디건 네이비 S50GP0245 S17785 511",
+            "brand_nm": "Maison Martin Margiela",
+            "cust_sale_price": 699000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2111924369&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131223545&conts_divi_cd=20&rel_no=2111924369&rel_divi_cd=10&brand_nm=Maison+Martin+Margiela&goods_nm=%EB%A9%94%EC%A2%85%EB%A7%88%EB%A5%B4%EC%A7%80%EC%97%98%EB%9D%BC+%EB%82%A8%EC%84%B1+%EB%B0%B1%EC%8A%A4%ED%8B%B0%EC%B9%98+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+S50GP0245+S17785+511&flag_img_path=",
+            "sale_rate": 52,
+            "image_url": "//www.elandrs.com/upload/prd/img/369/240/2111924369_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 1448000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "씨피컴퍼니 윈드 점퍼 블랙 11CMSH249A 005783G 999",
+            "brand_nm": "CP COMPANY",
+            "cust_sale_price": 329000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2111924379&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131223552&conts_divi_cd=20&rel_no=2111924379&rel_divi_cd=10&brand_nm=CP+COMPANY&goods_nm=%EC%94%A8%ED%94%BC%EC%BB%B4%ED%8D%BC%EB%8B%88+%EC%9C%88%EB%93%9C+%EC%A0%90%ED%8D%BC+%EB%B8%94%EB%9E%99+11CMSH249A+005783G+999&flag_img_path=",
+            "sale_rate": 53,
+            "image_url": "//www.elandrs.com/upload/prd/img/379/240/2111924379_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 705000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "버버리 윈체스터 바람막이 자켓 80387521",
+            "brand_nm": "럭셔리갤러리_버버리",
+            "cust_sale_price": 879000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209333858&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131223647&conts_divi_cd=20&rel_no=2209333858&rel_divi_cd=10&brand_nm=%EB%9F%AD%EC%85%94%EB%A6%AC%EA%B0%A4%EB%9F%AC%EB%A6%AC_%EB%B2%84%EB%B2%84%EB%A6%AC&goods_nm=%EB%B2%84%EB%B2%84%EB%A6%AC+%EC%9C%88%EC%B2%B4%EC%8A%A4%ED%84%B0+%EB%B0%94%EB%9E%8C%EB%A7%89%EC%9D%B4+%EC%9E%90%EC%BC%93+80387521&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/858/240/2209333858_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 1105000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 립스탑 메시 4바 후드 집업 재킷 그레이 MJT309A07863 035",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 1609000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208113369&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101131223648&conts_divi_cd=20&rel_no=2208113369&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EB%A6%BD%EC%8A%A4%ED%83%91+%EB%A9%94%EC%8B%9C+4%EB%B0%94+%ED%9B%84%EB%93%9C+%EC%A7%91%EC%97%85+%EC%9E%AC%ED%82%B7+%EA%B7%B8%EB%A0%88%EC%9D%B4+MJT309A07863+035&flag_img_path=",
+            "sale_rate": 23,
+            "image_url": "//www.elandrs.com/upload/prd/img/369/240/2208113369_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 2100000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/793/00/221000000371793.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210648526"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[슈펜×최실장] 라운드토 앵클 부츠 7.0 HPWXAC471Q",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375160&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231270693&conts_divi_cd=20&rel_no=2209375160&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%8A%88%ED%8E%9C%C3%97%EC%B5%9C%EC%8B%A4%EC%9E%A5%5D+%EB%9D%BC%EC%9A%B4%EB%93%9C%ED%86%A0+%EC%95%B5%ED%81%B4+%EB%B6%80%EC%B8%A0+7.0+HPWXAC471Q&flag_img_path=",
+            "sale_rate": 29,
+            "image_url": "//www.elandrs.com/upload/prd/img/160/240/2209375160_0000013.jpg",
+            "sale_price": 56900,
+            "market_price": 69900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[슈펜×최실장] 플랫폼 삭스 부츠 5.0 HPWXAC472Q",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 49900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209375161&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231270694&conts_divi_cd=20&rel_no=2209375161&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EC%8A%88%ED%8E%9C%C3%97%EC%B5%9C%EC%8B%A4%EC%9E%A5%5D+%ED%94%8C%EB%9E%AB%ED%8F%BC+%EC%82%AD%EC%8A%A4+%EB%B6%80%EC%B8%A0+5.0+HPWXAC472Q&flag_img_path=",
+            "sale_rate": 29,
+            "image_url": "//www.elandrs.com/upload/prd/img/161/240/2209375161_0000013.jpg",
+            "sale_price": 56900,
+            "market_price": 69900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "베이직 스퀘어 삭스부츠 5.0 HPWXAC402S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 39900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208179050&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231270695&conts_divi_cd=20&rel_no=2208179050&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%B2%A0%EC%9D%B4%EC%A7%81+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%82%AD%EC%8A%A4%EB%B6%80%EC%B8%A0+5.0+HPWXAC402S&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/050/240/2208179050_0000021.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "브말템 베이직 스퀘어 삭스부츠 7.0 MITW79W01",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 31900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958511&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231270696&conts_divi_cd=20&rel_no=2206958511&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%B8%8C%EB%A7%90%ED%85%9C+%EB%B2%A0%EC%9D%B4%EC%A7%81+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%82%AD%EC%8A%A4%EB%B6%80%EC%B8%A0+7.0+MITW79W01&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/511/240/2206958511_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 39900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "베이직 스퀘어 삭스부츠 7.0 HPWXAC401S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 39900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208179049&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231270699&conts_divi_cd=20&rel_no=2208179049&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%B2%A0%EC%9D%B4%EC%A7%81+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%82%AD%EC%8A%A4%EB%B6%80%EC%B8%A0+7.0+HPWXAC401S&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/049/240/2208179049_0000013.jpg",
+            "sale_price": 0,
+            "market_price": 49900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/604/00/221000000372604.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210647810"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[드로우핏 X 슈펜] 스퀘어 첼시 HPMV9C402M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 69900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209345253&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231278787&conts_divi_cd=20&rel_no=2209345253&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%B2%BC%EC%8B%9C+HPMV9C402M&flag_img_path=",
+            "sale_rate": 13,
+            "image_url": "//www.elandrs.com/upload/prd/img/253/240/2209345253_0000020.jpg",
+            "sale_price": 0,
+            "market_price": 79900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[드로우핏 X 슈펜] 라운드 첼시 HPMV9C405M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 69900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209345254&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231278788&conts_divi_cd=20&rel_no=2209345254&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EB%9D%BC%EC%9A%B4%EB%93%9C+%EC%B2%BC%EC%8B%9C+HPMV9C405M&flag_img_path=",
+            "sale_rate": 13,
+            "image_url": "//www.elandrs.com/upload/prd/img/254/240/2209345254_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 79900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[드로우핏 X 슈펜] 비브람 첼시 HPMV9C403M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 139000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209345252&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231278789&conts_divi_cd=20&rel_no=2209345252&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EB%B9%84%EB%B8%8C%EB%9E%8C+%EC%B2%BC%EC%8B%9C+HPMV9C403M&flag_img_path=",
+            "sale_rate": 13,
+            "image_url": "//www.elandrs.com/upload/prd/img/252/240/2209345252_0000010.jpg",
+            "sale_price": 0,
+            "market_price": 159000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[드로우핏 X 슈펜] 베이직 더비 HPMR7CA55M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 69900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209292342&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231278790&conts_divi_cd=20&rel_no=2209292342&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EB%B2%A0%EC%9D%B4%EC%A7%81+%EB%8D%94%EB%B9%84+HPMR7CA55M&flag_img_path=",
+            "sale_rate": 13,
+            "image_url": "//www.elandrs.com/upload/prd/img/342/240/2209292342_0000010.jpg",
+            "sale_price": 0,
+            "market_price": 79900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[드로우핏 X 슈펜] 베이직 레더 더비 HPMR7CA51M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 109000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209292346&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22101231278792&conts_divi_cd=20&rel_no=2209292346&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%5B%EB%93%9C%EB%A1%9C%EC%9A%B0%ED%95%8F+X+%EC%8A%88%ED%8E%9C%5D+%EB%B2%A0%EC%9D%B4%EC%A7%81+%EB%A0%88%EB%8D%94+%EB%8D%94%EB%B9%84+HPMR7CA51M&flag_img_path=",
+            "sale_rate": 16,
+            "image_url": "//www.elandrs.com/upload/prd/img/346/240/2209292346_0000011.jpg",
+            "sale_price": 0,
+            "market_price": 129000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/595/00/221000000372595.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2210647715"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "쿠션 플랫 1.0 HPWWFCA01S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 17900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207080183&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22082528381421&conts_divi_cd=20&rel_no=2207080183&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%BF%A0%EC%85%98+%ED%94%8C%EB%9E%AB+1.0+HPWWFCA01S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/183/240/2207080183_0000020.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스윗버튼 메리제인 플랫 1.0 HPWWFC402S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 17900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2207080126&vir_vend_no=VV22030537&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22082528381420&conts_divi_cd=20&rel_no=2207080126&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%EC%9C%97%EB%B2%84%ED%8A%BC+%EB%A9%94%EB%A6%AC%EC%A0%9C%EC%9D%B8+%ED%94%8C%EB%9E%AB+1.0+HPWWFC402S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/126/240/2207080126_0000016.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "V컷 스퀘어 쿠션 플랫 1.0 HPWWFC401S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 17900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208113148&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22082528381422&conts_divi_cd=20&rel_no=2208113148&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=V%EC%BB%B7+%EC%8A%A4%ED%80%98%EC%96%B4+%EC%BF%A0%EC%85%98+%ED%94%8C%EB%9E%AB+1.0+HPWWFC401S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/148/240/2208113148_0000014.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "스퀘어 밴딩 바부슈 플랫 1.0 HPWWFB403M",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 15900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958665&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22082528381419&conts_divi_cd=20&rel_no=2206958665&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%A4%ED%80%98%EC%96%B4+%EB%B0%B4%EB%94%A9+%EB%B0%94%EB%B6%80%EC%8A%88+%ED%94%8C%EB%9E%AB+1.0+HPWWFB403M&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/665/240/2206958665_0000015.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/207/00/220800000364207.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2208635794"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "슈탠다드 스니커즈 V2 HPCR3CA01S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 26900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208101317&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22080927188126&conts_divi_cd=20&rel_no=2208101317&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%88%ED%83%A0%EB%8B%A4%EB%93%9C+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+V2+HPCR3CA01S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/317/240/2208101317_0000021.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "슈탠다드 와이드 스니커즈 HPCR3CA02S",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 26900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208101343&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22080927188125&conts_divi_cd=20&rel_no=2208101343&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%88%ED%83%A0%EB%8B%A4%EB%93%9C+%EC%99%80%EC%9D%B4%EB%93%9C+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+HPCR3CA02S&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/343/240/2208101343_0000015.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "네이비 뮬 스니커즈 AFHC78S52",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 26900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206959191&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22080927188450&conts_divi_cd=20&rel_no=2206959191&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EB%84%A4%EC%9D%B4%EB%B9%84+%EB%AE%AC+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+AFHC78S52&flag_img_path=",
+            "sale_rate": 10,
+            "image_url": "//www.elandrs.com/upload/prd/img/191/240/2206959191_0000015.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "슈탠다드 퍼 스니커즈 AFHC79W71",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 20900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206958878&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22080927188451&conts_divi_cd=20&rel_no=2206958878&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%88%ED%83%A0%EB%8B%A4%EB%93%9C+%ED%8D%BC+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+AFHC79W71&flag_img_path=",
+            "sale_rate": 30,
+            "image_url": "//www.elandrs.com/upload/prd/img/878/240/2206958878_0000004.jpg",
+            "sale_price": 0,
+            "market_price": 29900
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "슈탠다드 뮬 스니커즈 AFHC79S05",
+            "brand_nm": "슈펜",
+            "cust_sale_price": 18900,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2206957967&vir_vend_no=VV22030535&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22080927188453&conts_divi_cd=20&rel_no=2206957967&rel_divi_cd=10&brand_nm=%EC%8A%88%ED%8E%9C&goods_nm=%EC%8A%88%ED%83%A0%EB%8B%A4%EB%93%9C+%EB%AE%AC+%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88+AFHC79S05&flag_img_path=",
+            "sale_rate": 5,
+            "image_url": "//www.elandrs.com/upload/prd/img/967/240/2206957967_0000014.jpg",
+            "sale_price": 0,
+            "market_price": 19900
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/903/00/220800000359903.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2208629905"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 남성 로고 패치 버킷햇 MHC327A07110 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 429000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112013146&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536449&conts_divi_cd=20&rel_no=2112013146&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EB%82%A8%EC%84%B1+%EB%A1%9C%EA%B3%A0+%ED%8C%A8%EC%B9%98+%EB%B2%84%ED%82%B7%ED%96%87+MHC327A07110+415&flag_img_path=",
+            "sale_rate": 43,
+            "image_url": "//www.elandrs.com/upload/prd/img/146/240/2112013146_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 750000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 코튼 4바 사선 가디건 네이비 MJT306A07897 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 899000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2205774499&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536454&conts_divi_cd=20&rel_no=2205774499&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%BD%94%ED%8A%BC+4%EB%B0%94+%EC%82%AC%EC%84%A0+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+MJT306A07897+415&flag_img_path=",
+            "sale_rate": 42,
+            "image_url": "//www.elandrs.com/upload/prd/img/499/240/2205774499_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 1550000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 여성 메리노 울 4바 니트가디건 그레이 FKJ056AY1002 035",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 1599000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204565510&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536452&conts_divi_cd=20&rel_no=2204565510&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%97%AC%EC%84%B1+%EB%A9%94%EB%A6%AC%EB%85%B8+%EC%9A%B8+4%EB%B0%94+%EB%8B%88%ED%8A%B8%EA%B0%80%EB%94%94%EA%B1%B4+%EA%B7%B8%EB%A0%88%EC%9D%B4+FKJ056AY1002+035&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/510/240/2204565510_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 3650000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 페블레더 디보스드 4바 카드지갑 그레이 MAW290A00198 025",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 259000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204606629&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536700&conts_divi_cd=20&rel_no=2204606629&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%ED%8E%98%EB%B8%94%EB%A0%88%EB%8D%94+%EB%94%94%EB%B3%B4%EC%8A%A4%EB%93%9C+4%EB%B0%94+%EC%B9%B4%EB%93%9C%EC%A7%80%EA%B0%91+%EA%B7%B8%EB%A0%88%EC%9D%B4+MAW290A00198+025&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/629/240/2204606629_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 610000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 남성 숄더 스트랩 카드지갑 FAW079A07770 025",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 559000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112013154&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536542&conts_divi_cd=20&rel_no=2112013154&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EB%82%A8%EC%84%B1+%EC%88%84%EB%8D%94+%EC%8A%A4%ED%8A%B8%EB%9E%A9+%EC%B9%B4%EB%93%9C%EC%A7%80%EA%B0%91+FAW079A07770+025&flag_img_path=",
+            "sale_rate": 42,
+            "image_url": "//www.elandrs.com/upload/prd/img/154/240/2112013154_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 960000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/905/00/221100000375905.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2207629232"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 남성 로고 패치 버킷햇 MHC327A07110 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 429000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112013146&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536389&conts_divi_cd=20&rel_no=2112013146&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EB%82%A8%EC%84%B1+%EB%A1%9C%EA%B3%A0+%ED%8C%A8%EC%B9%98+%EB%B2%84%ED%82%B7%ED%96%87+MHC327A07110+415&flag_img_path=",
+            "sale_rate": 43,
+            "image_url": "//www.elandrs.com/upload/prd/img/146/240/2112013146_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 750000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 코튼 4바 사선 가디건 네이비 MJT306A07897 415",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 899000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2205774499&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536390&conts_divi_cd=20&rel_no=2205774499&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%BD%94%ED%8A%BC+4%EB%B0%94+%EC%82%AC%EC%84%A0+%EA%B0%80%EB%94%94%EA%B1%B4+%EB%84%A4%EC%9D%B4%EB%B9%84+MJT306A07897+415&flag_img_path=",
+            "sale_rate": 42,
+            "image_url": "//www.elandrs.com/upload/prd/img/499/240/2205774499_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 1550000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 여성 메리노 울 4바 니트가디건 그레이 FKJ056AY1002 035",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 1599000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204565510&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536392&conts_divi_cd=20&rel_no=2204565510&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%97%AC%EC%84%B1+%EB%A9%94%EB%A6%AC%EB%85%B8+%EC%9A%B8+4%EB%B0%94+%EB%8B%88%ED%8A%B8%EA%B0%80%EB%94%94%EA%B1%B4+%EA%B7%B8%EB%A0%88%EC%9D%B4+FKJ056AY1002+035&flag_img_path=",
+            "sale_rate": 56,
+            "image_url": "//www.elandrs.com/upload/prd/img/510/240/2204565510_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 3650000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 페블레더 디보스드 4바 카드지갑 그레이 MAW290A00198 025",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 259000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204606629&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536714&conts_divi_cd=20&rel_no=2204606629&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%ED%8E%98%EB%B8%94%EB%A0%88%EB%8D%94+%EB%94%94%EB%B3%B4%EC%8A%A4%EB%93%9C+4%EB%B0%94+%EC%B9%B4%EB%93%9C%EC%A7%80%EA%B0%91+%EA%B7%B8%EB%A0%88%EC%9D%B4+MAW290A00198+025&flag_img_path=",
+            "sale_rate": 58,
+            "image_url": "//www.elandrs.com/upload/prd/img/629/240/2204606629_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 610000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "톰브라운 남성 숄더 스트랩 카드지갑 FAW079A07770 025",
+            "brand_nm": "THOM BROWNE",
+            "cust_sale_price": 559000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2112013154&vir_vend_no=VV20015129&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22073126536423&conts_divi_cd=20&rel_no=2112013154&rel_divi_cd=10&brand_nm=THOM+BROWNE&goods_nm=%ED%86%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EB%82%A8%EC%84%B1+%EC%88%84%EB%8D%94+%EC%8A%A4%ED%8A%B8%EB%9E%A9+%EC%B9%B4%EB%93%9C%EC%A7%80%EA%B0%91+FAW079A07770+025&flag_img_path=",
+            "sale_rate": 42,
+            "image_url": "//www.elandrs.com/upload/prd/img/154/240/2112013154_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 960000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/906/00/221100000375906.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2207629203"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "[🖤무배+15%추가할인🖤]아메리칸투어리스터%쌤소나이트당일출고28인치화물DO871003벨트증정",
+            "brand_nm": "아메리칸투어리스터",
+            "cust_sale_price": 143650,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2105901614&vir_vend_no=VV20017404&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22090829417777&conts_divi_cd=20&rel_no=2105901614&rel_divi_cd=10&brand_nm=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0&goods_nm=%5B%F0%9F%96%A4%EB%AC%B4%EB%B0%B0%2B15%25%EC%B6%94%EA%B0%80%ED%95%A0%EC%9D%B8%F0%9F%96%A4%5D%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0%25%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%EB%8B%B9%EC%9D%BC%EC%B6%9C%EA%B3%A028%EC%9D%B8%EC%B9%98%ED%99%94%EB%AC%BCDO871003%EB%B2%A8%ED%8A%B8%EC%A6%9D%EC%A0%95&flag_img_path=",
+            "sale_rate": 33,
+            "image_url": "//www.elandrs.com/upload/prd/img/614/240/2105901614_0000008.jpg",
+            "sale_price": 169000,
+            "market_price": 213000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[🖤무배+15%추가할인🖤]쌤소나이트%당일무료%24인치화물%캐리어커버증정%DO808002뉴코아최저가할인",
+            "brand_nm": "아메리칸투어리스터",
+            "cust_sale_price": 126650,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2107126267&vir_vend_no=VV20017404&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22090829417785&conts_divi_cd=20&rel_no=2107126267&rel_divi_cd=10&brand_nm=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0&goods_nm=%5B%F0%9F%96%A4%EB%AC%B4%EB%B0%B0%2B15%25%EC%B6%94%EA%B0%80%ED%95%A0%EC%9D%B8%F0%9F%96%A4%5D%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%25%EB%8B%B9%EC%9D%BC%EB%AC%B4%EB%A3%8C%2524%EC%9D%B8%EC%B9%98%ED%99%94%EB%AC%BC%25%EC%BA%90%EB%A6%AC%EC%96%B4%EC%BB%A4%EB%B2%84%EC%A6%9D%EC%A0%95%25DO808002%EB%89%B4%EC%BD%94%EC%95%84%EC%B5%9C%EC%A0%80%EA%B0%80%ED%95%A0%EC%9D%B8&flag_img_path=",
+            "sale_rate": 31,
+            "image_url": "//www.elandrs.com/upload/prd/img/267/240/2107126267_0000010.jpg",
+            "sale_price": 149000,
+            "market_price": 184000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[🖤무배+15%추가할인🖤]아메리칸투어리스터캐리어당일발송사은품방수커버29인치확장화물GL741011",
+            "brand_nm": "아메리칸투어리스터",
+            "cust_sale_price": 225250,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2012397990&vir_vend_no=VV20017404&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22090829417794&conts_divi_cd=20&rel_no=2012397990&rel_divi_cd=10&brand_nm=%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0&goods_nm=%5B%F0%9F%96%A4%EB%AC%B4%EB%B0%B0%2B15%25%EC%B6%94%EA%B0%80%ED%95%A0%EC%9D%B8%F0%9F%96%A4%5D%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B8%ED%88%AC%EC%96%B4%EB%A6%AC%EC%8A%A4%ED%84%B0%EC%BA%90%EB%A6%AC%EC%96%B4%EB%8B%B9%EC%9D%BC%EB%B0%9C%EC%86%A1%EC%82%AC%EC%9D%80%ED%92%88%EB%B0%A9%EC%88%98%EC%BB%A4%EB%B2%8429%EC%9D%B8%EC%B9%98%ED%99%95%EC%9E%A5%ED%99%94%EB%AC%BCGL741011&flag_img_path=",
+            "sale_rate": 16,
+            "image_url": "//www.elandrs.com/upload/prd/img/990/240/2012397990_0000008.jpg",
+            "sale_price": 265000,
+            "market_price": 269000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "로이드 다이애나 진주 비드 14K Gold 목걸이 LNN21091G뉴코아창원점",
+            "brand_nm": "로이드",
+            "cust_sale_price": 299000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2204555594&vir_vend_no=VV20020375&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22090829417784&conts_divi_cd=20&rel_no=2204555594&rel_divi_cd=10&brand_nm=%EB%A1%9C%EC%9D%B4%EB%93%9C&goods_nm=%EB%A1%9C%EC%9D%B4%EB%93%9C+%EB%8B%A4%EC%9D%B4%EC%95%A0%EB%82%98+%EC%A7%84%EC%A3%BC+%EB%B9%84%EB%93%9C+14K+Gold+%EB%AA%A9%EA%B1%B8%EC%9D%B4+LNN21091G%EB%89%B4%EC%BD%94%EC%95%84%EC%B0%BD%EC%9B%90%EC%A0%90&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/594/240/2204555594_0000003.jpg",
+            "sale_price": 0,
+            "market_price": 0
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "[🖤무배+10%추가할인🖤]by 미소페 여성 여자 3cm 소가죽 슬링백 샌들 111912017",
+            "brand_nm": "미소페",
+            "cust_sale_price": 146200,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2203367734&vir_vend_no=VV22028875&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22090829417797&conts_divi_cd=20&rel_no=2203367734&rel_divi_cd=10&brand_nm=%EB%AF%B8%EC%86%8C%ED%8E%98&goods_nm=%5B%F0%9F%96%A4%EB%AC%B4%EB%B0%B0%2B10%25%EC%B6%94%EA%B0%80%ED%95%A0%EC%9D%B8%F0%9F%96%A4%5Dby+%EB%AF%B8%EC%86%8C%ED%8E%98+%EC%97%AC%EC%84%B1+%EC%97%AC%EC%9E%90+3cm+%EC%86%8C%EA%B0%80%EC%A3%BD+%EC%8A%AC%EB%A7%81%EB%B0%B1+%EC%83%8C%EB%93%A4+111912017&flag_img_path=",
+            "sale_rate": 13,
+            "image_url": "//www.elandrs.com/upload/prd/img/734/240/2203367734_0000003.jpg",
+            "sale_price": 168000,
+            "market_price": 0
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/292/00/220900000366292.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2203595178"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "알렉산더맥퀸 포링 숄더백 블랙 686436 DYTX1 1000",
+            "brand_nm": "Alexander McQueen",
+            "cust_sale_price": 1729000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210425728&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22110432807926&conts_divi_cd=20&rel_no=2210425728&rel_divi_cd=10&brand_nm=Alexander+McQueen&goods_nm=%EC%95%8C%EB%A0%89%EC%82%B0%EB%8D%94%EB%A7%A5%ED%80%B8+%ED%8F%AC%EB%A7%81+%EC%88%84%EB%8D%94%EB%B0%B1+%EB%B8%94%EB%9E%99+686436+DYTX1+1000&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/728/240/2210425728_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 2150000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "알렉산더맥퀸 커브백 블랙 656467 1YB40 1000",
+            "brand_nm": "Alexander McQueen",
+            "cust_sale_price": 1729000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2210425726&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22110432807925&conts_divi_cd=20&rel_no=2210425726&rel_divi_cd=10&brand_nm=Alexander+McQueen&goods_nm=%EC%95%8C%EB%A0%89%EC%82%B0%EB%8D%94%EB%A7%A5%ED%80%B8+%EC%BB%A4%EB%B8%8C%EB%B0%B1+%EB%B8%94%EB%9E%99+656467+1YB40+1000&flag_img_path=",
+            "sale_rate": 20,
+            "image_url": "//www.elandrs.com/upload/prd/img/726/240/2210425726_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 2150000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "생로랑 오피움 더블랩 가죽 팔찌 은장 646558 0IH0E 1000",
+            "brand_nm": "SAINT LAURENT",
+            "cust_sale_price": 459000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209294079&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22110432807973&conts_divi_cd=20&rel_no=2209294079&rel_divi_cd=10&brand_nm=SAINT+LAURENT&goods_nm=%EC%83%9D%EB%A1%9C%EB%9E%91+%EC%98%A4%ED%94%BC%EC%9B%80+%EB%8D%94%EB%B8%94%EB%9E%A9+%EA%B0%80%EC%A3%BD+%ED%8C%94%EC%B0%8C+%EC%9D%80%EC%9E%A5+646558+0IH0E+1000&flag_img_path=",
+            "sale_rate": 8,
+            "image_url": "//www.elandrs.com/upload/prd/img/079/240/2209294079_0000006.jpg",
+            "sale_price": 0,
+            "market_price": 500000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "구찌 오피디아 점보 GG 수프림 숄더백 503877 UKMIG 2570",
+            "brand_nm": "GUCCI",
+            "cust_sale_price": 2459000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2209273214&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22110432807955&conts_divi_cd=20&rel_no=2209273214&rel_divi_cd=10&brand_nm=GUCCI&goods_nm=%EA%B5%AC%EC%B0%8C+%EC%98%A4%ED%94%BC%EB%94%94%EC%95%84+%EC%A0%90%EB%B3%B4+GG+%EC%88%98%ED%94%84%EB%A6%BC+%EC%88%84%EB%8D%94%EB%B0%B1+503877+UKMIG+2570&flag_img_path=",
+            "sale_rate": 5,
+            "image_url": "//www.elandrs.com/upload/prd/img/214/240/2209273214_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 2590000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "보테가베네타 루프백 스몰 680255 V1G11 9412",
+            "brand_nm": "BOTTEGA VENETA",
+            "cust_sale_price": 2399000,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2208101326&vir_vend_no=VV18009255&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B22110432807946&conts_divi_cd=20&rel_no=2208101326&rel_divi_cd=10&brand_nm=BOTTEGA+VENETA&goods_nm=%EB%B3%B4%ED%85%8C%EA%B0%80%EB%B2%A0%EB%84%A4%ED%83%80+%EB%A3%A8%ED%94%84%EB%B0%B1+%EC%8A%A4%EB%AA%B0+680255+V1G11+9412&flag_img_path=",
+            "sale_rate": 9,
+            "image_url": "//www.elandrs.com/upload/prd/img/326/240/2208101326_0000001.jpg",
+            "sale_price": 0,
+            "market_price": 2650000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/022/00/221100000377022.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2203592248"
+      },
+      {
+        "goods_list": [
+          {
+            "flag_img_path": "",
+            "goods_nm": "수원점_[포멜카멜레]클래식 미니 토트 크로스백_FHY1F2HD016",
+            "brand_nm": "FORMEL CAMELE",
+            "cust_sale_price": 62750,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108514621&vir_vend_no=VV21021109&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B21083098792389&conts_divi_cd=20&rel_no=2108514621&rel_divi_cd=10&brand_nm=FORMEL+CAMELE&goods_nm=%EC%88%98%EC%9B%90%EC%A0%90_%5B%ED%8F%AC%EB%A9%9C%EC%B9%B4%EB%A9%9C%EB%A0%88%5D%ED%81%B4%EB%9E%98%EC%8B%9D+%EB%AF%B8%EB%8B%88+%ED%86%A0%ED%8A%B8+%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B0%B1_FHY1F2HD016&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/621/240/2108514621_0000025.jpg",
+            "sale_price": 0,
+            "market_price": 68600
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "평택점_[포멜카멜레]선셋 라탄 버킷백 FGS1F2HS081Z1",
+            "brand_nm": "FORMEL CAMELE",
+            "cust_sale_price": 81570,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108358083&vir_vend_no=VV21024722&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B21083098792390&conts_divi_cd=20&rel_no=2108358083&rel_divi_cd=10&brand_nm=FORMEL+CAMELE&goods_nm=%ED%8F%89%ED%83%9D%EC%A0%90_%5B%ED%8F%AC%EB%A9%9C%EC%B9%B4%EB%A9%9C%EB%A0%88%5D%EC%84%A0%EC%85%8B+%EB%9D%BC%ED%83%84+%EB%B2%84%ED%82%B7%EB%B0%B1+FGS1F2HS081Z1&flag_img_path=",
+            "sale_rate": 7,
+            "image_url": "//www.elandrs.com/upload/prd/img/083/240/2108358083_0000007.jpg",
+            "sale_price": 0,
+            "market_price": 88000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "평택점_[포멜카멜레]클라우드 셔링 크로스바디 FGF1F2HD012Y2",
+            "brand_nm": "FORMEL CAMELE",
+            "cust_sale_price": 72300,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108358053&vir_vend_no=VV21024722&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B21083098792392&conts_divi_cd=20&rel_no=2108358053&rel_divi_cd=10&brand_nm=FORMEL+CAMELE&goods_nm=%ED%8F%89%ED%83%9D%EC%A0%90_%5B%ED%8F%AC%EB%A9%9C%EC%B9%B4%EB%A9%9C%EB%A0%88%5D%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C+%EC%85%94%EB%A7%81+%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B0%94%EB%94%94+FGF1F2HD012Y2&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/053/240/2108358053_0000007.jpg",
+            "sale_price": 0,
+            "market_price": 78000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "평택점_[포멜카멜레]셀리나 투웨이새들백 FGF1F2HD088Y1",
+            "brand_nm": "FORMEL CAMELE",
+            "cust_sale_price": 100100,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108358056&vir_vend_no=VV21024722&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B21083098792394&conts_divi_cd=20&rel_no=2108358056&rel_divi_cd=10&brand_nm=FORMEL+CAMELE&goods_nm=%ED%8F%89%ED%83%9D%EC%A0%90_%5B%ED%8F%AC%EB%A9%9C%EC%B9%B4%EB%A9%9C%EB%A0%88%5D%EC%85%80%EB%A6%AC%EB%82%98+%ED%88%AC%EC%9B%A8%EC%9D%B4%EC%83%88%EB%93%A4%EB%B0%B1+FGF1F2HD088Y1&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/056/240/2108358056_0000007.jpg",
+            "sale_price": 0,
+            "market_price": 108000
+          },
+          {
+            "flag_img_path": "",
+            "goods_nm": "평택점_[포멜카멜레]마블장식숄더크로스백 2종1 FLHY1F2HS041",
+            "brand_nm": "AK플라자",
+            "cust_sale_price": 183520,
+            "link_url": "https://m.elandmall.com/goods/initGoodsDetail.action?goods_no=2108358060&vir_vend_no=VV21024722&sale_shop_divi_cd=&disp_ctg_no=2110554377&sale_area_no=&tr_yn=N&conts_dist_no=B21083098792397&conts_divi_cd=20&rel_no=2108358060&rel_divi_cd=10&brand_nm=AK%ED%94%8C%EB%9D%BC%EC%9E%90&goods_nm=%ED%8F%89%ED%83%9D%EC%A0%90_%5B%ED%8F%AC%EB%A9%9C%EC%B9%B4%EB%A9%9C%EB%A0%88%5D%EB%A7%88%EB%B8%94%EC%9E%A5%EC%8B%9D%EC%88%84%EB%8D%94%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B0%B1+2%EC%A2%851+FLHY1F2HS041&flag_img_path=",
+            "sale_rate": 0,
+            "image_url": "//www.elandrs.com/upload/prd/img/060/240/2108358060_0000016.jpg",
+            "sale_price": 0,
+            "market_price": 198000
+          }
+        ],
+        "image_url": "//www.elandrs.com/upload/dspl/banner/11/672/00/210800000288672.jpg",
+        "link_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2108537795"
+      }
+    ]
+  },
+  "resultMsg": "success"
+}

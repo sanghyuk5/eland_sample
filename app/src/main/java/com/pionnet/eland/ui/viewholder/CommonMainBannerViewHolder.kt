@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.request.target.Target
 import com.orhanobut.logger.Logger
+import com.pionnet.eland.databinding.ViewCommonMainBannerModuleBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
-import com.pionnet.eland.databinding.ViewMainBannerModuleBinding
 import com.pionnet.eland.model.Banner
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget
@@ -17,8 +17,8 @@ import com.pionnet.eland.utils.GlideApp
 import kotlinx.coroutines.*
 import kotlin.math.ceil
 
-class MainBannerViewHolder(
-    private val binding: ViewMainBannerModuleBinding,
+class CommonMainBannerViewHolder(
+    private val binding: ViewCommonMainBannerModuleBinding,
     private val lifecycleOwner: LifecycleOwner
 ) : BaseViewHolder(binding.root) {
 
@@ -27,7 +27,7 @@ class MainBannerViewHolder(
     private lateinit var job: Job
 
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.MainBannerData)?.let {
+        (data as? ModuleData.CommonMainBanner)?.let {
             initView(it.mainBannerData)
         }
     }

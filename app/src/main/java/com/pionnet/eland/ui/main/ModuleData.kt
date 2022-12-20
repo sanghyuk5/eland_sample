@@ -5,7 +5,7 @@ import com.pionnet.eland.model.*
 sealed class ModuleData {
     abstract fun clone(): ModuleData
 
-    data class MainBannerData(
+    data class CommonMainBanner(
         val mainBannerData: List<Banner>
     ) : ModuleData() {
         override fun clone(): ModuleData {
@@ -26,8 +26,9 @@ sealed class ModuleData {
         companion object
     }
 
-    data class HomeMultiBannerData(
-        val homeBannerData: List<Banner>
+    data class CommonMultiBannerData(
+        val bannerData: List<Banner>,
+        val isShowDivide: Boolean = true
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -227,7 +228,17 @@ sealed class ModuleData {
         companion object
     }
 
-    data class PlanInfoData(
+    data class CommonCenterTitleData(
+        val title: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonWebViewData(
         val shopInfo: PlanDetailData.Data.ShopInfo
     ) : ModuleData() {
         override fun clone(): ModuleData {
@@ -240,6 +251,58 @@ sealed class ModuleData {
     data class PlanTabTitleData(
         val tabTitle: String,
         val count: Int
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EKidsCategoryData(
+        val categoryData: List<EKidsData.Data.Category>
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EKidsCategoryGoodsData(
+        val goodsData: Goods
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EKidsBrandData(
+        val bannerData: List<Banner>
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EKidsRecommendCategoryData(
+        val categoryData: List<EKidsData.Data.ExpandGroup.Group>,
+        var viewType: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EKidsExpandableData(
+        val isExpand: Boolean,
+        val viewType: String
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()

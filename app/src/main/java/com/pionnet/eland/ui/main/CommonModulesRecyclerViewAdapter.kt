@@ -23,8 +23,8 @@ class CommonModulesRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return when (viewType) {
-            ModuleData.MainBannerData.ordinal() -> MainBannerViewHolder(
-                    ViewMainBannerModuleBinding.inflate(
+            ModuleData.CommonMainBanner.ordinal() -> CommonMainBannerViewHolder(
+                    ViewCommonMainBannerModuleBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false
@@ -39,8 +39,8 @@ class CommonModulesRecyclerViewAdapter(
                     )
                 )
 
-            ModuleData.HomeMultiBannerData.ordinal() -> HomeMultiBannerViewHolder(
-                    ViewHomeMultiBannerModuleBinding.inflate(
+            ModuleData.CommonMultiBannerData.ordinal() -> CommonMultiBannerViewHolder(
+                    ViewCommonMultiBannerModuleBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false
@@ -191,16 +191,64 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.PlanInfoData.ordinal() -> PlanInfoViewHolder(
-                ViewPlanInfoModuleBinding.inflate(
+            ModuleData.CommonCenterTitleData.ordinal() -> CommonCenterTitleViewHolder(
+                ViewCommonCenterTitleModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            ModuleData.PlanTabTitleData.ordinal() -> PlanTabTitleViewHolder(
-                ViewPlanTabTitleModuleBinding.inflate(
+            ModuleData.CommonWebViewData.ordinal() -> CommonWebViewViewHolder(
+                ViewCommonWebViewModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.PlanTabTitleData.ordinal() -> PlanDetailTabTitleViewHolder(
+                ViewPlanDetailTabTitleModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EKidsCategoryData.ordinal() -> EKidsCategoryViewHolder(
+                ViewEkidsCategoryModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EKidsCategoryGoodsData.ordinal() -> EKidsCategoryGoodsViewHolder(
+                ViewEkidsCategoryGoodsModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EKidsBrandData.ordinal() -> EKidsBrandViewHolder(
+                ViewEkidsBrandModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EKidsRecommendCategoryData.ordinal() -> EKidsRecommendCategoryViewHolder(
+                ViewEkidsRecommendCategoryModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EKidsExpandableData.ordinal() -> EKidsExpandableViewHolder(
+                ViewEkidsExpandableModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
