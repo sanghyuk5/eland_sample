@@ -144,6 +144,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                                     categoryGoods.goodsList!!.chunked(2).forEachIndexed { index, goodsInfo ->
                                         moduleList.add(
                                             ModuleData.CommonGoodsGridData(
+                                                "storeShop",
                                                 goodsInfo,
                                                 index
                                             )
@@ -247,7 +248,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                             smartPickGoodsData.chunked(2).forEachIndexed { addIndex, addItem ->
                                 dataSet.add(
                                     index + addIndex + 1,
-                                    ModuleData.CommonGoodsGridData(addItem, addIndex)
+                                    ModuleData.CommonGoodsGridData("storeShop", addItem, addIndex)
                                 )
                             }
 

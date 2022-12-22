@@ -140,6 +140,7 @@ class PlanDetailViewModel : CommonViewModel() {
                                 goodsInfo.goodsList?.chunked(2)?.forEach {
                                     dataSet.add(
                                         ModuleData.CommonGoodsGridData(
+                                            "planDetail",
                                             it,
                                             index
                                         )

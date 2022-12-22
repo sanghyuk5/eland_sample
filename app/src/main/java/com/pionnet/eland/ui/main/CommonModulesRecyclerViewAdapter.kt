@@ -255,6 +255,22 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
+            ModuleData.TempData.ordinal() -> EKidsExpandableViewHolder(
+                ViewEkidsExpandableModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.PlanGoodsData.ordinal() -> PlanGoodsViewHolder(
+                ViewPlanGoodsModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
             else -> UnknownViewHolder(
                 ViewUnknownModuleBinding.inflate(
                     LayoutInflater.from(parent.context),

@@ -4,7 +4,7 @@ import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
 import com.pionnet.eland.model.Resource
 import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.tabmenu.TabData
+import com.pionnet.eland.model.TabData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*

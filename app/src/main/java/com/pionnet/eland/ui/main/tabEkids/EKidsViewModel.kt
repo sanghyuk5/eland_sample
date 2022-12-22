@@ -218,7 +218,7 @@ class EKidsViewModel : CommonViewModel() {
         list.chunked(2).forEach {
             moduleList.add(
                 ModuleData.CommonGoodsGridData(
-                    it, 0
+                    "ekids", it, 0
                 )
             )
         }

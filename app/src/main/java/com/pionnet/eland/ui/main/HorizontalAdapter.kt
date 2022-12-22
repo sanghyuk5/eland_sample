@@ -14,7 +14,7 @@ import com.pionnet.eland.utils.priceFormat
 
 /**
  * 사용하는 곳
- * MD추천(홈 영역), 나의 단골매장(NC백화점)
+ * MD추천(홈 영역), 나의 단골매장(NC백화점), 기획전("40")
  */
 
 class HorizontalAdapter

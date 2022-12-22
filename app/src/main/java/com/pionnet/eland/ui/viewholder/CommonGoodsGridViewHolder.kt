@@ -1,6 +1,7 @@
 package com.pionnet.eland.ui.viewholder
 
 import android.view.View
+import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ViewCommonGoodsGridModuleBinding
 import com.pionnet.eland.databinding.ViewItemCommonGoodBinding
 import com.pionnet.eland.model.Goods
@@ -14,30 +15,31 @@ class CommonGoodsGridViewHolder(
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
         (data as? ModuleData.CommonGoodsGridData)?.let {
-            initView(it.goodsData)
+            initView(it, position)
         }
     }
 
-    private fun initView(data: List<Goods>) = with(binding) {
-        if (data.getOrNull(0)?.imageUrl.isNullOrEmpty()) viewLeftGood.root.visibility = View.INVISIBLE
+    private fun initView(data: ModuleData.CommonGoodsGridData, position: Int) = with(binding) {
+        if (data.goodsData.getOrNull(0)?.imageUrl.isNullOrEmpty()) viewLeftGood.root.visibility = View.INVISIBLE
         else {
             viewLeftGood.root.visibility = View.VISIBLE
-            viewLeftGood.setView(data[0]) { pickGoodsNo ->
+            viewLeftGood.setView(data.viewType, data.goodsData[0], position * 2) { pickGoodsNo ->
 
             }
         }
 
-        if (data.getOrNull(1)?.imageUrl.isNullOrEmpty()) viewRightGood.root.visibility = View.INVISIBLE
+        if (data.goodsData.getOrNull(1)?.imageUrl.isNullOrEmpty()) viewRightGood.root.visibility = View.INVISIBLE
         else {
             viewRightGood.root.visibility = View.VISIBLE
-            viewRightGood.setView(data[1]) { pickGoodsNo ->
+            viewRightGood.setView(data.viewType, data.goodsData[1], position * 2 + 1) { pickGoodsNo ->
 
             }
         }
     }
 
-    private fun ViewItemCommonGoodBinding.setView(data: Goods, Callback: (String?) -> Unit) {
+    private fun ViewItemCommonGoodBinding.setView(viewType: String, data: Goods, position: Int, Callback: (String?) -> Unit) {
         GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
+
         tvBrand.text = data.brand
         tvContent.text = data.goodsName
         tvPercent.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
@@ -50,7 +52,18 @@ class CommonGoodsGridViewHolder(
         ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
         tvReply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
         tvReply.text = "리뷰(" + data.commentCnt.toString() + ")"
+        cfvFlag.viewType = "goods"
         cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
         cfvFlag.flags = FlagUtil.from(data.iconView)
+
+        if (viewType == "best") {
+            tvRank.visibility = View.VISIBLE
+            tvRank.text = (position + 1).toString()
+            if (position + 1 <= 3) tvRank.setBackgroundResource(R.drawable.ic_baseline_rectangle_red_24)
+            else if (position + 1 <= 20) tvRank.setBackgroundResource(R.drawable.ic_baseline_rectangle_orange_24)
+            else tvRank.visibility = View.GONE
+        } else {
+            tvRank.visibility = View.GONE
+        }
     }
 }

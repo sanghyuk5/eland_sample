@@ -31,6 +31,7 @@ class CommonGoodsLargeViewHolder(
         ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
         tvReply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
         tvReply.text = "리뷰(" + data.commentCnt.toString() + ")"
+        cfvFlag.viewType = "goods"
         cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
         cfvFlag.flags = FlagUtil.from(data.iconView)
     }

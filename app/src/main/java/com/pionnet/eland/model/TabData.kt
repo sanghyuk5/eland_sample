@@ -1,4 +1,4 @@
-package com.pionnet.eland.model.tabmenu
+package com.pionnet.eland.model
 
 import com.google.gson.annotations.SerializedName
 

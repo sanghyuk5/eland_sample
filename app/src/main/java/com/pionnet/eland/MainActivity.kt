@@ -8,7 +8,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.databinding.ActivityMainBinding
 import com.pionnet.eland.model.DataSource
-import com.pionnet.eland.model.tabmenu.TabData
+import com.pionnet.eland.model.TabData
 import com.pionnet.eland.ui.main.MainTabMenuAdapter
 import com.pionnet.eland.ui.main.MainTabPagerAdapter
 import com.pionnet.eland.ui.main.MainViewModel

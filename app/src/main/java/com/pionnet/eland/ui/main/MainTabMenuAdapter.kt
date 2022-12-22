@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemMainTabmenuBinding
-import com.pionnet.eland.model.tabmenu.TabData
+import com.pionnet.eland.model.TabData
 import com.pionnet.eland.utils.toPx
 
 class MainTabMenuAdapter : RecyclerView.Adapter<MainTabMenuAdapter.TabMenuViewHolder>() {
