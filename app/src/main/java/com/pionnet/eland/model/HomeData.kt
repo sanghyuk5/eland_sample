@@ -79,8 +79,7 @@ data class HomeData(
             data class CategoryList(
                 @SerializedName("home_md_goods") var goodsList: List<Goods>? = null,
                 @SerializedName("image_url") var imageUrl: String?,
-                @SerializedName("menu_title") var title: String?,
-                var isSelected: Boolean = false
+                @SerializedName("menu_title") var title: String?
             )
         }
 

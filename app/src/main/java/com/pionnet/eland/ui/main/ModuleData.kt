@@ -1,7 +1,6 @@
 package com.pionnet.eland.ui.main
 
 import com.pionnet.eland.model.*
-import com.pionnet.eland.model.LuckyDealData
 
 sealed class ModuleData {
     abstract fun clone(): ModuleData
@@ -99,9 +98,18 @@ sealed class ModuleData {
         companion object
     }
 
-    data class HomeMDRecommendData(
-        val homeMDRecommendData: HomeData.Data.MDRecommend,
-        var isSelected: Boolean = false
+    data class CommonCategoryTab(
+        var categoryData: List<Category>
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonGoodsHorizontalData(
+        val goodsData: List<Goods>
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -314,8 +322,10 @@ sealed class ModuleData {
         companion object
     }
 
-    data class TempData(
-        val categoryList: List<LuckyDealData.Data.CategoryList>
+    data class PlanGoodsData(
+        val goods: List<Goods>?,
+        val imageUrl: String?,
+        val linkUrl: String?
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -324,10 +334,20 @@ sealed class ModuleData {
         companion object
     }
 
-    data class PlanGoodsData(
-        val goods: List<Goods>?,
-        val imageUrl: String?,
-        val linkUrl: String?
+    data class EShopCategoryData(
+        val categoryData: List<EShopData.Data.Group>,
+        var viewType: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class EShopCategoryMoreData(
+        var isShow: Boolean = false,
+        var viewType: String
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()

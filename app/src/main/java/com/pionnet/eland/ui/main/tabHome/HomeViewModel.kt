@@ -1,6 +1,8 @@
 package com.pionnet.eland.ui.main.tabHome
 
 import androidx.lifecycle.*
+import com.pionnet.eland.model.Category
+import com.pionnet.eland.model.HomeData
 import com.pionnet.eland.model.Status
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
@@ -9,7 +11,12 @@ import kotlinx.coroutines.launch
 class HomeViewModel : CommonViewModel() {
     private val repository by lazy { HomeRepository() }
 
-    val homeResult = MutableLiveData<MutableList<ModuleData>>()
+    val result = MutableLiveData<MutableList<ModuleData>>()
+    val tabResult = MutableLiveData<MutableList<ModuleData>>()
+
+    private val moduleList = mutableListOf<ModuleData>()
+
+    private var homeMdCategoryList = listOf<HomeData.Data.MDRecommend.CategoryList>()
 
     /**
      * 홈 api
@@ -17,10 +24,9 @@ class HomeViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestHomeStream().collect {
-                val moduleList = mutableListOf<ModuleData>()
-
                 if (it.status == Status.SUCCESS) {
                     it.data?.let { homeData ->
+                        moduleList.clear()
                         if (!homeData.data.mainBanner.isNullOrEmpty()) {
                             moduleList.add(
                                 ModuleData.CommonMainBanner(
@@ -110,11 +116,6 @@ class HomeViewModel : CommonViewModel() {
                         }
 
                         if (homeData.data.mdRecommend != null && !homeData.data.mdRecommend!!.categoryList.isNullOrEmpty()) {
-                            homeData.data.mdRecommend!!.apply {
-                                categoryList!!.map { it.isSelected = false }
-                            }
-                            homeData.data.mdRecommend!!.categoryList!![0].isSelected = true
-
                             moduleList.add(
                                 ModuleData.CommonTitleData(
                                     homeData.data.mdRecommend!!.title ?: "MD추천",
@@ -122,19 +123,58 @@ class HomeViewModel : CommonViewModel() {
                                 )
                             )
 
+                            homeMdCategoryList = homeData.data.mdRecommend!!.categoryList!!
+                            val categoryList = homeData.data.mdRecommend!!.categoryList!!.mapIndexed { index, category ->
+                                Category(imageUrl = category.imageUrl,
+                                    title = category.title,
+                                    isSelected = index == 0
+                                )
+                            }
+
                             moduleList.add(
-                                ModuleData.HomeMDRecommendData(
-                                    homeData.data.mdRecommend!!
+                                ModuleData.CommonCategoryTab(
+                                    categoryList
+                                )
+                            )
+
+                            moduleList.add(
+                                ModuleData.CommonGoodsHorizontalData(
+                                    homeMdCategoryList[0].goodsList!!
                                 )
                             )
                         }
 
-                        homeResult.postValue(moduleList)
+                        result.postValue(moduleList)
                     }
                 } else if (it.status == Status.ERROR) {
-                    homeResult.postValue(moduleList)
+                    result.postValue(moduleList)
                 }
             }
         }
+    }
+
+    fun setTabGoodsItem(selectedPosition: Int) {
+        val dataSet = moduleList.map { it.clone() }.toMutableList()
+
+        moduleList.forEachIndexed { index, item ->
+            when(item) {
+                is ModuleData.CommonCategoryTab -> {
+                    val categoryList = homeMdCategoryList.mapIndexed { index, category ->
+                        Category(imageUrl = category.imageUrl,
+                            title = category.title,
+                            isSelected = index == selectedPosition
+                        )
+                    }
+
+                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList)
+                }
+
+                is ModuleData.CommonGoodsHorizontalData -> {
+                    dataSet[index] = ModuleData.CommonGoodsHorizontalData(homeMdCategoryList[selectedPosition].goodsList!!)
+                }
+            }
+        }
+
+        tabResult.postValue(dataSet)
     }
 }

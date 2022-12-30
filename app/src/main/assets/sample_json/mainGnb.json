@@ -48,7 +48,7 @@
       },
       {
         "webview": "N",
-        "menu_cd": "스",
+        "menu_cd": "120",
         "api_url": "/api/dispctg/getEsInitDispCtgApi.action?disp_ctg_no=2001428825",
         "image_url": "",
         "menu_lank": 7,

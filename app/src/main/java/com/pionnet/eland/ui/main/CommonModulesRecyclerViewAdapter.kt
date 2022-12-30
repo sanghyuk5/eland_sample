@@ -95,8 +95,16 @@ class CommonModulesRecyclerViewAdapter(
                     )
                 )
 
-            ModuleData.HomeMDRecommendData.ordinal() -> HomeMDRecommendViewHolder(
-                ViewHomeMdRecommendModuleBinding.inflate(
+            ModuleData.CommonCategoryTab.ordinal() -> CommonCategoryTabViewHolder(
+                ViewCommonCategoryTabModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.CommonGoodsHorizontalData.ordinal() -> CommonGoodsHorizontalViewHolder(
+                ViewCommonGoodsHorizontalModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -255,16 +263,24 @@ class CommonModulesRecyclerViewAdapter(
                 )
             )
 
-            ModuleData.TempData.ordinal() -> EKidsExpandableViewHolder(
-                ViewEkidsExpandableModuleBinding.inflate(
+            ModuleData.PlanGoodsData.ordinal() -> PlanGoodsViewHolder(
+                ViewPlanGoodsModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            ModuleData.PlanGoodsData.ordinal() -> PlanGoodsViewHolder(
-                ViewPlanGoodsModuleBinding.inflate(
+            ModuleData.EShopCategoryData.ordinal() -> EShopCategoryViewHolder(
+                ViewEShopCategoryModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.EShopCategoryMoreData.ordinal() -> EShopCategoryMoreViewHolder(
+                ViewEShopCategoryMoreModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false

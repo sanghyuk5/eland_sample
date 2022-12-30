@@ -13,9 +13,9 @@ data class PlanData (
         @SerializedName("plan_list") var planList: List<PlanList>? = null,
     ) {
         data class CategoryList(
-            @SerializedName("img_path") var img_path: String?,
+            @SerializedName("img_path") var image: String?,
             @SerializedName("disp_ctg_no") var disp_ctg_no: String?,
-            @SerializedName("ldisp_ctg_show_nm") var ldisp_ctg_show_nm: String?
+            @SerializedName("disp_ctg_nm") var name: String?
         )
 
         data class PageInfo(

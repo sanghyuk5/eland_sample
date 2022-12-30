@@ -1,7 +1,6 @@
 package com.pionnet.eland.ui.viewholder
 
 import com.pionnet.eland.databinding.ViewPlanGoodsModuleBinding
-import com.pionnet.eland.ui.main.HorizontalAdapter
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 
@@ -18,7 +17,7 @@ class PlanGoodsViewHolder(
     private fun initView(data: ModuleData.PlanGoodsData) = with(binding) {
         GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivPlan)
 
-        rvPlan.adapter = HorizontalAdapter().apply {
+        rvPlan.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
             submitList(data.goods)
         }
     }

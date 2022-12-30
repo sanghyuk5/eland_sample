@@ -11,7 +11,6 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewHomeCategoryIconModuleBinding
 import com.pionnet.eland.databinding.ViewItemCategoryIconBinding
-import com.pionnet.eland.model.Category
 import com.pionnet.eland.model.HomeData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp

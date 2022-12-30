@@ -2,7 +2,6 @@ package com.pionnet.eland.ui.main.tabEkids
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.model.EKidsData
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.model.Status
@@ -13,7 +12,7 @@ import kotlinx.coroutines.launch
 class EKidsViewModel : CommonViewModel() {
     private val repository by lazy { EKidsRepository() }
 
-    val eKidsResult = MutableLiveData<MutableList<ModuleData>>()
+    val result = MutableLiveData<MutableList<ModuleData>>()
     val tabResult = MutableLiveData<MutableList<ModuleData>>()
 
     private val moduleList = mutableListOf<ModuleData>()
@@ -24,6 +23,8 @@ class EKidsViewModel : CommonViewModel() {
     private var weeklyBestGoodsList = listOf<Goods>()
     private var newArrivalGoodsList = listOf<Goods>()
 
+    private var tabClickViewType = "weeklyBest"
+    private var selectedPosition = 0
     private var indexAddNewArrivalGoods = 0
     private var isWeeklyBestClick = false
     private var isNewArrivalClick = false
@@ -141,7 +142,7 @@ class EKidsViewModel : CommonViewModel() {
                             }
                         }
 
-                        eKidsResult.postValue(moduleList)
+                        result.postValue(moduleList)
                     }
                 } else if (it.status == Status.ERROR) {
 
@@ -173,11 +174,15 @@ class EKidsViewModel : CommonViewModel() {
     }
 
     fun setTabGoodsView(selectedPosition: Int, viewType: String) {
+        this.selectedPosition = selectedPosition
+
         if (viewType == "weeklyBest") {
+            tabClickViewType = "weeklyBest"
             isWeeklyBestClick = false
             weeklyBestGoodsList = weeklyBestGroup[selectedPosition].goods!!
             indexAddNewArrivalGoods = weeklyBestGoodsList.take(20).chunked(2).size
         } else {
+            tabClickViewType = "newArrival"
             isNewArrivalClick = false
             newArrivalGoodsList = newArrivalGroup[selectedPosition].goods!!
         }
@@ -191,11 +196,27 @@ class EKidsViewModel : CommonViewModel() {
             when(item) {
                 is ModuleData.EKidsRecommendCategoryData -> {
                     if (item.viewType == "weeklyBest") {
+//                        if (tabClickViewType == "weeklyBest") {
+//                            weeklyBestGroup.mapIndexed { index, group ->
+//                                group.isSelected = index == selectedPosition
+//                            }
+//
+//                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(weeklyBestGroup, "newArrival")
+//                        }
+
                         val newList = mutableListOf<ModuleData>()
                         val goodsList = if (isWeeklyBestClick) weeklyBestGoodsList else weeklyBestGoodsList.take(20)
                         addItemWithGoods(newList, goodsList, true, isWeeklyBestClick, "weeklyBest")
                         dataSet.addAll(index + 1, newList)
                     } else if (item.viewType == "newArrival") {
+//                        if (tabClickViewType == "newArrival") {
+//                            newArrivalGroup.mapIndexed { index, group ->
+//                                group.isSelected = index == selectedPosition
+//                            }
+//
+//                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(newArrivalGroup, "newArrival")
+//                        }
+
                         val newList = mutableListOf<ModuleData>()
                         val goodsList = if (isNewArrivalClick) newArrivalGoodsList else newArrivalGoodsList.take(20)
                         addItemWithGoods(newList, goodsList, true, isNewArrivalClick, "newArrival")

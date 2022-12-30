@@ -15,15 +15,15 @@ class CommonGoodsGridViewHolder(
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
         (data as? ModuleData.CommonGoodsGridData)?.let {
-            initView(it, position)
+            initView(it)
         }
     }
 
-    private fun initView(data: ModuleData.CommonGoodsGridData, position: Int) = with(binding) {
+    private fun initView(data: ModuleData.CommonGoodsGridData,) = with(binding) {
         if (data.goodsData.getOrNull(0)?.imageUrl.isNullOrEmpty()) viewLeftGood.root.visibility = View.INVISIBLE
         else {
             viewLeftGood.root.visibility = View.VISIBLE
-            viewLeftGood.setView(data.viewType, data.goodsData[0], position * 2) { pickGoodsNo ->
+            viewLeftGood.setView(data.viewType, data.goodsData[0], data.index * 2) { pickGoodsNo ->
 
             }
         }
@@ -31,7 +31,7 @@ class CommonGoodsGridViewHolder(
         if (data.goodsData.getOrNull(1)?.imageUrl.isNullOrEmpty()) viewRightGood.root.visibility = View.INVISIBLE
         else {
             viewRightGood.root.visibility = View.VISIBLE
-            viewRightGood.setView(data.viewType, data.goodsData[1], position * 2 + 1) { pickGoodsNo ->
+            viewRightGood.setView(data.viewType, data.goodsData[1], data.index * 2 + 1) { pickGoodsNo ->
 
             }
         }

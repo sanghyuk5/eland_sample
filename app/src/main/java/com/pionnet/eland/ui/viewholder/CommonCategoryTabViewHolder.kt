@@ -1,15 +1,15 @@
 package com.pionnet.eland.ui.viewholder
 
-import com.pionnet.eland.databinding.ViewHomeMdRecommendModuleBinding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.pionnet.eland.databinding.ViewItemMdRecommendCategoryBinding
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.ui.main.HorizontalAdapter
+import com.pionnet.eland.EventBus
+import com.pionnet.eland.databinding.ViewCommonCategoryTabModuleBinding
+import com.pionnet.eland.databinding.ViewItemCommonCategoryBinding
+import com.pionnet.eland.model.Category
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx
@@ -19,58 +19,50 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class HomeMDRecommendViewHolder(
-    private val binding: ViewHomeMdRecommendModuleBinding
+class CommonCategoryTabViewHolder(
+    private val binding: ViewCommonCategoryTabModuleBinding
 ) : BaseViewHolder(binding.root) {
 
-    private var mdRecommend: HomeData.Data.MDRecommend? = null
+    private var category: ModuleData.CommonCategoryTab? = null
 
     private val tabClickCallback: ItemClickIntCallback = { index ->
-        mdRecommend?.categoryList?.select(index) {
-            mdRecommend?.categoryList = it.toMutableList()
-            (binding.rvGoods.adapter as? HorizontalAdapter)?.submitList(it.getOrNull(index)?.goodsList)
+        category?.categoryData?.select(index) {
+            category?.categoryData = it.toMutableList()
+            EventBus.fire(index)
         }
     }
 
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.HomeMDRecommendData)?.let {
-            initView(it.homeMDRecommendData)
+        (data as? ModuleData.CommonCategoryTab)?.let {
+            initView(it)
         }
     }
 
-    private fun initView(data: HomeData.Data.MDRecommend) = with(binding) {
-        mdRecommend = data
+    private fun initView(data: ModuleData.CommonCategoryTab) = with(binding) {
+        category = data
 
-        var selectedTabItem = data.categoryList?.indexOfFirst { it.isSelected } ?: -1
+        var selectedTabItem = data.categoryData.indexOfFirst { it.isSelected }
         if (selectedTabItem == -1) selectedTabItem = 0
 
         rvCategory.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
 
-            adapter = HomeMDCategoryAdapter(tabClickCallback).apply {
-                submitList(data.categoryList)
+            adapter = CategoryAdapter(tabClickCallback).apply {
+                submitList(data.categoryData)
             }
 
             smoothScrollToPosition(selectedTabItem)
         }
-
-        rvGoods.apply {
-            if (adapter == null) {
-                adapter = HorizontalAdapter().apply {
-                    submitList(data.categoryList!![selectedTabItem].goodsList)
-                }
-            }
-        }
     }
 
-    private fun List<HomeData.Data.MDRecommend.CategoryList>.select(index: Int, callback: (List<HomeData.Data.MDRecommend.CategoryList>) -> Unit) {
+    private fun List<Category>.select(index: Int, callback: (List<Category>) -> Unit) {
         val data = this.map { it.copy() }.toMutableList()
         val selectedItem = data.indexOfFirst { it.isSelected }
         if (selectedItem != -1 && selectedItem != index) {
             data.getOrNull(selectedItem)?.isSelected = false
             data.getOrNull(index)?.isSelected = true
             binding.rvCategory.apply {
-                (adapter as? HomeMDCategoryAdapter)?.submitList(data)
+                (adapter as? CategoryAdapter)?.submitList(data)
                 CoroutineScope(Dispatchers.Main).launch {
                     delay(200)
                     scrollToPosition(index)
@@ -80,12 +72,12 @@ class HomeMDRecommendViewHolder(
         }
     }
 
-    private inner class HomeMDCategoryAdapter(private val tabClickCallback: ItemClickIntCallback)
-        : ListAdapter<HomeData.Data.MDRecommend.CategoryList, HomeMDCategoryAdapter.ViewHolder>(DiffCallback()) {
+    private inner class CategoryAdapter(private val tabClickCallback: ItemClickIntCallback)
+        : ListAdapter<Category, CategoryAdapter.ViewHolder>(DiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
-                ViewItemMdRecommendCategoryBinding.inflate(
+                ViewItemCommonCategoryBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -100,10 +92,10 @@ class HomeMDRecommendViewHolder(
             }
         }
 
-        private inner class ViewHolder(val binding: ViewItemMdRecommendCategoryBinding)
+        private inner class ViewHolder(val binding: ViewItemCommonCategoryBinding)
             : RecyclerView.ViewHolder(binding.root) {
 
-            fun bind(data: HomeData.Data.MDRecommend.CategoryList) = with(binding) {
+            fun bind(data: Category) = with(binding) {
                 GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivCategory)
                 tvCategory.text = data.title
 
@@ -112,11 +104,11 @@ class HomeMDRecommendViewHolder(
         }
     }
 
-    private inner class DiffCallback : DiffUtil.ItemCallback<HomeData.Data.MDRecommend.CategoryList>() {
-        override fun areItemsTheSame(oldItem: HomeData.Data.MDRecommend.CategoryList, newItem: HomeData.Data.MDRecommend.CategoryList): Boolean =
+    private inner class DiffCallback : DiffUtil.ItemCallback<Category>() {
+        override fun areItemsTheSame(oldItem: Category, newItem: Category): Boolean =
             oldItem == newItem
 
-        override fun areContentsTheSame(oldItem: HomeData.Data.MDRecommend.CategoryList, newItem: HomeData.Data.MDRecommend.CategoryList): Boolean =
+        override fun areContentsTheSame(oldItem: Category, newItem: Category): Boolean =
             oldItem == newItem
     }
 }

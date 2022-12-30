@@ -8,9 +8,11 @@ import com.pionnet.eland.ui.main.tabBest.BestModulesFragment
 import com.pionnet.eland.ui.main.tabEkids.EKidsModulesFragment
 import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment
 import com.pionnet.eland.ui.main.tabLuckyDeal.LuckyDealModulesFragment
+import com.pionnet.eland.ui.main.tabEShop.EShopModulesFragment
 import com.pionnet.eland.ui.main.tabPlan.PlanModulesFragment
 import com.pionnet.eland.ui.main.tabPlanDetail.PlanDetailModulesFragment
 import com.pionnet.eland.ui.main.tabStoreShop.StoreShopModulesFragment
+import com.pionnet.eland.ui.main.tabWeb.MainWebViewFragment
 
 class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fragmentActivity: FragmentActivity)
     : FragmentStateAdapter(fragmentActivity) {
@@ -28,11 +30,11 @@ class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fr
             "30" -> BestModulesFragment()
             "40" -> PlanModulesFragment()
             "60" -> StoreShopModulesFragment.create("")
+            "80" -> MainWebViewFragment.create(tabs[position].link_url)
             "110" -> EKidsModulesFragment()
+            "120" -> EShopModulesFragment()
             "130" -> PlanDetailModulesFragment()
-            else -> {
-                HomeModulesFragment()
-            }
+            else -> HomeModulesFragment()
         }
 
         fragments[gnbItem.menu_cd] = fragment

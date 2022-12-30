@@ -16,9 +16,9 @@ class EKidsExpandableViewHolder(
     init {
         binding.cvMore.setOnClickListener {
             if (isWeeklyBest) {
-                EventBus.fire(HolderEvent(HolderEventType.EXPAND_WEEKLY, binding.tvMore.text.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_WEEKLY, binding.tvMore.text.toString()))
             } else {
-                EventBus.fire(HolderEvent(HolderEventType.EXPAND_NEW_ARRIVAL, binding.tvMore.text.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_ARRIVAL, binding.tvMore.text.toString()))
             }
         }
     }

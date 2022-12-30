@@ -27,6 +27,7 @@ data class Goods(
 
 data class Category(
     @SerializedName("image_url") var imageUrl: String?,
-    @SerializedName("link_url") var linkUrl: String?,
-    @SerializedName("title") var title: String?
+    @SerializedName("link_url") var linkUrl: String? = null,
+    @SerializedName("title") var title: String?,
+    var isSelected: Boolean = false
 )

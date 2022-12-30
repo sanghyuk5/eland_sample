@@ -5,19 +5,22 @@ import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.orhanobut.logger.Logger
 import com.pionnet.eland.SingleLiveEvent
 
 abstract class MainBaseFragment(@LayoutRes contentLayoutId: Int = 0) : Fragment(contentLayoutId) {
 
-    private lateinit var tabName: String
-
-    protected var apiUrl: String = ""
+    protected var url: String = ""
     protected var params: String = ""
 
     protected val mainViewModel: MainViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        arguments?.let {
+            url = it.getString(KEY_ITEM_URL) ?: ""
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -31,6 +34,8 @@ abstract class MainBaseFragment(@LayoutRes contentLayoutId: Int = 0) : Fragment(
     open fun onRequestRefresh() {}
 
     companion object {
+        const val KEY_ITEM_TEXT: String = "keyItemText"
         const val KEY_ITEM_PARAMS: String = "keyItemParams"
+        const val KEY_ITEM_URL: String = "keyItemUrl"
     }
 }

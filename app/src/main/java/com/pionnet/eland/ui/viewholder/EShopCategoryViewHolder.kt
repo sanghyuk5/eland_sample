@@ -2,61 +2,62 @@ package com.pionnet.eland.ui.viewholder
 
 import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
-import com.pionnet.eland.databinding.ViewEkidsRecommendCategoryModuleBinding
-import com.pionnet.eland.databinding.ViewItemEkidsRecommendCategoryBinding
-import com.pionnet.eland.model.EKidsData
+import com.pionnet.eland.databinding.ViewEShopCategoryModuleBinding
+import com.pionnet.eland.databinding.ViewItemEShopCategoryItemBinding
+import com.pionnet.eland.model.EShopData
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.utils.toPx
-import com.pionnet.eland.views.HorizontalMarginDecoration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class EKidsRecommendCategoryViewHolder(
-    private val binding: ViewEkidsRecommendCategoryModuleBinding
+class EShopCategoryViewHolder(
+    private val binding: ViewEShopCategoryModuleBinding
 ) : BaseViewHolder(binding.root) {
 
-    private var groupData: List<EKidsData.Data.ExpandGroup.Group>? = null
-    private var isWeeklyBest = false
+    private var category: List<EShopData.Data.Group>? = null
+    private var isIssue = false
 
     private val tabClickCallback: ItemClickIntCallback = { index ->
-        groupData?.select(index)
-
-        if (isWeeklyBest) {
-            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_WEEKLY, index.toString()))
-        } else {
-            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_ARRIVAL, index.toString()))
+        category?.select(index) {
+            category = it.toMutableList()
+            if (isIssue) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ISSUE, index.toString()))
+            } else {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ARRIVAL, index.toString()))
+            }
         }
     }
 
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.EKidsRecommendCategoryData)?.let {
+        (data as? ModuleData.EShopCategoryData)?.let {
             initView(it)
         }
     }
 
-    private fun initView(data: ModuleData.EKidsRecommendCategoryData) = with(binding) {
-        groupData = data.categoryData
-        isWeeklyBest = data.viewType == "weeklyBest"
+    private fun initView(data: ModuleData.EShopCategoryData) = with(binding) {
+        category = data.categoryData
+        isIssue = data.viewType == "issue"
 
         rvCategory.apply {
-            if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
-
             adapter = CategoryAdapter(tabClickCallback).apply {
+                layoutManager = GridLayoutManager(binding.root.context, data.categoryData.size)
                 submitList(data.categoryData)
             }
         }
     }
 
-    private fun List<EKidsData.Data.ExpandGroup.Group>.select(index: Int) {
+    private fun List<EShopData.Data.Group>.select(index: Int, callback: (List<EShopData.Data.Group>) -> Unit) {
         val data = this.map { it.copy() }.toMutableList()
         val selectedItem = data.indexOfFirst { it.isSelected }
         if (selectedItem != -1 && selectedItem != index) {
@@ -69,15 +70,16 @@ class EKidsRecommendCategoryViewHolder(
                     scrollToPosition(index)
                 }
             }
+            callback.invoke(data)
         }
     }
 
     private inner class CategoryAdapter(private val tabClickCallback: ItemClickIntCallback)
-        : ListAdapter<EKidsData.Data.ExpandGroup.Group, CategoryAdapter.ViewHolder>(DiffCallback()) {
+        : ListAdapter<EShopData.Data.Group, CategoryAdapter.ViewHolder>(DiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
-                ViewItemEkidsRecommendCategoryBinding.inflate(
+                ViewItemEShopCategoryItemBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -86,34 +88,36 @@ class EKidsRecommendCategoryViewHolder(
         }
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.bind(currentList[position])
+            holder.bind(currentList[position], position)
             holder.itemView.setOnClickListener {
                 tabClickCallback.invoke(position)
             }
         }
 
-        private inner class ViewHolder(val binding: ViewItemEkidsRecommendCategoryBinding)
+        private inner class ViewHolder(val binding: ViewItemEShopCategoryItemBinding)
             : RecyclerView.ViewHolder(binding.root) {
 
-            fun bind(data: EKidsData.Data.ExpandGroup.Group) = with(binding) {
+            fun bind(data: EShopData.Data.Group, position: Int) = with(binding) {
                 if (data.isSelected) {
-                    tvCategory.setTextColor(Color.parseColor("#ffffff"))
-                    cvCategory.setCardBackgroundColor(Color.parseColor("#414141"))
+                    tvName.setTextColor(Color.parseColor("#c9000b"))
+                    ivBar.visibility = View.VISIBLE
                 } else {
-                    tvCategory.setTextColor(Color.parseColor("#414141"))
-                    cvCategory.setCardBackgroundColor(Color.parseColor("#ffffff"))
+                    tvName.setTextColor(Color.parseColor("#353535"))
+                    ivBar.visibility = View.GONE
                 }
 
-                tvCategory.text = data.name
+                ivDivider.visibility = if (position == currentList.size - 1) View.GONE else View.VISIBLE
+
+                tvName.text = data.title
             }
         }
     }
 
-    private inner class DiffCallback : DiffUtil.ItemCallback<EKidsData.Data.ExpandGroup.Group>() {
-        override fun areItemsTheSame(oldItem: EKidsData.Data.ExpandGroup.Group, newItem: EKidsData.Data.ExpandGroup.Group): Boolean =
+    private inner class DiffCallback : DiffUtil.ItemCallback<EShopData.Data.Group>() {
+        override fun areItemsTheSame(oldItem: EShopData.Data.Group, newItem: EShopData.Data.Group): Boolean =
             oldItem == newItem
 
-        override fun areContentsTheSame(oldItem: EKidsData.Data.ExpandGroup.Group, newItem: EKidsData.Data.ExpandGroup.Group): Boolean =
+        override fun areContentsTheSame(oldItem: EShopData.Data.Group, newItem: EShopData.Data.Group): Boolean =
             oldItem == newItem
     }
 }

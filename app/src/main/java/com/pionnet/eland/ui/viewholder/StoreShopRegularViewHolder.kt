@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.databinding.ViewItemStoreShopRegularMenuBinding
 import com.pionnet.eland.databinding.ViewStoreShopRegularModuleBinding
-import com.pionnet.eland.ui.main.HorizontalAdapter
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.main.StringDiffCallback
 
@@ -37,7 +36,7 @@ class StoreShopRegularViewHolder(
                 submitList(menuList)
             }
 
-            rvRegularItem.adapter = HorizontalAdapter().apply {
+            rvRegularItem.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
                 submitList(data.goods)
             }
         }

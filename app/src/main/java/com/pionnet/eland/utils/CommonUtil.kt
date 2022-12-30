@@ -53,3 +53,23 @@ fun getDisplaySize(context: Context): DisplayMetrics {
     }
     return displayMetrics
 }
+
+inline fun <reified T> MutableList<T>.removeRange(range: IntRange): List<T> {
+    val fromIndex = range.first
+    val toIndex = range.last
+    if (fromIndex == toIndex) {
+        return listOf()
+    }
+
+    if (fromIndex >= size) {
+        throw IndexOutOfBoundsException("fromIndex $fromIndex >= size $size")
+    }
+    if (toIndex > size) {
+        throw IndexOutOfBoundsException("toIndex $toIndex > size $size")
+    }
+    if (fromIndex > toIndex) {
+        throw IndexOutOfBoundsException("fromIndex $fromIndex > toIndex $toIndex")
+    }
+
+    return filterIndexed { i, _ -> i < fromIndex || i > toIndex }
+}

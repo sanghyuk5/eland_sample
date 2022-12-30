@@ -38,24 +38,24 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
         viewModelScope.launch {
             repository.requestStoreShopStream(params).collect {
                 if (it.status == Status.SUCCESS) {
-                    it.data?.let { storeShopData ->
-                        if (!storeShopData.data.mainBanner.isNullOrEmpty()) {
+                    it.data?.data?.let { storeShopData ->
+                        if (!storeShopData.mainBanner.isNullOrEmpty()) {
                             moduleList.add(
                                 ModuleData.CommonMainBanner(
-                                    storeShopData.data.mainBanner!!
+                                    storeShopData.mainBanner!!
                                 )
                             )
                         }
 
-                        if (storeShopData.data.delivery != null) {
+                        if (storeShopData.delivery != null) {
                             moduleList.add(
                                 ModuleData.StoreShopDeliveryData(
-                                    storeShopData.data.delivery!!
+                                    storeShopData.delivery!!
                                 )
                             )
                         }
 
-                        if (!storeShopData.data.recommend.isNullOrEmpty()) {
+                        if (!storeShopData.recommend.isNullOrEmpty()) {
                             moduleList.add(
                                 ModuleData.CommonTitleData(
                                     "추천 지점",
@@ -65,12 +65,12 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
 
                             moduleList.add(
                                 ModuleData.StoreShopRecommendData(
-                                    storeShopData.data.recommend!!
+                                    storeShopData.recommend!!
                                 )
                             )
                         }
 
-                        if (storeShopData.data.regular != null) { //size가 0이여도 그려야함.
+                        if (storeShopData.regular != null) { //size가 0이여도 그려야함.
                             moduleList.add(
                                 ModuleData.CommonTitleData(
                                     "나의 단골매장",
@@ -78,7 +78,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                                 )
                             )
 
-                            regularData = storeShopData.data.regular!!
+                            regularData = storeShopData.regular!!
                             moduleList.add(
                                 ModuleData.StoreShopRegularStoreData(
                                     regularData,
@@ -88,7 +88,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                             )
                         }
 
-                        if (!storeShopData.data.smartPick.isNullOrEmpty()) {
+                        if (!storeShopData.smartPick.isNullOrEmpty()) {
                             moduleList.add(
                                 ModuleData.CommonTitleData(
                                     "스토어픽 지점",
@@ -96,10 +96,10 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                                 )
                             )
 
-                            smartPickData = storeShopData.data.smartPick!!
-                            pickName = storeShopData.data.smartPick!![0].name ?: ""
-                            pickNo = storeShopData.data.smartPick!![0].categoryNo
-                            storeShopData.data.smartPick!![0].isSelected = true
+                            smartPickData = storeShopData.smartPick!!
+                            pickName = storeShopData.smartPick!![0].name ?: ""
+                            pickNo = storeShopData.smartPick!![0].categoryNo
+                            storeShopData.smartPick!![0].isSelected = true
 
                             moduleList.add(
                                 ModuleData.StoreShopPickSearchData(
@@ -117,7 +117,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                             )
                         }
 
-                        if (!storeShopData.data.categoryGoods.isNullOrEmpty()) {
+                        if (!storeShopData.categoryGoods.isNullOrEmpty()) {
                             moduleList.add(
                                 ModuleData.CommonTitleData(
                                     "카테고리별 베스트 상품",
@@ -125,14 +125,14 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                                 )
                             )
 
-                            storeShopData.data.categoryGoods!![0].isSelected = true
+                            storeShopData.categoryGoods!![0].isSelected = true
                             moduleList.add(
                                 ModuleData.StoreShopCategoryData(
-                                    storeShopData.data.categoryGoods!!
+                                    storeShopData.categoryGoods!!
                                 )
                             )
 
-                            storeShopData.data.categoryGoods!!.forEach { categoryGoods ->
+                            storeShopData.categoryGoods!!.forEach { categoryGoods ->
                                 moduleList.add(
                                     ModuleData.StoreShopCategoryTitleData(
                                         categoryGoods.ctgNm ?: ""

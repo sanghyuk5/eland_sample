@@ -11,13 +11,8 @@ import android.webkit.WebView
 import com.pionnet.eland.BuildConfig
 
 open class ElandWebView : WebView {
-    private var callback: Callback? = null
     private lateinit var elandWebViewClient: ElandWebViewClient
     private lateinit var elandWebChromeClient: ElandWebChromeClient
-
-    interface Callback {
-        fun onScrollChanged(dy: Int)
-    }
 
     constructor(context: Context) : super(context) {
         init(context)
@@ -32,10 +27,6 @@ open class ElandWebView : WebView {
         if (isInEditMode) return
 
         setWebContentsDebuggingEnabled(BuildConfig.DEBUG)
-
-        if (context is Callback) {
-            setCallback(context)
-        }
 
         settings.textZoom = 100
         settings.loadWithOverviewMode = true
@@ -62,14 +53,11 @@ open class ElandWebView : WebView {
 
     }
 
-    private fun setCallback(callback: Callback) {
-        this.callback = callback
+    fun setClientCallback(callback: ElandWebViewClient.Callback) {
+        elandWebViewClient.setCallback(callback)
     }
 
-    override fun onScrollChanged(l: Int, t: Int, oldl: Int, oldt: Int) {
-        super.onScrollChanged(l, t, oldl, oldt)
-        callback?.onScrollChanged(t - oldt)
-    }
+
 
     override fun loadUrl(url: String) {
         if (!TextUtils.isEmpty(url)) {

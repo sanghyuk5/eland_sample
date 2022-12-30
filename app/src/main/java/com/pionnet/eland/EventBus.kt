@@ -14,12 +14,19 @@ object EventBus {
     private var lastEventTime: Long = 0
 
     val linkEvent: MutableLiveData<SingleLiveEvent<LinkEvent>> = MutableLiveData()
-    val holderEvent: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val storeShopRegularSearchStore: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
     val storeShopSearchStore: MutableLiveData<SingleLiveEvent<ModuleData.StoreShopPickSearchData>> = MutableLiveData()
     val sort: MutableLiveData<SingleLiveEvent<List<String>>> = MutableLiveData()
     val viewChange: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
     val tabChange: MutableLiveData<SingleLiveEvent<Int>> = MutableLiveData()
+    val eKidsWeeklyBestTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eKidsNewArrivalTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eKidsWeeklyExpand: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eKidsNewArrivalExpand: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eShopIssueTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eShopArrivalTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eShopIssueMore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val eShopArrivalMore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
 
     fun fire(event: LinkEvent) {
         if (isIntervalTooShort()) return
@@ -30,7 +37,16 @@ object EventBus {
     fun fire(event: HolderEvent) {
         if (isIntervalTooShort()) return
 
-        holderEvent.value = SingleLiveEvent(event)
+        when (event.type) {
+            HolderEventType.TAB_CLICK_E_KIDS_WEEKLY -> eKidsWeeklyBestTabChange.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_E_KIDS_ARRIVAL -> eKidsNewArrivalTabChange.value = SingleLiveEvent(event)
+            HolderEventType.EXPAND_E_KIDS_WEEKLY -> eKidsWeeklyExpand.value = SingleLiveEvent(event)
+            HolderEventType.EXPAND_E_KIDS_ARRIVAL -> eKidsNewArrivalExpand.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_E_SHOP_ISSUE -> eShopIssueTabChange.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_E_SHOP_ARRIVAL -> eShopArrivalTabChange.value = SingleLiveEvent(event)
+            HolderEventType.MORE_E_SHOP_ISSUE -> eShopIssueMore.value = SingleLiveEvent(event)
+            HolderEventType.MORE_E_SHOP_ARRIVAL -> eShopArrivalMore.value = SingleLiveEvent(event)
+        }
     }
 
     fun fire(event: ModuleData.StoreShopPickSearchData) {
@@ -44,6 +60,7 @@ object EventBus {
 
         sort.value = SingleLiveEvent(event)
     }
+
 
     fun fire(event: String) {
         if (isIntervalTooShort()) return
@@ -132,12 +149,14 @@ class HolderEvent {
 }
 
 enum class HolderEventType {
-    EXPAND_WEEKLY,
-    EXPAND_NEW_ARRIVAL,
-    TAB_CLICK_WEEKLY,
-    TAB_CLICK_NEW_ARRIVAL,
-    ADD_REPLY,
-    STORE_SHOP_SEARCH
+    TAB_CLICK_E_KIDS_WEEKLY,
+    TAB_CLICK_E_KIDS_ARRIVAL,
+    EXPAND_E_KIDS_WEEKLY,
+    EXPAND_E_KIDS_ARRIVAL,
+    TAB_CLICK_E_SHOP_ISSUE,
+    TAB_CLICK_E_SHOP_ARRIVAL,
+    MORE_E_SHOP_ISSUE,
+    MORE_E_SHOP_ARRIVAL
 }
 
 class SingleLiveEvent<out T>(private val content: T) {
