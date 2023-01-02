@@ -3,31 +3,31 @@ package com.pionnet.eland.model
 import com.google.gson.annotations.SerializedName
 
 data class Banner(
-    @SerializedName("image_url") var imageUrl: String?,
-    @SerializedName("link_url") var linkUrl: String?,
-    @SerializedName("rel_cont_nm") var name: String?
+    @SerializedName("image_url") val imageUrl: String?,
+    @SerializedName("link_url") val linkUrl: String?,
+    @SerializedName("rel_cont_nm") val name: String?
 )
 
 data class Goods(
-    @SerializedName("brand_nm") var brand: String?,
-    @SerializedName("cust_sale_price") var salePrice: Int?,
-    @SerializedName("flag_img_path") var flagImage: String?,
-    @SerializedName("goods_nm") var goodsName: String?,
-    @SerializedName("icon_view") var iconView: String?,
-    @SerializedName("image_url") var imageUrl: String?,
-    @SerializedName("link_url") var linkUrl: String?,
-    @SerializedName("market_price") var marketPrice: Int?,
-    @SerializedName("sale_qty") var saleQty: Int?,
-    @SerializedName("sale_rate") var saleRate: Int?,
-    @SerializedName("time") var time: String?,
-    @SerializedName("title") var title: String?,
-    @SerializedName("goods_star_point") var starPoint: Int?,
-    @SerializedName("goods_comment_count") var commentCnt: Int?,
+    @SerializedName("brand_nm") val brand: String?,
+    @SerializedName("cust_sale_price") val salePrice: Int?,
+    @SerializedName("flag_img_path") val flagImage: String?,
+    @SerializedName("goods_nm") val goodsName: String?,
+    @SerializedName("icon_view") val iconView: String?,
+    @SerializedName("image_url") val imageUrl: String?,
+    @SerializedName("link_url") val linkUrl: String?,
+    @SerializedName("market_price") val marketPrice: Int?,
+    @SerializedName("sale_qty") val saleQty: Int?,
+    @SerializedName("sale_rate") val saleRate: Int?,
+    @SerializedName("time") val time: String?,
+    @SerializedName("title") val title: String?,
+    @SerializedName("goods_star_point") val starPoint: Int?,
+    @SerializedName("goods_comment_count") val commentCnt: Int?,
 )
 
 data class Category(
-    @SerializedName("image_url") var imageUrl: String?,
-    @SerializedName("link_url") var linkUrl: String? = null,
-    @SerializedName("title") var title: String?,
+    @SerializedName("image_url") val imageUrl: String?,
+    @SerializedName("link_url") val linkUrl: String? = null,
+    @SerializedName("title") val title: String?,
     var isSelected: Boolean = false
 )

@@ -32,123 +32,124 @@ class EKidsViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestEKidsStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { eKidsData ->
-                        if (!eKidsData.mainBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMainBanner(
-                                    eKidsData.mainBanner!!
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setEKidsModules(data)
                         }
-
-                        if (!eKidsData.category.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.EKidsCategoryData(
-                                    eKidsData.category!!
-                                )
-                            )
-                        }
-
-                        if (!eKidsData.bandBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMultiBannerData(
-                                    eKidsData.bandBanner!!,
-                                    isShowDivide = false
-                                )
-                            )
-                        }
-
-                        if (!eKidsData.subBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMultiBannerData(
-                                    eKidsData.subBanner!!,
-                                    isShowDivide = false
-                                )
-                            )
-                        }
-
-                        if (eKidsData.specialDeal != null) {
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData(
-                                    eKidsData.specialDeal!!.title ?: "이번주 특가"
-                                )
-                            )
-
-                            eKidsData.specialDeal!!.goods?.forEach { goods ->
-                                moduleList.add(
-                                    ModuleData.EKidsCategoryGoodsData(
-                                        goods
-                                    )
-                                )
-                            }
-                        }
-
-                        if (eKidsData.brandStory != null) {
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData(
-                                    eKidsData.brandStory!!.title ?: "Brand Shop"
-                                )
-                            )
-
-                            moduleList.add(
-                                ModuleData.EKidsBrandData(
-                                    eKidsData.brandStory!!.banner!!
-                                )
-                            )
-                        }
-
-                        if (eKidsData.weeklyBest != null) {
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData(
-                                    eKidsData.weeklyBest!!.title ?: "MD추천"
-                                )
-                            )
-
-                            eKidsData.weeklyBest!!.group?.let { group ->
-                                group[0].isSelected = true
-
-                                weeklyBestGroup = group
-                                weeklyBestGoodsList = group[0].goods!!
-
-                                moduleList.add(
-                                    ModuleData.EKidsRecommendCategoryData(
-                                        group,
-                                        "weeklyBest"
-                                    )
-                                )
-                            }
-                        }
-
-                        if (eKidsData.newArrival != null) {
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData(
-                                    eKidsData.newArrival!!.title ?: "MD추천 신상"
-                                )
-                            )
-
-                            eKidsData.newArrival!!.group?.let { group ->
-                                group[0].isSelected = true
-
-                                newArrivalGroup = group
-                                newArrivalGoodsList = group[0].goods!!
-
-                                moduleList.add(
-                                    ModuleData.EKidsRecommendCategoryData(
-                                        group,
-                                        "newArrival"
-                                    )
-                                )
-                            }
-                        }
-
-                        result.postValue(moduleList)
-                    }
-                } else if (it.status == Status.ERROR) {
-
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
+    }
+
+    private fun setEKidsModules(data: EKidsData.Data) {
+        if (!data.mainBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMainBanner(data.mainBanner)
+            )
+        }
+
+        if (!data.category.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.EKidsCategoryData(data.category)
+            )
+        }
+
+        if (!data.bandBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMultiBannerData(
+                    data.bandBanner,
+                    isShowDivide = false
+                )
+            )
+        }
+
+        if (!data.subBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMultiBannerData(
+                    data.subBanner,
+                    isShowDivide = false
+                )
+            )
+        }
+
+        if (data.specialDeal != null) {
+            moduleList.add(
+                ModuleData.CommonCenterTitleData(
+                    data.specialDeal.title ?: "이번주 특가"
+                )
+            )
+
+            data.specialDeal.goods?.forEach { goods ->
+                moduleList.add(
+                    ModuleData.EKidsCategoryGoodsData(
+                        goods
+                    )
+                )
+            }
+        }
+
+        if (data.brandStory != null) {
+            moduleList.add(
+                ModuleData.CommonCenterTitleData(
+                    data.brandStory.title ?: "Brand Shop"
+                )
+            )
+
+            moduleList.add(
+                ModuleData.EKidsBrandData(
+                    data.brandStory.banner!!
+                )
+            )
+        }
+
+        if (data.weeklyBest != null) {
+            moduleList.add(
+                ModuleData.CommonCenterTitleData(
+                    data.weeklyBest.title ?: "MD추천"
+                )
+            )
+
+            data.weeklyBest.group?.let { group ->
+                group[0].isSelected = true
+
+                weeklyBestGroup = group
+                weeklyBestGoodsList = group[0].goods!!
+
+                moduleList.add(
+                    ModuleData.EKidsRecommendCategoryData(
+                        group,
+                        "weeklyBest"
+                    )
+                )
+            }
+        }
+
+        if (data.newArrival != null) {
+            moduleList.add(
+                ModuleData.CommonCenterTitleData(
+                    data.newArrival.title ?: "MD추천 신상"
+                )
+            )
+
+            data.newArrival.group?.let { group ->
+                group[0].isSelected = true
+
+                newArrivalGroup = group
+                newArrivalGoodsList = group[0].goods!!
+
+                moduleList.add(
+                    ModuleData.EKidsRecommendCategoryData(
+                        group,
+                        "newArrival"
+                    )
+                )
+            }
+        }
+
+        result.postValue(moduleList)
     }
 
     fun setGoodsView() {
@@ -196,26 +197,26 @@ class EKidsViewModel : CommonViewModel() {
             when(item) {
                 is ModuleData.EKidsRecommendCategoryData -> {
                     if (item.viewType == "weeklyBest") {
-//                        if (tabClickViewType == "weeklyBest") {
-//                            weeklyBestGroup.mapIndexed { index, group ->
-//                                group.isSelected = index == selectedPosition
-//                            }
-//
-//                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(weeklyBestGroup, "newArrival")
-//                        }
+                        if (tabClickViewType == "weeklyBest") {
+                            weeklyBestGroup.mapIndexed { index, group ->
+                                group.isSelected = index == selectedPosition
+                            }
+
+                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(weeklyBestGroup, "weeklyBest")
+                        }
 
                         val newList = mutableListOf<ModuleData>()
                         val goodsList = if (isWeeklyBestClick) weeklyBestGoodsList else weeklyBestGoodsList.take(20)
                         addItemWithGoods(newList, goodsList, true, isWeeklyBestClick, "weeklyBest")
                         dataSet.addAll(index + 1, newList)
                     } else if (item.viewType == "newArrival") {
-//                        if (tabClickViewType == "newArrival") {
-//                            newArrivalGroup.mapIndexed { index, group ->
-//                                group.isSelected = index == selectedPosition
-//                            }
-//
-//                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(newArrivalGroup, "newArrival")
-//                        }
+                        if (tabClickViewType == "newArrival") {
+                            newArrivalGroup.mapIndexed { index, group ->
+                                group.isSelected = index == selectedPosition
+                            }
+
+                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(newArrivalGroup, "newArrival")
+                        }
 
                         val newList = mutableListOf<ModuleData>()
                         val goodsList = if (isNewArrivalClick) newArrivalGoodsList else newArrivalGoodsList.take(20)
@@ -238,9 +239,7 @@ class EKidsViewModel : CommonViewModel() {
     ) {
         list.chunked(2).forEach {
             moduleList.add(
-                ModuleData.CommonGoodsGridData(
-                    "ekids", it, 0
-                )
+                ModuleData.CommonGoodsGridData("ekids", it, 0)
             )
         }
 

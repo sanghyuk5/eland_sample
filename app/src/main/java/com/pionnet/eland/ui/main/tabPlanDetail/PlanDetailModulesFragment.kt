@@ -24,7 +24,7 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
     }
 
     private fun observePlanDetail() = with(viewModel) {
-        planResult.observe(viewLifecycleOwner) {
+        result.observe(viewLifecycleOwner) {
             setModules(it)
             setGoodsView(true)
         }

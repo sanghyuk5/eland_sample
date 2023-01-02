@@ -24,39 +24,68 @@ class LuckyDealViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestLucyDealStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { luckyDealData ->
-                        if (!luckyDealData.goodsList.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData("오늘의 럭키딜")
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setLuckyModules(data)
+                        }
+                    },
+                    onFailure = {}
+                )
+            }
+        }
+    }
 
-                            luckyDealData.goodsList!!.forEach { goods ->
-                                moduleList.add(
-                                    ModuleData.HomeLuckyDealGoodsData(
-                                        goods
-                                    )
-                                )
+    private fun setLuckyModules(data: LuckyDealData.Data) {
+        if (!data.goodsList.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonCenterTitleData("오늘의 럭키딜")
+            )
+
+            data.goodsList.forEach { goods ->
+                moduleList.add(
+                    ModuleData.HomeLuckyDealGoodsData(goods)
+                )
+            }
+        }
+
+        if (!data.categoryList.isNullOrEmpty()) {
+            luckyCategoryList = data.categoryList
+            val categoryList = data.categoryList.mapIndexed { index, item ->
+                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
+            }
+
+            moduleList.add(
+                ModuleData.CommonCategoryTab(categoryList)
+            )
+        }
+
+        result.postValue(moduleList)
+    }
+
+    fun requestGoodsData() {
+        val dataSet = moduleList.map { it.clone() }.toMutableList()
+        viewModelScope.launch {
+            repository.requestLucyDealGoodsStream().collect {
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            if (data.goodsInfo != null) {
+                                moduleList.forEachIndexed { index, item ->
+                                    when(item) {
+                                        is ModuleData.CommonCategoryTab -> {
+                                            val newList = mutableListOf<ModuleData>()
+                                            addItemWithGoods(newList, data.goodsInfo.goods!!)
+                                            dataSet.addAll(index + 1, newList)
+                                        }
+                                    }
+                                }
+                                goodsResult.postValue(dataSet)
                             }
                         }
-
-                        if (!luckyDealData.categoryList.isNullOrEmpty()) {
-                            luckyCategoryList = luckyDealData.categoryList!!
-                            val categoryList = luckyDealData.categoryList!!.mapIndexed { index, item ->
-                                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
-                            }
-
-                            moduleList.add(
-                                ModuleData.CommonCategoryTab(
-                                    categoryList
-                                )
-                            )
-                        }
-
-                        result.postValue(moduleList)
-                    }
-
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
     }
@@ -79,42 +108,13 @@ class LuckyDealViewModel : CommonViewModel() {
         tabResult.postValue(dataSet)
     }
 
-    fun requestGoodsData() {
-        val dataSet = moduleList.map { it.clone() }.toMutableList()
-        viewModelScope.launch {
-            repository.requestLucyDealGoodsStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { luckyDealGoodsData ->
-                        if (luckyDealGoodsData.goodsInfo != null) {
-                            moduleList.forEachIndexed { index, item ->
-                                when(item) {
-                                    is ModuleData.CommonCategoryTab -> {
-                                        val newList = mutableListOf<ModuleData>()
-                                        addItemWithGoods(newList, luckyDealGoodsData.goodsInfo!!.goods!!)
-                                        dataSet.addAll(index + 1, newList)
-                                    }
-                                }
-                            }
-                        }
-
-                        goodsResult.postValue(dataSet)
-                    }
-                } else if (it.status == Status.ERROR) {
-                    goodsResult.postValue(dataSet)
-                }
-            }
-        }
-    }
-
     private fun addItemWithGoods(
         moduleList: MutableList<ModuleData>,
         list: List<Goods>
     ) {
         list.chunked(2).forEach {
             moduleList.add(
-                ModuleData.CommonGoodsGridData(
-                    "lucky", it, 0
-                )
+                ModuleData.CommonGoodsGridData("lucky", it, 0)
             )
         }
     }

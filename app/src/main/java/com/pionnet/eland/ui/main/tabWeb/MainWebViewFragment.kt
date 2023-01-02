@@ -26,8 +26,6 @@ class MainWebViewFragment : MainBaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Logger.d("hyuk here")
-
         binding.webView.loadUrl(url)
         binding.webView.setClientCallback(webViewCallback)
     }

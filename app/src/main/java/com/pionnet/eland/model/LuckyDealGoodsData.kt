@@ -8,7 +8,7 @@ data class LuckyDealGoodsData(
     @SerializedName("resultMsg") val resultMsg: String?
 ) {
     data class Data(
-        @SerializedName("goods_info") var goodsInfo: GoodsInfo? = null
+        @SerializedName("goods_info") val goodsInfo: GoodsInfo? = null
     ) {
         data class GoodsInfo(
             @SerializedName("goods_list") val goods: List<Goods>? = null

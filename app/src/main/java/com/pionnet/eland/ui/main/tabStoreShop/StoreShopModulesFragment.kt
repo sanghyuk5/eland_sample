@@ -35,7 +35,7 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
     }
 
     private fun observeStoreShop() = with(viewModel) {
-        storeShopResult.observe(viewLifecycleOwner) {
+        result.observe(viewLifecycleOwner) {
             setModules(it)
             requestStorePickData()
         }

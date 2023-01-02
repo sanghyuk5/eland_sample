@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 class StoreShopViewModel(private val params: String) : CommonViewModel() {
     private val repository by lazy { StoreShopRepository() }
 
-    val storeShopResult = MutableLiveData<MutableList<ModuleData>>()
+    val result = MutableLiveData<MutableList<ModuleData>>()
     val regularHolderResult = MutableLiveData<MutableList<ModuleData>>()
     val sortResult = MutableLiveData<MutableList<ModuleData>>()
 
@@ -37,143 +37,116 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestStoreShopStream(params).collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { storeShopData ->
-                        if (!storeShopData.mainBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMainBanner(
-                                    storeShopData.mainBanner!!
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setStoreShopModules(data)
                         }
-
-                        if (storeShopData.delivery != null) {
-                            moduleList.add(
-                                ModuleData.StoreShopDeliveryData(
-                                    storeShopData.delivery!!
-                                )
-                            )
-                        }
-
-                        if (!storeShopData.recommend.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    "추천 지점",
-                                    ""
-                                )
-                            )
-
-                            moduleList.add(
-                                ModuleData.StoreShopRecommendData(
-                                    storeShopData.recommend!!
-                                )
-                            )
-                        }
-
-                        if (storeShopData.regular != null) { //size가 0이여도 그려야함.
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    "나의 단골매장",
-                                    ""
-                                )
-                            )
-
-                            regularData = storeShopData.regular!!
-                            moduleList.add(
-                                ModuleData.StoreShopRegularStoreData(
-                                    regularData,
-                                    regularGoodsData,
-                                    false
-                                )
-                            )
-                        }
-
-                        if (!storeShopData.smartPick.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    "스토어픽 지점",
-                                    "매장에서 직접 확인하고 픽업해보세요."
-                                )
-                            )
-
-                            smartPickData = storeShopData.smartPick!!
-                            pickName = storeShopData.smartPick!![0].name ?: ""
-                            pickNo = storeShopData.smartPick!![0].categoryNo
-                            storeShopData.smartPick!![0].isSelected = true
-
-                            moduleList.add(
-                                ModuleData.StoreShopPickSearchData(
-                                    smartPickData,
-                                    pickName
-                                )
-                            )
-
-                            moduleList.add(
-                                ModuleData.CommonSortData(
-                                    null,
-                                    1,
-                                    "grid"
-                                )
-                            )
-                        }
-
-                        if (!storeShopData.categoryGoods.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    "카테고리별 베스트 상품",
-                                    ""
-                                )
-                            )
-
-                            storeShopData.categoryGoods!![0].isSelected = true
-                            moduleList.add(
-                                ModuleData.StoreShopCategoryData(
-                                    storeShopData.categoryGoods!!
-                                )
-                            )
-
-                            storeShopData.categoryGoods!!.forEach { categoryGoods ->
-                                moduleList.add(
-                                    ModuleData.StoreShopCategoryTitleData(
-                                        categoryGoods.ctgNm ?: ""
-                                    )
-                                )
-
-                                if (!categoryGoods.goodsList.isNullOrEmpty()) {
-                                    categoryGoodsCount = categoryGoods.goodsList!!.size / 2
-                                    categoryGoods.goodsList!!.chunked(2).forEachIndexed { index, goodsInfo ->
-                                        moduleList.add(
-                                            ModuleData.CommonGoodsGridData(
-                                                "storeShop",
-                                                goodsInfo,
-                                                index
-                                            )
-                                        )
-                                    }
-                                }
-
-                            }
-                        }
-
-                        storeShopResult.postValue(moduleList)
-                    }
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
+    }
+
+    private fun setStoreShopModules(data: StoreShopData.Data) {
+        if (!data.mainBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMainBanner(data.mainBanner)
+            )
+        }
+
+        if (data.delivery != null) {
+            moduleList.add(
+                ModuleData.StoreShopDeliveryData(data.delivery)
+            )
+        }
+
+        if (!data.recommend.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonTitleData("추천 지점", "")
+            )
+
+            moduleList.add(
+                ModuleData.StoreShopRecommendData(data.recommend)
+            )
+        }
+
+        if (data.regular != null) { //size가 0이여도 그려야함.
+            moduleList.add(
+                ModuleData.CommonTitleData("나의 단골매장", "")
+            )
+
+            regularData = data.regular
+            moduleList.add(
+                ModuleData.StoreShopRegularStoreData(regularData, regularGoodsData, false)
+            )
+        }
+
+        if (!data.smartPick.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonTitleData("스토어픽 지점", "매장에서 직접 확인하고 픽업해보세요.")
+            )
+
+            smartPickData = data.smartPick
+            pickName = data.smartPick[0].name ?: ""
+            pickNo = data.smartPick[0].categoryNo
+            data.smartPick[0].isSelected = true
+
+            moduleList.add(
+                ModuleData.StoreShopPickSearchData(smartPickData, pickName)
+            )
+
+            moduleList.add(
+                ModuleData.CommonSortData(null, 1, "grid")
+            )
+        }
+
+        if (!data.categoryGoods.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonTitleData("카테고리별 베스트 상품", "")
+            )
+
+            data.categoryGoods[0].isSelected = true
+            moduleList.add(
+                ModuleData.StoreShopCategoryData(data.categoryGoods)
+            )
+
+            data.categoryGoods.forEach { categoryGoods ->
+                moduleList.add(
+                    ModuleData.StoreShopCategoryTitleData(categoryGoods.ctgNm ?: "")
+                )
+
+                if (!categoryGoods.goodsList.isNullOrEmpty()) {
+                    categoryGoodsCount = categoryGoods.goodsList.size / 2
+                    categoryGoods.goodsList.chunked(2).forEachIndexed { index, goodsInfo ->
+                        moduleList.add(
+                            ModuleData.CommonGoodsGridData("storeShop", goodsInfo, index)
+                        )
+                    }
+                }
+
+            }
+        }
+
+        result.postValue(moduleList)
     }
 
     fun requestStorePickData() {
         viewModelScope.launch {
             repository.requestStorePickStream(pickNo).collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.let { storePickData ->
-                        if (storePickData.data.keywordResult != null && !storePickData.data.keywordResult!!.goodsList.isNullOrEmpty()) {
-                            smartPickGoodsData = storePickData.data.keywordResult!!.goodsList!!
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            if (data.keywordResult != null && !data.keywordResult.goodsList.isNullOrEmpty()) {
+                                smartPickGoodsData = data.keywordResult.goodsList
 
-                            sortResult.postValue(getViewType())
+                                sortResult.postValue(getViewType())
+                            }
                         }
-                    }
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
     }

@@ -18,7 +18,6 @@ class EKidsModulesFragment : CommonModulesBaseFragment() {
 
     private fun observeEKids() = with(viewModel) {
         result.observe(viewLifecycleOwner) {
-            //setModules(it)
             setGoodsView()
         }
     }

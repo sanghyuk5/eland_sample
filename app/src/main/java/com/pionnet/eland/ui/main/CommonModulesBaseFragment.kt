@@ -108,7 +108,6 @@ abstract class CommonModulesBaseFragment :
             }
 
             list.apply {
-                setHasFixedSize(true)
                 layoutManager = linearlayoutManager
                 adapter = CommonModulesRecyclerViewAdapter(
                     this@CommonModulesBaseFragment

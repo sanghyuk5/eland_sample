@@ -18,12 +18,12 @@ class StoreShopRepository {
     /**
      *  스토어쇼핑
      */
-    suspend fun requestStoreShopStream(mbrVendNo: String?): Flow<Resource<StoreShopData>> {
+    suspend fun requestStoreShopStream(mbrVendNo: String?): Flow<Result<StoreShopData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/storeShop.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, StoreShopData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)
@@ -32,12 +32,12 @@ class StoreShopRepository {
     /**
      *  스토어쇼핑 스토어픽
      */
-    suspend fun requestStorePickStream(categoryNo: String?): Flow<Resource<StorePickData>> {
+    suspend fun requestStorePickStream(categoryNo: String?): Flow<Result<StorePickData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/storePick.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, StorePickData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

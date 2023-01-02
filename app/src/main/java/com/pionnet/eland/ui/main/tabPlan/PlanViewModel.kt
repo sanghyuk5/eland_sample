@@ -22,36 +22,38 @@ class PlanViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestPlanStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { planData ->
-                        if (!planData.categoryList.isNullOrEmpty()) {
-                            planCategoryList = planData.categoryList!!
-                            val categoryList = planData.categoryList!!.mapIndexed { index, item ->
-                                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
-                            }
-
-                            moduleList.add(
-                                ModuleData.CommonCategoryTab(
-                                    categoryList
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setPlanModules(data)
                         }
-
-                        if (!planData.planList.isNullOrEmpty()) {
-                            planData.planList!!.forEach {
-                                moduleList.add(
-                                    ModuleData.PlanGoodsData(
-                                        it.goods, it.imageUrl, it.linkUrl
-                                    )
-                                )
-                            }
-                        }
-
-                        result.postValue(moduleList)
-                    }
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
     }
 
+    private fun setPlanModules(data: PlanData.Data) {
+        if (!data.categoryList.isNullOrEmpty()) {
+            planCategoryList = data.categoryList
+            val categoryList = data.categoryList.mapIndexed { index, item ->
+                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
+            }
+
+            moduleList.add(
+                ModuleData.CommonCategoryTab(categoryList)
+            )
+        }
+
+        if (!data.planList.isNullOrEmpty()) {
+            data.planList.forEach {
+                moduleList.add(
+                    ModuleData.PlanGoodsData(it.goods, it.imageUrl, it.linkUrl)
+                )
+            }
+        }
+
+        result.postValue(moduleList)
+    }
 }

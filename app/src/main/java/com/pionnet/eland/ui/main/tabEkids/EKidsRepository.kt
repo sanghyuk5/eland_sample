@@ -15,12 +15,12 @@ class EKidsRepository {
     /**
      *  EKids 데이터
      */
-    suspend fun requestEKidsStream(): Flow<Resource<EKidsData>> {
+    suspend fun requestEKidsStream(): Flow<Result<EKidsData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/ekids.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, EKidsData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

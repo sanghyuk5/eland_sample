@@ -8,19 +8,19 @@ data class BestData (
     @SerializedName("resultMsg") val resultMsg: String?
 ) {
     data class Data(
-        @SerializedName("disp_ctg_list") var categoryList: List<CategoryList>? = null,
-        @SerializedName("goods_info") var goodsInfo: GoodsInfo? = null,
+        @SerializedName("disp_ctg_list") val categoryList: List<CategoryList>? = null,
+        @SerializedName("goods_info") val goodsInfo: GoodsInfo? = null,
     ) {
         data class CategoryList(
-            @SerializedName("img_path") var image: String?,
-            @SerializedName("disp_ctg_show_nm") var disp_ctg_show_nm: String?,
-            @SerializedName("disp_ctg_no") var disp_ctg_no: String?,
-            @SerializedName("ldisp_ctg_show_nm") var name: String?,
-            @SerializedName("ldisp_ctg_no") var ldisp_ctg_no: String?
+            @SerializedName("img_path") val image: String?,
+            @SerializedName("disp_ctg_show_nm") val disp_ctg_show_nm: String?,
+            @SerializedName("disp_ctg_no") val disp_ctg_no: String?,
+            @SerializedName("ldisp_ctg_show_nm") val name: String?,
+            @SerializedName("ldisp_ctg_no") val ldisp_ctg_no: String?
         )
 
         data class GoodsInfo(
-            @SerializedName("goods_list") var goods: List<Goods>? = null,
+            @SerializedName("goods_list") val goods: List<Goods>? = null,
         )
     }
 }

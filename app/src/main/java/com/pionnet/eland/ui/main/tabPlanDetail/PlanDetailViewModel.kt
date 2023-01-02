@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 class PlanDetailViewModel : CommonViewModel() {
     private val repository by lazy { PlanDetailRepository() }
 
-    val planResult = MutableLiveData<MutableList<ModuleData>>()
+    val result = MutableLiveData<MutableList<ModuleData>>()
     val sortResult = MutableLiveData<MutableList<ModuleData>>()
 
     private val moduleList = mutableListOf<ModuleData>()
@@ -25,50 +25,47 @@ class PlanDetailViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestPlanDetailStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { planData ->
-                        if (planData.shopInfo != null) {
-                            shopName = planData.shopInfo!!.name.toString()
-                            moduleList.add(
-                                ModuleData.CommonCenterTitleData(
-                                    shopName
-                                )
-                            )
-
-                            moduleList.add(
-                                ModuleData.CommonWebViewData(
-                                    planData.shopInfo!!
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setPlanDetailModules(data)
                         }
-
-                        if (!planData.tabList.isNullOrEmpty()) {
-                            tabList.clear()
-                            tabList.add("전체")
-                            planData.tabList!!.forEach { planTabList ->
-                                planTabList.name?.let { it -> tabList.add(it) }
-                            }
-
-                            moduleList.add(
-                                ModuleData.CommonSortData(
-                                    tabList,
-                                    sortPosition,
-                                    viewType
-                                )
-                            )
-                        }
-
-                        if (!planData.goodsInfo.isNullOrEmpty()) {
-                            goodsInfo = planData.goodsInfo!!
-                        }
-
-                        planResult.postValue(moduleList)
-                    }
-                } else if (it.status == Status.ERROR) {
-
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
+    }
+
+    private fun setPlanDetailModules(data: PlanDetailData.Data) {
+        if (data.shopInfo != null) {
+            shopName = data.shopInfo.name.toString()
+            moduleList.add(
+                ModuleData.CommonCenterTitleData(shopName)
+            )
+
+            moduleList.add(
+                ModuleData.CommonWebViewData(data.shopInfo)
+            )
+        }
+
+        if (!data.tabList.isNullOrEmpty()) {
+            tabList.clear()
+            tabList.add("전체")
+            data.tabList.forEach { planTabList ->
+                planTabList.name?.let { it -> tabList.add(it) }
+            }
+
+            moduleList.add(
+                ModuleData.CommonSortData(tabList, sortPosition, viewType)
+            )
+        }
+
+        if (!data.goodsInfo.isNullOrEmpty()) {
+            goodsInfo = data.goodsInfo
+        }
+
+        result.postValue(moduleList)
     }
 
     fun setGoodsView(isClick: Boolean) {
@@ -93,18 +90,12 @@ class PlanDetailViewModel : CommonViewModel() {
                         "linear" -> {
                             goodsInfo.forEachIndexed { index, goodsInfo ->
                                 dataSet.add(
-                                    ModuleData.PlanTabTitleData(
-                                        goodsInfo.name ?: "",
-                                        goodsInfo.goodsList?.size ?: 0
-                                    )
+                                    ModuleData.PlanTabTitleData(goodsInfo.name ?: "", goodsInfo.goodsList?.size ?: 0)
                                 )
 
                                 goodsInfo.goodsList?.forEach {
                                     dataSet.add(
-                                        ModuleData.CommonGoodsLinearData(
-                                            it,
-                                            index
-                                        )
+                                        ModuleData.CommonGoodsLinearData(it, index)
                                     )
                                 }
                             }
@@ -112,18 +103,12 @@ class PlanDetailViewModel : CommonViewModel() {
                         "large" -> {
                             goodsInfo.forEachIndexed { index, goodsInfo ->
                                 dataSet.add(
-                                    ModuleData.PlanTabTitleData(
-                                        goodsInfo.name ?: "",
-                                        goodsInfo.goodsList?.size ?: 0
-                                    )
+                                    ModuleData.PlanTabTitleData(goodsInfo.name ?: "", goodsInfo.goodsList?.size ?: 0)
                                 )
 
                                 goodsInfo.goodsList?.forEach {
                                     dataSet.add(
-                                        ModuleData.CommonGoodsLargeData(
-                                            it,
-                                            index
-                                        )
+                                        ModuleData.CommonGoodsLargeData(it, index)
                                     )
                                 }
                             }
@@ -131,19 +116,13 @@ class PlanDetailViewModel : CommonViewModel() {
                         else -> {
                             goodsInfo.forEachIndexed { index, goodsInfo ->
                                 dataSet.add(
-                                    ModuleData.PlanTabTitleData(
-                                        goodsInfo.name ?: "",
-                                        goodsInfo.goodsList?.size ?: 0
+                                    ModuleData.PlanTabTitleData(goodsInfo.name ?: "", goodsInfo.goodsList?.size ?: 0
                                     )
                                 )
 
                                 goodsInfo.goodsList?.chunked(2)?.forEach {
                                     dataSet.add(
-                                        ModuleData.CommonGoodsGridData(
-                                            "planDetail",
-                                            it,
-                                            index
-                                        )
+                                        ModuleData.CommonGoodsGridData("planDetail", it, index)
                                     )
                                 }
                             }

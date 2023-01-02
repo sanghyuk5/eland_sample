@@ -8,10 +8,10 @@ data class StorePickData(
     @SerializedName("resultMsg") val resultMsg: String
 ) {
     data class Data(
-        @SerializedName("keyword_result") var keywordResult: Result? = null,
+        @SerializedName("keyword_result") val keywordResult: Result? = null,
     ) {
         data class Result(
-            @SerializedName("search_goods") var goodsList: List<Goods>?
+            @SerializedName("search_goods") val goodsList: List<Goods>?
         )
     }
 }

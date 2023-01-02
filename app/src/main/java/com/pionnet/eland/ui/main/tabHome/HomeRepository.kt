@@ -30,7 +30,7 @@ class HomeRepository {
     /**
      *  메인 홈 데이터
      */
-    suspend fun requestHomeStream(): Flow<Resource<HomeData>> {
+    suspend fun requestHomeStream(): Flow<Result<HomeData?>> {
         return flow {
             val data = if (DataManager.isIntroToMain) {
                 DataManager.isIntroToMain = false
@@ -40,7 +40,7 @@ class HomeRepository {
                 Gson().fromJson(jsonString, HomeData::class.java)
             }
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

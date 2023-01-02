@@ -2,14 +2,11 @@ package com.pionnet.eland.ui.main.tabEShop
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.model.*
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.ui.main.tabBest.BestRepository
 import com.pionnet.eland.utils.removeRange
 import kotlinx.coroutines.launch
-import java.text.FieldPosition
 
 class EShopViewModel : CommonViewModel() {
     private val repository by lazy { EShopRepository() }
@@ -37,90 +34,78 @@ class EShopViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestEShopStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { eShopData ->
-                        if (!eShopData.mainBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMainBanner(
-                                    eShopData.mainBanner!!
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setEShopModules(data)
                         }
-
-                        if (!eShopData.subBanner.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMultiBannerData(
-                                    eShopData.subBanner!!
-                                )
-                            )
-                        }
-
-                        if (eShopData.issue != null && !eShopData.issue!!.group.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    eShopData.issue!!.title ?: "",
-                                    ""
-                                )
-                            )
-
-                            eShopData.issue!!.group!!.mapIndexed { index, group ->
-                                group.isSelected = index == 0
-                            }
-
-                            moduleList.add(
-                                ModuleData.EShopCategoryData(
-                                    eShopData.issue!!.group!!,
-                                    "issue"
-                                )
-                            )
-
-                            issueGroup = eShopData.issue!!.group!!
-                            issueGoodsList = eShopData.issue!!.group!![0].goods!!
-                            indexAddArrivalItems = eShopData.issue!!.group!![0].goods!!.chunked(2).size
-
-                            issueClickCount = 1
-                        }
-
-                        if (!eShopData.banner2.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonMultiBannerData(
-                                    eShopData.banner2!!
-                                )
-                            )
-                        }
-
-                        if (eShopData.arrival != null && !eShopData.arrival!!.group.isNullOrEmpty()) {
-                            moduleList.add(
-                                ModuleData.CommonTitleData(
-                                    eShopData.arrival!!.title ?: "",
-                                    ""
-                                )
-                            )
-
-                            eShopData.arrival!!.group!!.mapIndexed { index, group ->
-                                group.isSelected = index == 0
-                                group.title = group.category
-                            }
-
-                            moduleList.add(
-                                ModuleData.EShopCategoryData(
-                                    eShopData.arrival!!.group!!,
-                                    "arrival"
-                                )
-                            )
-
-                            arrivalGroup = eShopData.arrival!!.group!!
-                            arrivalGoodsList = eShopData.arrival!!.group!![0].goods!!
-
-                            arrivalClickCount = 1
-                        }
-
-                        result.postValue(moduleList)
-                    }
-
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
+    }
+    
+    private fun setEShopModules(data: EShopData.Data) {
+        if (!data.mainBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMainBanner(data.mainBanner)
+            )
+        }
+
+        if (!data.subBanner.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMultiBannerData(data.subBanner)
+            )
+        }
+
+        if (data.issue != null && !data.issue.group.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonTitleData(data.issue.title ?: "", "")
+            )
+
+            data.issue.group!!.mapIndexed { index, group ->
+                group.isSelected = index == 0
+            }
+
+            moduleList.add(
+                ModuleData.EShopCategoryData(data.issue.group!!, "issue")
+            )
+
+            issueGroup = data.issue.group
+            issueGoodsList = data.issue.group[0].goods!!
+            indexAddArrivalItems = data.issue.group[0].goods!!.chunked(2).size
+
+            issueClickCount = 1
+        }
+
+        if (!data.banner2.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonMultiBannerData(data.banner2)
+            )
+        }
+
+        if (data.arrival != null && !data.arrival.group.isNullOrEmpty()) {
+            moduleList.add(
+                ModuleData.CommonTitleData(data.arrival.title ?: "", "")
+            )
+
+            data.arrival.group.mapIndexed { index, group ->
+                group.isSelected = index == 0
+                group.title = group.category
+            }
+
+            moduleList.add(
+                ModuleData.EShopCategoryData(data.arrival.group, "arrival")
+            )
+
+            arrivalGroup = data.arrival.group
+            arrivalGoodsList = data.arrival.group[0].goods!!
+
+            arrivalClickCount = 1
+        }
+
+        result.postValue(moduleList)
     }
 
     fun setExpandableGoodsView(viewType: String) {
@@ -186,12 +171,7 @@ class EShopViewModel : CommonViewModel() {
                             goodsList = issueGoodsList
                         }
 
-                        addItemWithGoods(
-                            newList,
-                            goodsList,
-                            issueGoodsList.size > 8 * arrivalClickCount,
-                            "issue"
-                        )
+                        addItemWithGoods(newList, goodsList, issueGoodsList.size > 8 * arrivalClickCount, "issue")
 
                         dataSet.addAll(index + 2, newList)
                     } else if (item.viewType == "arrival") {
@@ -213,12 +193,7 @@ class EShopViewModel : CommonViewModel() {
                         val newList = mutableListOf<ModuleData>()
                         val goodsList = if (arrivalGoodsList.size > 8) arrivalGoodsList.take(8 * arrivalClickCount) else arrivalGoodsList
 
-                        addItemWithGoods(
-                            newList,
-                            goodsList,
-                            arrivalGoodsList.size > 8 * arrivalClickCount,
-                            "arrival"
-                        )
+                        addItemWithGoods(newList, goodsList, arrivalGoodsList.size > 8 * arrivalClickCount, "arrival")
 
                         dataSet.addAll(index + indexAddArrivalItems + 2, newList)
                     }
@@ -237,9 +212,7 @@ class EShopViewModel : CommonViewModel() {
     ) {
         list.chunked(2).forEach {
             moduleList.add(
-                ModuleData.CommonGoodsGridData(
-                    "eshop", it, 0
-                )
+                ModuleData.CommonGoodsGridData("eshop", it, 0)
             )
         }
 

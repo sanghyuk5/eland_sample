@@ -19,33 +19,39 @@ class BestViewModel : CommonViewModel() {
     override fun requestData() {
         viewModelScope.launch {
             repository.requestBestStream().collect {
-                if (it.status == Status.SUCCESS) {
-                    it.data?.data?.let { bestData ->
-                        if (!bestData.categoryList.isNullOrEmpty()) {
-                            bestCategoryList = bestData.categoryList!!
-                            val categoryList = bestData.categoryList!!.mapIndexed { index, item ->
-                                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
-                            }
-
-                            moduleList.add(
-                                ModuleData.CommonCategoryTab(
-                                    categoryList
-                                )
-                            )
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setBestModules(data)
                         }
-
-                        if (bestData.goodsInfo != null && !bestData.goodsInfo!!.goods.isNullOrEmpty()) {
-                            val newList = mutableListOf<ModuleData>()
-                            addItemWithGoods(newList, bestData.goodsInfo!!.goods!!)
-                            moduleList.addAll(newList)
-                        }
-
-                        result.postValue(moduleList)
-                    }
-
-                }
+                    },
+                    onFailure = {}
+                )
             }
         }
+    }
+
+    private fun setBestModules(data: BestData.Data) {
+        if (!data.categoryList.isNullOrEmpty()) {
+            bestCategoryList = data.categoryList
+            val categoryList = data.categoryList.mapIndexed { index, item ->
+                Category(imageUrl = item.image, title = item.name, isSelected = index == 0)
+            }
+
+            moduleList.add(
+                ModuleData.CommonCategoryTab(
+                    categoryList
+                )
+            )
+        }
+
+        if (data.goodsInfo != null && !data.goodsInfo.goods.isNullOrEmpty()) {
+            val newList = mutableListOf<ModuleData>()
+            addItemWithGoods(newList, data.goodsInfo.goods)
+            moduleList.addAll(newList)
+        }
+
+        result.postValue(moduleList)
     }
 
     private fun addItemWithGoods(
@@ -54,9 +60,7 @@ class BestViewModel : CommonViewModel() {
     ) {
         list.chunked(2).forEachIndexed { index, item ->
             moduleList.add(
-                ModuleData.CommonGoodsGridData(
-                    "best", item, index, isRank = true
-                )
+                ModuleData.CommonGoodsGridData("best", item, index, isRank = true)
             )
         }
     }

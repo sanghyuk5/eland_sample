@@ -16,23 +16,23 @@ class LuckyDealRepository {
     /**
      *  럭키딜 데이터
      */
-    suspend fun requestLucyDealStream(): Flow<Resource<LuckyDealData>> {
+    suspend fun requestLucyDealStream(): Flow<Result<LuckyDealData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/luckydeal1.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, LuckyDealData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)
     }
 
-    suspend fun requestLucyDealGoodsStream(): Flow<Resource<LuckyDealGoodsData>> {
+    suspend fun requestLucyDealGoodsStream(): Flow<Result<LuckyDealGoodsData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/luckydeal.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, LuckyDealGoodsData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

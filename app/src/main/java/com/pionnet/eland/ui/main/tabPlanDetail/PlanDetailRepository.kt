@@ -28,12 +28,12 @@ class PlanDetailRepository {
     /**
      *  기획전 데이터
      */
-    suspend fun requestPlanDetailStream(): Flow<Resource<PlanDetailData>> {
+    suspend fun requestPlanDetailStream(): Flow<Result<PlanDetailData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/planDetail.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, PlanDetailData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

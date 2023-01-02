@@ -44,12 +44,13 @@ class CommonMainBannerViewHolder(
 
         viewPager.adapter = ViewPagerAdapter(data)
         bannerPosition = Int.MAX_VALUE / 2 - ceil(data.size.toDouble() - 1).toInt()
-
         binding.viewPager.setCurrentItem(bannerPosition, false)
+
+        tvNow.text = ((bannerPosition % data.size) + 1).toString()
         tvTotal.text = "/" + data.size.toString() + "+"
     }
 
-    inner class ViewPagerAdapter(private val data: List<Banner>) : RecyclerView.Adapter<ViewHolder>() {
+    private inner class ViewPagerAdapter(private val data: List<Banner>) : RecyclerView.Adapter<ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
@@ -68,7 +69,7 @@ class CommonMainBannerViewHolder(
         override fun getItemCount(): Int = Int.MAX_VALUE
     }
 
-    inner class ViewHolder(val binding: ViewItemBannerBinding) : RecyclerView.ViewHolder(binding.root) {
+    private inner class ViewHolder(val binding: ViewItemBannerBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Banner) = with(binding) {
             GlideApp.with(itemView.context)
                 .load("https:" + data.imageUrl)
@@ -80,7 +81,6 @@ class CommonMainBannerViewHolder(
     private fun scrollJobCreate() {
         job = lifecycleOwner.lifecycleScope.launchWhenResumed {
             while (lifecycleOwner.lifecycleScope.isActive) {
-                Logger.d("hyuk launch")
                 delay(3000)
                 binding.viewPager.setCurrentItem(++bannerPosition, true)
             }

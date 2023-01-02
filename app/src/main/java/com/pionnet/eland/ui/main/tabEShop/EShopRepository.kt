@@ -16,12 +16,12 @@ class EShopRepository {
     /**
      *  e-shop 데이터
      */
-    suspend fun requestEShopStream(): Flow<Resource<EShopData>> {
+    suspend fun requestEShopStream(): Flow<Result<EShopData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/eshop.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, EShopData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)

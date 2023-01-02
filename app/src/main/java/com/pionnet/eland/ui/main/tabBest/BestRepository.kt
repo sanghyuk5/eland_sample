@@ -15,12 +15,12 @@ class BestRepository {
     /**
      *  럭키딜 데이터
      */
-    suspend fun requestBestStream(): Flow<Resource<BestData>> {
+    suspend fun requestBestStream(): Flow<Result<BestData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/best.json", ElandApp.appContext)
             val data = Gson().fromJson(jsonString, BestData::class.java)
 
-            emit(Resource.success(data))
+            emit(Result.success(data))
         }.retryWhen { cause, attempt ->
             return@retryWhen attempt < 2 && cause is java.lang.Exception
         }.flowOn(Dispatchers.IO)
