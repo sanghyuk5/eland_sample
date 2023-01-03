@@ -45,6 +45,8 @@ class EKidsViewModel : CommonViewModel() {
     }
 
     private fun setEKidsModules(data: EKidsData.Data) {
+        moduleList.clear()
+
         if (!data.mainBanner.isNullOrEmpty()) {
             moduleList.add(
                 ModuleData.CommonMainBanner(data.mainBanner)

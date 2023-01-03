@@ -47,6 +47,8 @@ class EShopViewModel : CommonViewModel() {
     }
     
     private fun setEShopModules(data: EShopData.Data) {
+        moduleList.clear()
+
         if (!data.mainBanner.isNullOrEmpty()) {
             moduleList.add(
                 ModuleData.CommonMainBanner(data.mainBanner)

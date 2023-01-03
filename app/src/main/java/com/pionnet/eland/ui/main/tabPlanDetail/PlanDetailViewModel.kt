@@ -38,6 +38,8 @@ class PlanDetailViewModel : CommonViewModel() {
     }
 
     private fun setPlanDetailModules(data: PlanDetailData.Data) {
+        moduleList.clear()
+
         if (data.shopInfo != null) {
             shopName = data.shopInfo.name.toString()
             moduleList.add(

@@ -50,6 +50,8 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
     }
 
     private fun setStoreShopModules(data: StoreShopData.Data) {
+        moduleList.clear()
+
         if (!data.mainBanner.isNullOrEmpty()) {
             moduleList.add(
                 ModuleData.CommonMainBanner(data.mainBanner)

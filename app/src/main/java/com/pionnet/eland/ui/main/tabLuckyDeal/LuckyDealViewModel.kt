@@ -36,6 +36,8 @@ class LuckyDealViewModel : CommonViewModel() {
     }
 
     private fun setLuckyModules(data: LuckyDealData.Data) {
+        moduleList.clear()
+
         if (!data.goodsList.isNullOrEmpty()) {
             moduleList.add(
                 ModuleData.CommonCenterTitleData("오늘의 럭키딜")
