@@ -75,7 +75,7 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
         EventBus.storeShopSort.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
                 if (holderEvent.data is List<*>) {
-                    val data = holderEvent.data as? List<String> ?: listOf()
+                    val data = holderEvent.data.filterIsInstance<String>()
                     val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, data)
                     dlg.applyCallback = { index ->
                         viewModel.sortPosition = index
