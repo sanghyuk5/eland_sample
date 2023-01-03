@@ -14,6 +14,7 @@ class PlanViewModel : CommonViewModel() {
     val result = MutableLiveData<MutableList<ModuleData>>()
 
     private val moduleList = mutableListOf<ModuleData>()
+    private var tabModuleList = mutableListOf<ModuleData>()
 
     private var planCategoryList = listOf<PlanData.Data.CategoryList>()
 
@@ -56,6 +57,7 @@ class PlanViewModel : CommonViewModel() {
 
     fun setTabGoodsItem(selectedPosition: Int) {
         pageNo = 1
+        tabModuleList.clear()
 
         viewModelScope.launch {
             repository.requestPlanTabStream(selectedPosition).collect {
@@ -72,7 +74,7 @@ class PlanViewModel : CommonViewModel() {
     }
 
     private fun setPlanTabModules(data: PlanData.Data, selectedPosition: Int) {
-        val dataSet = moduleList.map { it.clone() }.toMutableList()
+        tabModuleList = moduleList.map { it.clone() }.toMutableList()
 
         moduleList.forEachIndexed { index, item ->
             when(item) {
@@ -81,11 +83,11 @@ class PlanViewModel : CommonViewModel() {
                         Category(imageUrl = item.image, title = item.name, isSelected = index == selectedPosition)
                     }
 
-                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList, "plan")
+                    tabModuleList[index] = ModuleData.CommonCategoryTab(categoryList, "plan")
 
                     if (!data.planList.isNullOrEmpty()) {
                         data.planList.forEach {
-                            dataSet.add(
+                            tabModuleList.add(
                                 ModuleData.PlanGoodsData(it.goods, it.imageUrl, it.linkUrl)
                             )
                         }
@@ -94,7 +96,7 @@ class PlanViewModel : CommonViewModel() {
             }
         }
 
-        result.postValue(dataSet)
+        result.postValue(tabModuleList)
     }
 
     fun loadMore() {
@@ -127,11 +129,10 @@ class PlanViewModel : CommonViewModel() {
         val newList = mutableListOf<ModuleData>()
         addItemWithGoods(newList, data.planList!!)
 
-        val dataSet = moduleList.toMutableList()
-        val insertIndex = dataSet.indexOfLast { moduleList -> moduleList is ModuleData.PlanGoodsData }
-        dataSet.addAll(insertIndex + 1, newList)
+        tabModuleList = tabModuleList.map { it.clone() }.toMutableList()
+        tabModuleList.addAll(tabModuleList.size, newList)
 
-        result.postValue(dataSet)
+        result.postValue(tabModuleList)
         isLoadingMore = false
     }
 
