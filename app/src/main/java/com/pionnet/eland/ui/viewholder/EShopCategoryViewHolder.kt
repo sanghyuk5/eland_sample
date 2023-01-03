@@ -32,9 +32,9 @@ class EShopCategoryViewHolder(
         category?.select(index) {
             category = it.toMutableList()
             if (isIssue) {
-                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ISSUE, index.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ISSUE, index))
             } else {
-                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ARRIVAL, index.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_SHOP_ARRIVAL, index))
             }
         }
     }

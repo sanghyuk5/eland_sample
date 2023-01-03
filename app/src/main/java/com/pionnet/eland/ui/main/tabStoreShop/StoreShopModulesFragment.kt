@@ -83,7 +83,6 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
                     }
                     dlg.show(childFragmentManager, dlg.tag)
                 }
-
             }
         }
 

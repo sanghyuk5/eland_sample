@@ -37,6 +37,7 @@ class HomeViewModel : CommonViewModel() {
 
     private fun setHomeModules(data: HomeData.Data) {
         moduleList.clear()
+
         if (!data.mainBanner.isNullOrEmpty()) {
             moduleList.add(
                 ModuleData.CommonMainBanner(data.mainBanner)

@@ -217,7 +217,7 @@ class EKidsViewModel : CommonViewModel() {
                                 group.isSelected = index == selectedPosition
                             }
 
-                            dataSet[index] = ModuleData.EKidsRecommendCategoryData(newArrivalGroup, "newArrival")
+                            dataSet[index + indexAddNewArrivalGoods + 1] = ModuleData.EKidsRecommendCategoryData(newArrivalGroup, "newArrival")
                         }
 
                         val newList = mutableListOf<ModuleData>()
