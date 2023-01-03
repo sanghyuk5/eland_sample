@@ -24,14 +24,7 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
 
     override fun observeData() {
         observeStoreShop()
-        observeRegularSearchStore()
-        observeStoreShopPick()
-        observeSort()
-        observeViewChange()
-    }
-
-    override fun observeTabChange() {
-        observeStoreShopTabChange()
+        observeHolderEvent()
     }
 
     private fun observeStoreShop() = with(viewModel) {
@@ -58,54 +51,56 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
         }
     }
 
-    private fun observeRegularSearchStore() {
+    private fun observeHolderEvent() {
         EventBus.storeShopRegularSearchStore.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let {
                 viewModel.requestRegularData()
             }
         }
-    }
 
-    private fun observeStoreShopPick() {
-        EventBus.storeShopSearchStore.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let { data ->
-                val dlg = StoreShopPickBottomSheetFragment.newInstance(data, viewModel.pickName)
-                dlg.applyCallback = { pickNo, pickName ->
-                    viewModel.pickNo = pickNo
-                    viewModel.pickName = pickName
-                    viewModel.requestStorePickData()
+        EventBus.storeShopPickSearchStore.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                if (holderEvent.data is ModuleData.StoreShopPickSearchData) {
+                    val dlg = StoreShopPickBottomSheetFragment.newInstance(holderEvent.data, viewModel.pickName)
+                    dlg.applyCallback = { pickNo, pickName ->
+                        viewModel.pickNo = pickNo
+                        viewModel.pickName = pickName
+                        viewModel.requestStorePickData()
+                    }
+                    dlg.show(childFragmentManager, dlg.tag)
                 }
-                dlg.show(childFragmentManager, dlg.tag)
             }
         }
-    }
 
-    private fun observeSort() {
-        EventBus.sort.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let {
-                val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, it)
-                dlg.applyCallback = { index ->
-                    viewModel.sortPosition = index
-                    viewModel.requestStorePickData()
+        EventBus.storeShopSort.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                if (holderEvent.data is List<*>) {
+                    val data = holderEvent.data as? List<String> ?: listOf()
+                    val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, data)
+                    dlg.applyCallback = { index ->
+                        viewModel.sortPosition = index
+                        viewModel.requestStorePickData()
+                    }
+                    dlg.show(childFragmentManager, dlg.tag)
                 }
-                dlg.show(childFragmentManager, dlg.tag)
+
             }
         }
-    }
 
-    private fun observeViewChange() {
-        EventBus.viewChange.observe(viewLifecycleOwner) {
+        EventBus.storeShopViewChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let {
                 viewModel.setGoodsView()
             }
         }
-    }
 
-    private fun observeStoreShopTabChange() {
-        EventBus.tabChange.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let { position ->
-                linearlayoutManager.scrollToPositionWithOffset(storeShopCategoryTitlePositionList[position], 0)
-                setStickyViewPosition(position)
+        EventBus.storeShopTabChange.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                holderEvent.data?.let { data ->
+                    if (data is Int) {
+                        linearlayoutManager.scrollToPositionWithOffset(storeShopCategoryTitlePositionList[data], 0)
+                        setStickyViewPosition(data)
+                    }
+                }
             }
         }
     }

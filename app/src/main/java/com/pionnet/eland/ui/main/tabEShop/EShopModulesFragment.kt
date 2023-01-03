@@ -27,13 +27,18 @@ class EShopModulesFragment : CommonModulesBaseFragment() {
     private fun observeHolderEvent() = with(viewModel) {
         EventBus.eShopIssueTabChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
-                viewModel.setTabGoodsView((holderEvent.data ?: "0").toInt(), "issue")
+                if (holderEvent.data is Int) {
+                    viewModel.setTabGoodsView(holderEvent.data, "issue")
+                }
+
             }
         }
 
         EventBus.eShopArrivalTabChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
-                viewModel.setTabGoodsView((holderEvent.data ?: "0").toInt(), "arrival")
+                if (holderEvent.data is Int) {
+                    viewModel.setTabGoodsView(holderEvent.data, "arrival")
+                }
             }
         }
 

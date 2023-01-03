@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
+import com.pionnet.eland.HolderEvent
+import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewCommonCategoryTabModuleBinding
 import com.pionnet.eland.databinding.ViewItemCommonCategoryBinding
 import com.pionnet.eland.model.Category
@@ -24,11 +26,22 @@ class CommonCategoryTabViewHolder(
 ) : BaseViewHolder(binding.root) {
 
     private var category: ModuleData.CommonCategoryTab? = null
+    private var viewType = ""
 
     private val tabClickCallback: ItemClickIntCallback = { index ->
         category?.categoryData?.select(index) {
             category?.categoryData = it.toMutableList()
-            EventBus.fire(index)
+            if ("home".equals(viewType, true)) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_HOME, index))
+            } else if ("lucky".equals(viewType, true)) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_LUCKY, index))
+            } else if ("best".equals(viewType, true)) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_BEST, index))
+            } else if ("storeShop".equals(viewType, true)) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_STORE_SHOP, index))
+            } else if ("plan".equals(viewType, true)) {
+                EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_PLAN, index))
+            }
         }
     }
 
@@ -40,6 +53,7 @@ class CommonCategoryTabViewHolder(
 
     private fun initView(data: ModuleData.CommonCategoryTab) = with(binding) {
         category = data
+        viewType = data.viewType
 
         var selectedTabItem = data.categoryData.indexOfFirst { it.isSelected }
         if (selectedTabItem == -1) selectedTabItem = 0

@@ -5,7 +5,7 @@ import com.bumptech.glide.request.target.Target
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.R
-import com.pionnet.eland.databinding.ViewHomeLuckyDealGoodsModuleBinding
+import com.pionnet.eland.databinding.ViewCommonLuckyDealGoodsModuleBinding
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget
@@ -14,8 +14,8 @@ import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.priceFormat
 import com.pionnet.eland.utils.saleQuantity
 
-class HomeLuckyDealGoodsViewHolder(
-    private val binding: ViewHomeLuckyDealGoodsModuleBinding
+class CommonLuckyDealGoodsViewHolder(
+    private val binding: ViewCommonLuckyDealGoodsModuleBinding
 ) : BaseViewHolder(binding.root) {
 
     private var linkUrl: String? = null
@@ -29,8 +29,8 @@ class HomeLuckyDealGoodsViewHolder(
     }
 
     override fun onBind(data: Any, position: Int) {
-        (data as? ModuleData.HomeLuckyDealGoodsData)?.let {
-            initView(it.homeLuckyDealData)
+        (data as? ModuleData.CommonLuckyDealGoods)?.let {
+            initView(it.goodsData)
         }
     }
 

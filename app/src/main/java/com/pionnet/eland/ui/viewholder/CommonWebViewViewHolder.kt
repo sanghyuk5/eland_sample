@@ -18,8 +18,8 @@ class CommonWebViewViewHolder(
 
     private fun initView(data: PlanDetailData.Data.ShopInfo) = with(binding) {
         data.bannerInfo?.html?.let {
-            //webView.loadUrl("https://m.naver.com")
-            webView.loadData(changedHeaderHtml(it), "text/html; charset=utf-8", "UTF-8")
+            webView.loadUrl("https://m.naver.com")
+            //webView.loadDataWithBaseURL(null, changedHeaderHtml(it), "text/html", "UTF-8", null)
             webView.setClientCallback(webViewCallback)
         }
     }

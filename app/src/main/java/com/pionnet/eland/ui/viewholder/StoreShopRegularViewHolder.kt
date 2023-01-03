@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
+import com.pionnet.eland.HolderEvent
+import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemStoreShopRegularMenuBinding
 import com.pionnet.eland.databinding.ViewStoreShopRegularModuleBinding
 import com.pionnet.eland.ui.main.ModuleData
@@ -26,7 +28,7 @@ class StoreShopRegularViewHolder(
         llNoRegular.visibility = if (data.isShowData) View.GONE else View.VISIBLE
 
         llSearch.setOnClickListener {
-            EventBus.fire("searchStore")
+            EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_REGULAR_SEARCH))
         }
 
         if (data.isShowData) { // 메뉴는 하드코딩된 정보로 그리기

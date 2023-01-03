@@ -31,9 +31,9 @@ class EKidsRecommendCategoryViewHolder(
         groupData?.select(index)
 
         if (isWeeklyBest) {
-            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_WEEKLY, index.toString()))
+            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_WEEKLY, index))
         } else {
-            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_ARRIVAL, index.toString()))
+            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_E_KIDS_ARRIVAL, index))
         }
     }
 

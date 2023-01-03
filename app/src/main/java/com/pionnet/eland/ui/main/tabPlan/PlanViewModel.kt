@@ -2,10 +2,8 @@ package com.pionnet.eland.ui.main.tabPlan
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.Category
-import com.pionnet.eland.model.LuckyDealData
-import com.pionnet.eland.model.PlanData
-import com.pionnet.eland.model.Status
+import com.orhanobut.logger.Logger
+import com.pionnet.eland.model.*
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import kotlinx.coroutines.launch
@@ -19,6 +17,9 @@ class PlanViewModel : CommonViewModel() {
 
     private var planCategoryList = listOf<PlanData.Data.CategoryList>()
 
+    private var pageNo = 1
+    private var isLoadingMore: Boolean = false
+
     override fun requestData() {
         viewModelScope.launch {
             repository.requestPlanStream().collect {
@@ -26,6 +27,7 @@ class PlanViewModel : CommonViewModel() {
                     onSuccess = {
                         it?.data?.let { data ->
                             setPlanModules(data)
+                            setTabGoodsItem(0)
                         }
                     },
                     onFailure = {}
@@ -35,6 +37,8 @@ class PlanViewModel : CommonViewModel() {
     }
 
     private fun setPlanModules(data: PlanData.Data) {
+        moduleList.clear()
+
         if (!data.categoryList.isNullOrEmpty()) {
             planCategoryList = data.categoryList
             val categoryList = data.categoryList.mapIndexed { index, item ->
@@ -42,18 +46,103 @@ class PlanViewModel : CommonViewModel() {
             }
 
             moduleList.add(
-                ModuleData.CommonCategoryTab(categoryList)
+                ModuleData.CommonCategoryTab(categoryList, "plan")
             )
         }
 
-        if (!data.planList.isNullOrEmpty()) {
-            data.planList.forEach {
-                moduleList.add(
-                    ModuleData.PlanGoodsData(it.goods, it.imageUrl, it.linkUrl)
+        result.postValue(moduleList)
+        isLoadingMore = false
+    }
+
+    fun setTabGoodsItem(selectedPosition: Int) {
+        pageNo = 1
+
+        viewModelScope.launch {
+            repository.requestPlanTabStream(selectedPosition).collect {
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setPlanTabModules(data, selectedPosition)
+                        }
+                    },
+                    onFailure = {}
                 )
             }
         }
+    }
 
-        result.postValue(moduleList)
+    private fun setPlanTabModules(data: PlanData.Data, selectedPosition: Int) {
+        val dataSet = moduleList.map { it.clone() }.toMutableList()
+
+        moduleList.forEachIndexed { index, item ->
+            when(item) {
+                is ModuleData.CommonCategoryTab -> {
+                    val categoryList = planCategoryList.mapIndexed { index, item ->
+                        Category(imageUrl = item.image, title = item.name, isSelected = index == selectedPosition)
+                    }
+
+                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList, "plan")
+
+                    if (!data.planList.isNullOrEmpty()) {
+                        data.planList.forEach {
+                            dataSet.add(
+                                ModuleData.PlanGoodsData(it.goods, it.imageUrl, it.linkUrl)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        result.postValue(dataSet)
+    }
+
+    fun loadMore() {
+        if (isLoadingMore) {
+            return
+        }
+
+        isLoadingMore = true
+        pageNo++
+
+        requestPageData(pageNo)
+    }
+
+    private fun requestPageData(pageNo: Int) {
+        viewModelScope.launch {
+            repository.requestPlanPageStream(pageNo).collect {
+                it.fold(
+                    onSuccess = {
+                        it?.data?.let { data ->
+                            setPlanPageModules(data)
+                        }
+                    },
+                    onFailure = {}
+                )
+            }
+        }
+    }
+
+    private fun setPlanPageModules(data: PlanData.Data) {
+        val newList = mutableListOf<ModuleData>()
+        addItemWithGoods(newList, data.planList!!)
+
+        val dataSet = moduleList.toMutableList()
+        val insertIndex = dataSet.indexOfLast { moduleList -> moduleList is ModuleData.PlanGoodsData }
+        dataSet.addAll(insertIndex + 1, newList)
+
+        result.postValue(dataSet)
+        isLoadingMore = false
+    }
+
+    private fun addItemWithGoods(
+        moduleList: MutableList<ModuleData>,
+        list: List<PlanData.Data.PlanList>
+    ) {
+        list.forEach {
+            moduleList.add(
+                ModuleData.PlanGoodsData(it.goods, it.imageUrl, it.linkUrl)
+            )
+        }
     }
 }

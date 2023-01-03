@@ -3,11 +3,14 @@ package com.pionnet.eland.ui.main
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.orhanobut.logger.Logger
+import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.R
+import com.pionnet.eland.SingleLiveEvent
 import com.pionnet.eland.databinding.FragmentMainCommonModulesBinding
 import com.pionnet.eland.localData.DataManager
 
@@ -56,16 +59,6 @@ abstract class CommonModulesBaseFragment :
 
     abstract fun observeData()
 
-    open fun observeTabChange() {
-        // 필요한 곳에서만 override 해서 사용
-    }
-
-    open fun completelyVisibleStyleNowModule(itemPosition: Int) {}
-
-    open fun onLoadMore() {}
-
-//    open fun setStickyView(isState: Boolean, position: Int = 0) {}
-
     protected fun addScrollListener(listener: RecyclerView.OnScrollListener) {
         binding.list.addOnScrollListener(listener)
     }
@@ -94,7 +87,6 @@ abstract class CommonModulesBaseFragment :
         onBaseViewCreated()
 
         observeData()
-        observeTabChange()
 
         with(viewModel) {
             requestData()
@@ -108,6 +100,7 @@ abstract class CommonModulesBaseFragment :
             }
 
             list.apply {
+                setHasFixedSize(true)
                 layoutManager = linearlayoutManager
                 adapter = CommonModulesRecyclerViewAdapter(
                     this@CommonModulesBaseFragment
@@ -147,30 +140,6 @@ abstract class CommonModulesBaseFragment :
                         }
                     })
                 }
-
-                addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                        super.onScrolled(recyclerView, dx, dy)
-
-//                        val isShowTopButton = mainViewModel.showTopButton.value
-//                        val isNewShowTop = canScrollVertically(-1)
-//                        if (isNewShowTop != isShowTopButton) {
-//                            mainViewModel.showTopButton.value = isNewShowTop
-//                        }
-
-                        if (dy > 0) {
-                            val lastVisibleItemPosition =
-                                (recyclerView.layoutManager as LinearLayoutManager?)!!.findLastVisibleItemPosition()
-                            val itemTotalCount =
-                                recyclerView.adapter!!.itemCount - 2 // 어댑터에 등록된 아이템의 총 개수 -2
-
-                            // 스크롤이 끝에 도달했는지 확인
-                            if (lastVisibleItemPosition >= itemTotalCount) {
-                                onLoadMore()
-                            }
-                        }
-                    }
-                })
             }
         }
     }

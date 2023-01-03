@@ -2,6 +2,7 @@ package com.pionnet.eland
 
 import android.os.SystemClock
 import androidx.lifecycle.MutableLiveData
+import com.google.android.material.transition.Hold
 import com.pionnet.eland.ui.main.ModuleData
 
 /**
@@ -14,11 +15,16 @@ object EventBus {
     private var lastEventTime: Long = 0
 
     val linkEvent: MutableLiveData<SingleLiveEvent<LinkEvent>> = MutableLiveData()
-    val storeShopRegularSearchStore: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
-    val storeShopSearchStore: MutableLiveData<SingleLiveEvent<ModuleData.StoreShopPickSearchData>> = MutableLiveData()
-    val sort: MutableLiveData<SingleLiveEvent<List<String>>> = MutableLiveData()
-    val viewChange: MutableLiveData<SingleLiveEvent<String>> = MutableLiveData()
-    val tabChange: MutableLiveData<SingleLiveEvent<Int>> = MutableLiveData()
+
+    val homeTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val luckyTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val bestTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val planTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopRegularSearchStore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopPickSearchStore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopSort: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopViewChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val storeShopTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val eKidsWeeklyBestTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val eKidsNewArrivalTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val eKidsWeeklyExpand: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
@@ -27,6 +33,8 @@ object EventBus {
     val eShopArrivalTabChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val eShopIssueMore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
     val eShopArrivalMore: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val planDetailViewChange: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
+    val planDetailSort: MutableLiveData<SingleLiveEvent<HolderEvent>> = MutableLiveData()
 
     fun fire(event: LinkEvent) {
         if (isIntervalTooShort()) return
@@ -38,6 +46,14 @@ object EventBus {
         if (isIntervalTooShort()) return
 
         when (event.type) {
+            HolderEventType.TAB_CLICK_HOME -> homeTabChange.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_LUCKY -> luckyTabChange.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_BEST -> bestTabChange.value = SingleLiveEvent(event)
+            HolderEventType.STORE_SHOP_REGULAR_SEARCH -> storeShopRegularSearchStore.value = SingleLiveEvent(event)
+            HolderEventType.STORE_SHOP_PICK_SEARCH -> storeShopPickSearchStore.value = SingleLiveEvent(event)
+            HolderEventType.STORE_SHOP_SORT -> storeShopSort.value = SingleLiveEvent(event)
+            HolderEventType.STORE_SHOP_VIEW_CHANGE -> storeShopViewChange.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_STORE_SHOP -> storeShopTabChange.value = SingleLiveEvent(event)
             HolderEventType.TAB_CLICK_E_KIDS_WEEKLY -> eKidsWeeklyBestTabChange.value = SingleLiveEvent(event)
             HolderEventType.TAB_CLICK_E_KIDS_ARRIVAL -> eKidsNewArrivalTabChange.value = SingleLiveEvent(event)
             HolderEventType.EXPAND_E_KIDS_WEEKLY -> eKidsWeeklyExpand.value = SingleLiveEvent(event)
@@ -46,35 +62,10 @@ object EventBus {
             HolderEventType.TAB_CLICK_E_SHOP_ARRIVAL -> eShopArrivalTabChange.value = SingleLiveEvent(event)
             HolderEventType.MORE_E_SHOP_ISSUE -> eShopIssueMore.value = SingleLiveEvent(event)
             HolderEventType.MORE_E_SHOP_ARRIVAL -> eShopArrivalMore.value = SingleLiveEvent(event)
+            HolderEventType.TAB_CLICK_PLAN -> planTabChange.value = SingleLiveEvent(event)
+            HolderEventType.PLAN_DETAIL_SORT -> planDetailSort.value = SingleLiveEvent(event)
+            HolderEventType.PLAN_DETAIL_VIEW_CHANGE -> planDetailViewChange.value = SingleLiveEvent(event)
         }
-    }
-
-    fun fire(event: ModuleData.StoreShopPickSearchData) {
-        if (isIntervalTooShort()) return
-
-        storeShopSearchStore.value = SingleLiveEvent(event)
-    }
-
-    fun fire(event: List<String>) {
-        if (isIntervalTooShort()) return
-
-        sort.value = SingleLiveEvent(event)
-    }
-
-
-    fun fire(event: String) {
-        if (isIntervalTooShort()) return
-
-        when(event) {
-            "searchStore" -> storeShopRegularSearchStore.value = SingleLiveEvent(event)
-            "viewChange" -> viewChange.value = SingleLiveEvent(event)
-        }
-    }
-
-    fun fire(event: Int) {
-        if (isIntervalTooShort()) return
-
-        tabChange.value = SingleLiveEvent(event)
     }
 
     private fun isIntervalTooShort(): Boolean {
@@ -135,20 +126,28 @@ enum class LinkEventType {
 
 class HolderEvent {
     val type: HolderEventType
-    val data: String?
+    val data: Any?
 
     constructor(type: HolderEventType) {
         this.type = type
         this.data = null
     }
 
-    constructor(type: HolderEventType, data: String) {
+    constructor(type: HolderEventType, data: Any) {
         this.type = type
         this.data = data
     }
 }
 
 enum class HolderEventType {
+    TAB_CLICK_HOME,
+    TAB_CLICK_LUCKY,
+    TAB_CLICK_BEST,
+    STORE_SHOP_REGULAR_SEARCH,
+    STORE_SHOP_PICK_SEARCH,
+    STORE_SHOP_SORT,
+    STORE_SHOP_VIEW_CHANGE,
+    TAB_CLICK_STORE_SHOP,
     TAB_CLICK_E_KIDS_WEEKLY,
     TAB_CLICK_E_KIDS_ARRIVAL,
     EXPAND_E_KIDS_WEEKLY,
@@ -156,7 +155,10 @@ enum class HolderEventType {
     TAB_CLICK_E_SHOP_ISSUE,
     TAB_CLICK_E_SHOP_ARRIVAL,
     MORE_E_SHOP_ISSUE,
-    MORE_E_SHOP_ARRIVAL
+    MORE_E_SHOP_ARRIVAL,
+    TAB_CLICK_PLAN,
+    PLAN_DETAIL_SORT,
+    PLAN_DETAIL_VIEW_CHANGE
 }
 
 class SingleLiveEvent<out T>(private val content: T) {

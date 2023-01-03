@@ -39,9 +39,7 @@ class BestViewModel : CommonViewModel() {
             }
 
             moduleList.add(
-                ModuleData.CommonCategoryTab(
-                    categoryList
-                )
+                ModuleData.CommonCategoryTab(categoryList, "best")
             )
         }
 

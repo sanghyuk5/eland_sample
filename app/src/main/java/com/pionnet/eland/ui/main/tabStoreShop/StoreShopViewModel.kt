@@ -23,7 +23,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
     var pickNo: String? = null
     var pickName = ""
     var sortPosition = 1
-    private var viewType = "grid"
+    private var viewShape = "grid"
     private var clickCount = 0
 
     private var regularData = listOf<StoreShopData.Data.Regular>()
@@ -98,7 +98,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
             )
 
             moduleList.add(
-                ModuleData.CommonSortData(null, 1, "grid")
+                ModuleData.CommonSortData(null, 1, "storeShop", "grid")
             )
         }
 
@@ -154,7 +154,7 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
     fun setGoodsView() {
         clickCount += 1
 
-        viewType = if (clickCount % 3 == 1) {
+        viewShape = if (clickCount % 3 == 1) {
             "linear"
         } else if (clickCount % 3 == 2) {
             "large"
@@ -188,9 +188,9 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
                 }
 
                 is ModuleData.CommonSortData -> {
-                    dataSet[index] = ModuleData.CommonSortData(null, sortPosition, viewType)
+                    dataSet[index] = ModuleData.CommonSortData(null, sortPosition, "storeShop", viewShape)
 
-                    when (viewType) {
+                    when (viewShape) {
                         "linear" -> {
                             smartPickGoodsData.forEachIndexed { addIndex, addItem ->
                                 dataSet.add(

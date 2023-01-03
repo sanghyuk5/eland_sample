@@ -11,10 +11,7 @@ class LuckyDealModulesFragment : CommonModulesBaseFragment() {
     override fun observeData() {
         observeLuckyDeal()
         observeLuckyDealGoods()
-    }
-
-    override fun observeTabChange() {
-        observeHomeTabChange()
+        observeHolderEvent()
     }
 
     private fun observeLuckyDeal() = with(viewModel) {
@@ -33,10 +30,15 @@ class LuckyDealModulesFragment : CommonModulesBaseFragment() {
         }
     }
 
-    private fun observeHomeTabChange() = with(viewModel) {
-        EventBus.tabChange.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let { position ->
-                setTabGoodsItem(position)
+    private fun observeHolderEvent() = with(viewModel) {
+        EventBus.luckyTabChange.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                holderEvent.data?.let { data ->
+                    if (data is Int) {
+                        setTabGoodsItem(data)
+                    }
+
+                }
             }
         }
     }

@@ -10,26 +10,23 @@ class HomeModulesFragment : CommonModulesBaseFragment() {
 
     override fun observeData() {
         observeHome()
-    }
-
-    override fun observeTabChange() {
-        observeHomeTabChange()
+        observeHolderEvent()
     }
 
     private fun observeHome() = with(viewModel) {
         result.observe(viewLifecycleOwner) {
             setModules(it)
         }
-
-        tabResult.observe(viewLifecycleOwner) {
-            setModules(it)
-        }
     }
 
-    private fun observeHomeTabChange() = with(viewModel) {
-        EventBus.tabChange.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let { position ->
-                setTabGoodsItem(position)
+    private fun observeHolderEvent() = with(viewModel) {
+        EventBus.homeTabChange.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                holderEvent.data?.let { data ->
+                    if (data is Int) {
+                        setTabGoodsItem(data)
+                    }
+                }
             }
         }
     }

@@ -19,7 +19,7 @@ class PlanDetailViewModel : CommonViewModel() {
     private var goodsInfo = listOf<PlanDetailData.Data.GoodsInfo>()
 
     var sortPosition = 0
-    var viewType = "grid"
+    var viewShape = "grid"
     private var clickCount = 0
 
     override fun requestData() {
@@ -57,7 +57,7 @@ class PlanDetailViewModel : CommonViewModel() {
             }
 
             moduleList.add(
-                ModuleData.CommonSortData(tabList, sortPosition, viewType)
+                ModuleData.CommonSortData(tabList, sortPosition, "planDetail", viewShape)
             )
         }
 
@@ -71,7 +71,7 @@ class PlanDetailViewModel : CommonViewModel() {
     fun setGoodsView(isClick: Boolean) {
         if (!isClick) clickCount += 1
 
-        viewType = if (clickCount % 3 == 1) {
+        viewShape = if (clickCount % 3 == 1) {
             "linear"
         } else if (clickCount % 3 == 2) {
             "large"
@@ -84,9 +84,9 @@ class PlanDetailViewModel : CommonViewModel() {
         moduleList.forEachIndexed { index, item ->
             when(item) {
                 is ModuleData.CommonSortData -> {
-                    dataSet[index] = ModuleData.CommonSortData(tabList, sortPosition, viewType)
+                    dataSet[index] = ModuleData.CommonSortData(tabList, sortPosition, "planDetail", viewShape)
 
-                    when (viewType) {
+                    when (viewShape) {
                         "linear" -> {
                             goodsInfo.forEachIndexed { index, goodsInfo ->
                                 dataSet.add(

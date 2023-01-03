@@ -12,7 +12,6 @@ class EKidsModulesFragment : CommonModulesBaseFragment() {
 
     override fun observeData() {
         observeEKids()
-        observeTabChange()
         observeHolderEvent()
     }
 
@@ -20,13 +19,6 @@ class EKidsModulesFragment : CommonModulesBaseFragment() {
         result.observe(viewLifecycleOwner) {
             setGoodsView()
         }
-    }
-
-    override fun observeTabChange() {
-        observeEKidsTabChange()
-    }
-
-    private fun observeEKidsTabChange() = with(viewModel) {
         tabResult.observe(viewLifecycleOwner) {
             setModules(it)
         }
@@ -35,13 +27,17 @@ class EKidsModulesFragment : CommonModulesBaseFragment() {
     private fun observeHolderEvent() {
         EventBus.eKidsWeeklyBestTabChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
-                viewModel.setTabGoodsView((holderEvent.data ?: "0").toInt(), "weeklyBest")
+                if (holderEvent.data is Int) {
+                    viewModel.setTabGoodsView(holderEvent.data, "weeklyBest")
+                }
             }
         }
 
         EventBus.eKidsNewArrivalTabChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
-                viewModel.setTabGoodsView((holderEvent.data ?: "0").toInt(), "newArrival")
+                if (holderEvent.data is Int) {
+                    viewModel.setTabGoodsView(holderEvent.data, "newArrival")
+                }
             }
         }
 

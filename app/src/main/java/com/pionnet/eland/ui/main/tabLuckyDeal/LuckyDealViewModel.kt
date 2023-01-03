@@ -4,7 +4,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.pionnet.eland.model.Category
 import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.Status
 import com.pionnet.eland.model.LuckyDealData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
@@ -44,7 +43,7 @@ class LuckyDealViewModel : CommonViewModel() {
 
             data.goodsList.forEach { goods ->
                 moduleList.add(
-                    ModuleData.HomeLuckyDealGoodsData(goods)
+                    ModuleData.CommonLuckyDealGoods(goods)
                 )
             }
         }
@@ -56,7 +55,7 @@ class LuckyDealViewModel : CommonViewModel() {
             }
 
             moduleList.add(
-                ModuleData.CommonCategoryTab(categoryList)
+                ModuleData.CommonCategoryTab(categoryList, "lucky")
             )
         }
 
@@ -100,7 +99,7 @@ class LuckyDealViewModel : CommonViewModel() {
                         Category(imageUrl = category.image, title = category.name, isSelected = index == selectedPosition)
                     }
 
-                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList)
+                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList, "lucky")
                 }
             }
         }

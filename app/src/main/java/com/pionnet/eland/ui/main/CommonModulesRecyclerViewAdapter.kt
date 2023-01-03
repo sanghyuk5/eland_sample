@@ -71,8 +71,8 @@ class CommonModulesRecyclerViewAdapter(
                     )
                 )
 
-            ModuleData.HomeLuckyDealGoodsData.ordinal() -> HomeLuckyDealGoodsViewHolder(
-                    ViewHomeLuckyDealGoodsModuleBinding.inflate(
+            ModuleData.CommonLuckyDealGoods.ordinal() -> CommonLuckyDealGoodsViewHolder(
+                    ViewCommonLuckyDealGoodsModuleBinding.inflate(
                         LayoutInflater.from(parent.context),
                         parent,
                         false

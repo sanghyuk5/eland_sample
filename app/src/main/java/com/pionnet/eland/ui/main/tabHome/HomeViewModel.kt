@@ -11,7 +11,6 @@ class HomeViewModel : CommonViewModel() {
     private val repository by lazy { HomeRepository() }
 
     val result = MutableLiveData<MutableList<ModuleData>>()
-    val tabResult = MutableLiveData<MutableList<ModuleData>>()
 
     private val moduleList = mutableListOf<ModuleData>()
 
@@ -79,7 +78,7 @@ class HomeViewModel : CommonViewModel() {
 
             data.luckyDeal.goodsList.forEach { goods ->
                 moduleList.add(
-                    ModuleData.HomeLuckyDealGoodsData(goods)
+                    ModuleData.CommonLuckyDealGoods(goods)
                 )
             }
         }
@@ -118,7 +117,7 @@ class HomeViewModel : CommonViewModel() {
             }
 
             moduleList.add(
-                ModuleData.CommonCategoryTab(categoryList)
+                ModuleData.CommonCategoryTab(categoryList, "home")
             )
 
             moduleList.add(
@@ -143,7 +142,7 @@ class HomeViewModel : CommonViewModel() {
                         )
                     }
 
-                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList)
+                    dataSet[index] = ModuleData.CommonCategoryTab(categoryList, "home")
                 }
 
                 is ModuleData.CommonGoodsHorizontalData -> {
@@ -152,6 +151,6 @@ class HomeViewModel : CommonViewModel() {
             }
         }
 
-        tabResult.postValue(dataSet)
+        result.postValue(dataSet)
     }
 }

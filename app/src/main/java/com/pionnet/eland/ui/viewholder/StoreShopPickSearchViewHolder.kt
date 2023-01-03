@@ -1,6 +1,8 @@
 package com.pionnet.eland.ui.viewholder
 
 import com.pionnet.eland.EventBus
+import com.pionnet.eland.HolderEvent
+import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewStoreShopPickSearchModuleBinding
 import com.pionnet.eland.ui.main.ModuleData
 
@@ -18,7 +20,7 @@ class StoreShopPickSearchViewHolder(
         tvStore.text = data.pickName
 
         tvSearch.setOnClickListener {
-            EventBus.fire(data)
+            EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_PICK_SEARCH, data))
         }
     }
 }

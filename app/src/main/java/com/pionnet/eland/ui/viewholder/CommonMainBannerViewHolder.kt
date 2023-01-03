@@ -42,8 +42,9 @@ class CommonMainBannerViewHolder(
             }
         })
 
+        bannerPosition = Int.MAX_VALUE / 2
         viewPager.adapter = ViewPagerAdapter(data)
-        bannerPosition = Int.MAX_VALUE / 2 - ceil(data.size.toDouble() - 1).toInt()
+        bannerPosition -= (bannerPosition % data.size)
         binding.viewPager.setCurrentItem(bannerPosition, false)
 
         tvNow.text = ((bannerPosition % data.size) + 1).toString()

@@ -5,6 +5,8 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
+import com.pionnet.eland.HolderEvent
+import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.R
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
 import com.pionnet.eland.ui.main.ModuleData
@@ -19,8 +21,7 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
 
     override fun observeData() {
         observePlanDetail()
-        observeSort()
-        observeViewChange()
+        observeHolderEvent()
     }
 
     private fun observePlanDetail() = with(viewModel) {
@@ -43,27 +44,28 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
         }
     }
 
-    private fun observeSort() {
-        EventBus.sort.observe(viewLifecycleOwner) {
-            it.getIfNotHandled()?.let {
-                val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, it)
-                dlg.applyCallback = { index ->
-                    if (index == 0) {
-                        linearlayoutManager.scrollToPositionWithOffset(planSortPosition - 1, 0)
-                    } else {
-                        linearlayoutManager.scrollToPositionWithOffset(planTitlePositionList[index - 1], 0)
-                    }
+    private fun observeHolderEvent() {
+        EventBus.planDetailSort.observe(viewLifecycleOwner) {
+            it.getIfNotHandled()?.let { holderEvent ->
+                if (holderEvent.data is List<*>) {
+                    val data = holderEvent.data as? List<String> ?: listOf()
+                    val dlg = SortBottomSheetFragment.newInstance(viewModel.sortPosition, data)
+                    dlg.applyCallback = { index ->
+                        if (index == 0) {
+                            linearlayoutManager.scrollToPositionWithOffset(planSortPosition - 1, 0)
+                        } else {
+                            linearlayoutManager.scrollToPositionWithOffset(planTitlePositionList[index - 1], 0)
+                        }
 
-                    viewModel.sortPosition = index
-                    binding.stickySort.tvSort.text = viewModel.tabList[index]
+                        viewModel.sortPosition = index
+                        binding.stickySort.tvSort.text = viewModel.tabList[index]
+                    }
+                    dlg.show(childFragmentManager, dlg.tag)
                 }
-                dlg.show(childFragmentManager, dlg.tag)
             }
         }
-    }
 
-    private fun observeViewChange() {
-        EventBus.viewChange.observe(viewLifecycleOwner) {
+        EventBus.planDetailViewChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let {
                 viewModel.setGoodsView(false)
             }
@@ -74,18 +76,18 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
         tvStickyTitle.visibility = View.VISIBLE
         tvStickyTitle.text = viewModel.shopName
 
-        when (viewModel.viewType) {
+        when (viewModel.viewShape) {
             "grid" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_grid_view_24)
             "linear" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_menu_24)
             "large" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_rectangle_24)
         }
 
         stickySort.tvSort.setOnClickListener {
-            EventBus.fire(viewModel.tabList)
+            EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_SORT, viewModel.tabList))
         }
 
         stickySort.ivSort.setOnClickListener {
-            EventBus.fire("viewChange")
+            EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_VIEW_CHANGE))
         }
     }
 

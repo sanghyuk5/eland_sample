@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
+import com.pionnet.eland.HolderEvent
+import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemStoreShopCategoryBinding
 import com.pionnet.eland.model.StoreShopData
 import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
@@ -29,7 +31,7 @@ class StoreShopCategoryStickyAdapter
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(currentList[position])
         holder.itemView.setOnClickListener {
-            EventBus.fire(position)
+            EventBus.fire(HolderEvent(HolderEventType.TAB_CLICK_STORE_SHOP, position))
         }
     }
 

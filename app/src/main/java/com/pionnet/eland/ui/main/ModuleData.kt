@@ -68,8 +68,8 @@ sealed class ModuleData {
         companion object
     }
 
-    data class HomeLuckyDealGoodsData(
-        val homeLuckyDealData: Goods
+    data class CommonLuckyDealGoods(
+        val goodsData: Goods
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -99,7 +99,8 @@ sealed class ModuleData {
     }
 
     data class CommonCategoryTab(
-        var categoryData: List<Category>
+        var categoryData: List<Category>,
+        var viewType: String
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -162,9 +163,10 @@ sealed class ModuleData {
     }
 
     data class CommonSortData(
-        val sortData: List<String>?,
+        val sortData: List<String>? = null,
         val sortPosition: Int,
-        val viewType: String
+        val viewType: String,
+        val viewShape: String
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()

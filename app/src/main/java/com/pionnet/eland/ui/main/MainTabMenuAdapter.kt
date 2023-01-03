@@ -77,7 +77,5 @@ class MainTabMenuAdapter : RecyclerView.Adapter<MainTabMenuAdapter.TabMenuViewHo
     fun updatePosition(selectPosition: Int) {
         selected_position = selectPosition
         notifyDataSetChanged()
-
     }
-
 }
