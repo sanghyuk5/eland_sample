@@ -15,7 +15,7 @@ class MainTabMenuAdapter : RecyclerView.Adapter<MainTabMenuAdapter.TabMenuViewHo
     private lateinit var itemClickListener : OnItemClickListener
 
     companion object {
-        var selected_position: Int = 0
+        var selectedPosition: Int = 0
         var tabs: List<TabData.TabInfo.HeaderIcon> = mutableListOf()
     }
 
@@ -49,7 +49,7 @@ class MainTabMenuAdapter : RecyclerView.Adapter<MainTabMenuAdapter.TabMenuViewHo
                     marginEnd = 5.toPx
                 }
             }
-            if (position == selected_position) {
+            if (position == selectedPosition) {
                 itemBinding.tvItemMainTabTitle.setTextColor(Color.parseColor("#222222"))
                 itemBinding.viewItemMainTabUnderline.visibility = View.VISIBLE
             } else {
@@ -75,7 +75,7 @@ class MainTabMenuAdapter : RecyclerView.Adapter<MainTabMenuAdapter.TabMenuViewHo
     }
 
     fun updatePosition(selectPosition: Int) {
-        selected_position = selectPosition
+        selectedPosition = selectPosition
         notifyDataSetChanged()
     }
 }

@@ -1,8 +1,10 @@
 package com.pionnet.eland.ui.main.tabLuckyDeal
 
+import android.os.Bundle
 import androidx.fragment.app.viewModels
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
+import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment
 
 class LuckyDealModulesFragment : CommonModulesBaseFragment() {
 
@@ -41,5 +43,16 @@ class LuckyDealModulesFragment : CommonModulesBaseFragment() {
                 }
             }
         }
+    }
+
+    companion object {
+        fun create(mainApiUrl: String?) =
+            LuckyDealModulesFragment().apply {
+                arguments = Bundle().apply {
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
+                }
+            }
     }
 }

@@ -1,10 +1,12 @@
 package com.pionnet.eland.ui.main.tabEkids
 
+import android.os.Bundle
 import androidx.fragment.app.viewModels
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
+import com.pionnet.eland.ui.main.tabPlan.PlanModulesFragment
 
 class EKidsModulesFragment : CommonModulesBaseFragment() {
 
@@ -52,5 +54,16 @@ class EKidsModulesFragment : CommonModulesBaseFragment() {
                 viewModel.setExpandableGoodsView(holderEvent.data == "더보기", "newArrival")
             }
         }
+    }
+
+    companion object {
+        fun create(mainApiUrl: String?) =
+            EKidsModulesFragment().apply {
+                arguments = Bundle().apply {
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
+                }
+            }
     }
 }

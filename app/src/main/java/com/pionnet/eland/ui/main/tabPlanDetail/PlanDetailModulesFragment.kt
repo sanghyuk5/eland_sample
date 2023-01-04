@@ -1,5 +1,6 @@
 package com.pionnet.eland.ui.main.tabPlanDetail
 
+import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +11,7 @@ import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.R
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
 import com.pionnet.eland.ui.main.ModuleData
+import com.pionnet.eland.ui.main.tabPlan.PlanModulesFragment
 import com.pionnet.eland.ui.main.tabStoreShop.SortBottomSheetFragment
 
 class PlanDetailModulesFragment : CommonModulesBaseFragment() {
@@ -142,5 +144,16 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
                 }
             }
         }
+    }
+
+    companion object {
+        fun create(mainApiUrl: String?) =
+            PlanDetailModulesFragment().apply {
+                arguments = Bundle().apply {
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
+                }
+            }
     }
 }

@@ -1,11 +1,13 @@
 package com.pionnet.eland.ui.main.tabPlan
 
+import android.os.Bundle
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
+import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment
 
 class PlanModulesFragment : CommonModulesBaseFragment() {
 
@@ -60,5 +62,16 @@ class PlanModulesFragment : CommonModulesBaseFragment() {
                 }
             }
         }
+    }
+
+    companion object {
+        fun create(mainApiUrl: String?) =
+            PlanModulesFragment().apply {
+                arguments = Bundle().apply {
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
+                }
+            }
     }
 }

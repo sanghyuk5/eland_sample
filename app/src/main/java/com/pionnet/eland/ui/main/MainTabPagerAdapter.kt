@@ -24,17 +24,17 @@ class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fr
     override fun createFragment(position: Int): Fragment {
         val gnbItem = tabs[position]
 
-        val fragment = when (tabs[position].menu_cd) {
-            "10" -> HomeModulesFragment()
-            "20" -> LuckyDealModulesFragment()
-            "30" -> BestModulesFragment()
-            "40" -> PlanModulesFragment()
-            "60" -> StoreShopModulesFragment.create("")
+        val fragment = when (gnbItem.menu_cd) {
+            "10" -> HomeModulesFragment.create(gnbItem.api_url)
+            "20" -> LuckyDealModulesFragment.create(gnbItem.api_url)
+            "30" -> BestModulesFragment.create(gnbItem.api_url)
+            "40" -> PlanModulesFragment.create(gnbItem.api_url)
+            "60" -> StoreShopModulesFragment.create("", gnbItem.api_url)
             "80" -> MainWebViewFragment.create(tabs[position].link_url)
-            "110" -> EKidsModulesFragment()
-            "120" -> EShopModulesFragment()
-            "130" -> PlanDetailModulesFragment()
-            else -> HomeModulesFragment()
+            "110" -> EKidsModulesFragment.create(gnbItem.api_url)
+            "120" -> EShopModulesFragment.create(gnbItem.api_url)
+            "130" -> PlanDetailModulesFragment.create(gnbItem.api_url)
+            else -> HomeModulesFragment.create(gnbItem.api_url)
         }
 
         fragments[gnbItem.menu_cd] = fragment

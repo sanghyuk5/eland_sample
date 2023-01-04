@@ -174,10 +174,13 @@ class StoreShopModulesFragment : CommonModulesBaseFragment() {
     }
 
     companion object {
-        fun create(param: String) =
+        fun create(param: String, mainApiUrl: String?) =
             StoreShopModulesFragment().apply {
                 arguments = Bundle().apply {
                     putString(KEY_ITEM_PARAMS, param)
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
                 }
             }
     }

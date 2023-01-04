@@ -1,8 +1,10 @@
 package com.pionnet.eland.ui.main.tabBest
 
+import android.os.Bundle
 import androidx.fragment.app.viewModels
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
+import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment
 
 class BestModulesFragment : CommonModulesBaseFragment() {
 
@@ -29,5 +31,16 @@ class BestModulesFragment : CommonModulesBaseFragment() {
                 }
             }
         }
+    }
+
+    companion object {
+        fun create(mainApiUrl: String?) =
+            BestModulesFragment().apply {
+                arguments = Bundle().apply {
+                    if (!mainApiUrl.isNullOrEmpty()) {
+                        putString(KEY_ITEM_URL, mainApiUrl)
+                    }
+                }
+            }
     }
 }

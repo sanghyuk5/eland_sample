@@ -47,6 +47,10 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initTopTab() = with(binding) {
+        topBar.ivMenu.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.SEARCH))
+        }
+
         DataSource.tabData!!.tabInfo.header_icon_list?.let {
             mainTabs = it
             tabPagerAdapter = MainTabPagerAdapter(it,this@MainActivity)
@@ -57,6 +61,7 @@ class MainActivity : BaseActivity() {
 
         viewPager.apply {
             adapter = tabPagerAdapter
+            offscreenPageLimit = mainTabs.size
         }
 
         val tabMenuLayoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
@@ -77,7 +82,7 @@ class MainActivity : BaseActivity() {
         tabAdapter.setItemClickListener(object : MainTabMenuAdapter.OnItemClickListener {
             override fun onClick(position: Int) {
                 tabCurrentPosition = position
-                viewPager.setCurrentItem(position, true)
+                viewPager.setCurrentItem(position, false)
                 tabAdapter.updatePosition(position)
                 tabMenuLayoutManager.scrollToPositionWithOffset(position, getDisplaySize(this@MainActivity).widthPixels / 2)
             }
