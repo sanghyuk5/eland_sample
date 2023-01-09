@@ -27,14 +27,8 @@ class LeftMenuActivity : BaseActivity() {
         binding = ActivityLeftMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        initObserve()
         initViewModel()
         initView()
-    }
-
-    private fun initObserve() {
-
     }
 
     private fun initViewModel() = with(viewModel) {

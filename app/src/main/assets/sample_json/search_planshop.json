@@ -1,0 +1,23 @@
+{
+  "result": [
+    {
+      "planshop": [
+        {
+          "banner_img_path": "/dspl/banner/11/062/00/230100000389062.jpg",
+          "disp_ctg_nm": "[밀크마일] 겨울막차 BIG SALE",
+          "disp_ctg_no": "2301672438"
+        },
+        {
+          "banner_img_path": "/dspl/banner/11/890/00/230100000388890.jpg",
+          "disp_ctg_nm": "[밀크마일로로] BIG SALE!",
+          "disp_ctg_no": "2301672390"
+        },
+        {
+          "banner_img_path": "/dspl/banner/11/810/00/230100000388810.jpg",
+          "disp_ctg_nm": "WINTER COLOR ITEM",
+          "disp_ctg_no": "2301672357"
+        }
+      ]
+    }
+  ]
+}

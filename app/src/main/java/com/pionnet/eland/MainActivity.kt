@@ -48,6 +48,10 @@ class MainActivity : BaseActivity() {
 
     private fun initTopTab() = with(binding) {
         topBar.ivMenu.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
+        }
+
+        topBar.rlSearch.setOnClickListener {
             EventBus.fire(LinkEvent(LinkEventType.SEARCH))
         }
 

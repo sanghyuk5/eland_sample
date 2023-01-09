@@ -1,0 +1,182 @@
+{
+  "code": "200",
+  "data": [
+    {
+      "nav_brand_keyword": {
+        "nav_brand_keyword_list_kor": [
+          {
+            "nav_brand_keyword_count": 131,
+            "nav_brand_keyword_title": "ㄱ"
+          },
+          {
+            "nav_brand_keyword_count": 77,
+            "nav_brand_keyword_title": "ㄴ"
+          },
+          {
+            "nav_brand_keyword_count": 165,
+            "nav_brand_keyword_title": "ㄷ"
+          },
+          {
+            "nav_brand_keyword_count": 202,
+            "nav_brand_keyword_title": "ㄹ"
+          },
+          {
+            "nav_brand_keyword_count": 203,
+            "nav_brand_keyword_title": "ㅁ"
+          },
+          {
+            "nav_brand_keyword_count": 260,
+            "nav_brand_keyword_title": "ㅂ"
+          },
+          {
+            "nav_brand_keyword_count": 212,
+            "nav_brand_keyword_title": "ㅅ"
+          },
+          {
+            "nav_brand_keyword_count": 524,
+            "nav_brand_keyword_title": "ㅇ"
+          },
+          {
+            "nav_brand_keyword_count": 119,
+            "nav_brand_keyword_title": "ㅈ"
+          },
+          {
+            "nav_brand_keyword_count": 29,
+            "nav_brand_keyword_title": "ㅊ"
+          },
+          {
+            "nav_brand_keyword_count": 187,
+            "nav_brand_keyword_title": "ㅋ"
+          },
+          {
+            "nav_brand_keyword_count": 88,
+            "nav_brand_keyword_title": "ㅌ"
+          },
+          {
+            "nav_brand_keyword_count": 177,
+            "nav_brand_keyword_title": "ㅍ"
+          },
+          {
+            "nav_brand_keyword_count": 141,
+            "nav_brand_keyword_title": "ㅎ"
+          },
+          {
+            "nav_brand_keyword_count": 19,
+            "nav_brand_keyword_title": "기타"
+          }
+        ],
+        "nav_brand_keyword_list_eng": [
+          {
+            "nav_brand_keyword_count": 143,
+            "nav_brand_keyword_title": "A"
+          },
+          {
+            "nav_brand_keyword_count": 177,
+            "nav_brand_keyword_title": "B"
+          },
+          {
+            "nav_brand_keyword_count": 181,
+            "nav_brand_keyword_title": "C"
+          },
+          {
+            "nav_brand_keyword_count": 112,
+            "nav_brand_keyword_title": "D"
+          },
+          {
+            "nav_brand_keyword_count": 74,
+            "nav_brand_keyword_title": "E"
+          },
+          {
+            "nav_brand_keyword_count": 56,
+            "nav_brand_keyword_title": "F"
+          },
+          {
+            "nav_brand_keyword_count": 67,
+            "nav_brand_keyword_title": "G"
+          },
+          {
+            "nav_brand_keyword_count": 106,
+            "nav_brand_keyword_title": "H"
+          },
+          {
+            "nav_brand_keyword_count": 61,
+            "nav_brand_keyword_title": "I"
+          },
+          {
+            "nav_brand_keyword_count": 69,
+            "nav_brand_keyword_title": "J"
+          },
+          {
+            "nav_brand_keyword_count": 71,
+            "nav_brand_keyword_title": "K"
+          },
+          {
+            "nav_brand_keyword_count": 111,
+            "nav_brand_keyword_title": "L"
+          },
+          {
+            "nav_brand_keyword_count": 186,
+            "nav_brand_keyword_title": "M"
+          },
+          {
+            "nav_brand_keyword_count": 74,
+            "nav_brand_keyword_title": "N"
+          },
+          {
+            "nav_brand_keyword_count": 48,
+            "nav_brand_keyword_title": "O"
+          },
+          {
+            "nav_brand_keyword_count": 118,
+            "nav_brand_keyword_title": "P"
+          },
+          {
+            "nav_brand_keyword_count": 3,
+            "nav_brand_keyword_title": "Q"
+          },
+          {
+            "nav_brand_keyword_count": 69,
+            "nav_brand_keyword_title": "R"
+          },
+          {
+            "nav_brand_keyword_count": 147,
+            "nav_brand_keyword_title": "S"
+          },
+          {
+            "nav_brand_keyword_count": 105,
+            "nav_brand_keyword_title": "T"
+          },
+          {
+            "nav_brand_keyword_count": 25,
+            "nav_brand_keyword_title": "U"
+          },
+          {
+            "nav_brand_keyword_count": 45,
+            "nav_brand_keyword_title": "V"
+          },
+          {
+            "nav_brand_keyword_count": 33,
+            "nav_brand_keyword_title": "W"
+          },
+          {
+            "nav_brand_keyword_count": 3,
+            "nav_brand_keyword_title": "X"
+          },
+          {
+            "nav_brand_keyword_count": 32,
+            "nav_brand_keyword_title": "Y"
+          },
+          {
+            "nav_brand_keyword_count": 17,
+            "nav_brand_keyword_title": "Z"
+          },
+          {
+            "nav_brand_keyword_count": 18,
+            "nav_brand_keyword_title": "ETC"
+          }
+        ]
+      }
+    }
+  ],
+  "resultMsg": "success"
+}

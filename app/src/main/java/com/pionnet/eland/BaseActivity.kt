@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.localData.DataManager.EXTRA_LINK
 import com.pionnet.eland.ui.leftmenu.LeftMenuActivity
+import com.pionnet.eland.ui.search.SearchActivity
 import com.pionnet.eland.ui.splash.SplashActivity
 import com.pionnet.eland.utils.debugToast
 import com.pionnet.eland.utils.dialogAlert
@@ -37,6 +38,7 @@ open class BaseActivity : AppCompatActivity() {
 
     protected open fun onLinkEvent(linkEvent: LinkEvent) {
         when (linkEvent.type) {
+            LinkEventType.LEFT_MENU -> navToLeftMenu()
             LinkEventType.SEARCH -> navToSearch()
             LinkEventType.DEFAULT -> navToDefault(linkEvent.url)
             LinkEventType.DIAL -> navToDial(linkEvent.url)
@@ -55,9 +57,17 @@ open class BaseActivity : AppCompatActivity() {
 //        }
     }
 
-    private fun navToSearch() {
+    private fun navToLeftMenu() {
         if (isNetworkAvailable(this)) {
             startActivity(Intent(this, LeftMenuActivity::class.java))
+        } else {
+            dialogAlert(this, getString(R.string.msg_network_error))
+        }
+    }
+
+    private fun navToSearch() {
+        if (isNetworkAvailable(this)) {
+            startActivity(Intent(this, SearchActivity::class.java))
         } else {
             dialogAlert(this, getString(R.string.msg_network_error))
         }

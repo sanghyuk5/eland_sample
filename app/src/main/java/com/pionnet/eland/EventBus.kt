@@ -108,6 +108,7 @@ class LinkEvent {
 
 enum class LinkEventType {
     HOME,
+    LEFT_MENU,
     SEARCH,
     DEFAULT,
     PROFILE,

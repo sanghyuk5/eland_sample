@@ -29,6 +29,9 @@
 
         <activity android:name=".ui.leftmenu.LeftMenuActivity"
             android:exported="true" />
+
+        <activity android:name=".ui.search.SearchActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,406 @@
+{
+  "code": "200",
+  "data": [
+    [
+      {
+        "nav_brand_keyword_title": "ㄱ",
+        "nav_brand_keyword_list": [
+          {
+            "brand_nm": "가나출판사"
+          },
+          {
+            "brand_nm": "가나키즈"
+          },
+          {
+            "brand_nm": "가니"
+          },
+          {
+            "brand_nm": "가디언"
+          },
+          {
+            "brand_nm": "가락마켓"
+          },
+          {
+            "brand_nm": "가람어린이"
+          },
+          {
+            "brand_nm": "가문비"
+          },
+          {
+            "brand_nm": "가방팝"
+          },
+          {
+            "brand_nm": "가이거"
+          },
+          {
+            "brand_nm": "가치창조"
+          },
+          {
+            "brand_nm": "가히"
+          },
+          {
+            "brand_nm": "개성인삼농협"
+          },
+          {
+            "brand_nm": "개암나무"
+          },
+          {
+            "brand_nm": "갤러리안경"
+          },
+          {
+            "brand_nm": "갭"
+          },
+          {
+            "brand_nm": "갭 키즈"
+          },
+          {
+            "brand_nm": "거북이북스"
+          },
+          {
+            "brand_nm": "거인"
+          },
+          {
+            "brand_nm": "걸음동무"
+          },
+          {
+            "brand_nm": "게스"
+          },
+          {
+            "brand_nm": "게스키즈"
+          },
+          {
+            "brand_nm": "겐조"
+          },
+          {
+            "brand_nm": "겐조 키즈"
+          },
+          {
+            "brand_nm": "겐지아"
+          },
+          {
+            "brand_nm": "겜맥"
+          },
+          {
+            "brand_nm": "겜툰"
+          },
+          {
+            "brand_nm": "겟유즈드"
+          },
+          {
+            "brand_nm": "견과네"
+          },
+          {
+            "brand_nm": "결"
+          },
+          {
+            "brand_nm": "경남제약"
+          },
+          {
+            "brand_nm": "경동나비엔"
+          },
+          {
+            "brand_nm": "경희대학교"
+          },
+          {
+            "brand_nm": "경희대학교 기술지주회사 한방바이오"
+          },
+          {
+            "brand_nm": "계림북스"
+          },
+          {
+            "brand_nm": "고래가숨쉬는도서관"
+          },
+          {
+            "brand_nm": "고래뱃속"
+          },
+          {
+            "brand_nm": "고려홍삼원"
+          },
+          {
+            "brand_nm": "고릴라박스"
+          },
+          {
+            "brand_nm": "고세"
+          },
+          {
+            "brand_nm": "고아라"
+          },
+          {
+            "brand_nm": "고야드"
+          },
+          {
+            "brand_nm": "고이담은"
+          },
+          {
+            "brand_nm": "고퍼우드"
+          },
+          {
+            "brand_nm": "골드앤"
+          },
+          {
+            "brand_nm": "골든구스"
+          },
+          {
+            "brand_nm": "골든듀"
+          },
+          {
+            "brand_nm": "골든베어"
+          },
+          {
+            "brand_nm": "과일나라"
+          },
+          {
+            "brand_nm": "광동"
+          },
+          {
+            "brand_nm": "광동제약"
+          },
+          {
+            "brand_nm": "광합성"
+          },
+          {
+            "brand_nm": "교복몰"
+          },
+          {
+            "brand_nm": "구달"
+          },
+          {
+            "brand_nm": "구디즈"
+          },
+          {
+            "brand_nm": "구딸파리"
+          },
+          {
+            "brand_nm": "구찌"
+          },
+          {
+            "brand_nm": "구찌 뷰티"
+          },
+          {
+            "brand_nm": "구찌선글라스"
+          },
+          {
+            "brand_nm": "구포국수"
+          },
+          {
+            "brand_nm": "국수나무"
+          },
+          {
+            "brand_nm": "국일아이"
+          },
+          {
+            "brand_nm": "굳닭"
+          },
+          {
+            "brand_nm": "굿즈트리"
+          },
+          {
+            "brand_nm": "굿프랜드"
+          },
+          {
+            "brand_nm": "궁리출판"
+          },
+          {
+            "brand_nm": "궁중비책"
+          },
+          {
+            "brand_nm": "그라미치"
+          },
+          {
+            "brand_nm": "그라빈"
+          },
+          {
+            "brand_nm": "그라인더스"
+          },
+          {
+            "brand_nm": "그렉노먼"
+          },
+          {
+            "brand_nm": "그루브라임플레이"
+          },
+          {
+            "brand_nm": "그린루프트"
+          },
+          {
+            "brand_nm": "그린북"
+          },
+          {
+            "brand_nm": "그린조이"
+          },
+          {
+            "brand_nm": "그린키즈"
+          },
+          {
+            "brand_nm": "그림책공작소"
+          },
+          {
+            "brand_nm": "글라스락"
+          },
+          {
+            "brand_nm": "글렌큐어"
+          },
+          {
+            "brand_nm": "글로리"
+          },
+          {
+            "brand_nm": "글로버"
+          },
+          {
+            "brand_nm": "글로버롤"
+          },
+          {
+            "brand_nm": "글로투브"
+          },
+          {
+            "brand_nm": "글송이"
+          },
+          {
+            "brand_nm": "글채움"
+          },
+          {
+            "brand_nm": "금산인삼협동조합"
+          },
+          {
+            "brand_nm": "금호리조트"
+          },
+          {
+            "brand_nm": "기라로쉬"
+          },
+          {
+            "brand_nm": "기비"
+          },
+          {
+            "brand_nm": "기비키이스"
+          },
+          {
+            "brand_nm": "기타"
+          },
+          {
+            "brand_nm": "기타 브랜드"
+          },
+          {
+            "brand_nm": "기타모니터"
+          },
+          {
+            "brand_nm": "기탄교육"
+          },
+          {
+            "brand_nm": "긱에어"
+          },
+          {
+            "brand_nm": "길벗스쿨"
+          },
+          {
+            "brand_nm": "길벗어린이"
+          },
+          {
+            "brand_nm": "김소형"
+          },
+          {
+            "brand_nm": "김수자"
+          },
+          {
+            "brand_nm": "김포파주인삼농협"
+          },
+          {
+            "brand_nm": "까꿍놀이터"
+          },
+          {
+            "brand_nm": "까날리"
+          },
+          {
+            "brand_nm": "까르뜨블랑슈"
+          },
+          {
+            "brand_nm": "까르띠에"
+          },
+          {
+            "brand_nm": "까르멧"
+          },
+          {
+            "brand_nm": "까르뱅"
+          },
+          {
+            "brand_nm": "까사니"
+          },
+          {
+            "brand_nm": "까사마루　"
+          },
+          {
+            "brand_nm": "까사맘"
+          },
+          {
+            "brand_nm": "까스따네르"
+          },
+          {
+            "brand_nm": "까스텔바작"
+          },
+          {
+            "brand_nm": "까웨"
+          },
+          {
+            "brand_nm": "꼬꼬노리"
+          },
+          {
+            "brand_nm": "꼬꼬빌"
+          },
+          {
+            "brand_nm": "꼬꼬잠"
+          },
+          {
+            "brand_nm": "꼬마버스타요"
+          },
+          {
+            "brand_nm": "꼬망스"
+          },
+          {
+            "brand_nm": "꼬메모이"
+          },
+          {
+            "brand_nm": "꼬잇"
+          },
+          {
+            "brand_nm": "꼴마르"
+          },
+          {
+            "brand_nm": "꼼데가르송"
+          },
+          {
+            "brand_nm": "꼼므모아"
+          },
+          {
+            "brand_nm": "꼼빠니아"
+          },
+          {
+            "brand_nm": "꾸씨꾸씨"
+          },
+          {
+            "brand_nm": "꾸즈"
+          },
+          {
+            "brand_nm": "꿈꾸는푸른언덕"
+          },
+          {
+            "brand_nm": "꿈소담이"
+          },
+          {
+            "brand_nm": "꿈터"
+          },
+          {
+            "brand_nm": "끄란느"
+          },
+          {
+            "brand_nm": "끄레아또레"
+          },
+          {
+            "brand_nm": "끌로에"
+          },
+          {
+            "brand_nm": "끌로에 키즈"
+          }
+        ]
+      }
+    ]
+  ],
+  "resultMsg": "success"
+}
