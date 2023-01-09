@@ -1,0 +1,244 @@
+{
+  "code": "200",
+  "data": {
+    "login_info": {
+      "autoLogin": "",
+      "pop_type": "",
+      "birth_day": "",
+      "wedd_cele_day": "",
+      "user_id": "",
+      "mbr_grade_nm": "",
+      "pop_confirm_url": "",
+      "pop_title": "",
+      "staff_yn": "",
+      "pop_url": "",
+      "mbr_nm": "",
+      "cust_id": "",
+      "pop_cancel_url": ""
+    },
+    "nav_cat_servicemenu_list": [
+      {
+        "link_url": "/event/searchEventBenefitZoneJson.action?gnb_num=10",
+        "service_menu": "이벤트·쿠폰"
+      },
+      {
+        "link_url": "/shop/searchShopLuckyDealJson.action?gnb_num=2",
+        "service_menu": "럭키딜"
+      },
+      {
+        "link_url": "/shop/searchShopBest100Json.action?gnb_num=1",
+        "service_menu": "베스트"
+      },
+      {
+        "link_url": "/shop/searchPlanShopMainJson.action?gnb_num=9",
+        "service_menu": "기획전"
+      }
+    ],
+    "nav_cat_top_menu_list": [
+      {
+        "menu_info": "mypage",
+        "link_url": "https://m-secure.elandmall.com/mypage/initMypageMain.action",
+        "menu_nm": "마이페이지"
+      },
+      {
+        "menu_info": "order_deli",
+        "link_url": "https://m-secure.elandmall.com/mypage/initMyOrderDeliList.action",
+        "menu_nm": "주문/배송조회"
+      },
+      {
+        "cart_cnt": 0,
+        "menu_info": "cart",
+        "link_url": "https://m.elandmall.com/cart/initCart.action",
+        "menu_nm": "장바구니"
+      },
+      {
+        "menu_info": "wish",
+        "link_url": "https://m-secure.elandmall.com/mypage/initMyWishlist.action",
+        "menu_nm": "나의 찜목록"
+      },
+      {
+        "menu_info": "coupon",
+        "link_url": "https://m-secure.elandmall.com/mypage/initMyCouponList.action",
+        "menu_nm": "쿠폰",
+        "cupn_cnt": 0
+      }
+    ],
+    "nav_cat_shop_list": [
+      {
+        "image_url": "//www.elandrs.com/20221228131146/images/mobile/temp/shp_eland_made.png",
+        "link_url": "",
+        "staff_yn": "N",
+        "shop_nm": "이랜드브랜드"
+      },
+      {
+        "image_url": "//www.elandrs.com/20221228131146/images/mobile/temp/shp_staff.png",
+        "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=1707323093",
+        "staff_yn": "Y",
+        "shop_nm": "복지몰"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/853/00/220100000322853.png",
+        "link_url": "https://m-kidikidi.elandmall.com/main/initMain.action",
+        "staff_yn": "N",
+        "shop_nm": "키디키디"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/856/00/220100000322856.png",
+        "link_url": "/dispctg/initDispCtg.action?disp_ctg_no=2001428825",
+        "staff_yn": "N",
+        "shop_nm": "리빙관"
+      }
+    ],
+    "nav_cat_lately_goods_list": [],
+    "nav_cat_category_list": [
+      {
+        "nav_cat_category_menu_list": [
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/667/00/220100000321667.png",
+            "menu_title": "캐주얼/유니섹스",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554360"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/666/00/220100000321666.png",
+            "menu_title": "여성의류",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554374"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/679/00/220100000321679.png",
+            "menu_title": "언더웨어/잠옷",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554375"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/684/00/220100000321684.png",
+            "menu_title": "남성의류",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554376"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/339/00/220300000331339.png",
+            "menu_title": "슈즈/가방/잡화",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554377"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/681/00/220100000321681.png",
+            "menu_title": "주얼리/시계",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554378"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/668/00/220100000321668.png",
+            "menu_title": "유아동패션",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554379"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/676/00/220100000321676.png",
+            "menu_title": "유아동용품",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554380"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/682/00/220100000321682.png",
+            "menu_title": "가구",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554381"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/672/00/220100000321672.png",
+            "menu_title": "패브릭/홈데코",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554382"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/673/00/220100000321673.png",
+            "menu_title": "주방",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554398"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/678/00/220100000321678.png",
+            "menu_title": "생활/수납/청소",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554399"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/683/00/220100000321683.png",
+            "menu_title": "가전/디지털",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554400"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/677/00/220100000321677.png",
+            "menu_title": "식품",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554401"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/685/00/220100000321685.png",
+            "menu_title": "레저/스포츠",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554402"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/674/00/220100000321674.png",
+            "menu_title": "뷰티",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554403"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/675/00/220100000321675.png",
+            "menu_title": "해외명품",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554404"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/687/00/220100000321687.png",
+            "menu_title": "펫/문구/취미",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554405"
+          },
+          {
+            "image_url": "//www.elandrs.com/upload/dspl/banner/90/686/00/220100000321686.png",
+            "menu_title": "여행/상품권/티켓",
+            "link_url": "https://m.elandmall.com/dispctg/initDispCtg.action?disp_ctg_no=2110554406"
+          }
+        ],
+        "nav_cat_category_menu": ""
+      }
+    ],
+    "nav_cat_brand_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/867/00/220100000322867.png",
+        "link_url": "https://modernhouse.elandmall.com/main/initMain.action",
+        "brand_nm": "모던하우스"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/866/00/220100000322866.png",
+        "link_url": "https://spao.elandmall.com/main/initMain.action",
+        "brand_nm": "스파오"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/865/00/220100000322865.png",
+        "link_url": "https://mixxo.elandmall.com/main/initMain.action",
+        "brand_nm": "미쏘"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/864/00/220100000322864.png",
+        "link_url": "https://whoau.elandmall.com/main/initMain.action",
+        "brand_nm": "후아유"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/863/00/220100000322863.png",
+        "link_url": "https://roem.elandmall.com/main/initMain.action",
+        "brand_nm": "로엠"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/862/00/220100000322862.png",
+        "link_url": "https://m-anybody.elandmall.com/main/initMain.action",
+        "brand_nm": "애니바디"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/861/00/220100000322861.png",
+        "link_url": "/dispctg/initBrandShop.action?brand_no=1600002582",
+        "brand_nm": "밀리밤"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/860/00/220100000322860.png",
+        "link_url": "https://shoopen.elandmall.com/main/initMain.action",
+        "brand_nm": "슈펜"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/51/201/00/221100000376201.png",
+        "link_url": "https://www.elandmall.com/dispctg/initBrandShop.action?brand_no=1690000333",
+        "brand_nm": "클라비스로고"
+      }
+    ]
+  },
+  "resultMsg": "success"
+}

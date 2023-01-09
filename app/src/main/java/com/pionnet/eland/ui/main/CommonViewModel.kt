@@ -1,7 +1,7 @@
 package com.pionnet.eland.ui.main
 
-import androidx.lifecycle.ViewModel
+import com.pionnet.eland.BaseViewModel
 
-abstract class CommonViewModel: ViewModel() {
+abstract class CommonViewModel: BaseViewModel() {
     abstract fun requestData()
 }

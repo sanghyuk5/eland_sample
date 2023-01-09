@@ -34,6 +34,12 @@ fun isNetworkAvailable(context: Context): Boolean {
     }
 }
 
+@Suppress("UNCHECKED_CAST")
+inline fun <reified T : Any> MutableList<*>.checkItemsAre() =
+    if (all { it is T })
+        this as MutableList<T>
+    else null
+
 fun <T> MediatorLiveData<T>.addSourceList(vararg liveDataArgs: MutableLiveData<*>, onChanged: () -> T) {
     liveDataArgs.forEach {
         this.addSource(it) { value = onChanged() }

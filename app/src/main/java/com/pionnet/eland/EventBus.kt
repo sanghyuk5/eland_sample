@@ -108,6 +108,7 @@ class LinkEvent {
 
 enum class LinkEventType {
     HOME,
+    SEARCH,
     DEFAULT,
     PROFILE,
     STORE_DETAIL,
