@@ -14,10 +14,11 @@ import com.pionnet.eland.ui.main.tabPlanDetail.PlanDetailModulesFragment
 import com.pionnet.eland.ui.main.tabStoreShop.StoreShopModulesFragment
 import com.pionnet.eland.ui.main.tabWeb.MainWebViewFragment
 
-class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fragmentActivity: FragmentActivity)
+class MainTabPagerAdapter(fragmentActivity: FragmentActivity)
     : FragmentStateAdapter(fragmentActivity) {
 
     val fragments = hashMapOf<String?, MainBaseFragment>()
+    private var tabs = listOf <TabData.TabInfo.HeaderIcon>()
 
     override fun getItemCount(): Int = tabs.size
 
@@ -40,5 +41,10 @@ class MainTabPagerAdapter(private val tabs: List<TabData.TabInfo.HeaderIcon>, fr
         fragments[gnbItem.menu_cd] = fragment
 
         return fragment
+    }
+
+    fun setData(tabs: List<TabData.TabInfo.HeaderIcon>) {
+        this.tabs = tabs
+        notifyDataSetChanged()
     }
 }

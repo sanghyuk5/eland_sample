@@ -21,7 +21,7 @@ class BestModulesFragment : CommonModulesBaseFragment() {
         }
     }
 
-    private fun observeHolderEvent() = with(viewModel) {
+    private fun observeHolderEvent() {
         EventBus.bestTabChange.observe(viewLifecycleOwner) {
             it.getIfNotHandled()?.let { holderEvent ->
                 holderEvent.data?.let { data ->

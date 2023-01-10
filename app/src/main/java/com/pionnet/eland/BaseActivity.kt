@@ -9,7 +9,6 @@ import com.orhanobut.logger.Logger
 import com.pionnet.eland.localData.DataManager.EXTRA_LINK
 import com.pionnet.eland.ui.leftmenu.LeftMenuActivity
 import com.pionnet.eland.ui.search.SearchActivity
-import com.pionnet.eland.ui.splash.SplashActivity
 import com.pionnet.eland.utils.debugToast
 import com.pionnet.eland.utils.dialogAlert
 import com.pionnet.eland.utils.isNetworkAvailable
@@ -26,7 +25,7 @@ open class BaseActivity : AppCompatActivity() {
     protected fun isSavedInstanceState(savedInstanceState: Bundle?): Boolean {
         return if (savedInstanceState != null) {
             Logger.d("savedInstanceState is NOT null.")
-            val intent = Intent(this, SplashActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
             finishAffinity()
