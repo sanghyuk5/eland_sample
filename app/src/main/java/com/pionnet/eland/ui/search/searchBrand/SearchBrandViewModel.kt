@@ -18,17 +18,8 @@ class BrandViewModel : CommonViewModel() {
     private val popularList = mutableListOf<SearchRank>()
 
     private var keywordList = listOf<SearchBrandKeyword.Data?>()
-    private var brandLetter = listOf<SearchBrandKeyword.Data.NavBrandKeyword.NavBrandKeywordLetter?>()
     private var brandLetterList = listOf<SearchBrandKeywordList.Data?>()
-
-    private var letterType = 0
-
-
-    val popularResult = MutableLiveData<MutableList<SearchRank>>()
-    val brandKeywordResult = MutableLiveData<List<SearchBrandKeyword.Data.NavBrandKeyword.NavBrandKeywordLetter?>?>()
-    val brandKeywordListResult = MutableLiveData<SearchBrandKeywordList.Data>()
-
-
+    
     override fun requestData() {
         viewModelScope.launch {
             merge(repository.requestSearchPopularStream(), repository.requestSearchKeywordStream(), repository.requestSearchKeywordListStream())

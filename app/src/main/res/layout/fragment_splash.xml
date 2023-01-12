@@ -8,7 +8,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="intro"
+        android:text="Splash Screen"
+        android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="100dp"/>
+        android:textSize="56dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
