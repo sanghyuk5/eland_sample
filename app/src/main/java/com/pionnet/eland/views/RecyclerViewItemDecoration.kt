@@ -3,6 +3,7 @@ package com.pionnet.eland.views
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.NO_POSITION
 
 /**
@@ -85,5 +86,20 @@ class PagerEndOnlyMarginItemDecoration(private val horizontalMargin: Int = 0) :
             left = if (firstItem) 0 else 0
             right = if (lastItem) 0 else horizontalMargin
         }
+    }
+}
+
+class GridMarginItemDecoration(private val spanCount: Int, private val spacing: Int)
+    : RecyclerView.ItemDecoration() {
+
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
+        val position = parent.getChildAdapterPosition(view) // item position
+        val column = position % spanCount // item column
+
+        outRect.left = spacing - column * spacing / spanCount
+        outRect.right = (column + 1) * spacing / spanCount
+
+        outRect.top = 0
+        outRect.bottom = 0
     }
 }

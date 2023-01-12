@@ -10,6 +10,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.BaseActivity
 import com.pionnet.eland.databinding.ActivitySearchBinding
+import com.pionnet.eland.ui.search.searchBrand.SearchBrandFragment
+import com.pionnet.eland.ui.search.searchPopular.PopularFragment
+import com.pionnet.eland.ui.search.searchRecently.SearchRecentlyFragment
 
 class SearchActivity : BaseActivity() {
 
@@ -73,8 +76,8 @@ class SearchActivity : BaseActivity() {
         override fun createFragment(position: Int): Fragment {
             when (position) {
                 0 -> return PopularFragment()
-                1 -> return RecentFragment()
-                2 -> return BrandFragment()
+                1 -> return SearchRecentlyFragment()
+                2 -> return SearchBrandFragment()
             }
             return PopularFragment()
         }
