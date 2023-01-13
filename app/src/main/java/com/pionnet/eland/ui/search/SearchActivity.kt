@@ -10,6 +10,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.BaseActivity
 import com.pionnet.eland.databinding.ActivitySearchBinding
+import com.pionnet.eland.localData.DataManager
 import com.pionnet.eland.ui.search.searchBrand.SearchBrandFragment
 import com.pionnet.eland.ui.search.searchPopular.PopularFragment
 import com.pionnet.eland.ui.search.searchRecently.SearchRecentlyFragment
@@ -18,6 +19,8 @@ class SearchActivity : BaseActivity() {
 
     private lateinit var binding: ActivitySearchBinding
     private lateinit var viewModel: SearchViewModel
+
+    private var tabInfo = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +33,8 @@ class SearchActivity : BaseActivity() {
         viewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
         binding = ActivitySearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        tabInfo = intent.getStringExtra(DataManager.EXTRA_LINK) ?: "인기"
 
         initObserve()
         initViewModel()
@@ -64,6 +69,10 @@ class SearchActivity : BaseActivity() {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = tabTitleArray[position]
         }.attach()
+
+        if (tabInfo == "브랜드") {
+            viewPager.currentItem = 2
+        }
     }
 
     class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :

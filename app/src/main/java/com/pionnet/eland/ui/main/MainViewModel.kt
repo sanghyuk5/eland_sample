@@ -17,9 +17,7 @@ class MainViewModel : ViewModel() {
      */
     private val repository by lazy { MainRepository() }
 
-
     val tabResult = MutableLiveData<TabData>()
-    val homeResult = MutableLiveData<HomeData>()
 
     private val isTabApiCalled = MutableLiveData<Boolean>()
     private val isHomeApiCalled = MutableLiveData<Boolean>()
@@ -49,7 +47,6 @@ class MainViewModel : ViewModel() {
             repository.requestHomeStream().collect {
                 it.fold(
                     onSuccess = {
-                        homeResult.postValue(it)
                         isHomeApiCalled.postValue(true)
                     },
                     onFailure = {
@@ -65,4 +62,5 @@ class MainViewModel : ViewModel() {
      */
     val requestRefresh: MutableLiveData<SingleLiveEvent<RequestRefresh>> = MutableLiveData()
     val showToast: MutableLiveData<ShowToast> = MutableLiveData()
+    val showBottomMenu: MutableLiveData<Boolean> = MutableLiveData()
 }

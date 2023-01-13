@@ -19,7 +19,7 @@ class BrandViewModel : CommonViewModel() {
 
     private var keywordList = listOf<SearchBrandKeyword.Data?>()
     private var brandLetterList = listOf<SearchBrandKeywordList.Data?>()
-    
+
     override fun requestData() {
         viewModelScope.launch {
             merge(repository.requestSearchPopularStream(), repository.requestSearchKeywordStream(), repository.requestSearchKeywordListStream())

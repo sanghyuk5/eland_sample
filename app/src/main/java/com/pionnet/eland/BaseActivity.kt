@@ -38,7 +38,7 @@ open class BaseActivity : AppCompatActivity() {
     protected open fun onLinkEvent(linkEvent: LinkEvent) {
         when (linkEvent.type) {
             LinkEventType.LEFT_MENU -> navToLeftMenu()
-            LinkEventType.SEARCH -> navToSearch()
+            LinkEventType.SEARCH -> navToSearch(linkEvent.data)
             LinkEventType.DEFAULT -> navToDefault(linkEvent.url)
             LinkEventType.DIAL -> navToDial(linkEvent.url)
         }
@@ -64,9 +64,9 @@ open class BaseActivity : AppCompatActivity() {
         }
     }
 
-    private fun navToSearch() {
+    private fun navToSearch(data: String?) {
         if (isNetworkAvailable(this)) {
-            startActivity(Intent(this, SearchActivity::class.java))
+            startActivity(Intent(this, SearchActivity::class.java).putExtra(EXTRA_LINK, data))
         } else {
             dialogAlert(this, getString(R.string.msg_network_error))
         }

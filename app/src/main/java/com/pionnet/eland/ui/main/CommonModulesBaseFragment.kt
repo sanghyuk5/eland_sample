@@ -140,6 +140,18 @@ abstract class CommonModulesBaseFragment :
                         }
                     })
                 }
+
+                addScrollListener(object : RecyclerView.OnScrollListener() {
+                    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                        super.onScrolled(recyclerView, dx, dy)
+
+                        if (dy > 0) {
+                            mainViewModel.showBottomMenu.postValue(false)
+                        } else {
+                            mainViewModel.showBottomMenu.postValue(true)
+                        }
+                    }
+                })
             }
         }
     }

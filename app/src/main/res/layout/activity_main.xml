@@ -24,12 +24,15 @@
                 android:layout_height="64dp"
                 app:layout_scrollFlags="scroll|enterAlways" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_main_tabmenu"
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginBottom="5dp"
-                android:scrollbars="none" />
+                android:background="#f4f5f7"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabMinWidth="0dp"
+                app:tabRippleColor="@android:color/transparent" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -40,6 +43,15 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/view_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/container"

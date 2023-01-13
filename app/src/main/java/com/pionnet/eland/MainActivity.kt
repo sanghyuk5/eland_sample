@@ -1,20 +1,22 @@
 package com.pionnet.eland
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.MotionEvent
+import android.view.View
 import androidx.activity.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
+import androidx.core.view.MotionEventCompat
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayoutMediator
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.databinding.ActivityMainBinding
-import com.pionnet.eland.model.DataSource
+import com.pionnet.eland.databinding.ViewItemMainTabmenuBinding
 import com.pionnet.eland.model.TabData
-import com.pionnet.eland.ui.main.MainTabMenuAdapter
 import com.pionnet.eland.ui.main.MainTabPagerAdapter
 import com.pionnet.eland.ui.main.MainViewModel
+import com.pionnet.eland.ui.main.ScrollMoveListener
 import com.pionnet.eland.ui.main.splash.SplashFragment
 import com.pionnet.eland.utils.dialogAlert
-import com.pionnet.eland.utils.getDisplaySize
 
 class MainActivity : BaseActivity() {
 
@@ -24,9 +26,7 @@ class MainActivity : BaseActivity() {
     private val splashFragment by lazy { SplashFragment() }
 
     private lateinit var tabPagerAdapter: MainTabPagerAdapter
-    private lateinit var tabAdapter: MainTabMenuAdapter
 
-    private var tabCurrentPosition = 0
     private var mainTabs = listOf<TabData.TabInfo.HeaderIcon>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,8 +46,8 @@ class MainActivity : BaseActivity() {
     private fun launchMain() {
         initSplash()
         initTopTab()
+        initBottomMenu()
         initObserve()
-
         //reload(true)
     }
 
@@ -57,53 +57,70 @@ class MainActivity : BaseActivity() {
             .commitNow()
     }
 
+    private fun initTopTab() = with(binding) {
+        topBar.ivMenu.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
+        }
+
+        topBar.rlSearch.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.SEARCH))
+        }
+
+        tabPagerAdapter = MainTabPagerAdapter(this@MainActivity)
+        viewPager.adapter = tabPagerAdapter
+
+        viewPager.setCurrentItem(0, false)
+    }
+
+    private fun initBottomMenu() = with(binding) {
+        bottomMenu.llSearchMenu.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
+        }
+
+        bottomMenu.llBrand.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.SEARCH, "브랜드"))
+        }
+
+        bottomMenu.ivHome.setOnClickListener {
+            viewPager.currentItem = 0
+        }
+
+        bottomMenu.llDelivery.setOnClickListener {}
+
+        bottomMenu.llGoods.setOnClickListener {}
+    }
+
+    private var scrollListener = object : ScrollMoveListener {
+        override fun onScrollUp(top: Int) {
+            showBottomMenu()
+        }
+
+        override fun onScrollDown(top: Int) {
+            hideBottomMenu()
+        }
+
+        override fun onBottomReached() {
+            hideBottomMenu()
+        }
+    }
+
+    private fun showBottomMenu() = with(binding) {
+        bottomMenu.root.visibility = View.VISIBLE
+    }
+
+    private fun hideBottomMenu() = with(binding) {
+        bottomMenu.root.visibility = View.GONE
+    }
+
     private fun initObserve() {
         observeSplash()
         observeRefresh()
         observeLinkEvent()
         observeShowToast()
-    }
-
-    private fun reload(
-        isReloadMain: Boolean = false
-    ) {
-        with(viewModel) {
-            if (isReloadMain) {
-                //requestMainGnb()
-            } else {
-                requestRefreshCurrentTab()
-            }
-        }
-    }
-
-    private fun requestRefreshCurrentTab() {
-        val menuCD = mainTabs[tabCurrentPosition].menu_cd
-        val fragment = (binding.viewPager.adapter as? MainTabPagerAdapter)?.fragments?.get(menuCD)
-        fragment?.let {
-            it.onRequestRefresh()
-        }
-    }
-
-    private fun observeRefresh() {
-        viewModel.requestRefresh.observe(this) {
-            it.getIfNotHandled()?.let { requestRefresh ->
-                reload(requestRefresh.isWhole)
-            }
-        }
+        observeShowBottomMenu()
     }
 
     private fun observeSplash() = with(viewModel) {
-        tabResult.observe(this@MainActivity) {
-            it.tabInfo.header_icon_list?.let { iconList ->
-                tabPagerAdapter.setData(iconList)
-                tabAdapter.updateData(iconList)
-            }
-        }
-
-        homeResult.observe(this@MainActivity) {
-
-        }
-
         isReadyToMain.observe(this@MainActivity) {
             if (it == true) {
                 supportFragmentManager.beginTransaction()
@@ -118,6 +135,44 @@ class MainActivity : BaseActivity() {
                     "오류가 발생하였습니다.",
                     okListener = { finish() }
                 )
+            }
+        }
+
+        tabResult.observe(this@MainActivity) {
+            it.tabInfo.header_icon_list?.let { iconList ->
+                TabLayoutMediator(binding.tabs, binding.viewPager) { tab, pos ->
+                    val customBinding = ViewItemMainTabmenuBinding.inflate(LayoutInflater.from(binding.tabs.context)).apply {
+                        tvItemMainTabTitle.text = iconList[pos].menu_nm
+                    }
+
+                    tab.customView = customBinding.root
+                }.attach()
+
+                tabPagerAdapter.setData(iconList)
+            }
+        }
+    }
+
+    private fun reload(isReloadMain: Boolean = false) = with(viewModel) {
+        if (isReloadMain) {
+            //requestMainGnb()
+        } else {
+            requestRefreshCurrentTab()
+        }
+    }
+
+    private fun requestRefreshCurrentTab() {
+        val menuCD = mainTabs[binding.viewPager.currentItem].menu_cd
+        val fragment = (binding.viewPager.adapter as? MainTabPagerAdapter)?.fragments?.get(menuCD)
+        fragment?.let {
+            it.onRequestRefresh()
+        }
+    }
+
+    private fun observeRefresh() {
+        viewModel.requestRefresh.observe(this) {
+            it.getIfNotHandled()?.let { requestRefresh ->
+                reload(requestRefresh.isWhole)
             }
         }
     }
@@ -140,41 +195,9 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    private fun initTopTab() = with(binding) {
-        topBar.ivMenu.setOnClickListener {
-            EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
+    private fun observeShowBottomMenu() {
+        viewModel.showBottomMenu.observe(this) {
+            if (it) showBottomMenu() else hideBottomMenu()
         }
-
-        topBar.rlSearch.setOnClickListener {
-            EventBus.fire(LinkEvent(LinkEventType.SEARCH))
-        }
-
-        tabPagerAdapter = MainTabPagerAdapter(this@MainActivity)
-        tabAdapter = MainTabMenuAdapter()
-
-        viewPager.adapter = tabPagerAdapter
-        val tabMenuLayoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
-        rvMainTabmenu.apply {
-            adapter = tabAdapter
-            layoutManager = tabMenuLayoutManager
-        }
-
-        viewPager.setCurrentItem(0, false)
-        viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                tabCurrentPosition = position
-                tabAdapter.updatePosition(position)
-                tabMenuLayoutManager.scrollToPositionWithOffset(position, getDisplaySize(this@MainActivity).widthPixels / 2)
-            }
-        })
-
-        tabAdapter.setItemClickListener(object : MainTabMenuAdapter.OnItemClickListener {
-            override fun onClick(position: Int) {
-                tabCurrentPosition = position
-                viewPager.setCurrentItem(position, false)
-                tabAdapter.updatePosition(position)
-                tabMenuLayoutManager.scrollToPositionWithOffset(position, getDisplaySize(this@MainActivity).widthPixels / 2)
-            }
-        })
     }
 }
