@@ -2,12 +2,12 @@ package com.pionnet.eland.model
 
 import com.google.gson.annotations.SerializedName
 
-data class SearchPlanShop(
+data class SearchPlanShopData(
     @SerializedName("result")
-    val result: List<Result?>?
+    val result: List<Result>?
 ) {
     data class Result(
-        @SerializedName("planshop") val planshop: List<Planshop?>?
+        @SerializedName("planshop") val planshop: List<Planshop>?
     ) {
         data class Planshop(
             @SerializedName("banner_img_path") val bannerImgPath: String?,

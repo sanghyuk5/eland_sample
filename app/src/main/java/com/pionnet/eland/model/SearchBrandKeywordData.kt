@@ -3,7 +3,7 @@ package com.pionnet.eland.model
 
 import com.google.gson.annotations.SerializedName
 
-data class SearchBrandKeyword(
+data class SearchBrandKeywordData(
     @SerializedName("code") val code: String?,
     @SerializedName("data") val data: List<Data?>?,
     @SerializedName("resultMsg") val resultMsg: String?

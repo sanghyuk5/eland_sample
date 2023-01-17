@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import com.pionnet.eland.databinding.*
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 
-class SearchBrandAdapter(private val changeLetterCallback: () -> Unit)
+class SearchBrandAdapter(private val changeLetterCallback: (String) -> Unit)
     : ListAdapter<SearchBrandDataSet, BaseViewHolder>(moduleDiffUtilCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder =

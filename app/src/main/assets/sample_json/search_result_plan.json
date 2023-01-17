@@ -1,0 +1,23 @@
+{
+  "result": [
+    {
+      "planshop": [
+        {
+          "banner_img_path": "/dspl/banner/11/840/00/220800000362840.jpg",
+          "disp_ctg_nm": "나은s 픽! 울트라푸쉬\uD83D\uDC96",
+          "disp_ctg_no": "2208634777"
+        },
+        {
+          "banner_img_path": "/dspl/banner/11/073/00/220500000346073.jpg",
+          "disp_ctg_nm": "[지케이나루] 인기 브랜드 총 집합",
+          "disp_ctg_no": "2205611420"
+        },
+        {
+          "banner_img_path": "/dspl/banner/11/749/00/211200000316749.jpg",
+          "disp_ctg_nm": "나만 알고 싶은 브랜드",
+          "disp_ctg_no": "2112575554"
+        }
+      ]
+    }
+  ]
+}

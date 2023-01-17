@@ -2,10 +2,8 @@ package com.pionnet.eland
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import androidx.activity.viewModels
-import androidx.core.view.MotionEventCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
 import com.orhanobut.logger.Logger
@@ -14,7 +12,6 @@ import com.pionnet.eland.databinding.ViewItemMainTabmenuBinding
 import com.pionnet.eland.model.TabData
 import com.pionnet.eland.ui.main.MainTabPagerAdapter
 import com.pionnet.eland.ui.main.MainViewModel
-import com.pionnet.eland.ui.main.ScrollMoveListener
 import com.pionnet.eland.ui.main.splash.SplashFragment
 import com.pionnet.eland.utils.dialogAlert
 
@@ -90,34 +87,11 @@ class MainActivity : BaseActivity() {
         bottomMenu.llGoods.setOnClickListener {}
     }
 
-    private var scrollListener = object : ScrollMoveListener {
-        override fun onScrollUp(top: Int) {
-            showBottomMenu()
-        }
-
-        override fun onScrollDown(top: Int) {
-            hideBottomMenu()
-        }
-
-        override fun onBottomReached() {
-            hideBottomMenu()
-        }
-    }
-
-    private fun showBottomMenu() = with(binding) {
-        bottomMenu.root.visibility = View.VISIBLE
-    }
-
-    private fun hideBottomMenu() = with(binding) {
-        bottomMenu.root.visibility = View.GONE
-    }
-
     private fun initObserve() {
         observeSplash()
         observeRefresh()
         observeLinkEvent()
         observeShowToast()
-        observeShowBottomMenu()
     }
 
     private fun observeSplash() = with(viewModel) {
@@ -192,12 +166,6 @@ class MainActivity : BaseActivity() {
     private fun observeShowToast() {
         viewModel.showToast.observe(this) {
             Snackbar.make(binding.root, it.msg, Snackbar.LENGTH_LONG).show()
-        }
-    }
-
-    private fun observeShowBottomMenu() {
-        viewModel.showBottomMenu.observe(this) {
-            if (it) showBottomMenu() else hideBottomMenu()
         }
     }
 }

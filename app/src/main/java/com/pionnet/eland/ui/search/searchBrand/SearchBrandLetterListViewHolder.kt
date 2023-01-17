@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemSearchBrandKeywordLetterListBinding
 import com.pionnet.eland.databinding.ViewSearchBrandLetterListModuleBinding
-import com.pionnet.eland.model.SearchBrandKeywordList
-import com.pionnet.eland.model.SearchBrandKeywordList.Data.NavBrandKeyword
+import com.pionnet.eland.model.SearchBrandKeywordListData
+import com.pionnet.eland.model.SearchBrandKeywordListData.Data.NavBrandKeyword
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 
@@ -18,14 +18,14 @@ class SearchBrandLetterListViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val keywordList = it.toMutableList().checkItemsAre<SearchBrandKeywordList.Data>()
+            val keywordList = it.toMutableList().checkItemsAre<SearchBrandKeywordListData.Data>()
             keywordList?.let { it ->
                 initView(it)
             }
         }
     }
 
-    private fun initView(data: MutableList<SearchBrandKeywordList.Data>) = with(binding) {
+    private fun initView(data: MutableList<SearchBrandKeywordListData.Data>) = with(binding) {
         tvLetterResult.text = "'" + data[0].navBrandKeywordTitle + "'" + "검색결과 총 " + data[0].navBrandKeywordList?.size.toString() + "건"
 
         rvLetterList.adapter = SearchBrandLetterListAdapter().apply {

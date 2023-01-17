@@ -8,7 +8,7 @@ data class SearchRawRankData(
 )
 
 data class SearchRank(
-    var rank: String?,
-    var keyword: String?,
+    var rank: String? = null,
+    var keyword: String? = null,
     var isTopFive: Boolean = false
 )

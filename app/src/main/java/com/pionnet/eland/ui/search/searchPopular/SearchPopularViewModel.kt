@@ -2,17 +2,17 @@ package com.pionnet.eland.ui.search.searchPopular
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.SearchPlanShop
+import com.pionnet.eland.model.SearchPlanShopData
 import com.pionnet.eland.model.SearchRank
 import com.pionnet.eland.ui.main.CommonViewModel
 import kotlinx.coroutines.launch
 
-class PopularViewModel : CommonViewModel() {
+class SearchPopularViewModel : CommonViewModel() {
 
-    private val repository by lazy { PopularRepository() }
+    private val repository by lazy { SearchPopularRepository() }
 
     val popularResult = MutableLiveData<MutableList<SearchRank>>()
-    val planShopResult = MutableLiveData<SearchPlanShop>()
+    val planShopResult = MutableLiveData<List<SearchPlanShopData.Result.Planshop>>()
 
     private var popularList = mutableListOf<SearchRank>()
 
@@ -22,6 +22,8 @@ class PopularViewModel : CommonViewModel() {
                 it.fold(
                     onSuccess = {
                         it?.result?.let { data ->
+                            popularList.clear()
+
                             data.forEachIndexed { index, resultData ->
                                 resultData?.let { value ->
                                     var isTopFive = false
@@ -41,7 +43,9 @@ class PopularViewModel : CommonViewModel() {
             repository.requestSearchPlanShopStream().collect {
                 it.fold(
                     onSuccess = {
-                        planShopResult.postValue(it)
+                        it?.result?.let { data ->
+                            planShopResult.postValue(data[0].planshop)
+                        }
                     },
                     onFailure = {}
                 )

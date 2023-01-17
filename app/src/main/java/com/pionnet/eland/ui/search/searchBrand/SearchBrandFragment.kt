@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.google.android.material.snackbar.Snackbar
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.FragmentSearchBrandBinding
 
@@ -32,7 +33,8 @@ class SearchBrandFragment : Fragment(R.layout.fragment_search_brand) {
         rvBrand.adapter = SearchBrandAdapter(changeLetterCallback)
     }
 
-    private val changeLetterCallback = {
-        viewModel.requestKeywordList()
+    private val changeLetterCallback: (String) -> Unit = {
+        Snackbar.make(binding.root, it, Snackbar.LENGTH_SHORT).show()
+        viewModel.requestKeywordList(it)
     }
 }

@@ -1,0 +1,56 @@
+{
+  "result": [
+    {
+      "img_path": "/dspl/banner/50/553/00/170500000026553.jpg",
+      "keyword": "나이키",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1600000748&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "가나키즈",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1800012855&webviewYn=N"
+    },
+    {
+      "img_path": "0000113",
+      "keyword": "나로",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1800011517&webviewYn=Y"
+    },
+    {
+      "img_path": "",
+      "keyword": "나이키키즈",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1600003091&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "가나출판사",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1600000647&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "시스티나",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=2200035876&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "모스코나",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1690000131&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "아레나",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1600003119&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "모다까리나",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=1600003288&webviewYn=N"
+    },
+    {
+      "img_path": "",
+      "keyword": "나스",
+      "brand_url": "/dispctg/initBrandShop.action?brand_no=2000016696&webviewYn=N"
+    }
+  ],
+  "code": "200",
+  "resultMsg": "success"
+}

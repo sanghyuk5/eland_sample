@@ -2,7 +2,6 @@ package com.pionnet.eland.ui.main
 
 import androidx.recyclerview.widget.DiffUtil
 import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Category
 import com.pionnet.eland.model.Goods
 
 class BannerDiffCallback : DiffUtil.ItemCallback<Banner>() {

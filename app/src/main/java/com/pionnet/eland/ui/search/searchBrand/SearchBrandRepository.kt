@@ -2,8 +2,8 @@ package com.pionnet.eland.ui.search.searchBrand
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.SearchBrandKeyword
-import com.pionnet.eland.model.SearchBrandKeywordList
+import com.pionnet.eland.model.SearchBrandKeywordData
+import com.pionnet.eland.model.SearchBrandKeywordListData
 import com.pionnet.eland.model.SearchRawRankData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
@@ -25,10 +25,10 @@ class SearchBrandRepository {
         }.flowOn(Dispatchers.IO)
     }
 
-    suspend fun requestSearchKeywordStream(): Flow<Result<SearchBrandKeyword?>> {
+    suspend fun requestSearchKeywordStream(): Flow<Result<SearchBrandKeywordData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/search_brand_keyword.json", ElandApp.appContext)
-            val data = Gson().fromJson(jsonString, SearchBrandKeyword::class.java)
+            val data = Gson().fromJson(jsonString, SearchBrandKeywordData::class.java)
 
             emit(Result.success(data))
         }.retryWhen { cause, attempt ->
@@ -36,10 +36,10 @@ class SearchBrandRepository {
         }.flowOn(Dispatchers.IO)
     }
 
-    suspend fun requestSearchKeywordListStream(): Flow<Result<SearchBrandKeywordList?>> {
+    suspend fun requestSearchKeywordListStream(keyword: String): Flow<Result<SearchBrandKeywordListData?>> {
         return flow {
             val jsonString = getJsonFileToString("sample_json/search_brand_keyword_list.json", ElandApp.appContext)
-            val data = Gson().fromJson(jsonString, SearchBrandKeywordList::class.java)
+            val data = Gson().fromJson(jsonString, SearchBrandKeywordListData::class.java)
 
             emit(Result.success(data))
         }.retryWhen { cause, attempt ->

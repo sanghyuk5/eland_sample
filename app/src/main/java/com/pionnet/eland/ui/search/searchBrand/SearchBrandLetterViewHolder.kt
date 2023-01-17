@@ -6,22 +6,32 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.databinding.ViewItemSearchBrandKeywordLetterBinding
 import com.pionnet.eland.databinding.ViewSearchBrandLetterModuleBinding
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.GridMarginItemDecoration
-import com.pionnet.eland.model.SearchBrandKeyword.Data
-import com.pionnet.eland.model.SearchBrandKeyword.Data.NavBrandKeyword.NavBrandKeywordLetter
+import com.pionnet.eland.model.SearchBrandKeywordData.Data
+import com.pionnet.eland.model.SearchBrandKeywordData.Data.NavBrandKeyword.NavBrandKeywordLetter
+import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
 
 class SearchBrandLetterViewHolder(
     private val binding: ViewSearchBrandLetterModuleBinding,
-    private val changeLetterCallback: () -> Unit
+    private var changeLetterCallback: (String) -> Unit
 ) : BaseViewHolder(binding.root) {
 
     private var letterType = 0
+    private var keywordData: List<NavBrandKeywordLetter?>? = null
+
+    private val itemClickIntCallback: ItemClickIntCallback = { index ->
+        keywordData?.let {
+            it.select(index)
+        }
+        keywordData?.get(index)?.navBrandKeywordTitle?.let { keyword ->
+            changeLetterCallback.invoke(keyword)
+        }
+    }
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
@@ -33,30 +43,45 @@ class SearchBrandLetterViewHolder(
     }
 
     private fun initView(data: MutableList<Data>) = with(binding) {
+        keywordData = data[0].navBrandKeyword?.navBrandKeywordListKor
         rvLetter.apply {
             if (itemDecorationCount == 0) addItemDecoration(GridMarginItemDecoration(6, 5.toPx))
-            adapter = SearchBrandLetterAdapter().apply {
-                submitList(data[0].navBrandKeyword?.navBrandKeywordListKor)
+            adapter = SearchBrandLetterAdapter(itemClickIntCallback).apply {
+                submitList(keywordData)
             }
         }
 
+        var keyword = "ㄱ"
         ivChange.setOnClickListener {
             if (letterType == 0) {
                 letterType = 1
+                keyword = "a"
             } else if (letterType == 1) {
                 letterType = 0
+                keyword = "ㄱ"
             }
 
-            changeLetterCallback.invoke()
+            changeLetterCallback.invoke(keyword)
 
-            val letter = if (letterType == 0) data[0].navBrandKeyword?.navBrandKeywordListKor else data[0].navBrandKeyword?.navBrandKeywordListEng
+            keywordData = if (letterType == 0) data[0].navBrandKeyword?.navBrandKeywordListKor else data[0].navBrandKeyword?.navBrandKeywordListEng
 
-            (rvLetter.adapter as? SearchBrandLetterAdapter)?.submitList(letter)
+            (rvLetter.adapter as? SearchBrandLetterAdapter)?.submitList(keywordData)
         }
     }
 
-    private class SearchBrandLetterAdapter
-        : ListAdapter<NavBrandKeywordLetter, SearchBrandLetterAdapter.ViewHolder>(DiffCallback()) {
+    private fun List<NavBrandKeywordLetter?>.select(index: Int) {
+        val data = this.map { it?.copy() }.toMutableList()
+        val selectedItem = data.indexOfFirst { it!!.isSelected }
+        if (selectedItem != -1 && selectedItem != index) {
+            data.getOrNull(selectedItem)?.isSelected = false
+            data.getOrNull(index)?.isSelected = true
+            binding.rvLetter.apply {
+                (adapter as? SearchBrandLetterAdapter)?.submitList(data)
+            }
+        }
+    }
+
+    private class SearchBrandLetterAdapter(private val itemClickIntCallback: (Int) -> Unit) : ListAdapter<NavBrandKeywordLetter, SearchBrandLetterAdapter.ViewHolder>(DiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             return ViewHolder(
@@ -70,9 +95,12 @@ class SearchBrandLetterViewHolder(
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.bind(currentList[position])
+            holder.itemView.setOnClickListener {
+                itemClickIntCallback.invoke(position)
+            }
         }
 
-        inner class ViewHolder(val binding: ViewItemSearchBrandKeywordLetterBinding)
+        private inner class ViewHolder(val binding: ViewItemSearchBrandKeywordLetterBinding)
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: NavBrandKeywordLetter) = with(binding) {
@@ -85,7 +113,7 @@ class SearchBrandLetterViewHolder(
             }
         }
 
-        class DiffCallback : DiffUtil.ItemCallback<NavBrandKeywordLetter>() {
+        private class DiffCallback : DiffUtil.ItemCallback<NavBrandKeywordLetter>() {
             override fun areItemsTheSame(oldItem: NavBrandKeywordLetter, newItem: NavBrandKeywordLetter): Boolean =
                 oldItem == newItem
 

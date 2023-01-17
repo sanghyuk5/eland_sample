@@ -62,5 +62,4 @@ class MainViewModel : ViewModel() {
      */
     val requestRefresh: MutableLiveData<SingleLiveEvent<RequestRefresh>> = MutableLiveData()
     val showToast: MutableLiveData<ShowToast> = MutableLiveData()
-    val showBottomMenu: MutableLiveData<Boolean> = MutableLiveData()
 }

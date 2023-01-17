@@ -1,20 +1,27 @@
 package com.pionnet.eland
 
+import android.Manifest
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.localData.DataManager.EXTRA_LINK
 import com.pionnet.eland.ui.leftmenu.LeftMenuActivity
 import com.pionnet.eland.ui.search.SearchActivity
-import com.pionnet.eland.utils.debugToast
-import com.pionnet.eland.utils.dialogAlert
-import com.pionnet.eland.utils.isNetworkAvailable
-import com.pionnet.eland.utils.withBaseUrl
+import com.pionnet.eland.ui.search.searchCamera.SearchCameraActivity
+import com.pionnet.eland.utils.*
 
 open class BaseActivity : AppCompatActivity() {
+
+    private val permissionHelper = PermissionGrantHelper(this)
+    private val imagePermissions = arrayOf(
+        Manifest.permission.CAMERA
+    )
+
 
     private val resultNavToWeb = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -67,6 +74,38 @@ open class BaseActivity : AppCompatActivity() {
     private fun navToSearch(data: String?) {
         if (isNetworkAvailable(this)) {
             startActivity(Intent(this, SearchActivity::class.java).putExtra(EXTRA_LINK, data))
+        } else {
+            dialogAlert(this, getString(R.string.msg_network_error))
+        }
+    }
+
+    fun navToSearchCamera() {
+        if (isNetworkAvailable(this)) {
+            if (permissionHelper.isAllGranted(imagePermissions)) {
+                startActivity(Intent(this, SearchCameraActivity::class.java))
+            } else {
+                dialogConfirm(this, "카메라 및 사진/미디어에 엑세스 하도록 접근 권한을 허용해야 합니다.",
+                    okListener = {
+                        if (permissionHelper.isAllGranted(imagePermissions)) {
+                            startActivity(Intent(this, SearchCameraActivity::class.java))
+                        } else {
+                            val rationales = imagePermissions.filterIndexed { index, s ->
+                                ActivityCompat.shouldShowRequestPermissionRationale(this, s)
+                            }
+                            if (rationales.isNotEmpty()) {
+                                startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                                    .setData(Uri.fromParts("package", BuildConfig.APPLICATION_ID, null)))
+                            } else {
+                                permissionHelper.checkMultiplePermissionsAndAction(imagePermissions,
+                                    grantedCallback = {
+                                        Logger.d("all granted.")
+                                    }
+                                )
+                            }
+                        }
+                    }
+                )
+            }
         } else {
             dialogAlert(this, getString(R.string.msg_network_error))
         }
