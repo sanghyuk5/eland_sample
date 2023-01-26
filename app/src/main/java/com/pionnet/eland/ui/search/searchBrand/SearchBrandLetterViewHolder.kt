@@ -26,7 +26,9 @@ class SearchBrandLetterViewHolder(
 
     private val itemClickIntCallback: ItemClickIntCallback = { index ->
         keywordData?.let {
-            it.select(index)
+            it.select(index) {
+                keywordData = it.toMutableList()
+            }
         }
         keywordData?.get(index)?.navBrandKeywordTitle?.let { keyword ->
             changeLetterCallback.invoke(keyword)
@@ -69,7 +71,7 @@ class SearchBrandLetterViewHolder(
         }
     }
 
-    private fun List<NavBrandKeywordLetter?>.select(index: Int) {
+    private fun List<NavBrandKeywordLetter?>.select(index: Int, callback: (List<NavBrandKeywordLetter?>) -> Unit) {
         val data = this.map { it?.copy() }.toMutableList()
         val selectedItem = data.indexOfFirst { it!!.isSelected }
         if (selectedItem != -1 && selectedItem != index) {
@@ -78,6 +80,8 @@ class SearchBrandLetterViewHolder(
             binding.rvLetter.apply {
                 (adapter as? SearchBrandLetterAdapter)?.submitList(data)
             }
+
+            callback.invoke(data)
         }
     }
 
