@@ -66,14 +66,14 @@ class HomeTimeSaleViewHolder(
         }
         currentCountDownTimer?.start()
 
-        tvBrand.text = data.brand
-        tvContent.text = data.goodsName
-        tvPercent.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
+        brandName.text = data.brandName
+        goodsName.text = data.goodsName
+        saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
         tvPer.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
-        tvPercent.text = data.saleRate.toString()
-        tvPrice.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.GONE
-        tvPrice.text = data.marketPrice.toString()
-        tvSalePrice.text = priceFormat(data.salePrice ?: 0)
+        saleRate.text = data.saleRate.toString()
+        priceBefore.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.GONE
+        priceBefore.text = data.marketPrice.toString()
+        priceAfter.text = priceFormat(data.salePrice ?: 0)
         cfvFlag.flags = FlagUtil.from(data.iconView)
     }
 

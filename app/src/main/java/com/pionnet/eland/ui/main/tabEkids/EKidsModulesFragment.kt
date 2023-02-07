@@ -4,9 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.viewModels
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
-import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
-import com.pionnet.eland.ui.main.tabPlan.PlanModulesFragment
 
 class EKidsModulesFragment : CommonModulesBaseFragment() {
 

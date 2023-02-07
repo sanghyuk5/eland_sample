@@ -21,9 +21,9 @@ class LeftMenuRecentlyViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val recentlyList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Recently>()
-            recentlyList?.let { it ->
-                initView(it)
+            val dataList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Recently>()
+            dataList?.let { data ->
+                initView(data)
             }
         }
     }

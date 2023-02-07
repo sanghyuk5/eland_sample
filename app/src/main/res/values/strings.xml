@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ElandMall_MVVM</string>
 
+    <string name="logo_with_color"><font color="#dd0000">Eland</font><font color="#000000">mall</font></string>
+
     <string name="dialog_ok">확인</string>
     <string name="dialog_cancel">취소</string>
     <string name="dialog_app_finish">앱 종료</string>

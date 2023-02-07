@@ -1,0 +1,427 @@
+{
+  "code": "200",
+  "data": {
+    "top_image_list": [
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/823/00/221000000373823.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/20/731/00/221000000373731.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/655/00/221000000373655.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/647/00/221000000373647.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/645/00/221000000373645.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/644/00/221000000373644.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/051/00/221000000374051.jpg"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/911/00/221000000373911.jpg"
+      }
+    ],
+    "goods_info": {
+      "brand_image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+      "brand_nm": "나이키",
+      "goods_nm": "오버핏 헤비 두툼 메종 브이넥",
+      "sale_rate": 50,
+      "sale_price": 19800,
+      "market_price": 39600,
+      "cust_sale_price": 19800,
+      "final_price" : 19206,
+      "coupon_sale_price": 594,
+      "point": "1% 적립(198원)",
+      "goods_review_info": {
+        "review_count": 25,
+        "review_info":{
+          "review_image_info": {
+            "review_count": 7,
+            "review_list": [
+              {
+                "image_url": "//www.elandrs.com/upload/dspl/banner/10/806/00/221200000385806.jpg",
+                "userID": "이영인",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱",
+                "link_url": "https://m.naver.com/goodsDetailReviewDetail.action"
+              },
+              {
+                "image_url": "//www.elandrs.com/upload/dspl/banner/11/043/00/230100000391043.jpg",
+                "userID": "이영인1",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱",
+                "link_url": "https://m.naver.com/goodsDetailReviewDetail.action"
+              },
+              {
+                "image_url": "//www.elandrs.com/upload/dspl/banner/10/806/00/221200000385806.jpg",
+                "userID": "이영인2",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱",
+                "link_url": "https://m.naver.com/goodsDetailReviewDetail.action"
+              },
+              {
+                "image_url": "//www.elandrs.com/upload/dspl/banner/10/806/00/221200000385806.jpg",
+                "link_url": "https://m.naver.com/goodsDetailReviewDetail.action"
+              },
+              {
+                "image_url": "//www.elandrs.com/upload/dspl/banner/10/806/00/221200000385806.jpg",
+                "link_url": "https://m.naver.com/goodsDetailReviewDetail.action"
+              }
+            ],
+            "review_more_url": "https://m.naver.com/goodsDetailReviewImageMore.action"
+          },
+          "review_text_info": {
+            "review_count": 18,
+            "review_list": [
+              {
+                "userID": "이영인",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱"
+              },
+              {
+                "userID": "이영인1",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱"
+              },
+              {
+                "userID": "이영인2",
+                "height": "170cm",
+                "weight": "50kg",
+                "purchase_goods_info": "이영인이영인이영인",
+                "review_comment": "굳샷입니다. 갱"
+              }
+            ],
+            "review_more_url": "https://m.naver.com/goodsDetailReviewTextMore.action"
+          }
+        }
+      },
+      "goods_question_info": {
+        "question_count": 18,
+        "question_list":[
+          {
+            "userID": "이영인",
+            "date": "2023.01.18 13:36",
+            "content": "굳샷입니다. 갱",
+            "secret": "Y"
+          },
+          {
+            "userID": "판매자",
+            "date": "2023.01.18 13:36",
+            "content": "감사합니다.",
+            "secret": "N"
+          },
+          {
+            "userID": "이영인",
+            "date": "2023.01.18 13:36",
+            "content": "굳샷입니다. 갱",
+            "secret": "Y"
+          },
+          {
+            "userID": "이영인",
+            "date": "2023.01.18 13:36",
+            "content": "굳샷입니다. 갱",
+            "secret": "Y"
+          }
+        ],
+        "question_more_url": "https://m.naver.com/goodsDetailQuestionMore.action"
+      }
+    },
+    "share": {
+      "share_img_path": "//www.elandrs.com/upload/dspl/banner/11/043/00/230100000391043.jpg",
+      "share_url": "https://m.elandmall.com/shop/initPlanShop.action?disp_ctg_no=2301671361"
+    },
+    "seller_popular_style": {
+      "title": "나이키",
+      "goods_list": [
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/994/00/221200000385994.png",
+          "goods_nm": "슬랙스 코디",
+          "favorite_yn" : "N",
+          "link_url" : "https://m.naver.com/initStyle.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/995/00/221200000385995.png",
+          "goods_nm": "니트 코디",
+          "favorite_yn" : "N",
+          "link_url" : "https://m.naver.com/initStyle.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/10/996/00/221200000385996.png",
+          "goods_nm": "맨투맨 코디",
+          "favorite_yn" : "N",
+          "link_url" : "https://m.naver.com/initStyle.action"
+        }
+      ]
+    },
+    "goods_detail": "https://m.naver.com",
+    "seller_recommend_goods": [
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/448/240/2203365448_0000001.jpg",
+        "brand_nm": "나이키",
+        "goods_nm": "[당일배송][1+1] 남녀공용 세미와이드",
+        "sale_rate": 50,
+        "cust_sale_price": 10900,
+        "market_price": 21800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/823/00/221000000373823.jpg",
+        "brand_nm": "나이키",
+        "goods_nm": "[당일배송][1+1] 가성비 끝판왕",
+        "sale_rate": 50,
+        "cust_sale_price": 35900,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/655/00/221000000373655.jpg",
+        "goods_nm": "[당일출고] 오버핏 8칼라 반진업",
+        "sale_rate": 50,
+        "cust_sale_price": 19800,
+        "market_price": 59800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/645/00/221000000373645.jpg",
+        "goods_nm": "겨울 세미와이드 +5cm 숏/롱 기장선택",
+        "sale_rate": 50,
+        "cust_sale_price": 24800,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/051/00/221000000374051.jpg",
+        "goods_nm": "[1+1] 오버핏 하찌 골지 기모갱",
+        "sale_rate": 51,
+        "cust_sale_price": 16800,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      }
+    ],
+    "tag_list": [
+      {
+        "tag_nm": "긴팔",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "무지",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "집업",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "스웨터",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "노멀",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "드롭숄더",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "셔츠카라",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "캐주얼",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      },
+      {
+        "tag_nm": "니트",
+        "tag_link": "https://m.naver.com/initTagDetail.action"
+      }
+    ],
+    "seller_popular_goods": [
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/090/240/2204562090_0000001.jpg",
+        "goods_nm": "[당일배송][1+1] 남녀공용 세미와이드",
+        "sale_rate": 50,
+        "cust_sale_price": 22700,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/823/00/221000000373823.jpg",
+        "goods_nm": "[당일배송][1+1] 가성비 끝판왕",
+        "sale_rate": 50,
+        "cust_sale_price": 27900,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/655/00/221000000373655.jpg",
+        "goods_nm": "[당일출고] 오버핏 8칼라 반진업",
+        "sale_rate": 50,
+        "cust_sale_price": 19800,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/051/00/221000000374051.jpg",
+        "goods_nm": "겨울 세미와이드 +5cm 숏/롱 기장선택",
+        "sale_rate": 50,
+        "cust_sale_price": 24800,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/448/240/2203365448_0000001.jpg",
+        "goods_nm": "[1+1] 오버핏 하찌 골지 기모갱",
+        "sale_rate": 51,
+        "cust_sale_price": 16800,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/10/823/00/221000000373823.jpg",
+        "goods_nm": "이영인",
+        "sale_rate": 50,
+        "cust_sale_price": 14900,
+        "favorite_yn" : "N",
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      }
+    ],
+    "recommend_goods": [
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/448/240/2203365448_0000001.jpg",
+        "brand_nm": "나이키",
+        "goods_nm": "[당일배송][1+1] 남녀공용 세미와이드",
+        "sale_rate": 50,
+        "cust_sale_price": 37800,
+        "market_price": 75600,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/447/240/2203365447_0000001.jpg",
+        "brand_nm": "나이키",
+        "goods_nm": "[당일배송][1+1] 가성비 끝판왕",
+        "sale_rate": 50,
+        "cust_sale_price": 35900,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/409/240/2202286409_0000001.jpg",
+        "goods_nm": "[당일출고] 오버핏 8칼라 반진업",
+        "sale_rate": 50,
+        "cust_sale_price": 19800,
+        "market_price": 59800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/prd/img/410/240/2202286410_0000001.jpg",
+        "goods_nm": "겨울 세미와이드 +5cm 숏/롱 기장선택",
+        "sale_rate": 50,
+        "cust_sale_price": 24800,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+        "goods_nm": "[1+1] 오버핏 하찌 골지 기모갱",
+        "sale_rate": 51,
+        "cust_sale_price": 16800,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      },
+      {
+        "image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+        "goods_nm": "이영인",
+        "sale_rate": 50,
+        "cust_sale_price": 14900,
+        "market_price": 71800,
+        "link_url" : "https://m.naver.com/initGoodsDetail.action"
+      }
+    ],
+    "popular_goods": {
+      "title": "니트",
+      "goods_list": [
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+          "goods_nm": "[1+1] 오버핏 하찌 골지 기모갱",
+          "sale_rate": 51,
+          "cust_sale_price": 16800,
+          "market_price": 71800,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/dspl/banner/90/328/220700000356328.jpg",
+          "goods_nm": "이영인",
+          "sale_rate": 50,
+          "cust_sale_price": 14900,
+          "market_price": 71800,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/prd/img/448/240/2203365448_0000001.jpg",
+          "brand_nm": "나이키",
+          "goods_nm": "[당일배송][1+1] 남녀공용 세미와이드",
+          "sale_rate": 50,
+          "cust_sale_price": 37800,
+          "market_price": 75600,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/prd/img/447/240/2203365447_0000001.jpg",
+          "brand_nm": "나이키",
+          "goods_nm": "[당일배송][1+1] 가성비 끝판왕",
+          "sale_rate": 50,
+          "cust_sale_price": 35900,
+          "market_price": 71800,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/prd/img/409/240/2202286409_0000001.jpg",
+          "goods_nm": "[당일출고] 오버핏 8칼라 반진업",
+          "sale_rate": 50,
+          "cust_sale_price": 19800,
+          "market_price": 59800,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        },
+        {
+          "image_url": "//www.elandrs.com/upload/prd/img/410/240/2202286410_0000001.jpg",
+          "goods_nm": "겨울 세미와이드 +5cm 숏/롱 기장선택",
+          "sale_rate": 50,
+          "cust_sale_price": 24800,
+          "market_price": 71800,
+          "link_url" : "https://m.naver.com/initGoodsDetail.action"
+        }
+      ]
+    },
+    "order_info": {
+      "bank_info": "국민은행",
+      "account_info": "111111-11-111111",
+      "bank_owner": "이영인",
+      "address": "서울 강서구 어딘가",
+      "business_name": "파이언넷",
+      "representative": "이영인",
+      "business_number": "111-111",
+      "mail_order_number": "제2022-굳",
+      "customer_center": "매일 9 AM ~ 5 PM",
+      "mail_address": "1234@gamil.com",
+      "call_number": "1111-1111"
+    }
+  },
+  "resultMsg": "success"
+}

@@ -11,7 +11,6 @@ import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.R
 import com.pionnet.eland.ui.main.CommonModulesBaseFragment
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.ui.main.tabPlan.PlanModulesFragment
 import com.pionnet.eland.ui.main.tabStoreShop.SortBottomSheetFragment
 
 class PlanDetailModulesFragment : CommonModulesBaseFragment() {

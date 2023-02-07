@@ -1,5 +1,6 @@
 package com.pionnet.eland.utils
 
+import android.net.Uri
 import android.provider.DocumentsContract
 import android.webkit.URLUtil
 import com.pionnet.eland.localData.DataManager
@@ -36,3 +37,6 @@ fun changedHeaderHtml(htmlText: String): String {
     changeFontHtml = doc.toString()
     return changeFontHtml
 }
+
+inline val String.isGoodsDetailUrl: Boolean
+    get() = Uri.parse(this).lastPathSegment.equals("initGoodsDetail.action", true)

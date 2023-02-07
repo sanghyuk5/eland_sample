@@ -19,9 +19,9 @@ class LeftMenuServiceMenuViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val serviceMenuList = it.toMutableList().checkItemsAre<LeftMenuData.Data.ServiceMenu>()
-            serviceMenuList?.let { it ->
-                initView(it)
+            val dataList = it.toMutableList().checkItemsAre<LeftMenuData.Data.ServiceMenu>()
+            dataList?.let { data ->
+                initView(data)
             }
         }
     }

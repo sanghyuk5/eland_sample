@@ -7,7 +7,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.request.target.Target
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.databinding.ViewCommonMainBannerModuleBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.model.Banner
@@ -15,7 +14,6 @@ import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget
 import com.pionnet.eland.utils.GlideApp
 import kotlinx.coroutines.*
-import kotlin.math.ceil
 
 class CommonMainBannerViewHolder(
     private val binding: ViewCommonMainBannerModuleBinding,

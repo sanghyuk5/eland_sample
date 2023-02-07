@@ -3,12 +3,11 @@ package com.pionnet.eland.ui.leftmenu
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.BaseViewModel
 import com.pionnet.eland.model.LeftMenuData
 import com.pionnet.eland.model.LeftMenuDataSet
 import com.pionnet.eland.model.LeftMenuViewType
-import com.pionnet.eland.ui.leftmenu.holder.MarginEntity
+import com.pionnet.eland.ui.viewholder.MarginEntity
 import com.pionnet.eland.utils.toPx
 import kotlinx.coroutines.launch
 

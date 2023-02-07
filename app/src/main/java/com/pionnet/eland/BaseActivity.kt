@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.localData.DataManager.EXTRA_LINK
+import com.pionnet.eland.ui.goodsdetail.GoodsDetailActivity
 import com.pionnet.eland.ui.leftmenu.LeftMenuActivity
 import com.pionnet.eland.ui.search.SearchActivity
 import com.pionnet.eland.ui.search.searchCamera.SearchCameraActivity
@@ -117,6 +118,10 @@ open class BaseActivity : AppCompatActivity() {
             return
         }
 
+        if (url.isGoodsDetailUrl) {
+            navToGoodsDetail(url)
+            return
+        }
 //        val mainTabScheme = url.matchedMainTabScheme
 //        if (!mainTabScheme.isNullOrBlank()) {
 //            navToMainTab(mainTabScheme)
@@ -143,6 +148,14 @@ open class BaseActivity : AppCompatActivity() {
                 .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
             resultNavToWeb.launch(intent)
+        } else {
+            dialogAlert(this, getString(R.string.msg_network_error))
+        }
+    }
+
+    private fun navToGoodsDetail(url: String) {
+        if (isNetworkAvailable(this)) {
+            startActivity(Intent(this, GoodsDetailActivity::class.java).putExtra(EXTRA_LINK, url.withBaseUrl))
         } else {
             dialogAlert(this, getString(R.string.msg_network_error))
         }

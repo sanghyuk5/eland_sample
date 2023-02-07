@@ -97,7 +97,7 @@
         app:tabTextColor="@color/black" />
 
     <View
-        android:id="@+id/view_divider"
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#f4f5f7"
@@ -108,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <include android:id="@+id/view_search_result"
         layout="@layout/view_search_result"

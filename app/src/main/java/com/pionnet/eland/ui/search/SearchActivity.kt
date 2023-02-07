@@ -93,7 +93,6 @@ class SearchActivity : BaseActivity() {
             }
         )
 
-
         viewSearchResult.rvSearchResultBrand.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(3.toPx, 5.toPx, 5.toPx))
             adapter = SearchResultBrandAdapter()
@@ -140,8 +139,8 @@ class SearchActivity : BaseActivity() {
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: SearchResultBrandData.Result) = with(binding) {
-                GlideApp.with(itemView.context).load("https://www.elandrs.com/upload" + data.imgPath).into(ivBrand)
-                tvBrand.text = data.keyword
+                GlideApp.with(itemView.context).load("https://www.elandrs.com/upload" + data.imgPath).into(brandImg)
+                brandName.text = data.keyword
             }
         }
 

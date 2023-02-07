@@ -23,4 +23,7 @@ object DataManager {
      * intent parameter
      */
     const val EXTRA_LINK = "extra_link"
+
+
+    const val ARG_LIST = "list"
 }

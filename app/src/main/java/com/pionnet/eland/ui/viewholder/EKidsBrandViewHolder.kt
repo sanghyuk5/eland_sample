@@ -67,7 +67,7 @@ class EKidsBrandViewHolder(
             fun bind(data: Banner) = with(binding) {
                 tvName.text = data.name
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivBrand)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(brandImg)
             }
         }
     }

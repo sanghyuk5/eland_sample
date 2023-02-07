@@ -1,70 +1,70 @@
-package com.pionnet.eland.ui.leftmenu
+package com.pionnet.eland.ui.goodsdetail.info
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.pionnet.eland.databinding.*
-import com.pionnet.eland.model.LeftMenuDataSet
-import com.pionnet.eland.model.LeftMenuViewType
-import com.pionnet.eland.ui.leftmenu.holder.*
+import com.pionnet.eland.model.ViewType
+import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.ui.goodsdetail.holder.*
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
+import com.pionnet.eland.ui.viewholder.CommonDividerViewHolder
 
-class LeftMenuListAdapter(private val logoutClickCallback: () -> Unit)
-    : ListAdapter<LeftMenuDataSet, BaseViewHolder>(moduleDiffUtilCallback) {
+class GoodsDetailInfoAdapter: ListAdapter<ViewTypeDataSet, BaseViewHolder>(moduleDiffUtilCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder =
-        when (LeftMenuViewType.values()[viewType]) {
-            LeftMenuViewType.RECENT -> LeftMenuRecentlyViewHolder(
-                ViewLeftMenuRecentlyModuleBinding.inflate(
+        when (ViewType.values()[viewType]) {
+            ViewType.FIRST -> GoodsDetailWebViewViewHolder(
+                ViewGoodsDetailWebViewModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.CATEGORY -> LeftMenuCategoryViewHolder(
-                ViewLeftMenuCategoryModuleBinding.inflate(
+            ViewType.SECOND -> GoodsDetailSellerRecommendViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.BRAND -> LeftMenuBrandViewHolder(
-                ViewLeftMenuBrandModuleBinding.inflate(
+            ViewType.THIRD -> GoodsDetailTagViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.SHOP -> LeftMenuShopViewHolder(
-                ViewLeftMenuShopModuleBinding.inflate(
+            ViewType.FOURTH -> GoodsDetailSellerPopularViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.SERVICE -> LeftMenuServiceMenuViewHolder(
-                ViewLeftMenuServiceModuleBinding.inflate(
+            ViewType.FIFTH, ViewType.SIXTH -> GoodsDetailRecommendViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.BOTTOM -> LeftMenuLogoutViewHolder(
-                ViewLeftMenuLogoutModuleBinding.inflate(
+            ViewType.SEVENTH -> GoodsDetailTitleViewHolder(
+                ViewCommonGoodsDetailTitleModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            else -> LeftMenuDividerViewHolder(
-                ViewLeftMenuDividerModuleBinding.inflate(
+            else -> CommonDividerViewHolder(
+                ViewCommonDividerModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -80,10 +80,9 @@ class LeftMenuListAdapter(private val logoutClickCallback: () -> Unit)
     override fun getItemViewType(position: Int): Int = getItem(position).viewType.ordinal
 
     companion object {
-        private val moduleDiffUtilCallback = object : DiffUtil.ItemCallback<LeftMenuDataSet>() {
-            override fun areItemsTheSame(oldItem: LeftMenuDataSet, newItem: LeftMenuDataSet): Boolean = oldItem == newItem
-            override fun areContentsTheSame(oldItem: LeftMenuDataSet, newItem: LeftMenuDataSet): Boolean = oldItem == newItem
+        private val moduleDiffUtilCallback = object : DiffUtil.ItemCallback<ViewTypeDataSet>() {
+            override fun areItemsTheSame(oldItem: ViewTypeDataSet, newItem: ViewTypeDataSet): Boolean = oldItem == newItem
+            override fun areContentsTheSame(oldItem: ViewTypeDataSet, newItem: ViewTypeDataSet): Boolean = oldItem == newItem
         }
     }
-
 }

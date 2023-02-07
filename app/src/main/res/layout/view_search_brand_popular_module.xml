@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tv_brand"
+        android:id="@+id/brand_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -18,7 +18,7 @@
     <com.pionnet.eland.views.NestedScrollableHost
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv_brand">
+        app:layout_constraintTop_toBottomOf="@id/brand_name">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_brand"

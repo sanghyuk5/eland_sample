@@ -18,7 +18,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view_divider"
+            android:id="@+id/divider"
             android:layout_width="match_parent"
             android:layout_height="5dp"
             android:background="#f4f5f7"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintTop_toBottomOf="@id/view_divider"
+            app:layout_constraintTop_toBottomOf="@id/divider"
             app:spanCount="2" />
 
         <TextView

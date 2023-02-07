@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="@id/rv_letter" />
 
     <View
-        android:id="@+id/view_divider"
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_marginTop="10dp"

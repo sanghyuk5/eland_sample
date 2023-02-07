@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <View
-        android:id="@+id/view_divider"
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#f4f5f7"
@@ -18,5 +18,5 @@
         android:padding="10dp"
         android:text="1"
         app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 </androidx.constraintlayout.widget.ConstraintLayout>

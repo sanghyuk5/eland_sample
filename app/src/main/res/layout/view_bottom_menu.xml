@@ -35,7 +35,7 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/iv_home"
+        app:layout_constraintEnd_toStartOf="@id/cl_home"
         app:layout_constraintStart_toEndOf="@id/ll_search_menu"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -52,16 +52,37 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/iv_home"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_home"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:paddingVertical="7.5dp"
-        android:src="@drawable/ic_baseline_home_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ll_delivery"
         app:layout_constraintStart_toEndOf="@id/ll_brand"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#c9000b"
+            app:cardCornerRadius="160dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="E"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/ll_delivery"
@@ -71,7 +92,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ll_goods"
-        app:layout_constraintStart_toEndOf="@id/iv_home"
+        app:layout_constraintStart_toEndOf="@id/cl_home"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView

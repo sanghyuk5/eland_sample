@@ -43,27 +43,27 @@ class CommonLuckyDealGoodsViewHolder(
             .placeholder(R.drawable.ic_baseline_wifi_tethering_24)
             .into(AdjustHeightImageViewTarget(ivLucky))
 
-        tvBrand.visibility = if (!data.brand.isNullOrEmpty()) View.VISIBLE else View.GONE
-        tvBrand.text = data.brand
+        brandName.visibility = if (!data.brandName.isNullOrEmpty()) View.VISIBLE else View.GONE
+        brandName.text = data.brandName
 
-        tvContent.text = data.goodsName
+        goodsName.text = data.goodsName
 
         if (data.saleRate != null && data.saleRate != 0) {
-            tvPercent.visibility = View.VISIBLE
+            saleRate.visibility = View.VISIBLE
             tvPer.visibility = View.VISIBLE
-            tvPercent.text = data.saleRate.toString()
+            saleRate.text = data.saleRate.toString()
         } else {
-            tvPercent.visibility = View.GONE
+            saleRate.visibility = View.GONE
             tvPer.visibility = View.GONE
         }
 
-        tvSalePrice.text = priceFormat(data.salePrice ?: 0)
+        priceAfter.text = priceFormat(data.salePrice ?: 0)
 
         if (data.marketPrice.toString().isEmpty() || data.marketPrice.toString() == "0") {
-            tvPrice.visibility = View.GONE
+            priceBefore.visibility = View.GONE
         } else {
-            tvPrice.visibility = View.VISIBLE
-            tvPrice.text = priceFormat(data.marketPrice ?: 0)
+            priceBefore.visibility = View.VISIBLE
+            priceBefore.text = priceFormat(data.marketPrice ?: 0)
         }
 
         cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.GONE

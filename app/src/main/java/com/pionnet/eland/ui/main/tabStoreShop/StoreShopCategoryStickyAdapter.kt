@@ -12,7 +12,6 @@ import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemStoreShopCategoryBinding
 import com.pionnet.eland.model.StoreShopData
-import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
 import com.pionnet.eland.utils.GlideApp
 
 class StoreShopCategoryStickyAdapter

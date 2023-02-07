@@ -21,9 +21,9 @@ class LeftMenuCategoryViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val categoryList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Category.CategoryMenu>()
-            categoryList?.let { it ->
-                initView(it)
+            val dataList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Category.CategoryMenu>()
+            dataList?.let { data ->
+                initView(data)
             }
         }
     }

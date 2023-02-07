@@ -40,14 +40,14 @@ class CommonGoodsGridViewHolder(
     private fun ViewItemCommonGoodBinding.setView(viewType: String, data: Goods, position: Int, Callback: (String?) -> Unit) {
         GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
 
-        tvBrand.text = data.brand
-        tvContent.text = data.goodsName
-        tvPercent.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
-        tvPer.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
-        tvPercent.text = data.saleRate.toString()
-        tvPrice.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.INVISIBLE
-        tvPrice.text = priceFormat(data.marketPrice ?: 0) + "원"
-        tvSalePrice.text = priceFormat(data.salePrice ?: 0)
+        brandName.text = data.brandName
+        goodsName.text = data.goodsName
+        saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
+        per.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
+        saleRate.text = data.saleRate.toString()
+        priceBefore.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.INVISIBLE
+        priceBefore.text = priceFormat(data.marketPrice ?: 0) + "원"
+        priceAfter.text = priceFormat(data.salePrice ?: 0)
         ratingbar.visibility = if (data.starPoint != null) View.VISIBLE else View.INVISIBLE
         ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
         tvReply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE

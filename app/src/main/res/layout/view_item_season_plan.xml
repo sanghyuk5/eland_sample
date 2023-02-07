@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@id/iv_season_plan">
 
         <TextView
-            android:id="@+id/tv_brand"
+            android:id="@+id/brand_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
@@ -32,7 +32,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_content"
+            android:id="@+id/goods_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
@@ -42,10 +42,10 @@
             android:textColor="#3E3E3E"
             android:textSize="12.5dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_brand" />
+            app:layout_constraintTop_toBottomOf="@id/brand_name" />
 
         <TextView
-            android:id="@+id/tv_sale_price"
+            android:id="@+id/price_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -54,7 +54,7 @@
             android:textColor="#333333"
             android:textSize="18dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_content" />
+            app:layout_constraintTop_toBottomOf="@id/goods_name" />
 
         <TextView
             android:id="@+id/tv_won"
@@ -65,8 +65,8 @@
             android:text="원"
             android:textColor="#333333"
             android:textSize="16dp"
-            app:layout_constraintBaseline_toBaselineOf="@id/tv_sale_price"
-            app:layout_constraintStart_toEndOf="@id/tv_sale_price" />
+            app:layout_constraintBaseline_toBaselineOf="@id/price_after"
+            app:layout_constraintStart_toEndOf="@id/price_after" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

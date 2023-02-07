@@ -66,7 +66,7 @@ class BrandViewModel : CommonViewModel() {
                     )
                 }
                 .onCompletion {
-                    setSearchBrandModules()
+                    createSearchBrandModules()
                 }
                 .launchIn(viewModelScope)
         }
@@ -87,7 +87,7 @@ class BrandViewModel : CommonViewModel() {
         }
     }
 
-    private fun setSearchBrandModules() {
+    private fun createSearchBrandModules() {
         moduleList.add(SearchBrandDataSet(SearchBrandViewType.POPULAR, popularList))
         moduleList.add(SearchBrandDataSet(SearchBrandViewType.LETTER, keywordList))
         moduleList.add(SearchBrandDataSet(SearchBrandViewType.LETTERLIST, brandLetterList))

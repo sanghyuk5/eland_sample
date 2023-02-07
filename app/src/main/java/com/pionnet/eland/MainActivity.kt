@@ -2,7 +2,6 @@ package com.pionnet.eland
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import androidx.activity.viewModels
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
@@ -78,7 +77,7 @@ class MainActivity : BaseActivity() {
             EventBus.fire(LinkEvent(LinkEventType.SEARCH, "브랜드"))
         }
 
-        bottomMenu.ivHome.setOnClickListener {
+        bottomMenu.clHome.setOnClickListener {
             viewPager.currentItem = 0
         }
 
@@ -123,6 +122,8 @@ class MainActivity : BaseActivity() {
                 }.attach()
 
                 tabPagerAdapter.setData(iconList)
+
+                binding.viewPager.offscreenPageLimit = iconList.size
             }
         }
     }

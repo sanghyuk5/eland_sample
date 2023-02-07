@@ -23,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@id/iv_md_good">
 
         <TextView
-            android:id="@+id/tv_brand"
+            android:id="@+id/brand_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CJ 제일제당"
@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_content"
+            android:id="@+id/goods_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -42,11 +42,11 @@
             android:text="고메치킨 순살크리스피550g"
             android:textColor="#3e3e3e"
             android:textSize="13dp"
-            app:layout_constraintStart_toStartOf="@id/tv_brand"
-            app:layout_constraintTop_toBottomOf="@id/tv_brand" />
+            app:layout_constraintStart_toStartOf="@id/brand_name"
+            app:layout_constraintTop_toBottomOf="@id/brand_name" />
 
         <TextView
-            android:id="@+id/tv_price"
+            android:id="@+id/price_before"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -54,17 +54,17 @@
             android:textColor="#8e8e8e"
             android:textSize="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_content" />
+            app:layout_constraintTop_toBottomOf="@id/goods_name" />
 
         <TextView
-            android:id="@+id/tv_percent"
+            android:id="@+id/sale_rate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10"
             android:textColor="#c9000b"
             android:textSize="17dp"
-            app:layout_constraintStart_toStartOf="@id/tv_content"
-            app:layout_constraintTop_toBottomOf="@id/tv_price" />
+            app:layout_constraintStart_toStartOf="@id/goods_name"
+            app:layout_constraintTop_toBottomOf="@id/price_before" />
 
         <TextView
             android:id="@+id/tv_per"
@@ -73,11 +73,11 @@
             android:text="%"
             android:textColor="#c9000b"
             android:textSize="13dp"
-            app:layout_constraintBaseline_toBaselineOf="@id/tv_percent"
-            app:layout_constraintStart_toEndOf="@id/tv_percent" />
+            app:layout_constraintBaseline_toBaselineOf="@id/sale_rate"
+            app:layout_constraintStart_toEndOf="@id/sale_rate" />
 
         <TextView
-            android:id="@+id/tv_sale_price"
+            android:id="@+id/price_after"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -87,7 +87,7 @@
             android:textSize="17dp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/tv_per"
-            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            app:layout_constraintTop_toBottomOf="@id/price_before"
             app:layout_goneMarginStart="0dp" />
 
         <TextView
@@ -99,8 +99,8 @@
             android:text="원"
             android:textColor="#333333"
             android:textSize="13dp"
-            app:layout_constraintBaseline_toBaselineOf="@id/tv_sale_price"
-            app:layout_constraintStart_toEndOf="@id/tv_sale_price" />
+            app:layout_constraintBaseline_toBaselineOf="@id/price_after"
+            app:layout_constraintStart_toEndOf="@id/price_after" />
 
         <RatingBar
             android:id="@+id/ratingbar"
@@ -117,7 +117,7 @@
             android:progressBackgroundTint="#666666"
             android:isIndicator="false"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_sale_price"/>
+            app:layout_constraintTop_toBottomOf="@id/price_after"/>
 
         <TextView
             android:id="@+id/tv_reply"

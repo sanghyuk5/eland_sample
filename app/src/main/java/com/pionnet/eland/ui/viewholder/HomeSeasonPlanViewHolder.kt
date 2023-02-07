@@ -2,7 +2,6 @@ package com.pionnet.eland.ui.viewholder
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
@@ -71,9 +70,9 @@ class HomeSeasonPlanViewHolder(
             fun bind(data: Goods) = with(binding) {
                 linkUrl = data.linkUrl
                 GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivSeasonPlan)
-                tvBrand.text = data.brand
-                tvContent.text = data.goodsName
-                tvSalePrice.text = priceFormat(data.salePrice ?: 0)
+                brandName.text = data.brandName
+                goodsName.text = data.goodsName
+                priceAfter.text = priceFormat(data.salePrice ?: 0)
             }
         }
     }

@@ -36,14 +36,14 @@ class LeftMenuActivity : BaseActivity() {
 
         leftMenuDataSet.observe(this@LeftMenuActivity) {
             initTopView()
-            (binding.rvLeftMenu.adapter as? LeftMenuListAdapter)?.submitList(it)
+            (binding.rvLeftMenu.adapter as? LeftMenuAdapter)?.submitList(it)
         }
     }
 
     private fun initView() = with(binding) {
         ivClose.setOnClickListener { finish() }
         rvLeftMenu.apply {
-            adapter = LeftMenuListAdapter(logoutClickCallback)
+            adapter = LeftMenuAdapter(logoutClickCallback)
         }
     }
 

@@ -20,9 +20,9 @@ class LeftMenuShopViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val shopList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Shop>()
-            shopList?.let { it ->
-                initView(it)
+            val dataList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Shop>()
+            dataList?.let { data ->
+                initView(data)
             }
         }
     }

@@ -1,14 +1,12 @@
-package com.pionnet.eland.ui.leftmenu.holder
+package com.pionnet.eland.ui.viewholder
 
 import android.graphics.Color
 import android.view.ViewGroup
 import androidx.core.view.updateLayoutParams
-import com.orhanobut.logger.Logger
-import com.pionnet.eland.databinding.ViewLeftMenuDividerModuleBinding
-import com.pionnet.eland.ui.viewholder.BaseViewHolder
+import com.pionnet.eland.databinding.ViewCommonDividerModuleBinding
 
-class LeftMenuDividerViewHolder(
-    private val binding: ViewLeftMenuDividerModuleBinding
+class CommonDividerViewHolder(
+    private val binding: ViewCommonDividerModuleBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -18,16 +16,16 @@ class LeftMenuDividerViewHolder(
     }
 
     private fun initView(data: MarginEntity) = with(binding) {
-        viewDivider.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+        divider.updateLayoutParams<ViewGroup.MarginLayoutParams> {
             height = data.height
             marginStart = data.start
             marginEnd = data.end
         }
 
         if (data.color.isEmpty()) {
-            viewDivider.background = null
+            divider.background = null
         } else {
-            viewDivider.setBackgroundColor(Color.parseColor(data.color))
+            divider.setBackgroundColor(Color.parseColor(data.color))
         }
     }
 }

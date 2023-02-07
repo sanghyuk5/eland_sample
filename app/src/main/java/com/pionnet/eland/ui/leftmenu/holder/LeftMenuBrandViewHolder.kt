@@ -22,9 +22,9 @@ class LeftMenuBrandViewHolder(
 
     override fun onBind(data: Any, position: Int) {
         (data as? List<*>)?.let {
-            val brandList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Brand>()
-            brandList?.let { it ->
-                initView(it)
+            val dataList = it.toMutableList().checkItemsAre<LeftMenuData.Data.Brand>()
+            dataList?.let { data ->
+                initView(data)
             }
         }
     }
@@ -70,7 +70,7 @@ class LeftMenuBrandViewHolder(
 
             fun bind(data: LeftMenuData.Data.Brand) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(ivBrand)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(brandImg)
             }
         }
     }

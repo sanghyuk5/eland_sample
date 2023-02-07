@@ -56,7 +56,7 @@ class SearchBrandPopularViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: SearchRank, position: Int) = with(binding) {
-                tvBrandPopular.text = (position + 1).toString() + " " + data.keyword
+                brandNamePopular.text = (position + 1).toString() + " " + data.keyword
             }
         }
 
