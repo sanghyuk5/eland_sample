@@ -47,7 +47,7 @@ class SearchCameraActivity : BaseActivity() {
     }
 
     private fun initView() = with(binding) {
-        ivClose.setOnClickListener { finish() }
+        close.setOnClickListener { finish() }
 
         cameraExecutor = Executors.newSingleThreadExecutor()
 

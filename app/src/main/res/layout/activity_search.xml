@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_top"
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#f4f5f7"
@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_camera"
+            android:id="@+id/camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_crop_free_24"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cv_search"
+            android:id="@+id/search_view"
             android:layout_width="0dp"
             android:layout_height="36dp"
             android:layout_marginStart="7dp"
@@ -30,8 +30,8 @@
             app:cardCornerRadius="12dp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/tv_close"
-            app:layout_constraintStart_toEndOf="@id/iv_camera"
+            app:layout_constraintEnd_toStartOf="@id/close_text"
+            app:layout_constraintStart_toEndOf="@id/camera"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,7 +39,7 @@
                 android:layout_height="match_parent">
 
                 <EditText
-                    android:id="@+id/et_search"
+                    android:id="@+id/search_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -52,7 +52,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/iv_search"
+                    android:id="@+id/search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
@@ -62,14 +62,14 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/iv_close"
+                    android:id="@+id/close"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
                     android:src="@drawable/ic_baseline_close_24"
                     android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/iv_search"
+                    app:layout_constraintEnd_toStartOf="@id/search"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -77,7 +77,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/tv_close"
+            android:id="@+id/close_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="닫기"
@@ -88,10 +88,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/cl_top"
+        app:layout_constraintTop_toBottomOf="@id/top"
         app:tabIndicatorColor="#c9000b"
         app:tabSelectedTextColor="#c9000b"
         app:tabTextColor="@color/black" />
@@ -101,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#f4f5f7"
-        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+        app:layout_constraintTop_toBottomOf="@id/tab" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
@@ -114,6 +114,6 @@
         layout="@layout/view_search_result"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/cl_top"
+        app:layout_constraintTop_toBottomOf="@id/top"
         app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

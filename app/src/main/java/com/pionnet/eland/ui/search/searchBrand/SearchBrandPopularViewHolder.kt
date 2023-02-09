@@ -3,10 +3,11 @@ package com.pionnet.eland.ui.search.searchBrand
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemSearchBrandPopularBinding
-import com.pionnet.eland.databinding.ViewSearchBrandPopularModuleBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.SearchRank
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
@@ -14,7 +15,7 @@ import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class SearchBrandPopularViewHolder(
-    private val binding: ViewSearchBrandPopularModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -27,8 +28,9 @@ class SearchBrandPopularViewHolder(
     }
 
     private fun initView(data: MutableList<SearchRank>) = with(binding) {
-        rvBrand.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(3.toPx, 5.toPx, 5.toPx))
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = SearchBrandPopularAdapter().apply {
                 submitList(data)
             }
@@ -56,7 +58,7 @@ class SearchBrandPopularViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: SearchRank, position: Int) = with(binding) {
-                brandNamePopular.text = (position + 1).toString() + " " + data.keyword
+                name.text = (position + 1).toString() + " " + data.keyword
             }
         }
 

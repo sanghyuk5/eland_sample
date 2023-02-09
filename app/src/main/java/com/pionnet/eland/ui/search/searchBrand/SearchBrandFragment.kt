@@ -4,14 +4,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.snackbar.Snackbar
 import com.pionnet.eland.R
-import com.pionnet.eland.databinding.FragmentSearchBrandBinding
+import com.pionnet.eland.databinding.ViewListBinding
 
-class SearchBrandFragment : Fragment(R.layout.fragment_search_brand) {
+class SearchBrandFragment : Fragment(R.layout.view_list) {
 
-    private val binding by viewBinding(FragmentSearchBrandBinding::bind)
+    private val binding by viewBinding(ViewListBinding::bind)
     private val viewModel: BrandViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,12 +26,15 @@ class SearchBrandFragment : Fragment(R.layout.fragment_search_brand) {
         requestData()
 
         result.observe(viewLifecycleOwner) {
-            (binding.rvBrand.adapter as? SearchBrandAdapter)?.submitList(it)
+            (binding.list.adapter as? SearchBrandAdapter)?.submitList(it)
         }
     }
 
     private fun initView() = with(binding) {
-        rvBrand.adapter = SearchBrandAdapter(changeLetterCallback)
+        list.apply {
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.VERTICAL, false)
+            adapter = SearchBrandAdapter(changeLetterCallback)
+        }
     }
 
     private val changeLetterCallback: (String) -> Unit = {

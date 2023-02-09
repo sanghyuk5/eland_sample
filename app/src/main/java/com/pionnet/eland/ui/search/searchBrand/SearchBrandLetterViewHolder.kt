@@ -46,7 +46,7 @@ class SearchBrandLetterViewHolder(
 
     private fun initView(data: MutableList<Data>) = with(binding) {
         keywordData = data[0].navBrandKeyword?.navBrandKeywordListKor
-        rvLetter.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(GridMarginItemDecoration(6, 5.toPx))
             adapter = SearchBrandLetterAdapter(itemClickIntCallback).apply {
                 submitList(keywordData)
@@ -67,7 +67,7 @@ class SearchBrandLetterViewHolder(
 
             keywordData = if (letterType == 0) data[0].navBrandKeyword?.navBrandKeywordListKor else data[0].navBrandKeyword?.navBrandKeywordListEng
 
-            (rvLetter.adapter as? SearchBrandLetterAdapter)?.submitList(keywordData)
+            (list.adapter as? SearchBrandLetterAdapter)?.submitList(keywordData)
         }
     }
 
@@ -77,7 +77,7 @@ class SearchBrandLetterViewHolder(
         if (selectedItem != -1 && selectedItem != index) {
             data.getOrNull(selectedItem)?.isSelected = false
             data.getOrNull(index)?.isSelected = true
-            binding.rvLetter.apply {
+            binding.list.apply {
                 (adapter as? SearchBrandLetterAdapter)?.submitList(data)
             }
 
@@ -108,11 +108,11 @@ class SearchBrandLetterViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: NavBrandKeywordLetter) = with(binding) {
-                tvLetter.text = data.navBrandKeywordTitle
+                letter.text = data.navBrandKeywordTitle
                 if (data.isSelected) {
-                    cvLetter.strokeColor = Color.parseColor("#c9000b")
+                    layout.strokeColor = Color.parseColor("#c9000b")
                 } else {
-                    cvLetter.strokeColor = Color.parseColor("#f4f5f7")
+                    layout.strokeColor = Color.parseColor("#f4f5f7")
                 }
             }
         }

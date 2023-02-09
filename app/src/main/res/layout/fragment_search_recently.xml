@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_top"
+        android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -15,17 +15,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_goods"
+        android:id="@+id/goods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:text="최근 본 상품"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_top" />
+        app:layout_constraintTop_toBottomOf="@id/top" />
 
     <TextView
-        android:id="@+id/tv_goods_null"
+        android:id="@+id/goods_null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -33,5 +33,5 @@
         android:paddingVertical="65dp"
         android:text="최근 본 상품 내역이 없습니다."
         app:drawableTopCompat="@drawable/ic_baseline_report_gmailerrorred_24"
-        app:layout_constraintTop_toBottomOf="@id/tv_goods" />
+        app:layout_constraintTop_toBottomOf="@id/goods" />
 </androidx.constraintlayout.widget.ConstraintLayout>

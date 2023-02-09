@@ -26,7 +26,7 @@ class LeftMenuViewModel : BaseViewModel() {
                                 topMenuList = it
                             }
 
-                            result.value = createLeftMenuModules(data)
+                            result.value = createModules(data)
                         }
                     },
                     onFailure = {}
@@ -35,7 +35,7 @@ class LeftMenuViewModel : BaseViewModel() {
         }
     }
 
-    private fun createLeftMenuModules(data: LeftMenuData.Data): List<ViewTypeDataSet> {
+    private fun createModules(data: LeftMenuData.Data): List<ViewTypeDataSet> {
         val module = mutableListOf<ViewTypeDataSet>()
 
         module.add(ViewTypeDataSet(ViewType.SEVENTH, ViewEntity(height = 50.toPx, start = 15.toPx, title = "최근 본 상품")))

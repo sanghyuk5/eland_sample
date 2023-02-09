@@ -32,31 +32,31 @@ class SearchPopularAdapter
         : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(data: SearchRank, position: Int) = with(binding) {
-            tvName.text = data.keyword
+            name.text = data.keyword
 
             data.rank?.let {
-                tvRank.visibility = View.VISIBLE
-                ivRank.visibility = View.VISIBLE
+                rank.visibility = View.VISIBLE
+                image.visibility = View.VISIBLE
 
-                tvRank.text = (position + 1).toString()
-                if (data.isTopFive) tvRank.setTextColor(Color.parseColor("#c9000b"))
-                else tvRank.setTextColor(Color.parseColor("#393939"))
+                rank.text = (position + 1).toString()
+                if (data.isTopFive) rank.setTextColor(Color.parseColor("#c9000b"))
+                else rank.setTextColor(Color.parseColor("#393939"))
 
                 val rank = it.toIntOrNull()
                 if (rank != null) {
                     if (rank > 0) {
-                        ivRank.setImageResource(R.drawable.ic_baseline_arrow_upward_red_24)
+                        image.setImageResource(R.drawable.ic_baseline_arrow_upward_red_24)
                     } else if (rank == 0) {
-                        ivRank.setImageResource(R.drawable.ic_baseline_horizontal_rule_24)
+                        image.setImageResource(R.drawable.ic_baseline_horizontal_rule_24)
                     } else {
-                        ivRank.setImageResource(R.drawable.ic_baseline_arrow_downward_gray_24)
+                        image.setImageResource(R.drawable.ic_baseline_arrow_downward_gray_24)
                     }
                 } else {
-                    if (it == "new") ivRank.setImageResource(R.drawable.ic_baseline_fiber_new_24)
+                    if (it == "new") image.setImageResource(R.drawable.ic_baseline_fiber_new_24)
                 }
             } ?: run {
-                tvRank.visibility = View.GONE
-                ivRank.visibility = View.GONE
+                rank.visibility = View.GONE
+                image.visibility = View.GONE
             }
         }
     }

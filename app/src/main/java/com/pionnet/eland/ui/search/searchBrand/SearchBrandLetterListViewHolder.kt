@@ -26,9 +26,9 @@ class SearchBrandLetterListViewHolder(
     }
 
     private fun initView(data: MutableList<SearchBrandKeywordListData.Data>) = with(binding) {
-        tvLetterResult.text = "'" + data[0].navBrandKeywordTitle + "'" + "검색결과 총 " + data[0].navBrandKeywordList?.size.toString() + "건"
+        result.text = "'" + data[0].navBrandKeywordTitle + "'" + "검색결과 총 " + data[0].navBrandKeywordList?.size.toString() + "건"
 
-        rvLetterList.adapter = SearchBrandLetterListAdapter().apply {
+        list.adapter = SearchBrandLetterListAdapter().apply {
             submitList(data[0].navBrandKeywordList)
         }
     }
@@ -54,7 +54,7 @@ class SearchBrandLetterListViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: NavBrandKeyword) = with(binding) {
-                tvRank.text = data.brandNm
+                rank.text = data.brandNm
             }
         }
 

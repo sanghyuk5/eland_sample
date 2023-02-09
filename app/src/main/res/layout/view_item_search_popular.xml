@@ -6,7 +6,7 @@
     android:layout_marginHorizontal="8dp">
 
     <TextView
-        android:id="@+id/tv_rank"
+        android:id="@+id/rank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
@@ -24,12 +24,12 @@
         android:maxLines="1"
         android:text="전기 면도기"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/iv_rank"
-        app:layout_constraintStart_toEndOf="@id/tv_rank"
+        app:layout_constraintEnd_toStartOf="@id/image"
+        app:layout_constraintStart_toEndOf="@id/rank"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_rank"
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_arrow_upward_red_24"
@@ -42,6 +42,6 @@
         android:layout_height="1dp"
         android:layout_marginTop="12dp"
         android:background="#f4f5f7"
-        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,8 +74,8 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
     }
 
     private fun initStickyView() = with(binding) {
-        tvStickyTitle.visibility = View.VISIBLE
-        tvStickyTitle.text = viewModel.shopName
+        stickyTitle.visibility = View.VISIBLE
+        stickyTitle.text = viewModel.shopName
 
         when (viewModel.viewShape) {
             "grid" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_grid_view_24)

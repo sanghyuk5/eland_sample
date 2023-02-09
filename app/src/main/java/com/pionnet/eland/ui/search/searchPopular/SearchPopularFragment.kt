@@ -28,17 +28,17 @@ class SearchPopularFragment : Fragment(R.layout.fragment_search_popular) {
         requestData()
 
         popularResult.observe(viewLifecycleOwner) {
-            (binding.rvPopular.adapter as? SearchPopularAdapter)?.submitList(it)
+            (binding.listPopular.adapter as? SearchPopularAdapter)?.submitList(it)
         }
 
         planShopResult.observe(viewLifecycleOwner) {
-            (binding.rvPlanShop.adapter as? SearchPlanShopAdapter)?.submitList(it)
+            (binding.listPlanShop.adapter as? SearchPlanShopAdapter)?.submitList(it)
         }
     }
 
     private fun initView() = with(binding) {
-        rvPopular.adapter = SearchPopularAdapter()
-        rvPlanShop.apply {
+        listPopular.adapter = SearchPopularAdapter()
+        listPlanShop.apply {
             if (itemDecorationCount == 0) addItemDecoration(GridMarginItemDecoration(3, 10.toPx))
             adapter = SearchPlanShopAdapter()
         }

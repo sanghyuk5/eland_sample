@@ -2,25 +2,29 @@ package com.pionnet.eland.ui.search.searchBrand
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.pionnet.eland.databinding.*
+import com.pionnet.eland.model.ViewType
+import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.ui.goodsdetail.holder.GoodsDetailTitleViewHolder
+import com.pionnet.eland.ui.main.ModuleDiffCallback
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
+import com.pionnet.eland.ui.viewholder.UnknownViewHolder
 
 class SearchBrandAdapter(private val changeLetterCallback: (String) -> Unit)
-    : ListAdapter<SearchBrandDataSet, BaseViewHolder>(moduleDiffUtilCallback) {
+    : ListAdapter<ViewTypeDataSet, BaseViewHolder>(ModuleDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder =
-        when (SearchBrandViewType.values()[viewType]) {
-            SearchBrandViewType.POPULAR -> SearchBrandPopularViewHolder(
-                ViewSearchBrandPopularModuleBinding.inflate(
+        when (ViewType.values()[viewType]) {
+            ViewType.FIRST -> SearchBrandPopularViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            SearchBrandViewType.LETTER -> SearchBrandLetterViewHolder(
+            ViewType.SECOND -> SearchBrandLetterViewHolder(
                 ViewSearchBrandLetterModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
@@ -29,8 +33,24 @@ class SearchBrandAdapter(private val changeLetterCallback: (String) -> Unit)
                 changeLetterCallback
             )
 
-            SearchBrandViewType.LETTERLIST -> SearchBrandLetterListViewHolder(
+            ViewType.THIRD -> SearchBrandLetterListViewHolder(
                 ViewSearchBrandLetterListModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ViewType.FOURTH -> GoodsDetailTitleViewHolder(
+                ViewCommonGoodsDetailTitleModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            else ->  UnknownViewHolder(
+                ViewUnknownModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -44,11 +64,4 @@ class SearchBrandAdapter(private val changeLetterCallback: (String) -> Unit)
     }
 
     override fun getItemViewType(position: Int): Int = getItem(position).viewType.ordinal
-
-    companion object {
-        private val moduleDiffUtilCallback = object : DiffUtil.ItemCallback<SearchBrandDataSet>() {
-            override fun areItemsTheSame(oldItem: SearchBrandDataSet, newItem: SearchBrandDataSet): Boolean = oldItem == newItem
-            override fun areContentsTheSame(oldItem: SearchBrandDataSet, newItem: SearchBrandDataSet): Boolean = oldItem == newItem
-        }
-    }
 }

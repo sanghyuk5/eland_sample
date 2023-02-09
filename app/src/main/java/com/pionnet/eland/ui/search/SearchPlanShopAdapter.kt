@@ -30,8 +30,8 @@ class SearchPlanShopAdapter
         : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(data: Planshop) = with(binding) {
-            GlideApp.with(itemView.context).load("https://www.elandrs.com/upload" + data.bannerImgPath).into(ivPlanShop)
-            tvPlanShop.text = data.dispCtgNm
+            GlideApp.with(itemView.context).load("https://www.elandrs.com/upload" + data.bannerImgPath).into(image)
+            name.text = data.dispCtgNm
         }
     }
 

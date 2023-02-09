@@ -74,13 +74,13 @@ class SearchActivity : BaseActivity() {
     private fun initView() = with(binding) {
         viewSearchResult.root.visibility = View.GONE
 
-        ivCamera.setOnClickListener { navToSearchCamera() }
+        camera.setOnClickListener { navToSearchCamera() }
 
-        etSearch.addTextChangedListener(
+        searchText.addTextChangedListener(
             {_, _, _, _ -> },
             {_, _, _, _ -> },
             { edit ->
-                ivClose.visibility = View.VISIBLE
+                close.visibility = View.VISIBLE
 
                 val timer = Timer()
                 timer.schedule(object : TimerTask() {
@@ -103,13 +103,13 @@ class SearchActivity : BaseActivity() {
             adapter = SearchPlanShopAdapter()
         }
 
-        ivClose.setOnClickListener { viewSearchResult.root.visibility = View.GONE }
-        tvClose.setOnClickListener { finish() }
+        close.setOnClickListener { viewSearchResult.root.visibility = View.GONE }
+        closeText.setOnClickListener { finish() }
 
         val tabTitleArray = arrayOf("인기", "최근", "브랜드")
         viewPager.adapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
 
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+        TabLayoutMediator(tab, viewPager) { tab, position ->
             tab.text = tabTitleArray[position]
         }.attach()
 

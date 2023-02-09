@@ -3,7 +3,9 @@ package com.pionnet.eland.ui.search.searchBrand
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.pionnet.eland.model.*
+import com.pionnet.eland.ui.goodsdetail.holder.ViewEntity
 import com.pionnet.eland.ui.main.CommonViewModel
+import com.pionnet.eland.utils.toPx
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
@@ -11,9 +13,8 @@ class BrandViewModel : CommonViewModel() {
 
     private val repository by lazy { SearchBrandRepository() }
 
-    val result = MutableLiveData<MutableList<SearchBrandDataSet>>()
+    val result = MutableLiveData<List<ViewTypeDataSet>>()
 
-    private val moduleList = mutableListOf<SearchBrandDataSet>()
     private val popularList = mutableListOf<SearchRank>()
 
     private var keywordList = listOf<SearchBrandKeywordData.Data?>()
@@ -66,7 +67,7 @@ class BrandViewModel : CommonViewModel() {
                     )
                 }
                 .onCompletion {
-                    createSearchBrandModules()
+                    result.value = createModules()
                 }
                 .launchIn(viewModelScope)
         }
@@ -87,22 +88,14 @@ class BrandViewModel : CommonViewModel() {
         }
     }
 
-    private fun createSearchBrandModules() {
-        moduleList.add(SearchBrandDataSet(SearchBrandViewType.POPULAR, popularList))
-        moduleList.add(SearchBrandDataSet(SearchBrandViewType.LETTER, keywordList))
-        moduleList.add(SearchBrandDataSet(SearchBrandViewType.LETTERLIST, brandLetterList))
+    private fun createModules(): List<ViewTypeDataSet> {
+        val module = mutableListOf<ViewTypeDataSet>()
 
-        result.postValue(moduleList)
+        module.add(ViewTypeDataSet(ViewType.FOURTH, ViewEntity(height = 30.toPx, start = 15.toPx, title = "지금 인기있는 브랜드")))
+        module.add(ViewTypeDataSet(ViewType.FIRST, popularList))
+        module.add(ViewTypeDataSet(ViewType.SECOND, keywordList))
+        module.add(ViewTypeDataSet(ViewType.THIRD, brandLetterList))
+
+        return module
     }
-}
-
-data class SearchBrandDataSet(
-    val viewType: SearchBrandViewType,
-    var data: Any? = null
-)
-
-enum class SearchBrandViewType {
-    POPULAR,
-    LETTER,
-    LETTERLIST
 }
