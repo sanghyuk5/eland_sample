@@ -80,9 +80,9 @@ class HomeCategoryIconViewHolder(
             Logger.d("holder isMoreClick: $isMoreClick, position: $position")
             if (isMoreClick) {
                 if (position == 9) {
-                    holder.binding.ivIcon.visibility = View.GONE
-                    holder.binding.ivMore.visibility = View.VISIBLE
-                    holder.binding.tvName.text = "더보기"
+                    holder.binding.layout.visibility = View.GONE
+                    holder.binding.more.visibility = View.VISIBLE
+                    holder.binding.name.text = "더보기"
                     holder.itemView.setOnClickListener(moreClickListener)
                 } else {
                     holder.bind(currentList[position])
@@ -106,11 +106,11 @@ class HomeCategoryIconViewHolder(
             }
 
             fun bind(data: HomeData.Data.CategoryIcon) = with(binding) {
-                ivIcon.visibility = View.VISIBLE
-                ivMore.visibility = View.VISIBLE
-                tvName.text = data.title
+                layout.visibility = View.VISIBLE
+                more.visibility = View.VISIBLE
+                name.text = data.title
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(ivIcon)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(image)
             }
         }
     }

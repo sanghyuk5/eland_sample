@@ -29,10 +29,10 @@ class LeftMenuRecentlyViewHolder(
     }
 
     private fun initView(data: MutableList<LeftMenuData.Data.Recently>) = with(binding) {
-        if (data.isNullOrEmpty()) tvItemEmpty.visibility = View.VISIBLE
+        if (data.isNullOrEmpty()) empty.visibility = View.VISIBLE
         else {
-            tvItemEmpty.visibility = View.GONE
-            rvRecently.adapter = RecentlyAdapter().apply {
+            empty.visibility = View.GONE
+            list.adapter = RecentlyAdapter().apply {
                 submitList(data)
             }
         }

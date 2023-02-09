@@ -30,7 +30,7 @@ class LeftMenuBrandViewHolder(
     }
 
     private fun initView(data: MutableList<LeftMenuData.Data.Brand>) = with(binding) {
-        rvBrand.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx))
             adapter = BrandAdapter().apply {
                 submitList(data)
@@ -70,7 +70,7 @@ class LeftMenuBrandViewHolder(
 
             fun bind(data: LeftMenuData.Data.Brand) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(brandImg)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(image)
             }
         }
     }

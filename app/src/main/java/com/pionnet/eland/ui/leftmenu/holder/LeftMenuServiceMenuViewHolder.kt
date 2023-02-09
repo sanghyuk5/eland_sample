@@ -3,18 +3,19 @@ package com.pionnet.eland.ui.leftmenu.holder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemLeftMenuServiceBinding
-import com.pionnet.eland.databinding.ViewLeftMenuServiceModuleBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.LeftMenuData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 
 class LeftMenuServiceMenuViewHolder(
-    private val binding: ViewLeftMenuServiceModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -27,8 +28,11 @@ class LeftMenuServiceMenuViewHolder(
     }
 
     private fun initView(data: MutableList<LeftMenuData.Data.ServiceMenu>) = with(binding) {
-        rvServiceMenu.adapter = ServiceMenuAdapter().apply {
-            submitList(data)
+        list.apply {
+            layoutManager = GridLayoutManager(root.context, 2)
+            adapter = ServiceMenuAdapter().apply {
+                submitList(data)
+            }
         }
     }
 

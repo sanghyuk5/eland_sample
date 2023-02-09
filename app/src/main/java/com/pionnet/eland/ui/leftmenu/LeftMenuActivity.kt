@@ -34,15 +34,15 @@ class LeftMenuActivity : BaseActivity() {
     private fun initViewModel() = with(viewModel) {
         requestData()
 
-        leftMenuDataSet.observe(this@LeftMenuActivity) {
+        result.observe(this@LeftMenuActivity) {
             initTopView()
-            (binding.rvLeftMenu.adapter as? LeftMenuAdapter)?.submitList(it)
+            (binding.list.adapter as? LeftMenuAdapter)?.submitList(it)
         }
     }
 
     private fun initView() = with(binding) {
-        ivClose.setOnClickListener { finish() }
-        rvLeftMenu.apply {
+        close.setOnClickListener { finish() }
+        list.apply {
             adapter = LeftMenuAdapter(logoutClickCallback)
         }
     }
@@ -50,8 +50,8 @@ class LeftMenuActivity : BaseActivity() {
     private fun initTopView() = with(binding) {
         viewModel.topMenuList?.let {
             if (it.isNotEmpty()) {
-                tvBasket.text = it[2].cartCnt.toString()
-                tvCoupon.text = it[4].cupnCnt.toString()
+                basketCount.text = it[2].cartCnt.toString()
+                couponCount.text = it[4].cupnCnt.toString()
             }
         }
     }

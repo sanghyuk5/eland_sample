@@ -5,37 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
-        android:gravity="center"
-        android:layout_marginStart="16dp"
-        android:text="브랜드"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_search"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginHorizontal="15dp"
-        android:background="@drawable/bg_left_search"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="15dp"
-        android:text="브랜드를 찾아 보세요."
-        app:drawableEndCompat="@drawable/ic_baseline_search_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+        app:cardBackgroundColor="#f4f5f7"
+        app:cardCornerRadius="48dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="15dp"
+            android:text="브랜드를 찾아 보세요."
+            app:drawableEndCompat="@drawable/ic_baseline_search_24" />
+
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_brand"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:paddingHorizontal="12dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:layout_constraintTop_toBottomOf="@id/tv_search"
+        app:layout_constraintTop_toBottomOf="@id/search"
         app:spanCount="3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

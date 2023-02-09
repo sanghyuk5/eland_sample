@@ -3,19 +3,20 @@ package com.pionnet.eland.ui.leftmenu.holder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemLeftMenuShopBinding
-import com.pionnet.eland.databinding.ViewLeftMenuShopModuleBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.LeftMenuData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 import com.pionnet.eland.utils.GlideApp
 
 class LeftMenuShopViewHolder(
-    private val binding: ViewLeftMenuShopModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -28,8 +29,11 @@ class LeftMenuShopViewHolder(
     }
 
     private fun initView(data: MutableList<LeftMenuData.Data.Shop>) = with(binding) {
-        rvShop.adapter = ShopAdapter().apply {
-            submitList(data)
+        list.apply {
+            layoutManager = GridLayoutManager(root.context, 5)
+            adapter = ShopAdapter().apply {
+                submitList(data)
+            }
         }
     }
 
@@ -64,9 +68,9 @@ class LeftMenuShopViewHolder(
             }
 
             fun bind(data: LeftMenuData.Data.Shop) = with(binding) {
-                tvShop.text = data.name
+                name.text = data.name
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(ivShop)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(image)
             }
         }
     }

@@ -5,18 +5,21 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.pionnet.eland.databinding.*
-import com.pionnet.eland.model.LeftMenuDataSet
-import com.pionnet.eland.model.LeftMenuViewType
+import com.pionnet.eland.model.ViewType
+import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.ui.goodsdetail.holder.GoodsDetailTitleViewHolder
 import com.pionnet.eland.ui.leftmenu.holder.*
+import com.pionnet.eland.ui.main.ModuleDiffCallback
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.ui.viewholder.CommonDividerViewHolder
+import com.pionnet.eland.ui.viewholder.CommonTitleViewHolder
 
 class LeftMenuAdapter(private val logoutClickCallback: () -> Unit)
-    : ListAdapter<LeftMenuDataSet, BaseViewHolder>(moduleDiffUtilCallback) {
+    : ListAdapter<ViewTypeDataSet, BaseViewHolder>(ModuleDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder =
-        when (LeftMenuViewType.values()[viewType]) {
-            LeftMenuViewType.RECENT -> LeftMenuRecentlyViewHolder(
+        when (ViewType.values()[viewType]) {
+            ViewType.FIRST -> LeftMenuRecentlyViewHolder(
                 ViewLeftMenuRecentlyModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
@@ -24,15 +27,15 @@ class LeftMenuAdapter(private val logoutClickCallback: () -> Unit)
                 )
             )
 
-            LeftMenuViewType.CATEGORY -> LeftMenuCategoryViewHolder(
-                ViewLeftMenuCategoryModuleBinding.inflate(
+            ViewType.SECOND -> LeftMenuCategoryViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.BRAND -> LeftMenuBrandViewHolder(
+            ViewType.THIRD -> LeftMenuBrandViewHolder(
                 ViewLeftMenuBrandModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
@@ -40,24 +43,32 @@ class LeftMenuAdapter(private val logoutClickCallback: () -> Unit)
                 )
             )
 
-            LeftMenuViewType.SHOP -> LeftMenuShopViewHolder(
-                ViewLeftMenuShopModuleBinding.inflate(
+            ViewType.FOURTH -> LeftMenuShopViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.SERVICE -> LeftMenuServiceMenuViewHolder(
-                ViewLeftMenuServiceModuleBinding.inflate(
+            ViewType.FIFTH -> LeftMenuServiceMenuViewHolder(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
                 )
             )
 
-            LeftMenuViewType.BOTTOM -> LeftMenuLogoutViewHolder(
+            ViewType.SIXTH -> LeftMenuLogoutViewHolder(
                 ViewLeftMenuLogoutModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ViewType.SEVENTH -> GoodsDetailTitleViewHolder(
+                ViewCommonGoodsDetailTitleModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -79,12 +90,4 @@ class LeftMenuAdapter(private val logoutClickCallback: () -> Unit)
     }
 
     override fun getItemViewType(position: Int): Int = getItem(position).viewType.ordinal
-
-    companion object {
-        private val moduleDiffUtilCallback = object : DiffUtil.ItemCallback<LeftMenuDataSet>() {
-            override fun areItemsTheSame(oldItem: LeftMenuDataSet, newItem: LeftMenuDataSet): Boolean = oldItem == newItem
-            override fun areContentsTheSame(oldItem: LeftMenuDataSet, newItem: LeftMenuDataSet): Boolean = oldItem == newItem
-        }
-    }
-
 }

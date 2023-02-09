@@ -3,6 +3,7 @@ package com.pionnet.eland.ui.main
 import androidx.recyclerview.widget.DiffUtil
 import com.pionnet.eland.model.Banner
 import com.pionnet.eland.model.Goods
+import com.pionnet.eland.model.ViewTypeDataSet
 
 class BannerDiffCallback : DiffUtil.ItemCallback<Banner>() {
     override fun areItemsTheSame(oldItem: Banner, newItem: Banner): Boolean =
@@ -26,4 +27,9 @@ class StringDiffCallback : DiffUtil.ItemCallback<String>() {
 
     override fun areContentsTheSame(oldItem: String, newItem: String): Boolean =
         oldItem == newItem
+}
+
+class ModuleDiffCallback : DiffUtil.ItemCallback<ViewTypeDataSet>() {
+    override fun areItemsTheSame(oldItem: ViewTypeDataSet, newItem: ViewTypeDataSet): Boolean = oldItem == newItem
+    override fun areContentsTheSame(oldItem: ViewTypeDataSet, newItem: ViewTypeDataSet): Boolean = oldItem == newItem
 }

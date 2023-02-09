@@ -2,11 +2,6 @@ package com.pionnet.eland.model
 
 import com.google.gson.annotations.SerializedName
 
-data class LeftMenuDataSet(
-    val viewType: LeftMenuViewType,
-    var data: Any? = null
-)
-
 data class LeftMenuData(
     @SerializedName("code") val code: String?,
     @SerializedName("data") val data: Data?,
@@ -80,14 +75,4 @@ data class LeftMenuData(
             @SerializedName("service_menu") val serviceMenu: String?
         )
     }
-}
-
-enum class LeftMenuViewType {
-    RECENT,
-    DIVIDER,
-    CATEGORY,
-    BRAND,
-    SHOP,
-    SERVICE,
-    BOTTOM
 }
