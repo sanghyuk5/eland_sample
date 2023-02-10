@@ -36,7 +36,7 @@ class CommonMainBannerViewHolder(
                 super.onPageSelected(position)
                 bannerPosition = position
 
-                tvNow.text = ((bannerPosition % data.size) + 1).toString()
+                now.text = ((bannerPosition % data.size) + 1).toString()
             }
         })
 
@@ -45,8 +45,8 @@ class CommonMainBannerViewHolder(
         bannerPosition -= (bannerPosition % data.size)
         binding.viewPager.setCurrentItem(bannerPosition, false)
 
-        tvNow.text = ((bannerPosition % data.size) + 1).toString()
-        tvTotal.text = "/" + data.size.toString() + "+"
+        now.text = ((bannerPosition % data.size) + 1).toString()
+        total.text = "/" + data.size.toString() + "+"
     }
 
     private inner class ViewPagerAdapter(private val data: List<Banner>) : RecyclerView.Adapter<ViewHolder>() {
@@ -73,7 +73,7 @@ class CommonMainBannerViewHolder(
             GlideApp.with(itemView.context)
                 .load("https:" + data.imageUrl)
                 .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-                .into(AdjustHeightImageViewTarget(ivBanner))
+                .into(AdjustHeightImageViewTarget(image))
         }
     }
 

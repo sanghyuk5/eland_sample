@@ -180,7 +180,7 @@ class GoodsDetailActivity : BaseActivity() {
             GlideApp.with(itemView.context)
                 .load("https:" + data.imageUrl)
                 .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-                .into(AdjustHeightImageViewTarget(ivBanner))
+                .into(AdjustHeightImageViewTarget(image))
         }
     }
 

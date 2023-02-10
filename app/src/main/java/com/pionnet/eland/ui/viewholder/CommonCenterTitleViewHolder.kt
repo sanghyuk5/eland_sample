@@ -13,6 +13,6 @@ class CommonCenterTitleViewHolder(
     }
 
     private fun initView(data: ModuleData.CommonCenterTitleData) = with(binding) {
-        tvTitle.text = data.title
+        title.text = data.title
     }
 }

@@ -4,13 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
-import com.pionnet.eland.databinding.ViewCommonCategoryTabModuleBinding
 import com.pionnet.eland.databinding.ViewItemCommonCategoryBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.Category
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
@@ -22,7 +23,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class CommonCategoryTabViewHolder(
-    private val binding: ViewCommonCategoryTabModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     private var category: ModuleData.CommonCategoryTab? = null
@@ -58,9 +59,9 @@ class CommonCategoryTabViewHolder(
         var selectedTabItem = data.categoryData.indexOfFirst { it.isSelected }
         if (selectedTabItem == -1) selectedTabItem = 0
 
-        rvCategory.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
-
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = CategoryAdapter(tabClickCallback).apply {
                 submitList(data.categoryData)
             }
@@ -75,7 +76,7 @@ class CommonCategoryTabViewHolder(
         if (selectedItem != -1 && selectedItem != index) {
             data.getOrNull(selectedItem)?.isSelected = false
             data.getOrNull(index)?.isSelected = true
-            binding.rvCategory.apply {
+            binding.list.apply {
                 (adapter as? CategoryAdapter)?.submitList(data)
                 CoroutineScope(Dispatchers.Main).launch {
                     delay(200)
@@ -110,10 +111,10 @@ class CommonCategoryTabViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: Category) = with(binding) {
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivCategory)
-                tvCategory.text = data.title
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
+                name.text = data.title
 
-                ivBar.visibility = if (data.isSelected) View.VISIBLE else View.GONE
+                bar.visibility = if (data.isSelected) View.VISIBLE else View.GONE
             }
         }
     }

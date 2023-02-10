@@ -4,13 +4,14 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
-import com.pionnet.eland.databinding.ViewEkidsRecommendCategoryModuleBinding
 import com.pionnet.eland.databinding.ViewItemEkidsRecommendCategoryBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.EKidsData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.toPx
@@ -21,7 +22,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class EKidsRecommendCategoryViewHolder(
-    private val binding: ViewEkidsRecommendCategoryModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     private var groupData: List<EKidsData.Data.ExpandGroup.Group>? = null
@@ -47,9 +48,9 @@ class EKidsRecommendCategoryViewHolder(
         groupData = data.categoryData
         isWeeklyBest = data.viewType == "weeklyBest"
 
-        rvCategory.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
-
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = CategoryAdapter(tabClickCallback).apply {
                 submitList(data.categoryData)
             }
@@ -62,7 +63,7 @@ class EKidsRecommendCategoryViewHolder(
         if (selectedItem != -1 && selectedItem != index) {
             data.getOrNull(selectedItem)?.isSelected = false
             data.getOrNull(index)?.isSelected = true
-            binding.rvCategory.apply {
+            binding.list.apply {
                 (adapter as? CategoryAdapter)?.submitList(data)
                 CoroutineScope(Dispatchers.Main).launch {
                     delay(200)
@@ -97,14 +98,14 @@ class EKidsRecommendCategoryViewHolder(
 
             fun bind(data: EKidsData.Data.ExpandGroup.Group) = with(binding) {
                 if (data.isSelected) {
-                    tvCategory.setTextColor(Color.parseColor("#ffffff"))
-                    cvCategory.setCardBackgroundColor(Color.parseColor("#414141"))
+                    name.setTextColor(Color.parseColor("#ffffff"))
+                    categoryView.setCardBackgroundColor(Color.parseColor("#414141"))
                 } else {
-                    tvCategory.setTextColor(Color.parseColor("#414141"))
-                    cvCategory.setCardBackgroundColor(Color.parseColor("#ffffff"))
+                    name.setTextColor(Color.parseColor("#414141"))
+                    categoryView.setCardBackgroundColor(Color.parseColor("#ffffff"))
                 }
 
-                tvCategory.text = data.name
+                name.text = data.name
             }
         }
     }

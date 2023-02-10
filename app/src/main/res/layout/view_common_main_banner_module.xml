@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <com.pionnet.eland.views.NestedScrollableHost
-        android:id="@+id/ll_main_banner"
+        android:id="@+id/banner_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" >
@@ -18,45 +18,44 @@
             tools:background="@color/purple_200" />
     </com.pionnet.eland.views.NestedScrollableHost>
 
-    <LinearLayout
-        android:id="@+id/ll_more"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="65dp"
         android:layout_height="25dp"
-        android:orientation="horizontal"
-        android:background="@drawable/bg_banner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/ll_main_banner"
+        app:layout_constraintBottom_toBottomOf="@id/banner_layout"
         android:layout_marginBottom="12dp"
         android:layout_marginEnd="15dp"
-        android:gravity="center"
-        android:paddingStart="6dp">
+        app:cardCornerRadius="48dp"
+        app:cardBackgroundColor="#80000000">
 
-        <TextView
-            android:id="@+id/tv_now"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:text="1"
-            android:gravity="end"
-            android:textColor="#ffffff"
-            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="6dp">
 
-        <TextView
-            android:id="@+id/tv_total"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="/15"
-            android:textColor="#ffffff"
-            android:textSize="14dp" />
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="1"
+                android:gravity="end"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="/15"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
 
-    <include layout="@layout/view_item_divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ll_main_banner" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

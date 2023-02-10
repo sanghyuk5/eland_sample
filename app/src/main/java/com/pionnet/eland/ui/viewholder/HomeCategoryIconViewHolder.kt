@@ -24,8 +24,8 @@ class HomeCategoryIconViewHolder(
     private var categoryIconData: List<HomeData.Data.CategoryIcon> ?= null
 
     init {
-        binding.clClose.setOnClickListener {
-            binding.clClose.visibility = View.GONE
+        binding.closeLayout.setOnClickListener {
+            binding.closeLayout.visibility = View.GONE
             homeCategoryIconAdapter.apply {
                 isMoreClick = true
                 notifyItemChanged(9)
@@ -35,7 +35,7 @@ class HomeCategoryIconViewHolder(
     }
 
     private val moreClickListener = View.OnClickListener {
-        binding.clClose.visibility = View.VISIBLE
+        binding.closeLayout.visibility = View.VISIBLE
         homeCategoryIconAdapter.apply {
             isMoreClick = false
             notifyItemChanged(9) //submitList(categoryIconData.toMutableList()) 해도 10번째 데이터가 변하지 않음
@@ -52,7 +52,7 @@ class HomeCategoryIconViewHolder(
     private fun initView(data: ModuleData.HomeCategoryIconData) = with(binding) {
         isMoreClick = data.isMoreClick
         categoryIconData = data.homeCategoryIconData
-        rvCategory.apply {
+        list.apply {
             if (adapter == null) {
                 homeCategoryIconAdapter = HomeCategoryIconAdapter()
                 adapter = homeCategoryIconAdapter.apply {
@@ -80,7 +80,7 @@ class HomeCategoryIconViewHolder(
             Logger.d("holder isMoreClick: $isMoreClick, position: $position")
             if (isMoreClick) {
                 if (position == 9) {
-                    holder.binding.layout.visibility = View.GONE
+                    holder.binding.image.visibility = View.GONE
                     holder.binding.more.visibility = View.VISIBLE
                     holder.binding.name.text = "더보기"
                     holder.itemView.setOnClickListener(moreClickListener)

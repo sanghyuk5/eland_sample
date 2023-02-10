@@ -3,12 +3,13 @@ package com.pionnet.eland.ui.viewholder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewHomeBrandModuleBinding
 import com.pionnet.eland.databinding.ViewItemBrandBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.HomeData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
@@ -16,7 +17,7 @@ import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class HomeBrandViewHolder(
-    private val binding: ViewHomeBrandModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -26,8 +27,9 @@ class HomeBrandViewHolder(
     }
 
     private fun initView(data: ModuleData.HomeBrandData) = with(binding) {
-        rvBrand.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = HomeBrandAdapter().apply {
                 submitList(data.homeBrandData)
             }
@@ -65,9 +67,9 @@ class HomeBrandViewHolder(
             }
 
             fun bind(data: HomeData.Data.Brand) = with(binding) {
-                tvName.text = data.brand
+                name.text = data.brand
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivIcon)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
             }
         }
     }

@@ -1,7 +1,6 @@
 package com.pionnet.eland.ui.viewholder
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
@@ -9,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.request.target.Target
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewCommonMultiBannerModuleBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.Banner
 import com.pionnet.eland.ui.main.BannerDiffCallback
 import com.pionnet.eland.ui.main.ModuleData
@@ -18,7 +17,7 @@ import com.pionnet.eland.utils.AdjustHeightImageViewTarget
 import com.pionnet.eland.utils.GlideApp
 
 class CommonMultiBannerViewHolder(
-    private val binding: ViewCommonMultiBannerModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
         (data as? ModuleData.CommonMultiBannerData)?.let {
@@ -27,9 +26,7 @@ class CommonMultiBannerViewHolder(
     }
 
     private fun initView(data: ModuleData.CommonMultiBannerData) = with(binding) {
-        viewDivide.root.visibility = if (data.isShowDivide) View.VISIBLE else View.GONE
-
-        rvBanner.apply {
+        list.apply {
             adapter = BannerAdapter().apply {
                 layoutManager = GridLayoutManager(binding.root.context, data.bannerData.size)
                 submitList(data.bannerData)
@@ -72,7 +69,7 @@ class CommonMultiBannerViewHolder(
                 GlideApp.with(itemView.context)
                     .load("https:" + data.imageUrl)
                     .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-                    .into(AdjustHeightImageViewTarget(ivBanner))
+                    .into(AdjustHeightImageViewTarget(image))
             }
         }
     }

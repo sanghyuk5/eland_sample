@@ -23,26 +23,26 @@ class CommonSortViewHolder(
         viewType = data.viewType
 
         if (data.sortData != null) {
-            tvSort.text = data.sortData[data.sortPosition]
+            name.text = data.sortData[data.sortPosition]
         } else {
             val sortData = root.context.resources.getStringArray(R.array.sort_list)
-            tvSort.text = sortData[data.sortPosition]
+            name.text = sortData[data.sortPosition]
         }
 
         when (data.viewShape) {
-            "grid" -> ivSort.setImageResource(R.drawable.ic_baseline_grid_view_24)
-            "linear" -> ivSort.setImageResource(R.drawable.ic_baseline_menu_24)
-            "large" -> ivSort.setImageResource(R.drawable.ic_baseline_rectangle_24)
+            "grid" -> image.setImageResource(R.drawable.ic_baseline_grid_view_24)
+            "linear" -> image.setImageResource(R.drawable.ic_baseline_menu_24)
+            "large" -> image.setImageResource(R.drawable.ic_baseline_rectangle_24)
         }
 
-        tvSort.setOnClickListener {
+        name.setOnClickListener {
             when (viewType) {
                 "planDetail" -> EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_SORT, data.sortData ?: listOf<String>()))
                 "storeShop" -> EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_SORT, data.sortData ?: listOf<String>()))
             }
         }
 
-        ivSort.setOnClickListener {
+        sort.setOnClickListener {
             when (viewType) {
                 "planDetail" -> EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_VIEW_CHANGE))
                 "storeShop" -> EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_VIEW_CHANGE))

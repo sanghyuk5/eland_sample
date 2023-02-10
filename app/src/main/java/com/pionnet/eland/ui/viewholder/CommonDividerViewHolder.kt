@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.view.ViewGroup
 import androidx.core.view.updateLayoutParams
 import com.pionnet.eland.databinding.ViewCommonDividerModuleBinding
+import com.pionnet.eland.ui.main.ModuleData
 
 class CommonDividerViewHolder(
     private val binding: ViewCommonDividerModuleBinding
@@ -12,6 +13,10 @@ class CommonDividerViewHolder(
     override fun onBind(data: Any, position: Int) {
         (data as? MarginEntity)?.let {
             initView(it)
+        }
+
+        (data as? ModuleData.CommonDivider)?.let {
+            initView(it.data)
         }
     }
 

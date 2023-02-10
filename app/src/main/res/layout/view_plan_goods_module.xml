@@ -6,20 +6,19 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:id="@+id/iv_plan"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/ic_baseline_wifi_tethering_24" />
 
     <com.pionnet.eland.views.NestedScrollableHost
-        android:id="@+id/ns_plan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/iv_plan">
+        app:layout_constraintTop_toBottomOf="@id/image">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_plan"
+            android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

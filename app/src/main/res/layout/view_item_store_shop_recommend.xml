@@ -7,7 +7,7 @@
     android:paddingBottom="21dp">
 
     <ImageView
-        android:id="@+id/iv_icon"
+        android:id="@+id/image"
         android:layout_width="55dp"
         android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
@@ -25,5 +25,5 @@
         android:textSize="11dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+        app:layout_constraintTop_toBottomOf="@id/image" />
 </androidx.constraintlayout.widget.ConstraintLayout>

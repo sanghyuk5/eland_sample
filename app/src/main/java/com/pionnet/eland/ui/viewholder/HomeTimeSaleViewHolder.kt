@@ -37,12 +37,12 @@ class HomeTimeSaleViewHolder(
     }
 
     private fun initView(data: Goods) = with(binding) {
-        tvTitle.text = data.title
+        title.text = data.title
         linkUrl = data.linkUrl
 
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivTimeSale)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
 
-        tvTimerDash.visibility = View.VISIBLE
+        timerDash.visibility = View.VISIBLE
         val remainTime = SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.KOREA).parse(data.time ?: "0").time - Date().time
         currentCountDownTimer = object : CountDownTimer(remainTime, 1000L) {
             override fun onTick(millisUntilFinished: Long) {
@@ -56,12 +56,12 @@ class HomeTimeSaleViewHolder(
                 if (hours.toInt() > 24 * 3) {
                     hours %= 24
                 }
-                tvTimer.text = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+                timer.text = String.format("%02d:%02d:%02d", hours, minutes, seconds)
             }
 
             override fun onFinish() {
-                tvTimerDash.visibility = View.GONE
-                tvTimer.text = "Finish ."
+                timerDash.visibility = View.GONE
+                timer.text = "Finish ."
             }
         }
         currentCountDownTimer?.start()
@@ -69,12 +69,12 @@ class HomeTimeSaleViewHolder(
         brandName.text = data.brandName
         goodsName.text = data.goodsName
         saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
-        tvPer.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
+        per.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.INVISIBLE
         saleRate.text = data.saleRate.toString()
         priceBefore.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.GONE
         priceBefore.text = data.marketPrice.toString()
         priceAfter.text = priceFormat(data.salePrice ?: 0)
-        cfvFlag.flags = FlagUtil.from(data.iconView)
+        flag.flags = FlagUtil.from(data.iconView)
     }
 
     override fun onDisappeared() {

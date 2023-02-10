@@ -5,184 +5,169 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_time_sale"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19.5dp"
+        android:text="타임세일"
+        android:textColor="#2f2f2f"
+        android:textSize="21dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="19.5dp"
-            android:text="타임세일"
-            android:textColor="#2f2f2f"
-            android:textSize="21dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_timer_dash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:text="남은시간"
-            android:textColor="#2f2f2f"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_timer"
-            app:layout_constraintEnd_toStartOf="@id/tv_timer"
-            app:layout_constraintTop_toTopOf="@+id/tv_timer" />
-
-        <TextView
-            android:id="@+id/tv_timer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:textColor="#c9000b"
-            android:textSize="29dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_title"
-            tools:text="07:49:32" />
-
-        <ImageView
-            android:id="@+id/iv_time_sale"
-            android:layout_width="171dp"
-            android:layout_height="171dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginBottom="15dp"
-            android:background="#ffffff"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tv_title"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
-
-        <TextView
-            android:id="@+id/brand_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="9dp"
-            android:layout_marginTop="14dp"
-            android:maxLines="1"
-            android:text="청정원"
-            android:textColor="#3e3e3e"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/iv_time_sale"
-            app:layout_constraintTop_toTopOf="@+id/iv_time_sale" />
-
-        <TextView
-            android:id="@+id/goods_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:ellipsize="end"
-            android:lines="2"
-            android:maxLines="2"
-            android:text="제주도 산간에서 자란 소고기 550g"
-            android:textColor="#3e3e3e"
-            android:textSize="13dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/brand_name"
-            app:layout_constraintTop_toBottomOf="@+id/brand_name" />
-
-        <TextView
-            android:id="@+id/sale_rate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="10"
-            android:textColor="#c9000b"
-            android:textSize="28dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/price_before"
-            app:layout_constraintStart_toStartOf="@+id/goods_name" />
-
-        <TextView
-            android:id="@+id/tv_per"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="4dp"
-            android:text="%"
-            android:textColor="#c9000b"
-            android:textSize="14dp"
-            app:layout_constraintBottom_toBottomOf="@+id/sale_rate"
-            app:layout_constraintStart_toEndOf="@+id/sale_rate" />
-
-        <TextView
-            android:id="@+id/price_before"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginBottom="18dp"
-            android:text="46,550"
-            android:textColor="#3e3e3e"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/price_after"
-            app:layout_constraintStart_toStartOf="@+id/brand_name" />
-
-        <TextView
-            android:id="@+id/price_after"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="39dp"
-            android:gravity="center"
-            android:text="55,550"
-            android:textColor="#3e3e3e"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/iv_time_sale"
-            app:layout_constraintStart_toStartOf="@+id/brand_name" />
-
-        <TextView
-            android:id="@+id/tv_won"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:gravity="center"
-            android:text="원"
-            android:textColor="#3e3e3e"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/price_after"
-            app:layout_constraintStart_toEndOf="@+id/price_after" />
-
-        <com.pionnet.eland.views.CommonFlagsView
-            android:id="@+id/cfv_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            app:layout_constraintBottom_toTopOf="@+id/sell_cnt_txt"
-            app:layout_constraintStart_toStartOf="@+id/sell_cnt_txt"
-            tools:layout_height="20dp"
-            tools:layout_width="140dp" />
-
-        <TextView
-            android:id="@+id/sell_cnt_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="2dp"
-            android:textColor="#999999"
-            android:textSize="11dp"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_time_sale"
-            app:layout_constraintStart_toStartOf="@+id/brand_name"
-            tools:text="9,999개 구매" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <include
-        android:id="@+id/view_divide"
-        layout="@layout/view_item_divide"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/timer_dash"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cl_time_sale" />
+        android:layout_marginEnd="5dp"
+        android:text="남은시간"
+        android:textColor="#2f2f2f"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/timer"
+        app:layout_constraintEnd_toStartOf="@id/timer"
+        app:layout_constraintTop_toTopOf="@+id/timer" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:textColor="#c9000b"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        tools:text="07:49:32" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="171dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="15dp"
+        android:background="#ffffff"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="14dp"
+        android:maxLines="1"
+        android:text="청정원"
+        android:textColor="#3e3e3e"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="제주도 산간에서 자란 소고기 550g"
+        android:textColor="#3e3e3e"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/brand_name"
+        app:layout_constraintTop_toBottomOf="@+id/brand_name" />
+
+    <TextView
+        android:id="@+id/sale_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="10"
+        android:textColor="#c9000b"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/price_before"
+        app:layout_constraintStart_toStartOf="@+id/goods_name" />
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:text="%"
+        android:textColor="#c9000b"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sale_rate"
+        app:layout_constraintStart_toEndOf="@+id/sale_rate" />
+
+    <TextView
+        android:id="@+id/price_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="18dp"
+        android:text="46,550"
+        android:textColor="#3e3e3e"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after"
+        app:layout_constraintStart_toStartOf="@+id/brand_name" />
+
+    <TextView
+        android:id="@+id/price_after"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="39dp"
+        android:gravity="center"
+        android:text="55,550"
+        android:textColor="#3e3e3e"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="@+id/brand_name" />
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="원"
+        android:textColor="#3e3e3e"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after"
+        app:layout_constraintStart_toEndOf="@+id/price_after" />
+
+    <com.pionnet.eland.views.CommonFlagsView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/sell_cnt_txt"
+        app:layout_constraintStart_toStartOf="@+id/sell_cnt_txt"
+        tools:layout_height="20dp"
+        tools:layout_width="140dp" />
+
+    <TextView
+        android:id="@+id/sell_cnt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:textColor="#999999"
+        android:textSize="11dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintStart_toStartOf="@+id/brand_name"
+        tools:text="9,999개 구매" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -2,27 +2,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cl_good"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingHorizontal="15dp"
     android:paddingVertical="10dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_goods"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/image_view"
         android:layout_width="155dp"
-        android:layout_height="0dp"
+        android:layout_height="155dp"
         app:cardCornerRadius="17.5dp"
-        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_good"
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:src="@drawable/ic_baseline_wifi_tethering_24" />
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/brand_name"
@@ -35,7 +33,7 @@
         android:textSize="13dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/goods_name"
-        app:layout_constraintTop_toTopOf="@+id/cv_goods" />
+        app:layout_constraintTop_toTopOf="@+id/image_view" />
 
     <TextView
         android:id="@+id/goods_name"
@@ -49,7 +47,7 @@
         android:textColor="#333333"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cv_goods"
+        app:layout_constraintStart_toEndOf="@+id/image_view"
         app:layout_constraintTop_toBottomOf="@id/brand_name" />
 
     <TextView
@@ -95,13 +93,13 @@
         android:textColor="#333333"
         android:textSize="16dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@id/tv_won"
+        app:layout_constraintEnd_toStartOf="@id/won"
         app:layout_constraintTop_toBottomOf="@+id/goods_name"
         app:layout_goneMarginStart="0dp"
         app:layout_goneMarginTop="5dp" />
 
     <TextView
-        android:id="@+id/tv_won"
+        android:id="@+id/won"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ellipsize="end"
@@ -113,12 +111,12 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tv_count"
+        android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
         android:textColor="#8e8e8e"
         android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cv_goods"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view"
         app:layout_constraintStart_toStartOf="@+id/goods_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

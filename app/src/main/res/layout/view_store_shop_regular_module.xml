@@ -1,82 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.pionnet.eland.views.NestedScrollableHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
-    <com.pionnet.eland.views.NestedScrollableHost
-        android:id="@+id/ns_regular"
+    <LinearLayout
+        android:id="@+id/regular_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent" >
+        android:orientation="vertical" >
 
-        <LinearLayout
-            android:id="@+id/ll_regular"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_regular_menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:orientation="horizontal" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_regular_item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:orientation="horizontal" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_no_regular"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_item"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_regular_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록된 단골매장이 없습니다." />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp">
+            android:text="단골매장을 등록하면\n해당 매장의 최신 상품을 확인할 수 있습니다." />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="48dp"
+            app:strokeColor="#f4f5f7"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="등록된 단골매장이 없습니다." />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="단골매장을 등록하면\n해당 매장의 최신 상품을 확인할 수 있습니다." />
-
-            <LinearLayout
-                android:id="@+id/ll_search"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_search_store_shop"
-                android:layout_marginTop="10dp"
+                android:text="매장찾기"
+                android:layout_gravity="center"
                 android:padding="10dp"
-                android:gravity="center"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="매장찾기"
-                    app:drawableStartCompat="@drawable/ic_baseline_search_24" />
-            </LinearLayout>
-        </LinearLayout>
-
-    </com.pionnet.eland.views.NestedScrollableHost>
-
-    <include
-        layout="@layout/view_item_divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ns_regular" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+                app:drawableStartCompat="@drawable/ic_baseline_search_24" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</com.pionnet.eland.views.NestedScrollableHost>

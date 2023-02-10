@@ -5,11 +5,10 @@
     android:id="@+id/cl_good"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_good"
     android:padding="13dp">
 
     <ImageView
-        android:id="@+id/iv_good"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
@@ -18,7 +17,7 @@
         tools:src="@drawable/ic_baseline_wifi_tethering_24" />
 
     <TextView
-        android:id="@+id/tv_rank"
+        android:id="@+id/rank"
         android:layout_width="27dp"
         android:layout_height="27dp"
         android:gravity="center"
@@ -27,22 +26,23 @@
         android:textColor="#ffffff"
         android:textSize="16dp"
         android:visibility="gone"
-        app:layout_constraintTop_toTopOf="@id/iv_good"
-        app:layout_constraintStart_toStartOf="@id/iv_good" />
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/image" />
 
     <ImageView
+        android:id="@+id/like"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:src="@drawable/selector_wish"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/iv_good"
+        app:layout_constraintTop_toTopOf="@id/image"
         android:padding="5dp"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="4dp"
-        app:layout_constraintTop_toBottomOf="@id/iv_good">
+        app:layout_constraintTop_toBottomOf="@id/image">
 
         <TextView
             android:id="@+id/brand_name"
@@ -146,7 +146,7 @@
             app:layout_constraintTop_toBottomOf="@id/price_after" />
 
         <TextView
-            android:id="@+id/tv_reply"
+            android:id="@+id/reply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(51)"
@@ -157,7 +157,7 @@
             app:layout_constraintTop_toTopOf="@id/ratingbar" />
 
         <com.pionnet.eland.views.CommonFlagsView
-            android:id="@+id/cfv_flag"
+            android:id="@+id/flag"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginTop="2dp"

@@ -41,7 +41,9 @@ class CommonLuckyDealGoodsViewHolder(
             .load("https:" + data.imageUrl)
             .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
             .placeholder(R.drawable.ic_baseline_wifi_tethering_24)
-            .into(AdjustHeightImageViewTarget(ivLucky))
+            .into(AdjustHeightImageViewTarget(image))
+
+        GlideApp.with(itemView.context).load("https:" + data.flagImage).into(thumbnail)
 
         brandName.visibility = if (!data.brandName.isNullOrEmpty()) View.VISIBLE else View.GONE
         brandName.text = data.brandName
@@ -66,9 +68,9 @@ class CommonLuckyDealGoodsViewHolder(
             priceBefore.text = priceFormat(data.marketPrice ?: 0)
         }
 
-        cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.GONE
-        cfvFlag.flags = FlagUtil.from(data.iconView)
+        flag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.GONE
+        flag.flags = FlagUtil.from(data.iconView)
 
-        tvCount.text = saleQuantity(data.saleQty ?: 0)
+        count.text = saleQuantity(data.saleQty ?: 0)
     }
 }

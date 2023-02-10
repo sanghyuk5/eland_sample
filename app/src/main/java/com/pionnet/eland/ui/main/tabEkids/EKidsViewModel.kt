@@ -6,6 +6,8 @@ import com.pionnet.eland.model.EKidsData
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
+import com.pionnet.eland.ui.viewholder.MarginEntity
+import com.pionnet.eland.utils.toPx
 import kotlinx.coroutines.launch
 
 class EKidsViewModel : CommonViewModel() {
@@ -59,94 +61,46 @@ class EKidsViewModel : CommonViewModel() {
         }
 
         if (!data.bandBanner.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonMultiBannerData(
-                    data.bandBanner,
-                    isShowDivide = false
-                )
-            )
+            moduleList.add(ModuleData.CommonMultiBannerData(data.bandBanner))
         }
 
         if (!data.subBanner.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonMultiBannerData(
-                    data.subBanner,
-                    isShowDivide = false
-                )
-            )
+            moduleList.add(ModuleData.CommonMultiBannerData(data.subBanner))
         }
 
         if (data.specialDeal != null) {
-            moduleList.add(
-                ModuleData.CommonCenterTitleData(
-                    data.specialDeal.title ?: "이번주 특가"
-                )
-            )
-
+            moduleList.add(ModuleData.CommonCenterTitleData(data.specialDeal.title ?: "이번주 특가"))
             data.specialDeal.goods?.forEach { goods ->
-                moduleList.add(
-                    ModuleData.EKidsCategoryGoodsData(
-                        goods
-                    )
-                )
+                moduleList.add(ModuleData.EKidsCategoryGoodsData(goods))
             }
         }
 
         if (data.brandStory != null) {
-            moduleList.add(
-                ModuleData.CommonCenterTitleData(
-                    data.brandStory.title ?: "Brand Shop"
-                )
-            )
-
-            moduleList.add(
-                ModuleData.EKidsBrandData(
-                    data.brandStory.banner!!
-                )
-            )
+            moduleList.add(ModuleData.CommonCenterTitleData(data.brandStory.title ?: "Brand Shop"))
+            moduleList.add(ModuleData.EKidsBrandData(data.brandStory.banner!!))
         }
 
         if (data.weeklyBest != null) {
-            moduleList.add(
-                ModuleData.CommonCenterTitleData(
-                    data.weeklyBest.title ?: "MD추천"
-                )
-            )
-
+            moduleList.add(ModuleData.CommonCenterTitleData(data.weeklyBest.title ?: "MD추천"))
             data.weeklyBest.group?.let { group ->
                 group[0].isSelected = true
 
                 weeklyBestGroup = group
                 weeklyBestGoodsList = group[0].goods!!
 
-                moduleList.add(
-                    ModuleData.EKidsRecommendCategoryData(
-                        group,
-                        "weeklyBest"
-                    )
-                )
+                moduleList.add(ModuleData.EKidsRecommendCategoryData(group, "weeklyBest"))
             }
         }
 
         if (data.newArrival != null) {
-            moduleList.add(
-                ModuleData.CommonCenterTitleData(
-                    data.newArrival.title ?: "MD추천 신상"
-                )
-            )
-
+            moduleList.add(ModuleData.CommonCenterTitleData(data.newArrival.title ?: "MD추천 신상"))
             data.newArrival.group?.let { group ->
                 group[0].isSelected = true
 
                 newArrivalGroup = group
                 newArrivalGoodsList = group[0].goods!!
 
-                moduleList.add(
-                    ModuleData.EKidsRecommendCategoryData(
-                        group,
-                        "newArrival"
-                    )
-                )
+                moduleList.add(ModuleData.EKidsRecommendCategoryData(group, "newArrival"))
             }
         }
 

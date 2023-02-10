@@ -21,6 +21,6 @@ class StoreShopDeliveryViewHolder(
     }
 
     private fun initView(data: StoreShopData.Data.Delivery) = with(binding) {
-        tvDelivery.text = data.addr
+        delivery.text = data.addr
     }
 }

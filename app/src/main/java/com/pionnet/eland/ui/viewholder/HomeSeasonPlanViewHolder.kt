@@ -27,9 +27,9 @@ class HomeSeasonPlanViewHolder(
     }
 
     private fun initView(data: HomeData.Data.SeasonPlan.HomeOffer) = with(binding) {
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivSeasonPlan)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
 
-        rvSeasonPlan.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 3.toPx, 3.toPx))
             adapter = HomeSeasonPlanAdapter().apply {
                 submitList(data.goodsList)
@@ -69,7 +69,7 @@ class HomeSeasonPlanViewHolder(
 
             fun bind(data: Goods) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivSeasonPlan)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
                 brandName.text = data.brandName
                 goodsName.text = data.goodsName
                 priceAfter.text = priceFormat(data.salePrice ?: 0)

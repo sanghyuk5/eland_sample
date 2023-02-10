@@ -17,9 +17,9 @@ class StoreShopPickSearchViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopPickSearchData) = with(binding) {
-        tvStore.text = data.pickName
+        store.text = data.pickName
 
-        tvSearch.setOnClickListener {
+        search.setOnClickListener {
             EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_PICK_SEARCH, data))
         }
     }

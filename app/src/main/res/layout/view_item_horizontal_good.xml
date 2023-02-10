@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/iv_md_good"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
@@ -15,12 +15,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_lucky"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_md_good">
+        app:layout_constraintTop_toBottomOf="@id/image">
 
         <TextView
             android:id="@+id/brand_name"

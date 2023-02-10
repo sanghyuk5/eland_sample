@@ -3,12 +3,13 @@ package com.pionnet.eland.ui.viewholder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemStoreShopRecommendBinding
-import com.pionnet.eland.databinding.ViewStoreShopRecommendModuleBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.StoreShopData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
@@ -16,7 +17,7 @@ import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class StoreShopRecommendViewHolder(
-    private val binding: ViewStoreShopRecommendModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -26,8 +27,9 @@ class StoreShopRecommendViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopRecommendData) = with(binding) {
-        rvRecommend.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 3.toPx, 3.toPx))
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = StoreShopRecommendAdapter().apply {
                 submitList(data.recommendData)
             }
@@ -67,8 +69,8 @@ class StoreShopRecommendViewHolder(
             fun bind(data: StoreShopData.Data.Recommend) = with(binding) {
                 linkUrl = data.linkUrl
 
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(ivIcon)
-                tvName.text = data.storeNm
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).centerCrop().into(image)
+                name.text = data.storeNm
             }
         }
     }

@@ -24,79 +24,79 @@ class CommonModulesRecyclerViewAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return when (viewType) {
             ModuleData.CommonMainBanner.ordinal() -> CommonMainBannerViewHolder(
-                    ViewCommonMainBannerModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    ), lifecycleOwner
-                )
+                ViewCommonMainBannerModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                ), lifecycleOwner
+            )
 
             ModuleData.HomeCategoryIconData.ordinal() -> HomeCategoryIconViewHolder(
-                    ViewHomeCategoryIconModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewHomeCategoryIconModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.CommonMultiBannerData.ordinal() -> CommonMultiBannerViewHolder(
-                    ViewCommonMultiBannerModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewListBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.HomeTimeData.ordinal() -> HomeTimeSaleViewHolder(
-                    ViewHomeTimesaleModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewHomeTimesaleModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.HomeBrandData.ordinal() -> HomeBrandViewHolder(
-                    ViewHomeBrandModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewListBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.CommonTitleData.ordinal() -> CommonTitleViewHolder(
-                    ViewCommonTitleModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewCommonTitleModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.CommonLuckyDealGoods.ordinal() -> CommonLuckyDealGoodsViewHolder(
-                    ViewCommonLuckyDealGoodsModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewCommonLuckyDealGoodsModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.HomeSeasonPlansData.ordinal() -> HomeSeasonPlanViewHolder(
-                    ViewHomeSeasonPlanModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewHomeSeasonPlanModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.HomeStoreShopData.ordinal() -> HomeStoreShopViewHolder(
-                    ViewHomeStoreShopModuleBinding.inflate(
-                        LayoutInflater.from(parent.context),
-                        parent,
-                        false
-                    )
+                ViewHomeStoreShopModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
                 )
+            )
 
             ModuleData.CommonCategoryTab.ordinal() -> CommonCategoryTabViewHolder(
-                ViewCommonCategoryTabModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -104,7 +104,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.CommonGoodsHorizontalData.ordinal() -> CommonGoodsHorizontalViewHolder(
-                ViewCommonGoodsHorizontalModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -120,7 +120,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.StoreShopRecommendData.ordinal() -> StoreShopRecommendViewHolder(
-                ViewStoreShopRecommendModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -160,7 +160,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.StoreShopCategoryData.ordinal() -> StoreShopCategoryViewHolder(
-                ViewStoreShopCategoryModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -224,7 +224,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.EKidsCategoryData.ordinal() -> EKidsCategoryViewHolder(
-                ViewEkidsCategoryModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -240,7 +240,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.EKidsBrandData.ordinal() -> EKidsBrandViewHolder(
-                ViewEkidsBrandModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -248,7 +248,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.EKidsRecommendCategoryData.ordinal() -> EKidsRecommendCategoryViewHolder(
-                ViewEkidsRecommendCategoryModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -272,7 +272,7 @@ class CommonModulesRecyclerViewAdapter(
             )
 
             ModuleData.EShopCategoryData.ordinal() -> EShopCategoryViewHolder(
-                ViewEShopCategoryModuleBinding.inflate(
+                ViewListBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false
@@ -281,6 +281,14 @@ class CommonModulesRecyclerViewAdapter(
 
             ModuleData.EShopCategoryMoreData.ordinal() -> EShopCategoryMoreViewHolder(
                 ViewEShopCategoryMoreModuleBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+            )
+
+            ModuleData.CommonDivider.ordinal() -> CommonDividerViewHolder(
+                ViewCommonDividerModuleBinding.inflate(
                     LayoutInflater.from(parent.context),
                     parent,
                     false

@@ -6,26 +6,19 @@
     android:background="@android:color/white">
 
     <ImageView
-        android:id="@+id/iv_season_plan"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_season_plan"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_season_plan"
+        app:layout_constraintTop_toBottomOf="@id/image"
         app:spanCount="3" />
-
-    <include
-        layout="@layout/view_item_divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cl_close" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,7 @@ class CommonGoodsLinearViewHolder(
     }
 
     private fun initView(data: Goods) = with(binding) {
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
         brandName.text = data.brandName
         goodsName.text = data.goodsName
         saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
@@ -29,10 +29,10 @@ class CommonGoodsLinearViewHolder(
         priceAfter.text = priceFormat(data.salePrice ?: 0)
         ratingbar.visibility = if (data.starPoint != null) View.VISIBLE else View.INVISIBLE
         ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
-        tvReply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
-        tvReply.text = "리뷰(" + data.commentCnt.toString() + ")"
-        cfvFlag.viewType = "goods"
-        cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
-        cfvFlag.flags = FlagUtil.from(data.iconView)
+        reply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
+        reply.text = "리뷰(" + data.commentCnt.toString() + ")"
+        flag.viewType = "goods"
+        flag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
+        flag.flags = FlagUtil.from(data.iconView)
     }
 }

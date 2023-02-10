@@ -12,5 +12,6 @@
         android:text="Splash Screen"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="56dp" />
+        android:textSize="56dp"
+        android:visibility="visible"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

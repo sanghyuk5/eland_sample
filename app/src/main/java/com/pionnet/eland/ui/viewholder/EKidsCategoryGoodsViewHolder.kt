@@ -19,7 +19,7 @@ class EKidsCategoryGoodsViewHolder(
     }
 
     private fun initView(data: Goods) = with(binding) {
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
         brandName.text = data.brandName
         goodsName.text = data.goodsName
         saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE
@@ -28,6 +28,6 @@ class EKidsCategoryGoodsViewHolder(
         priceBefore.visibility = if (data.marketPrice != null && data.marketPrice != 0) View.VISIBLE else View.INVISIBLE
         priceBefore.text = priceFormat(data.marketPrice ?: 0) + "원"
         priceAfter.text = priceFormat(data.salePrice ?: 0)
-        tvCount.text = saleQuantity(data.saleQty ?: 0)
+        count.text = saleQuantity(data.saleQty ?: 0)
     }
 }

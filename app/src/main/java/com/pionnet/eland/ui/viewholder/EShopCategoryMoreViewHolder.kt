@@ -14,7 +14,7 @@ class EShopCategoryMoreViewHolder(
     private var isIssue = false
 
     init {
-        binding.cvMore.setOnClickListener {
+        binding.more.setOnClickListener {
             if (isIssue) {
                 EventBus.fire(HolderEvent(HolderEventType.MORE_E_SHOP_ISSUE))
             } else {
@@ -30,6 +30,6 @@ class EShopCategoryMoreViewHolder(
     }
 
     private fun initView(data: ModuleData.EShopCategoryMoreData) = with(binding) {
-        cvMore.visibility = if (data.isShow) View.VISIBLE else View.GONE
+        more.visibility = if (data.isShow) View.VISIBLE else View.GONE
     }
 }

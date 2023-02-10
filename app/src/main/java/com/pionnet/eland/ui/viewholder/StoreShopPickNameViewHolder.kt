@@ -10,7 +10,7 @@ class StoreShopPickNameViewHolder(
     private var pickNo: String? = null
 
     init {
-        binding.tvStore.setOnClickListener {
+        binding.name.setOnClickListener {
 
         }
     }
@@ -24,6 +24,6 @@ class StoreShopPickNameViewHolder(
     private fun initView(data: ModuleData.StoreShopSmartPickNameData) = with(binding) {
         pickNo = data.pickNo
 
-        tvStore.text = data.pickName + " 전체상품보기>"
+        name.text = data.pickName + " 전체상품보기>"
     }
 }

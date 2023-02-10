@@ -59,7 +59,7 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
                         }
 
                         viewModel.sortPosition = index
-                        binding.stickySort.tvSort.text = viewModel.tabList[index]
+                        binding.stickySort.name.text = viewModel.tabList[index]
                     }
                     dlg.show(childFragmentManager, dlg.tag)
                 }
@@ -78,16 +78,16 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
         stickyTitle.text = viewModel.shopName
 
         when (viewModel.viewShape) {
-            "grid" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_grid_view_24)
-            "linear" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_menu_24)
-            "large" -> stickySort.ivSort.setImageResource(R.drawable.ic_baseline_rectangle_24)
+            "grid" -> stickySort.image.setImageResource(R.drawable.ic_baseline_grid_view_24)
+            "linear" -> stickySort.image.setImageResource(R.drawable.ic_baseline_menu_24)
+            "large" -> stickySort.image.setImageResource(R.drawable.ic_baseline_rectangle_24)
         }
 
-        stickySort.tvSort.setOnClickListener {
+        stickySort.sortView.setOnClickListener {
             EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_SORT, viewModel.tabList))
         }
 
-        stickySort.ivSort.setOnClickListener {
+        stickySort.sort.setOnClickListener {
             EventBus.fire(HolderEvent(HolderEventType.PLAN_DETAIL_VIEW_CHANGE))
         }
     }
@@ -130,15 +130,15 @@ class PlanDetailModulesFragment : CommonModulesBaseFragment() {
 
             when (val goodsData = recyclerViewAdapter.values[position]) {
                 is ModuleData.CommonGoodsLinearData -> {
-                    stickySort.tvSort.text = viewModel.tabList[goodsData.index + 1]
+                    stickySort.name.text = viewModel.tabList[goodsData.index + 1]
                     viewModel.sortPosition = goodsData.index + 1
                 }
                 is ModuleData.CommonGoodsGridData -> {
-                    stickySort.tvSort.text = viewModel.tabList[goodsData.index + 1]
+                    stickySort.name.text = viewModel.tabList[goodsData.index + 1]
                     viewModel.sortPosition = goodsData.index + 1
                 }
                 is ModuleData.CommonGoodsLargeData -> {
-                    stickySort.tvSort.text = viewModel.tabList[goodsData.index + 1]
+                    stickySort.name.text = viewModel.tabList[goodsData.index + 1]
                     viewModel.sortPosition = goodsData.index + 1
                 }
             }

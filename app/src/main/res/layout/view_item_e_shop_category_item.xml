@@ -6,7 +6,7 @@
     android:paddingVertical="10dp">
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="1"
@@ -17,22 +17,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_bar"
+        android:id="@+id/bar"
         android:layout_width="0dp"
         android:layout_height="3dp"
         android:layout_marginTop="2dp"
         android:src="#c9000b"
-        app:layout_constraintEnd_toEndOf="@id/tv_name"
-        app:layout_constraintStart_toStartOf="@id/tv_name"
-        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+        app:layout_constraintEnd_toEndOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
     <ImageView
-        android:id="@+id/iv_divider"
+        android:id="@+id/divider"
         android:layout_width="1dp"
         android:layout_height="0dp"
         android:src="#d9dde4"
-        app:layout_constraintTop_toTopOf="@id/tv_name"
-        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintBottom_toBottomOf="@id/name"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/iv_season_plan"
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_season_plan">
+        app:layout_constraintTop_toBottomOf="@id/image">
 
         <TextView
             android:id="@+id/brand_name"
@@ -36,8 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:maxLines="2"
             android:lines="2"
+            android:maxLines="2"
             android:text="덧신/덧버선 5종모음/균일가 3000/6000원"
             android:textColor="#3E3E3E"
             android:textSize="12.5dp"
@@ -57,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@id/goods_name" />
 
         <TextView
-            android:id="@+id/tv_won"
+            android:id="@+id/won"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -68,8 +68,6 @@
             app:layout_constraintBaseline_toBaselineOf="@id/price_after"
             app:layout_constraintStart_toEndOf="@id/price_after" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

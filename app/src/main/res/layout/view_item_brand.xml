@@ -6,25 +6,26 @@
     android:paddingTop="15dp"
     android:paddingBottom="21dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_brand"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/image_view"
         android:layout_width="55dp"
         android:layout_height="55dp"
         app:cardCornerRadius="160dp"
         app:cardElevation="0dp"
+        app:cardBackgroundColor="#d3d3d3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
         <ImageView
-            android:id="@+id/iv_icon"
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/name"
         android:layout_width="62dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
@@ -34,5 +35,5 @@
         android:textSize="11dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_brand" />
+        app:layout_constraintTop_toBottomOf="@id/image_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>

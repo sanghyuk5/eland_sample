@@ -13,6 +13,6 @@ class StoreShopCategoryTitleViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopCategoryTitleData) = with(binding) {
-        tvTitle.text = data.title
+        title.text = data.title
     }
 }

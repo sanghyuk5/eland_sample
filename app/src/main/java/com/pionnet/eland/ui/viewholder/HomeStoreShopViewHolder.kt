@@ -28,15 +28,13 @@ class HomeStoreShopViewHolder(
     }
 
     private fun initView(data: HomeData.Data.StoreShop) = with(binding) {
-        viewTitle.tvTitle.text = data.title
-
-        rvBanner.apply {
+        listBanner.apply {
             adapter = HomeStoreShopBannerAdapter().apply {
                 submitList(data.bannerList)
             }
         }
 
-        rvGoods.apply {
+        listGoods.apply {
             adapter = HomeStoreShopGoodsAdapter().apply {
                 submitList(data.goodsList)
             }
@@ -75,7 +73,7 @@ class HomeStoreShopViewHolder(
 
             fun bind(data: Banner) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivBanner)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
             }
         }
     }
@@ -112,7 +110,7 @@ class HomeStoreShopViewHolder(
 
             fun bind(data: Goods) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivSeasonPlan)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
                 brandName.text = data.brandName
                 goodsName.text = data.goodsName
                 priceAfter.text = priceFormat(data.salePrice ?: 0)

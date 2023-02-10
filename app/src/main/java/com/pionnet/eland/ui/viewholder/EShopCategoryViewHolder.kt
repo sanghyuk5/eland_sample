@@ -8,12 +8,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
-import com.pionnet.eland.databinding.ViewEShopCategoryModuleBinding
 import com.pionnet.eland.databinding.ViewItemEShopCategoryItemBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.EShopData
 import com.pionnet.eland.ui.main.ModuleData
 import kotlinx.coroutines.CoroutineScope
@@ -22,7 +21,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class EShopCategoryViewHolder(
-    private val binding: ViewEShopCategoryModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     private var category: List<EShopData.Data.Group>? = null
@@ -49,7 +48,7 @@ class EShopCategoryViewHolder(
         category = data.categoryData
         isIssue = data.viewType == "issue"
 
-        rvCategory.apply {
+        list.apply {
             adapter = CategoryAdapter(tabClickCallback).apply {
                 layoutManager = GridLayoutManager(binding.root.context, data.categoryData.size)
                 submitList(data.categoryData)
@@ -63,7 +62,7 @@ class EShopCategoryViewHolder(
         if (selectedItem != -1 && selectedItem != index) {
             data.getOrNull(selectedItem)?.isSelected = false
             data.getOrNull(index)?.isSelected = true
-            binding.rvCategory.apply {
+            binding.list.apply {
                 (adapter as? CategoryAdapter)?.submitList(data)
                 CoroutineScope(Dispatchers.Main).launch {
                     delay(200)
@@ -99,16 +98,16 @@ class EShopCategoryViewHolder(
 
             fun bind(data: EShopData.Data.Group, position: Int) = with(binding) {
                 if (data.isSelected) {
-                    tvName.setTextColor(Color.parseColor("#c9000b"))
-                    ivBar.visibility = View.VISIBLE
+                    name.setTextColor(Color.parseColor("#c9000b"))
+                    bar.visibility = View.VISIBLE
                 } else {
-                    tvName.setTextColor(Color.parseColor("#353535"))
-                    ivBar.visibility = View.GONE
+                    name.setTextColor(Color.parseColor("#353535"))
+                    bar.visibility = View.GONE
                 }
 
-                ivDivider.visibility = if (position == currentList.size - 1) View.GONE else View.VISIBLE
+                divider.visibility = if (position == currentList.size - 1) View.GONE else View.VISIBLE
 
-                tvName.text = data.title
+                name.text = data.title
             }
         }
     }

@@ -4,32 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="15dp" >
+    android:padding="15dp">
 
-    <TextView
-        android:id="@+id/tv_sort"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sort_view"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/bg_black_rectangle"
-        android:gravity="center_vertical"
-        android:paddingStart="7dp"
-        android:text="신상품순"
-        app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
-        app:layout_constraintEnd_toStartOf="@id/iv_sort"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@id/sort"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
 
-    <ImageView
-        android:id="@+id/iv_sort"
-        android:layout_width="0dp"
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="7dp"
+            android:text="신상품순"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sort"
+        android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@drawable/bg_black_rectangle"
-        android:src="@drawable/ic_baseline_grid_view_24"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_sort"
-        app:layout_constraintDimensionRatio="1:1"
+        app:cardCornerRadius="0dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/sort_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_sort"
-        app:layout_constraintTop_toTopOf="@+id/tv_sort" />
+        app:layout_constraintStart_toEndOf="@id/sort_view"
+        app:layout_constraintTop_toTopOf="@id/sort_view"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_grid_view_24" />
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

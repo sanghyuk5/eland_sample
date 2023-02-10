@@ -13,6 +13,6 @@ class PlanDetailTabTitleViewHolder(
     }
 
     private fun initView(data: ModuleData.PlanTabTitleData) = with(binding) {
-        tvTitle.text = data.tabTitle + "(${data.count})"
+        title.text = data.tabTitle + "(${data.count})"
     }
 }

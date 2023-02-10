@@ -15,9 +15,9 @@ class PlanGoodsViewHolder(
     }
 
     private fun initView(data: ModuleData.PlanGoodsData) = with(binding) {
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivPlan)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
 
-        rvPlan.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
+        list.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
             submitList(data.goods)
         }
     }

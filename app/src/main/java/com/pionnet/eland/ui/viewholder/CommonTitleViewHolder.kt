@@ -13,7 +13,7 @@ class CommonTitleViewHolder(
     }
 
     private fun initView(data: ModuleData.CommonTitleData) = with(binding) {
-        tvTitle.text = data.title
-        tvSubTitle.text = data.subTitle
+        title.text = data.title
+        subTitle.text = data.subTitle
     }
 }

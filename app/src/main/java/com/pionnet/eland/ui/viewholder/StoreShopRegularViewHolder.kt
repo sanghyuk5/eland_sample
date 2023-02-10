@@ -24,21 +24,21 @@ class StoreShopRegularViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopRegularStoreData) = with(binding) {
-        llRegular.visibility = if (data.isShowData) View.VISIBLE else View.GONE
-        llNoRegular.visibility = if (data.isShowData) View.GONE else View.VISIBLE
+        regularLayout.visibility = if (data.isShowData) View.VISIBLE else View.GONE
+        noRegularLayout.visibility = if (data.isShowData) View.GONE else View.VISIBLE
 
-        llSearch.setOnClickListener {
+        search.setOnClickListener {
             EventBus.fire(HolderEvent(HolderEventType.STORE_SHOP_REGULAR_SEARCH))
         }
 
         if (data.isShowData) { // 메뉴는 하드코딩된 정보로 그리기
             val menuList = mutableListOf<String>()
             menuList.add("선택한 지점")
-            rvRegularMenu.adapter = StoreShopRegularMenuAdapter().apply {
+            listMenu.adapter = StoreShopRegularMenuAdapter().apply {
                 submitList(menuList)
             }
 
-            rvRegularItem.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
+            listItem.adapter = CommonGoodsHorizontalViewHolder.HorizontalAdapter().apply {
                 submitList(data.goods)
             }
         }
@@ -65,7 +65,7 @@ class StoreShopRegularViewHolder(
             : RecyclerView.ViewHolder(binding.root) {
 
             fun bind(data: String) = with(binding) {
-                tvMenu.text = data
+                name.text = data
             }
         }
     }

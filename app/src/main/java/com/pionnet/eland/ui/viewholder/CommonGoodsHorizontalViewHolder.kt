@@ -3,12 +3,13 @@ package com.pionnet.eland.ui.viewholder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewCommonGoodsHorizontalModuleBinding
 import com.pionnet.eland.databinding.ViewItemHorizontalGoodBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.Goods
 import com.pionnet.eland.ui.main.GoodsDiffCallback
 import com.pionnet.eland.ui.main.ModuleData
@@ -16,7 +17,7 @@ import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.priceFormat
 
 class CommonGoodsHorizontalViewHolder(
-    private val binding: ViewCommonGoodsHorizontalModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
     override fun onBind(data: Any, position: Int) {
         (data as? ModuleData.CommonGoodsHorizontalData)?.let {
@@ -25,11 +26,10 @@ class CommonGoodsHorizontalViewHolder(
     }
 
     private fun initView(data: List<Goods>) = with(binding) {
-        rvGoods.apply {
-            if (adapter == null) {
-                adapter = HorizontalAdapter().apply {
-                    submitList(data)
-                }
+        list.apply {
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = HorizontalAdapter().apply {
+                submitList(data)
             }
         }
     }
@@ -66,7 +66,7 @@ class CommonGoodsHorizontalViewHolder(
 
             fun bind(data: Goods) = with(binding) {
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivMdGood)
+                GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
                 brandName.text = data.brandName
                 goodsName.text = data.goodsName
                 saleRate.visibility = if (data.saleRate != null && data.saleRate != 0) View.VISIBLE else View.GONE

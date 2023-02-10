@@ -14,11 +14,11 @@ class EKidsExpandableViewHolder(
     private var isWeeklyBest = false
 
     init {
-        binding.cvMore.setOnClickListener {
+        binding.moreView.setOnClickListener {
             if (isWeeklyBest) {
-                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_WEEKLY, binding.tvMore.text.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_WEEKLY, binding.more.text.toString()))
             } else {
-                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_ARRIVAL, binding.tvMore.text.toString()))
+                EventBus.fire(HolderEvent(HolderEventType.EXPAND_E_KIDS_ARRIVAL, binding.more.text.toString()))
             }
         }
     }
@@ -32,11 +32,11 @@ class EKidsExpandableViewHolder(
     private fun initView(data: ModuleData.EKidsExpandableData) = with(binding) {
         isWeeklyBest = data.viewType == "weeklyBest"
 
-        tvMore.text = if (data.isExpand) "더보기" else "닫기"
+        more.text = if (data.isExpand) "더보기" else "닫기"
         var image = root.context.resources.getDrawable(R.drawable.ic_baseline_keyboard_arrow_down_24, null)
         if (!data.isExpand) {
             image = root.context.resources.getDrawable(R.drawable.ic_baseline_keyboard_arrow_up_24, null)
         }
-        tvMore.setCompoundDrawablesWithIntrinsicBounds(null, null, image, null)
+        more.setCompoundDrawablesWithIntrinsicBounds(null, null, image, null)
     }
 }

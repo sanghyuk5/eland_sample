@@ -7,6 +7,8 @@ import com.pionnet.eland.model.Status
 import com.pionnet.eland.model.StoreShopData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
+import com.pionnet.eland.ui.viewholder.MarginEntity
+import com.pionnet.eland.utils.toPx
 import kotlinx.coroutines.launch
 
 class StoreShopViewModel(private val params: String) : CommonViewModel() {
@@ -53,81 +55,59 @@ class StoreShopViewModel(private val params: String) : CommonViewModel() {
         moduleList.clear()
 
         if (!data.mainBanner.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonMainBanner(data.mainBanner)
-            )
+            moduleList.add(ModuleData.CommonMainBanner(data.mainBanner))
+            moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
         }
 
         if (data.delivery != null) {
-            moduleList.add(
-                ModuleData.StoreShopDeliveryData(data.delivery)
-            )
+            moduleList.add(ModuleData.StoreShopDeliveryData(data.delivery))
+            moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
         }
 
         if (!data.recommend.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonTitleData("추천 지점", "")
-            )
-
-            moduleList.add(
-                ModuleData.StoreShopRecommendData(data.recommend)
-            )
+            moduleList.add(ModuleData.CommonTitleData("추천 지점", ""))
+            moduleList.add(ModuleData.StoreShopRecommendData(data.recommend))
+            moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
         }
 
         if (data.regular != null) { //size가 0이여도 그려야함.
-            moduleList.add(
-                ModuleData.CommonTitleData("나의 단골매장", "")
-            )
+            moduleList.add(ModuleData.CommonTitleData("나의 단골매장", ""))
 
             regularData = data.regular
-            moduleList.add(
-                ModuleData.StoreShopRegularStoreData(regularData, regularGoodsData, false)
-            )
+            moduleList.add(ModuleData.StoreShopRegularStoreData(regularData, regularGoodsData, false))
+            moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
         }
 
         if (!data.smartPick.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonTitleData("스토어픽 지점", "매장에서 직접 확인하고 픽업해보세요.")
-            )
+            moduleList.add(ModuleData.CommonTitleData("스토어픽 지점", "매장에서 직접 확인하고 픽업해보세요."))
 
             smartPickData = data.smartPick
             pickName = data.smartPick[0].name ?: ""
             pickNo = data.smartPick[0].categoryNo
             data.smartPick[0].isSelected = true
 
-            moduleList.add(
-                ModuleData.StoreShopPickSearchData(smartPickData, pickName)
-            )
+            moduleList.add(ModuleData.StoreShopPickSearchData(smartPickData, pickName))
 
-            moduleList.add(
-                ModuleData.CommonSortData(null, 1, "storeShop", "grid")
-            )
+            moduleList.add(ModuleData.CommonSortData(null, 1, "storeShop", "grid"))
+            moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
         }
 
         if (!data.categoryGoods.isNullOrEmpty()) {
-            moduleList.add(
-                ModuleData.CommonTitleData("카테고리별 베스트 상품", "")
-            )
+            moduleList.add(ModuleData.CommonTitleData("카테고리별 베스트 상품", ""))
 
             data.categoryGoods[0].isSelected = true
-            moduleList.add(
-                ModuleData.StoreShopCategoryData(data.categoryGoods)
-            )
+            moduleList.add(ModuleData.StoreShopCategoryData(data.categoryGoods))
 
             data.categoryGoods.forEach { categoryGoods ->
-                moduleList.add(
-                    ModuleData.StoreShopCategoryTitleData(categoryGoods.ctgNm ?: "")
-                )
+                moduleList.add(ModuleData.StoreShopCategoryTitleData(categoryGoods.ctgNm ?: ""))
 
                 if (!categoryGoods.goodsList.isNullOrEmpty()) {
                     categoryGoodsCount = categoryGoods.goodsList.size / 2
                     categoryGoods.goodsList.chunked(2).forEachIndexed { index, goodsInfo ->
-                        moduleList.add(
-                            ModuleData.CommonGoodsGridData("storeShop", goodsInfo, index)
-                        )
+                        moduleList.add(ModuleData.CommonGoodsGridData("storeShop", goodsInfo, index))
                     }
                 }
-
+                moduleList.add(ModuleData.CommonDivider(MarginEntity(height = 7.toPx, color = "#f4f5f7")))
             }
         }
 

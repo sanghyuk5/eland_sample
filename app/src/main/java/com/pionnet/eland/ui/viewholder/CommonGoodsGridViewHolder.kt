@@ -38,7 +38,7 @@ class CommonGoodsGridViewHolder(
     }
 
     private fun ViewItemCommonGoodBinding.setView(viewType: String, data: Goods, position: Int, Callback: (String?) -> Unit) {
-        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(ivGood)
+        GlideApp.with(itemView.context).load("https:" + data.imageUrl).into(image)
 
         brandName.text = data.brandName
         goodsName.text = data.goodsName
@@ -50,20 +50,20 @@ class CommonGoodsGridViewHolder(
         priceAfter.text = priceFormat(data.salePrice ?: 0)
         ratingbar.visibility = if (data.starPoint != null) View.VISIBLE else View.INVISIBLE
         ratingbar.rating = ((data.starPoint ?: 0)/20).toFloat()
-        tvReply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
-        tvReply.text = "리뷰(" + data.commentCnt.toString() + ")"
-        cfvFlag.viewType = "goods"
-        cfvFlag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
-        cfvFlag.flags = FlagUtil.from(data.iconView)
+        reply.visibility = if (data.commentCnt != null) View.VISIBLE else View.GONE
+        reply.text = "리뷰(" + data.commentCnt.toString() + ")"
+        flag.viewType = "goods"
+        flag.visibility = if (!data.iconView.isNullOrEmpty()) View.VISIBLE else View.INVISIBLE
+        flag.flags = FlagUtil.from(data.iconView)
 
         if (viewType == "best") {
-            tvRank.visibility = View.VISIBLE
-            tvRank.text = (position + 1).toString()
-            if (position + 1 <= 3) tvRank.setBackgroundResource(R.drawable.ic_baseline_rectangle_red_24)
-            else if (position + 1 <= 20) tvRank.setBackgroundResource(R.drawable.ic_baseline_rectangle_orange_24)
-            else tvRank.visibility = View.GONE
+            rank.visibility = View.VISIBLE
+            rank.text = (position + 1).toString()
+            if (position + 1 <= 3) rank.setBackgroundResource(R.drawable.ic_baseline_rectangle_red_24)
+            else if (position + 1 <= 20) rank.setBackgroundResource(R.drawable.ic_baseline_rectangle_orange_24)
+            else rank.visibility = View.GONE
         } else {
-            tvRank.visibility = View.GONE
+            rank.visibility = View.GONE
         }
     }
 }

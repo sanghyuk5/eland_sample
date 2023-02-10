@@ -3,21 +3,21 @@ package com.pionnet.eland.ui.viewholder
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewEkidsCategoryModuleBinding
 import com.pionnet.eland.databinding.ViewItemBrandBinding
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.model.EKidsData
-import com.pionnet.eland.model.HomeData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class EKidsCategoryViewHolder(
-    private val binding: ViewEkidsCategoryModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -27,8 +27,9 @@ class EKidsCategoryViewHolder(
     }
 
     private fun initView(data: ModuleData.EKidsCategoryData) = with(binding) {
-        rvCategory.apply {
+        list.apply {
             if (itemDecorationCount == 0) addItemDecoration(HorizontalMarginDecoration(5.toPx, 7.toPx, 7.toPx))
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = CategoryAdapter().apply {
                 submitList(data.categoryData)
             }
@@ -66,9 +67,9 @@ class EKidsCategoryViewHolder(
             }
 
             fun bind(data: EKidsData.Data.Category) = with(binding) {
-                tvName.text = data.name
+                name.text = data.name
                 linkUrl = data.linkUrl
-                GlideApp.with(itemView.context).load("https:" + data.imagePath).centerCrop().into(ivIcon)
+                GlideApp.with(itemView.context).load("https:" + data.imagePath).centerCrop().into(image)
             }
         }
     }

@@ -1,6 +1,7 @@
 package com.pionnet.eland.ui.main
 
 import com.pionnet.eland.model.*
+import com.pionnet.eland.ui.viewholder.MarginEntity
 
 sealed class ModuleData {
     abstract fun clone(): ModuleData
@@ -27,8 +28,7 @@ sealed class ModuleData {
     }
 
     data class CommonMultiBannerData(
-        val bannerData: List<Banner>,
-        val isShowDivide: Boolean = true
+        val bannerData: List<Banner>
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()
@@ -350,6 +350,16 @@ sealed class ModuleData {
     data class EShopCategoryMoreData(
         var isShow: Boolean = false,
         var viewType: String
+    ) : ModuleData() {
+        override fun clone(): ModuleData {
+            return copy()
+        }
+
+        companion object
+    }
+
+    data class CommonDivider(
+        var data: MarginEntity
     ) : ModuleData() {
         override fun clone(): ModuleData {
             return copy()

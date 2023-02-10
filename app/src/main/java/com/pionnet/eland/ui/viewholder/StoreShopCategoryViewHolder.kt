@@ -1,11 +1,12 @@
 package com.pionnet.eland.ui.viewholder
 
-import com.pionnet.eland.databinding.ViewStoreShopCategoryModuleBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.pionnet.eland.databinding.ViewListBinding
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.main.tabStoreShop.StoreShopCategoryStickyAdapter
 
 class StoreShopCategoryViewHolder(
-    private val binding: ViewStoreShopCategoryModuleBinding
+    private val binding: ViewListBinding
 ) : BaseViewHolder(binding.root) {
 
     override fun onBind(data: Any, position: Int) {
@@ -15,7 +16,8 @@ class StoreShopCategoryViewHolder(
     }
 
     private fun initView(data: ModuleData.StoreShopCategoryData) = with(binding) {
-        rvCategory.apply {
+        list.apply {
+            layoutManager = LinearLayoutManager(root.context, LinearLayoutManager.HORIZONTAL, false)
             adapter = StoreShopCategoryStickyAdapter().apply {
                 submitList(data.categoryData)
             }
