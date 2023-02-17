@@ -13,8 +13,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.FragmentBottomSheetBinding
 import com.pionnet.eland.databinding.ViewItemBottomSheetBinding
-import com.pionnet.eland.model.BaseParcelable
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.BaseParcelable
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
 import com.pionnet.eland.views.BaseBottomSheetDialogFragment

@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.localData.DataManager.ARG_LIST
-import com.pionnet.eland.model.BaseParcelable
-import com.pionnet.eland.model.GoodsDetailData
+import com.pionnet.eland.data.DataManager.ARG_LIST
+import com.pionnet.eland.data.BaseParcelable
+import com.pionnet.eland.data.GoodsDetailData
 
 class GoodsDetailReviewFragment: Fragment(R.layout.view_list) {
 

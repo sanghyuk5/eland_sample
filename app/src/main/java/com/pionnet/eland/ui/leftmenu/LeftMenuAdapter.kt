@@ -2,17 +2,15 @@ package com.pionnet.eland.ui.leftmenu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.pionnet.eland.databinding.*
-import com.pionnet.eland.model.ViewType
-import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.data.ViewType
+import com.pionnet.eland.data.ViewTypeDataSet
 import com.pionnet.eland.ui.goodsdetail.holder.GoodsDetailTitleViewHolder
 import com.pionnet.eland.ui.leftmenu.holder.*
 import com.pionnet.eland.ui.main.ModuleDiffCallback
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.ui.viewholder.CommonDividerViewHolder
-import com.pionnet.eland.ui.viewholder.CommonTitleViewHolder
 
 class LeftMenuAdapter(private val logoutClickCallback: () -> Unit)
     : ListAdapter<ViewTypeDataSet, BaseViewHolder>(ModuleDiffCallback()) {

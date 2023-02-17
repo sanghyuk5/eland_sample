@@ -1,18 +1,36 @@
 package com.pionnet.eland
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.activity.viewModels
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.firebase.messaging.FirebaseMessaging
 import com.orhanobut.logger.Logger
+import com.pionnet.eland.ElandApp.Companion.database
+import com.pionnet.eland.data.DataManager.EXTRA_DEEP_LINK
+import com.pionnet.eland.data.DataManager.EXTRA_LINK
 import com.pionnet.eland.databinding.ActivityMainBinding
 import com.pionnet.eland.databinding.ViewItemMainTabmenuBinding
-import com.pionnet.eland.model.TabData
+import com.pionnet.eland.data.DataManager.EXTRA_PUSH
+import com.pionnet.eland.data.DataManager.EXTRA_PUSH_CONTENT
+import com.pionnet.eland.data.DataManager.EXTRA_PUSH_DATE
+import com.pionnet.eland.data.DataManager.EXTRA_PUSH_TITLE
+import com.pionnet.eland.data.DataManager.EXTRA_PUSH_WEB_LINK
+import com.pionnet.eland.data.DataManager.isAppRunning
+import com.pionnet.eland.data.TabData
+import com.pionnet.eland.data.room.Push
 import com.pionnet.eland.ui.main.MainTabPagerAdapter
 import com.pionnet.eland.ui.main.MainViewModel
 import com.pionnet.eland.ui.main.splash.SplashFragment
 import com.pionnet.eland.utils.dialogAlert
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : BaseActivity() {
 
@@ -37,6 +55,8 @@ class MainActivity : BaseActivity() {
         setContentView(binding.root)
 
         launchMain()
+        //getFCMToken()
+        isAppRunning = true
     }
 
     private fun launchMain() {
@@ -44,13 +64,32 @@ class MainActivity : BaseActivity() {
         initTopTab()
         initBottomMenu()
         initObserve()
+        resolveIntent(intent, true)
         //reload(true)
     }
 
+    private fun getFCMToken(): String?{
+        var token: String? = null
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            token = task.result
+
+            Logger.d("hyuk $token")
+        })
+
+        return token
+    }
+
     private fun initSplash() {
-        supportFragmentManager.beginTransaction()
-            .add(R.id.container, splashFragment, "")
-            .commitNow()
+        if (!isAppRunning) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.container, splashFragment, "")
+                .commitNow()
+        }
     }
 
     private fun initTopTab() = with(binding) {
@@ -69,21 +108,23 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initBottomMenu() = with(binding) {
-        bottomMenu.llSearchMenu.setOnClickListener {
+        bottomMenu.searchMenu.setOnClickListener {
             EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
         }
 
-        bottomMenu.llBrand.setOnClickListener {
+        bottomMenu.brand.setOnClickListener {
             EventBus.fire(LinkEvent(LinkEventType.SEARCH, "브랜드"))
         }
 
-        bottomMenu.clHome.setOnClickListener {
+        bottomMenu.home.setOnClickListener {
             viewPager.currentItem = 0
         }
 
-        bottomMenu.llDelivery.setOnClickListener {}
+        bottomMenu.pushList.setOnClickListener {
+            EventBus.fire(LinkEvent(LinkEventType.PUSH_LIST))
+        }
 
-        bottomMenu.llGoods.setOnClickListener {}
+        bottomMenu.recentlyGoods.setOnClickListener {}
     }
 
     private fun initObserve() {
@@ -160,13 +201,46 @@ class MainActivity : BaseActivity() {
         }
     }
 
-    override fun onLinkEvent(linkEvent: LinkEvent) {
-        super.onLinkEvent(linkEvent)
-    }
-
     private fun observeShowToast() {
         viewModel.showToast.observe(this) {
             Snackbar.make(binding.root, it.msg, Snackbar.LENGTH_LONG).show()
         }
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+
+        setIntent(intent)
+        resolveIntent(intent, false)
+    }
+
+    private fun resolveIntent(intent: Intent?, fromOnCreate: Boolean) {
+        if (intent == null) return
+
+        if (intent.getStringExtra(EXTRA_PUSH).equals("true")) {
+            val date = intent.getStringExtra(EXTRA_PUSH_DATE)
+            val title = intent.getStringExtra(EXTRA_PUSH_TITLE)
+            val content = intent.getStringExtra(EXTRA_PUSH_CONTENT)
+            val link = intent.getStringExtra(EXTRA_PUSH_WEB_LINK)
+            Logger.d("푸시 value 타이틀 : ${title}, 내용 : ${content}, 링크 : $link")
+
+            CoroutineScope(Dispatchers.Main).launch {
+               database.pushDao().insert(Push(date = date ?: "1994-04-04 04:58:52", title = title, content = content, image = null,link = link, false))
+            }
+
+            return
+        }
+
+        if (intent.getBooleanExtra(EXTRA_DEEP_LINK, false)) {
+            EventBus.fire(LinkEvent(intent.getStringExtra(EXTRA_LINK)))
+            
+            return
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        isAppRunning = false
     }
 }

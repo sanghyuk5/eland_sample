@@ -2,7 +2,7 @@ package com.pionnet.eland.ui.goodsdetail
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.GoodsDetailData
+import com.pionnet.eland.data.GoodsDetailData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

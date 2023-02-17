@@ -10,7 +10,7 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.Banner
+import com.pionnet.eland.data.Banner
 import com.pionnet.eland.ui.main.BannerDiffCallback
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget

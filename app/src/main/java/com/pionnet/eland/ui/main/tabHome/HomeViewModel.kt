@@ -1,10 +1,8 @@
 package com.pionnet.eland.ui.main.tabHome
 
 import androidx.lifecycle.*
-import com.pionnet.eland.model.Category
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.ViewType
-import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.data.Category
+import com.pionnet.eland.data.HomeData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.viewholder.MarginEntity

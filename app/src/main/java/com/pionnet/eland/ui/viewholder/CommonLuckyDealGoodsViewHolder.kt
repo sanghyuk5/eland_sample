@@ -6,7 +6,7 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ViewCommonLuckyDealGoodsModuleBinding
-import com.pionnet.eland.model.Goods
+import com.pionnet.eland.data.Goods
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.AdjustHeightImageViewTarget
 import com.pionnet.eland.utils.FlagUtil

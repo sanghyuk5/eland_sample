@@ -2,9 +2,8 @@ package com.pionnet.eland.ui.main.tabLuckyDeal
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.Resource
-import com.pionnet.eland.model.LuckyDealData
-import com.pionnet.eland.model.LuckyDealGoodsData
+import com.pionnet.eland.data.LuckyDealData
+import com.pionnet.eland.data.LuckyDealGoodsData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

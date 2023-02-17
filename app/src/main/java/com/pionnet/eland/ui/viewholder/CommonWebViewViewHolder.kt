@@ -2,10 +2,9 @@ package com.pionnet.eland.ui.viewholder
 
 import android.net.Uri
 import com.pionnet.eland.databinding.ViewCommonWebViewModuleBinding
-import com.pionnet.eland.model.PlanDetailData
+import com.pionnet.eland.data.PlanDetailData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.webview.ElandWebViewClient
-import com.pionnet.eland.utils.changedHeaderHtml
 
 class CommonWebViewViewHolder(
     private val binding: ViewCommonWebViewModuleBinding

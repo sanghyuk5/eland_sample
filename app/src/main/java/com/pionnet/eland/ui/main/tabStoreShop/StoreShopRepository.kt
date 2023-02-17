@@ -2,10 +2,8 @@ package com.pionnet.eland.ui.main.tabStoreShop
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.Resource
-import com.pionnet.eland.model.StorePickData
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.StorePickData
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

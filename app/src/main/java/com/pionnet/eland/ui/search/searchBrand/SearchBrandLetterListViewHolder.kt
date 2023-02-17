@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemSearchBrandKeywordLetterListBinding
 import com.pionnet.eland.databinding.ViewSearchBrandLetterListModuleBinding
-import com.pionnet.eland.model.SearchBrandKeywordListData
-import com.pionnet.eland.model.SearchBrandKeywordListData.Data.NavBrandKeyword
+import com.pionnet.eland.data.SearchBrandKeywordListData
+import com.pionnet.eland.data.SearchBrandKeywordListData.Data.NavBrandKeyword
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 

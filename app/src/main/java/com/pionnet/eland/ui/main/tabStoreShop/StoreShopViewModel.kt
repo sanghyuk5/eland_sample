@@ -2,9 +2,8 @@ package com.pionnet.eland.ui.main.tabStoreShop
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.Status
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.Goods
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.ui.viewholder.MarginEntity

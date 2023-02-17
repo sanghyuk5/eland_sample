@@ -3,7 +3,7 @@ package com.pionnet.eland.ui.goodsdetail
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.*
+import com.pionnet.eland.data.*
 import kotlinx.coroutines.launch
 
 class GoodsDetailViewModel : BaseViewModel() {

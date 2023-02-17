@@ -11,7 +11,7 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemGoodsDetailReviewImageBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.GoodsDetailData.Data.GoodsReviewInfo.ReviewInfo.ReviewImageTextInfo
+import com.pionnet.eland.data.GoodsDetailData.Data.GoodsReviewInfo.ReviewInfo.ReviewImageTextInfo
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx

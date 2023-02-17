@@ -2,8 +2,7 @@ package com.pionnet.eland.ui.main
 
 import androidx.lifecycle.*
 import com.pionnet.eland.SingleLiveEvent
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.TabData
+import com.pionnet.eland.data.TabData
 import com.pionnet.eland.utils.addSourceList
 import kotlinx.coroutines.launch
 

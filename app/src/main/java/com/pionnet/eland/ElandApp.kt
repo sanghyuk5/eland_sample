@@ -2,6 +2,7 @@ package com.pionnet.eland
 
 import android.app.Application
 import android.content.Context
+import androidx.room.Room
 import com.facebook.flipper.android.AndroidFlipperClient
 import com.facebook.flipper.android.utils.FlipperUtils
 import com.facebook.flipper.plugins.inspector.DescriptorMapping
@@ -11,6 +12,7 @@ import com.facebook.flipper.plugins.sharedpreferences.SharedPreferencesFlipperPl
 import com.facebook.soloader.SoLoader
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.Logger
+import com.pionnet.eland.data.room.PushDatabase
 
 
 class ElandApp : Application() {
@@ -20,7 +22,11 @@ class ElandApp : Application() {
 
         val appContext: Context
             get() = instance.applicationContext
+
+        lateinit var database: PushDatabase
+            private set
     }
+
     override fun onCreate() {
         super.onCreate()
         instance = this
@@ -32,31 +38,38 @@ class ElandApp : Application() {
         })
 
         if (!flipperInitialized) {
-            initFlipper(appContext)
+            initFlipper()
         }
+
+        initRoomDataBase()
     }
 
     private var flipperInitialized = false
 
-    private fun initFlipper(context: Context) {
-        SoLoader.init(context, false)
+    private fun initFlipper() {
+        SoLoader.init(appContext, false)
 
-        if (BuildConfig.DEBUG && FlipperUtils.shouldEnableFlipper(context)) {
-            val client = AndroidFlipperClient.getInstance(context)
+        if (BuildConfig.DEBUG && FlipperUtils.shouldEnableFlipper(appContext)) {
+            val client = AndroidFlipperClient.getInstance(appContext)
             client.addPlugin(
                 InspectorFlipperPlugin(
-                    context.applicationContext,
+                    appContext.applicationContext,
                     DescriptorMapping.withDefaults()
                 )
             )
 
             client.addPlugin(NetworkFlipperPlugin())
 
-            client.addPlugin(SharedPreferencesFlipperPlugin(context))
+            client.addPlugin(SharedPreferencesFlipperPlugin(appContext))
 
             client.start()
         }
 
         flipperInitialized = true
+    }
+
+    private fun initRoomDataBase() {
+        database = Room.databaseBuilder(appContext, PushDatabase::class.java, "data.db")
+            .build()
     }
 }

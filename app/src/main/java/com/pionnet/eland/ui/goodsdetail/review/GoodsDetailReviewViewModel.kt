@@ -2,7 +2,7 @@ package com.pionnet.eland.ui.goodsdetail.review
 
 import androidx.lifecycle.MutableLiveData
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.*
+import com.pionnet.eland.data.*
 import com.pionnet.eland.ui.goodsdetail.holder.ViewEntity
 import com.pionnet.eland.ui.viewholder.MarginEntity
 import com.pionnet.eland.utils.toPx

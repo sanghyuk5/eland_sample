@@ -2,7 +2,7 @@ package com.pionnet.eland.ui.main.tabEShop
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.*
+import com.pionnet.eland.data.*
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.removeRange

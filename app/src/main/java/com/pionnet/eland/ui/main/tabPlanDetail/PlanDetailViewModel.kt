@@ -1,8 +1,7 @@
 package com.pionnet.eland.ui.main.tabPlanDetail
 
 import androidx.lifecycle.*
-import com.pionnet.eland.model.PlanDetailData
-import com.pionnet.eland.model.Status
+import com.pionnet.eland.data.PlanDetailData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import kotlinx.coroutines.launch

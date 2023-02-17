@@ -10,7 +10,7 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemStoreShopRecommendBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx

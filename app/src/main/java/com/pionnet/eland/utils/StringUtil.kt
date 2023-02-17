@@ -1,11 +1,9 @@
 package com.pionnet.eland.utils
 
 import android.net.Uri
-import android.provider.DocumentsContract
 import android.webkit.URLUtil
-import com.pionnet.eland.localData.DataManager
+import com.pionnet.eland.data.DataManager
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
 
 inline val String?.withBaseUrl: String
     get() = (if (this.isNullOrBlank())  ""

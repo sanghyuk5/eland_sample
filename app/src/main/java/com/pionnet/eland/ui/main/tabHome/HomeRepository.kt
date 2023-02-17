@@ -18,10 +18,9 @@ package com.pionnet.eland.ui.main.tabHome
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.localData.DataManager
-import com.pionnet.eland.model.Resource
-import com.pionnet.eland.model.HomeData
-import com.pionnet.eland.model.DataSource
+import com.pionnet.eland.data.DataManager
+import com.pionnet.eland.data.HomeData
+import com.pionnet.eland.data.DataSource
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*

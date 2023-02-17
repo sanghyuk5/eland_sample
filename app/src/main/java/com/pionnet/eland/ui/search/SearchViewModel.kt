@@ -3,10 +3,10 @@ package com.pionnet.eland.ui.search
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.SearchPlanShopData
-import com.pionnet.eland.model.SearchRank
-import com.pionnet.eland.model.SearchRawRankData
-import com.pionnet.eland.model.SearchResultBrandData
+import com.pionnet.eland.data.SearchPlanShopData
+import com.pionnet.eland.data.SearchRank
+import com.pionnet.eland.data.SearchRawRankData
+import com.pionnet.eland.data.SearchResultBrandData
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 

@@ -2,9 +2,9 @@ package com.pionnet.eland.ui.goodsdetail.order
 
 import androidx.lifecycle.MutableLiveData
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.*
-import com.pionnet.eland.model.GoodsDetailData.Data.OrderInfoText
-import com.pionnet.eland.model.GoodsDetailData.Data.StoreInfo
+import com.pionnet.eland.data.*
+import com.pionnet.eland.data.GoodsDetailData.Data.OrderInfoText
+import com.pionnet.eland.data.GoodsDetailData.Data.StoreInfo
 import com.pionnet.eland.ui.goodsdetail.holder.ViewEntity
 import com.pionnet.eland.ui.viewholder.MarginEntity
 import com.pionnet.eland.utils.toPx

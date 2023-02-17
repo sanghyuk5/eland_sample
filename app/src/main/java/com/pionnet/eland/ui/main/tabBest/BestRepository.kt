@@ -2,8 +2,7 @@ package com.pionnet.eland.ui.main.tabBest
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.Resource
-import com.pionnet.eland.model.BestData
+import com.pionnet.eland.data.BestData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

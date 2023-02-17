@@ -2,9 +2,7 @@ package com.pionnet.eland.ui.goodsdetail.question
 
 import androidx.lifecycle.MutableLiveData
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.*
-import com.pionnet.eland.ui.viewholder.MarginEntity
-import com.pionnet.eland.utils.toPx
+import com.pionnet.eland.data.*
 
 class GoodsDetailQuestionViewModel : BaseViewModel() {
 

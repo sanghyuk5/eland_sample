@@ -2,12 +2,10 @@ package com.pionnet.eland.ui.main.tabEkids
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.EKidsData
-import com.pionnet.eland.model.Goods
+import com.pionnet.eland.data.EKidsData
+import com.pionnet.eland.data.Goods
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
-import com.pionnet.eland.ui.viewholder.MarginEntity
-import com.pionnet.eland.utils.toPx
 import kotlinx.coroutines.launch
 
 class EKidsViewModel : CommonViewModel() {

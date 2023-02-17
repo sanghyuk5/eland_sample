@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ViewItemSearchPopularBinding
-import com.pionnet.eland.model.SearchRank
+import com.pionnet.eland.data.SearchRank
 
 class SearchPopularAdapter
     : ListAdapter<SearchRank, SearchPopularAdapter.ViewHolder>(DiffCallback()) {

@@ -2,7 +2,7 @@ package com.pionnet.eland.ui.search.searchCamera
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.SearchRawRankData
+import com.pionnet.eland.data.SearchRawRankData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

@@ -1,9 +1,9 @@
 package com.pionnet.eland.ui.main
 
 import androidx.recyclerview.widget.DiffUtil
-import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.ViewTypeDataSet
+import com.pionnet.eland.data.Banner
+import com.pionnet.eland.data.Goods
+import com.pionnet.eland.data.ViewTypeDataSet
 
 class BannerDiffCallback : DiffUtil.ItemCallback<Banner>() {
     override fun areItemsTheSame(oldItem: Banner, newItem: Banner): Boolean =

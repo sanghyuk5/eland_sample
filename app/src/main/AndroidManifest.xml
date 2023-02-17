@@ -38,6 +38,33 @@
         <activity android:name=".ui.goodsdetail.GoodsDetailActivity"
             android:exported="false" />
 
+        <activity android:name=".ui.push.PushListActivity"
+            android:exported="false" />
+
+        <activity android:name=".LandingActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="elandmalltest.page.link"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="barcode" />

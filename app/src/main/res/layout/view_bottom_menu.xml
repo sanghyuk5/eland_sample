@@ -6,13 +6,13 @@
     android:background="@color/white">
 
     <LinearLayout
-        android:id="@+id/ll_search_menu"
+        android:id="@+id/search_menu"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ll_brand"
+        app:layout_constraintEnd_toStartOf="@id/brand"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -29,14 +29,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll_brand"
+        android:id="@+id/brand"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/cl_home"
-        app:layout_constraintStart_toEndOf="@id/ll_search_menu"
+        app:layout_constraintEnd_toStartOf="@id/home"
+        app:layout_constraintStart_toEndOf="@id/search_menu"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -53,12 +53,12 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_home"
+        android:id="@+id/home"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ll_delivery"
-        app:layout_constraintStart_toEndOf="@id/ll_brand"
+        app:layout_constraintEnd_toStartOf="@id/push_list"
+        app:layout_constraintStart_toEndOf="@id/brand"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.card.MaterialCardView
@@ -85,38 +85,38 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-        android:id="@+id/ll_delivery"
+        android:id="@+id/push_list"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ll_goods"
-        app:layout_constraintStart_toEndOf="@id/cl_home"
+        app:layout_constraintEnd_toStartOf="@id/recently_goods"
+        app:layout_constraintStart_toEndOf="@id/home"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_delivery_dining_24" />
+            android:src="@drawable/ic_baseline_list_alt_24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="주문조회" />
+            android:text="푸시목록" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll_goods"
+        android:id="@+id/recently_goods"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ll_delivery"
+        app:layout_constraintStart_toEndOf="@id/push_list"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView

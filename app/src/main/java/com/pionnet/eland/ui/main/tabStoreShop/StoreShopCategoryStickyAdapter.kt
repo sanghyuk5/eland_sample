@@ -6,12 +6,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemStoreShopCategoryBinding
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.utils.GlideApp
 
 class StoreShopCategoryStickyAdapter

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemSearchBrandPopularBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.SearchRank
+import com.pionnet.eland.data.SearchRank
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 import com.pionnet.eland.utils.toPx

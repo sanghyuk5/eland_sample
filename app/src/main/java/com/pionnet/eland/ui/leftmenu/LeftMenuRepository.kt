@@ -2,7 +2,7 @@ package com.pionnet.eland.ui.leftmenu
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.LeftMenuData
+import com.pionnet.eland.data.LeftMenuData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

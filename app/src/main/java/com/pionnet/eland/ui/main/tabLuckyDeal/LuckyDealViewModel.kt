@@ -2,9 +2,9 @@ package com.pionnet.eland.ui.main.tabLuckyDeal
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.Category
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.LuckyDealData
+import com.pionnet.eland.data.Category
+import com.pionnet.eland.data.Goods
+import com.pionnet.eland.data.LuckyDealData
 import com.pionnet.eland.ui.main.CommonViewModel
 import com.pionnet.eland.ui.main.ModuleData
 import kotlinx.coroutines.launch

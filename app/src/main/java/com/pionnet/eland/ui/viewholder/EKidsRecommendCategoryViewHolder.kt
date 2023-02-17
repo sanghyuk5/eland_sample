@@ -12,7 +12,7 @@ import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemEkidsRecommendCategoryBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.EKidsData
+import com.pionnet.eland.data.EKidsData
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.HorizontalMarginDecoration

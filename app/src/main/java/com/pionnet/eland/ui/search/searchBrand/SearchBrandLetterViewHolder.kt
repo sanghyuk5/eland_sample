@@ -12,8 +12,8 @@ import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 import com.pionnet.eland.utils.toPx
 import com.pionnet.eland.views.GridMarginItemDecoration
-import com.pionnet.eland.model.SearchBrandKeywordData.Data
-import com.pionnet.eland.model.SearchBrandKeywordData.Data.NavBrandKeyword.NavBrandKeywordLetter
+import com.pionnet.eland.data.SearchBrandKeywordData.Data
+import com.pionnet.eland.data.SearchBrandKeywordData.Data.NavBrandKeyword.NavBrandKeywordLetter
 import com.pionnet.eland.ui.viewholder.ItemClickIntCallback
 
 class SearchBrandLetterViewHolder(

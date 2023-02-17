@@ -9,9 +9,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.orhanobut.logger.Logger
-import com.pionnet.eland.localData.DataManager.EXTRA_LINK
+import com.pionnet.eland.data.DataManager.EXTRA_LINK
 import com.pionnet.eland.ui.goodsdetail.GoodsDetailActivity
 import com.pionnet.eland.ui.leftmenu.LeftMenuActivity
+import com.pionnet.eland.ui.push.PushListActivity
 import com.pionnet.eland.ui.search.SearchActivity
 import com.pionnet.eland.ui.search.searchCamera.SearchCameraActivity
 import com.pionnet.eland.utils.*
@@ -49,6 +50,7 @@ open class BaseActivity : AppCompatActivity() {
             LinkEventType.SEARCH -> navToSearch(linkEvent.data)
             LinkEventType.DEFAULT -> navToDefault(linkEvent.url)
             LinkEventType.DIAL -> navToDial(linkEvent.url)
+            LinkEventType.PUSH_LIST -> navToPush()
         }
     }
 
@@ -167,6 +169,14 @@ open class BaseActivity : AppCompatActivity() {
             startActivity(Intent(Intent.ACTION_VIEW).setData(Uri.parse("tel:$url")))
         } catch (ex: Exception) {
             // NOP
+        }
+    }
+
+    private fun navToPush() {
+        if (isNetworkAvailable(this)) {
+            startActivity(Intent(this, PushListActivity::class.java))
+        } else {
+            dialogAlert(this, getString(R.string.msg_network_error))
         }
     }
 }

@@ -1,10 +1,9 @@
 package com.pionnet.eland.ui.leftmenu
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.pionnet.eland.BaseViewModel
-import com.pionnet.eland.model.*
+import com.pionnet.eland.data.*
 import com.pionnet.eland.ui.goodsdetail.holder.ViewEntity
 import com.pionnet.eland.ui.viewholder.MarginEntity
 import com.pionnet.eland.utils.toPx

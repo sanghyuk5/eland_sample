@@ -111,6 +111,7 @@ enum class LinkEventType {
     LEFT_MENU,
     SEARCH,
     DEFAULT,
+    PUSH_LIST,
     PROFILE,
     LOGIN,
     SIGN_IN,

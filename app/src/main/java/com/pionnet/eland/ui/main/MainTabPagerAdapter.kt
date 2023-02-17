@@ -3,7 +3,7 @@ package com.pionnet.eland.ui.main
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.pionnet.eland.model.TabData
+import com.pionnet.eland.data.TabData
 import com.pionnet.eland.ui.main.tabBest.BestModulesFragment
 import com.pionnet.eland.ui.main.tabEkids.EKidsModulesFragment
 import com.pionnet.eland.ui.main.tabHome.HomeModulesFragment

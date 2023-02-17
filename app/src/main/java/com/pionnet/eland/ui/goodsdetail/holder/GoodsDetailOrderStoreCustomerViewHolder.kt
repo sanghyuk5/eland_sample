@@ -1,25 +1,14 @@
 package com.pionnet.eland.ui.goodsdetail.holder
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.*
-import com.pionnet.eland.EventBus
-import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ViewItemGoodsDetailOrderCustomerBinding
-import com.pionnet.eland.databinding.ViewItemGoodsDetailRecommendBinding
-import com.pionnet.eland.databinding.ViewItemGoodsDetailSellerRecommendBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.GoodsDetailData
-import com.pionnet.eland.ui.main.GoodsDiffCallback
+import com.pionnet.eland.data.GoodsDetailData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
-import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.checkItemsAre
-import com.pionnet.eland.utils.priceFormat
-import com.pionnet.eland.utils.toPx
-import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class GoodsDetailOrderStoreCustomerViewHolder(
     private val binding: ViewListBinding

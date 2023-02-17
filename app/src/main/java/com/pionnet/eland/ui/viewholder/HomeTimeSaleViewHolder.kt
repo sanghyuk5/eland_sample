@@ -5,7 +5,7 @@ import android.view.View
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewHomeTimesaleModuleBinding
-import com.pionnet.eland.model.Goods
+import com.pionnet.eland.data.Goods
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.FlagUtil
 import com.pionnet.eland.utils.GlideApp

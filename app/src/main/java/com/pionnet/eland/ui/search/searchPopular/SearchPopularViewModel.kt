@@ -2,8 +2,8 @@ package com.pionnet.eland.ui.search.searchPopular
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.pionnet.eland.model.SearchPlanShopData
-import com.pionnet.eland.model.SearchRank
+import com.pionnet.eland.data.SearchPlanShopData
+import com.pionnet.eland.data.SearchRank
 import com.pionnet.eland.ui.main.CommonViewModel
 import kotlinx.coroutines.launch
 

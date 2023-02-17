@@ -1,11 +1,8 @@
 package com.pionnet.eland.ui.goodsdetail.holder
 
 import android.view.View
-import android.view.ViewGroup
-import androidx.core.view.updateLayoutParams
-import com.pionnet.eland.databinding.ViewCommonGoodsDetailTitleModuleBinding
 import com.pionnet.eland.databinding.ViewGoodsDetailOrderInfoBinding
-import com.pionnet.eland.model.GoodsDetailData
+import com.pionnet.eland.data.GoodsDetailData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 
 class GoodsDetailOrderInfoViewHolder(

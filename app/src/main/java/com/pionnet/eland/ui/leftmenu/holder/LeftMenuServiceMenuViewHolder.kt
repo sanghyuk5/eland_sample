@@ -10,7 +10,7 @@ import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewItemLeftMenuServiceBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.LeftMenuData
+import com.pionnet.eland.data.LeftMenuData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
 

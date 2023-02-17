@@ -9,9 +9,9 @@ import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ViewHomeStoreShopModuleBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.databinding.ViewItemSeasonPlanBinding
-import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.HomeData
+import com.pionnet.eland.data.Banner
+import com.pionnet.eland.data.Goods
+import com.pionnet.eland.data.HomeData
 import com.pionnet.eland.ui.main.BannerDiffCallback
 import com.pionnet.eland.ui.main.GoodsDiffCallback
 import com.pionnet.eland.ui.main.ModuleData

@@ -17,11 +17,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.orhanobut.logger.Logger
 import com.pionnet.eland.*
 import com.pionnet.eland.databinding.ActivitySearchBinding
-import com.pionnet.eland.databinding.ViewItemSearchPlanShopBinding
 import com.pionnet.eland.databinding.ViewItemSearchResultBrandBinding
-import com.pionnet.eland.localData.DataManager
-import com.pionnet.eland.model.SearchPlanShopData
-import com.pionnet.eland.model.SearchResultBrandData
+import com.pionnet.eland.data.DataManager
+import com.pionnet.eland.data.SearchResultBrandData
 import com.pionnet.eland.ui.search.searchBrand.SearchBrandFragment
 import com.pionnet.eland.ui.search.searchPopular.SearchPopularFragment
 import com.pionnet.eland.ui.search.searchRecently.SearchRecentlyFragment

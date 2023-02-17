@@ -2,8 +2,7 @@ package com.pionnet.eland
 
 import android.os.Bundle
 import com.orhanobut.logger.Logger
-import com.pionnet.eland.BaseActivity
-import com.pionnet.eland.localData.DataManager.EXTRA_LINK
+import com.pionnet.eland.data.DataManager.EXTRA_LINK
 import com.pionnet.eland.utils.debugToast
 
 class WebViewActivity: BaseActivity() {

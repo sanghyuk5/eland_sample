@@ -19,9 +19,9 @@ import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.databinding.ActivityGoodsDetailBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.databinding.ViewItemGoodsDetailPopularStyleBinding
-import com.pionnet.eland.model.Banner
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.GoodsDetailData
+import com.pionnet.eland.data.Banner
+import com.pionnet.eland.data.Goods
+import com.pionnet.eland.data.GoodsDetailData
 import com.pionnet.eland.ui.goodsdetail.info.GoodsDetailInfoFragment
 import com.pionnet.eland.ui.goodsdetail.order.GoodsDetailOrderFragment
 import com.pionnet.eland.ui.goodsdetail.question.GoodsDetailQuestionFragment

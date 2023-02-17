@@ -13,7 +13,7 @@ import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemEShopCategoryItemBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.EShopData
+import com.pionnet.eland.data.EShopData
 import com.pionnet.eland.ui.main.ModuleData
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

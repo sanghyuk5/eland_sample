@@ -3,16 +3,12 @@ package com.pionnet.eland.ui.main
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.orhanobut.logger.Logger
-import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.R
-import com.pionnet.eland.SingleLiveEvent
 import com.pionnet.eland.databinding.FragmentMainCommonModulesBinding
-import com.pionnet.eland.localData.DataManager
 
 data class FooterAction(val position: Int, val isExpand: Boolean)
 

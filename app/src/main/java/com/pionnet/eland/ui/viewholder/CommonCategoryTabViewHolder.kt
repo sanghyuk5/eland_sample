@@ -12,7 +12,7 @@ import com.pionnet.eland.HolderEvent
 import com.pionnet.eland.HolderEventType
 import com.pionnet.eland.databinding.ViewItemCommonCategoryBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.Category
+import com.pionnet.eland.data.Category
 import com.pionnet.eland.ui.main.ModuleData
 import com.pionnet.eland.utils.GlideApp
 import com.pionnet.eland.utils.toPx

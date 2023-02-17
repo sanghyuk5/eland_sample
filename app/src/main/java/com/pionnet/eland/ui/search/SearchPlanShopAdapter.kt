@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.pionnet.eland.databinding.ViewItemSearchPlanShopBinding
-import com.pionnet.eland.model.SearchPlanShopData.Result.Planshop
+import com.pionnet.eland.data.SearchPlanShopData.Result.Planshop
 import com.pionnet.eland.utils.GlideApp
 
 class SearchPlanShopAdapter

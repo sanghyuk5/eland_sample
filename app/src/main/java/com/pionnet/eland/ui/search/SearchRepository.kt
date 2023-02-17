@@ -2,9 +2,9 @@ package com.pionnet.eland.ui.search
 
 import com.google.gson.Gson
 import com.pionnet.eland.ElandApp
-import com.pionnet.eland.model.SearchPlanShopData
-import com.pionnet.eland.model.SearchRawRankData
-import com.pionnet.eland.model.SearchResultBrandData
+import com.pionnet.eland.data.SearchPlanShopData
+import com.pionnet.eland.data.SearchRawRankData
+import com.pionnet.eland.data.SearchResultBrandData
 import com.pionnet.eland.utils.getJsonFileToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

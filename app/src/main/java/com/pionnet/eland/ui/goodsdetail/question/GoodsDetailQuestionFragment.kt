@@ -10,20 +10,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.orhanobut.logger.Logger
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
 import com.pionnet.eland.R
 import com.pionnet.eland.databinding.FragmentGoodsDetailQuestionBinding
 import com.pionnet.eland.databinding.ViewItemGoodsDetailQuestionBinding
-import com.pionnet.eland.databinding.ViewItemGoodsDetailReviewImageTextBinding
-import com.pionnet.eland.localData.DataManager.ARG_LIST
-import com.pionnet.eland.model.BaseParcelable
-import com.pionnet.eland.model.GoodsDetailData
-import com.pionnet.eland.model.ViewType
-import com.pionnet.eland.model.ViewTypeDataSet
-import com.pionnet.eland.ui.goodsdetail.info.GoodsDetailInfoAdapter
-import com.pionnet.eland.utils.GlideApp
+import com.pionnet.eland.data.DataManager.ARG_LIST
+import com.pionnet.eland.data.BaseParcelable
+import com.pionnet.eland.data.GoodsDetailData
 
 class GoodsDetailQuestionFragment: Fragment(R.layout.fragment_goods_detail_question) {
 

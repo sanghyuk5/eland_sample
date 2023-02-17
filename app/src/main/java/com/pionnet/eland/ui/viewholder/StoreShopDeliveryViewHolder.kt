@@ -1,7 +1,7 @@
 package com.pionnet.eland.ui.viewholder
 
 import com.pionnet.eland.databinding.ViewStoreShopDeliveryModuleBinding
-import com.pionnet.eland.model.StoreShopData
+import com.pionnet.eland.data.StoreShopData
 import com.pionnet.eland.ui.main.ModuleData
 
 class StoreShopDeliveryViewHolder(

@@ -1,6 +1,6 @@
 package com.pionnet.eland.ui.main
 
-import com.pionnet.eland.model.*
+import com.pionnet.eland.data.*
 import com.pionnet.eland.ui.viewholder.MarginEntity
 
 sealed class ModuleData {

@@ -1,7 +1,6 @@
 package com.pionnet.eland.ui.goodsdetail.holder
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.DiffUtil
@@ -13,18 +12,11 @@ import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
-import com.pionnet.eland.databinding.ViewItemGoodsDetailSellerRecommendBinding
 import com.pionnet.eland.databinding.ViewItemGoodsDetailTagBinding
 import com.pionnet.eland.databinding.ViewListBinding
-import com.pionnet.eland.model.Goods
-import com.pionnet.eland.model.GoodsDetailData
-import com.pionnet.eland.model.LeftMenuData
-import com.pionnet.eland.ui.main.GoodsDiffCallback
+import com.pionnet.eland.data.GoodsDetailData
 import com.pionnet.eland.ui.viewholder.BaseViewHolder
 import com.pionnet.eland.utils.checkItemsAre
-import com.pionnet.eland.utils.priceFormat
-import com.pionnet.eland.utils.toPx
-import com.pionnet.eland.views.HorizontalMarginDecoration
 
 class GoodsDetailTagViewHolder(
     private val binding: ViewListBinding
