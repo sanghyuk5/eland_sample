@@ -39,7 +39,6 @@ class LeftMenuActivity : BaseActivity() {
             (binding.list.adapter as? LeftMenuAdapter)?.submitList(it)
         }
     }
-
     private fun initView() = with(binding) {
         close.setOnClickListener { finish() }
         list.apply {

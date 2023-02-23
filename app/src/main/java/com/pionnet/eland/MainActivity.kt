@@ -58,7 +58,6 @@ class MainActivity : BaseActivity() {
         //getFCMToken()
         isAppRunning = true
     }
-
     private fun launchMain() {
         initSplash()
         initTopTab()
@@ -93,11 +92,11 @@ class MainActivity : BaseActivity() {
     }
 
     private fun initTopTab() = with(binding) {
-        topBar.ivMenu.setOnClickListener {
+        topBar.menu.setOnClickListener {
             EventBus.fire(LinkEvent(LinkEventType.LEFT_MENU))
         }
 
-        topBar.rlSearch.setOnClickListener {
+        topBar.search.setOnClickListener {
             EventBus.fire(LinkEvent(LinkEventType.SEARCH))
         }
 

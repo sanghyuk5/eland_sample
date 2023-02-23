@@ -9,3 +9,4 @@
 local.properties
 *.apk
 /app/release/output-metadata.json
+google-services.json

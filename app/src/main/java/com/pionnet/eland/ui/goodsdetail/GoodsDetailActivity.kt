@@ -16,6 +16,7 @@ import com.orhanobut.logger.Logger
 import com.pionnet.eland.BaseActivity
 import com.pionnet.eland.EventBus
 import com.pionnet.eland.LinkEvent
+import com.pionnet.eland.R
 import com.pionnet.eland.databinding.ActivityGoodsDetailBinding
 import com.pionnet.eland.databinding.ViewItemBannerBinding
 import com.pionnet.eland.databinding.ViewItemGoodsDetailPopularStyleBinding
@@ -80,6 +81,9 @@ class GoodsDetailActivity : BaseActivity() {
 
         top.setOnClickListener {
             bar.setExpanded(true)
+            val currentFragment = supportFragmentManager.fragments[viewPager.currentItem]
+            val list = currentFragment.view?.findViewById<RecyclerView>(R.id.list)
+            list?.smoothScrollToPosition(0)
         }
     }
 
